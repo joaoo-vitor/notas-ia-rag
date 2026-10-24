@@ -1,0 +1,37 @@
+{
+  "versao": "13a523fe6e83",
+  "gerado_em": "2026-10-23",
+  "total_trechos": 93,
+  "fontes": [
+    {
+      "id": "lei-11340-2006",
+      "artigos": 52,
+      "trechos": 54
+    },
+    {
+      "id": "codigo-penal",
+      "artigos": 18,
+      "trechos": 20
+    },
+    {
+      "id": "lei-14149-2021",
+      "artigos": 3,
+      "trechos": 3
+    },
+    {
+      "id": "lei-14188-2021",
+      "artigos": 3,
+      "trechos": 3
+    },
+    {
+      "id": "constituicao-1988",
+      "artigos": 1,
+      "trechos": 1
+    },
+    {
+      "id": "decreto-1973-1996",
+      "artigos": 12,
+      "trechos": 12
+    }
+  ]
+}

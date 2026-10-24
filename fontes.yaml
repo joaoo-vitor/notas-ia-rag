@@ -1,0 +1,83 @@
+# Fontes do corpus jurídico do RAG.
+#
+# Só entra no índice o que estiver listado aqui. Antes de acrescentar uma fonte,
+# conferir autoria, vigência, jurisdição e licença (ver arquitetura-chat-codex-eduardo-f/fontes.md).
+#
+# artigos: quando presente, só esses artigos do documento entram no corpus
+#          (para documentos grandes como o Código Penal e a Constituição).
+
+fontes:
+  - id: lei-11340-2006
+    documento: Lei nº 11.340/2006 (Lei Maria da Penha)
+    orgao: Presidência da República
+    tipo: legislacao
+    jurisdicao: Brasil
+    publicado_em: "2006-08-07"
+    url: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm
+
+  - id: codigo-penal
+    documento: Código Penal (Decreto-Lei nº 2.848/1940)
+    orgao: Presidência da República
+    tipo: legislacao
+    jurisdicao: Brasil
+    publicado_em: "1940-12-07"
+    url: https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm
+    artigos:
+      - "121"     # homicídio
+      - "121-A"   # feminicídio
+      - "129"     # lesão corporal (violência doméstica)
+      - "138"     # calúnia
+      - "139"     # difamação
+      - "140"     # injúria
+      - "147"     # ameaça
+      - "147-A"   # perseguição
+      - "147-B"   # violência psicológica contra a mulher
+      - "148"     # sequestro e cárcere privado
+      - "163"     # dano
+      - "181"     # imunidades nos crimes contra o patrimônio
+      - "182"
+      - "183"
+      - "213"     # estupro
+      - "215-A"   # importunação sexual
+      - "216-B"   # registro não autorizado da intimidade sexual
+      - "218-C"   # divulgação de cena de estupro ou de cena de sexo
+
+  - id: lei-14149-2021
+    documento: Lei nº 14.149/2021 (Formulário Nacional de Avaliação de Risco)
+    orgao: Presidência da República
+    tipo: legislacao
+    jurisdicao: Brasil
+    publicado_em: "2021-05-05"
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14149.htm
+
+  - id: lei-14188-2021
+    documento: Lei nº 14.188/2021 (Programa Sinal Vermelho)
+    orgao: Presidência da República
+    tipo: legislacao
+    jurisdicao: Brasil
+    publicado_em: "2021-07-28"
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14188.htm
+
+# Leis que só alteram outras (ex.: Lei 14.310/2022, que muda o art. 38-A da Lei Maria
+# da Penha) não entram: o texto alterado já está na versão compilada da lei original.
+
+  - id: constituicao-1988
+    documento: Constituição Federal de 1988
+    orgao: Presidência da República
+    tipo: legislacao
+    jurisdicao: Brasil
+    publicado_em: "1988-10-05"
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+    artigos:
+      - "226"     # família; §8º: o Estado coíbe a violência nas relações familiares
+
+  - id: decreto-1973-1996
+    documento: Decreto nº 1.973/1996 (Convenção de Belém do Pará)
+    orgao: Presidência da República
+    tipo: legislacao
+    jurisdicao: Brasil
+    publicado_em: "1996-08-01"
+    url: https://www.planalto.gov.br/ccivil_03/decreto/1996/d1973.htm
+    # artigos 1 a 12 da Convenção (definições, direitos e deveres dos Estados);
+    # os demais tratam de assinatura, ratificação e vigência do tratado
+    artigos: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
