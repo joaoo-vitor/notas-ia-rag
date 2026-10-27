@@ -33,8 +33,19 @@ KS = (1, 3, 5, 10)
 
 
 def recuperadores():
+    """Nome -> função que cria o recuperador (importações pesadas só quando usado)."""
     from busca_lexical import BuscaLexical
-    return {"lexical": BuscaLexical}
+    opcoes = {"lexical": BuscaLexical}
+    for modelo in ("e5-small", "e5-base", "bge-m3"):
+        def densa(m=modelo):
+            from busca_densa import BuscaDensa
+            return BuscaDensa(m)
+        def hibrida(m=modelo):
+            from busca_densa import BuscaHibrida
+            return BuscaHibrida(m)
+        opcoes[f"densa-{modelo}"] = densa
+        opcoes[f"hibrida-{modelo}"] = hibrida
+    return opcoes
 
 
 def artigo(id_trecho):
