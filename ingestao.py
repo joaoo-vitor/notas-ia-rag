@@ -173,9 +173,13 @@ def eh_rubrica(texto):
 SO_NUMERO = re.compile(r"^(§\s*\d+\s*[º°o]?|[IVXLC]+|[a-z]\)|Parágrafo único)\s*[.\-–]?\s*$")
 
 
+VETADO = re.compile(r"^(§\s*\d+\s*[º°o]?|[IVXLC]+\s*[-–]|[a-z]\)|Parágrafo único\.?)\s*\(?\s*(VETADO|Revogad[oa])\b.*$", re.I)
+
+
 def limpar_artigo(artigo):
-    """Tira numerações que ficaram sem texto quando a redação revogada foi removida ("§ 5º .")."""
-    artigo["linhas"] = [l for l in artigo["linhas"] if not SO_NUMERO.match(l)]
+    """Tira numerações que ficaram sem texto quando a redação revogada foi removida ("§ 5º .")
+    e dispositivos vetados ou revogados dentro do artigo ("§ 1º (VETADO).")."""
+    artigo["linhas"] = [l for l in artigo["linhas"] if not SO_NUMERO.match(l) and not VETADO.match(l)]
     return artigo
 
 

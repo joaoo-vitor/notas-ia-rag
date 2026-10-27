@@ -1,0 +1,191 @@
+# Gabarito do RAG: perguntas em linguagem leiga e os artigos que respondem cada uma.
+#
+# Campos:
+#   id              identificador estável (não reutilizar depois de apagar)
+#   pergunta        como uma usuária escreveria, com o registro indicado em "tipo"
+#   tipo            direta (usa termos da lei) | coloquial | adversa (gíria, sem acento,
+#                   abreviação, erro de digitação) | sem_resposta (a base não responde)
+#   relevantes      artigos que respondem a pergunta (id do artigo no corpus, sem "-p1/-p2")
+#   parciais        artigos que ajudam, mas não respondem sozinhos (opcional)
+#   status          rascunho | revisado   (só "revisado" entra nos números oficiais)
+#   revisores       quem conferiu (duas pessoas, sem ver a resposta uma da outra)
+#
+# Os itens abaixo são um RASCUNHO inicial escrito com auxílio de IA. Cada relevância foi
+# conferida contra o texto do corpus, mas precisa da revisão do grupo antes de valer.
+# Meta: 150 a 300 perguntas, com pelo menos 15% sem_resposta e 20% adversas.
+
+perguntas:
+  # --- formas de violência (Lei Maria da Penha, art. 7º) ---
+  - id: q001
+    pergunta: O que é violência patrimonial?
+    tipo: direta
+    relevantes: [lei-11340-2006:art7]
+    status: rascunho
+  - id: q002
+    pergunta: ele pega meu salário e não deixa eu trabalhar, isso é violência?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art7]
+    status: rascunho
+  - id: q003
+    pergunta: Quais são as formas de violência doméstica contra a mulher?
+    tipo: direta
+    relevantes: [lei-11340-2006:art7]
+    parciais: [lei-11340-2006:art5, decreto-1973-1996:art2]
+    status: rascunho
+  - id: q004
+    pergunta: ele quebrou meu celular de raiva
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art7, codigo-penal:art163]
+    status: rascunho
+  - id: q005
+    pergunta: ele pegou meus documentos e não quer devolver
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art7, lei-11340-2006:art24]
+    status: rascunho
+  - id: q006
+    pergunta: ele xinga eu de burra e vagabunda o tempo todo
+    tipo: adversa
+    relevantes: [codigo-penal:art140, lei-11340-2006:art7]
+    status: rascunho
+
+  # --- medidas protetivas ---
+  - id: q007
+    pergunta: O que é medida protetiva de urgência?
+    tipo: direta
+    relevantes: [lei-11340-2006:art22, lei-11340-2006:art19]
+    status: rascunho
+  - id: q008
+    pergunta: preciso fazer boletim de ocorrência pra pedir medida protetiva?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art19]
+    status: rascunho
+  - id: q009
+    pergunta: ele pode ser obrigado a sair de casa?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art22, lei-11340-2006:art12-C]
+    status: rascunho
+  - id: q010
+    pergunta: o juiz pode proibir ele de chegar perto de mim e dos meus filhos?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art22]
+    status: rascunho
+  - id: q011
+    pergunta: posso pedir pensão pros meus filhos junto com a medida protetiva?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art22]
+    status: rascunho
+  - id: q012
+    pergunta: O que acontece se o agressor descumprir a medida protetiva?
+    tipo: direta
+    relevantes: [lei-11340-2006:art24-A]
+    status: rascunho
+  - id: q013
+    pergunta: ele continua me mandando mensagem mesmo com a medida, isso é crime?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art24-A]
+    parciais: [lei-11340-2006:art22]
+    status: rascunho
+  - id: q014
+    pergunta: a cidade não tem juiz, o delegado pode tirar ele de casa?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art12-C]
+    status: rascunho
+
+  # --- crimes (Código Penal) ---
+  - id: q015
+    pergunta: Perseguição é crime?
+    tipo: direta
+    relevantes: [codigo-penal:art147-A]
+    status: rascunho
+  - id: q016
+    pergunta: meu ex fica me seguindo e aparecendo onde eu estou
+    tipo: coloquial
+    relevantes: [codigo-penal:art147-A]
+    status: rascunho
+  - id: q017
+    pergunta: ele vive me humilhando e controlando tudo que eu faço, isso é crime?
+    tipo: coloquial
+    relevantes: [codigo-penal:art147-B]
+    parciais: [lei-11340-2006:art7]
+    status: rascunho
+  - id: q018
+    pergunta: ele ameaçou me matar
+    tipo: coloquial
+    relevantes: [codigo-penal:art147]
+    parciais: [lei-11340-2006:art22]
+    status: rascunho
+  - id: q019
+    pergunta: O que é feminicídio?
+    tipo: direta
+    relevantes: [codigo-penal:art121-A]
+    status: rascunho
+  - id: q020
+    pergunta: q acontece c/ quem bate na mulher
+    tipo: adversa
+    relevantes: [codigo-penal:art129]
+    status: rascunho
+  - id: q021
+    pergunta: meu marido me obrigou a ter relação, isso é estupro?
+    tipo: coloquial
+    relevantes: [codigo-penal:art213]
+    parciais: [lei-11340-2006:art7]
+    status: rascunho
+  - id: q022
+    pergunta: ele espalhou fotos íntimas minhas no grupo da família
+    tipo: coloquial
+    relevantes: [codigo-penal:art218-C]
+    status: rascunho
+
+  # --- atendimento, processo e direitos ---
+  - id: q023
+    pergunta: Posso perder meu emprego se precisar me afastar por causa da violência?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art9]
+    status: rascunho
+  - id: q024
+    pergunta: a policia leva eu e meus filhos pra um abrigo?
+    tipo: adversa
+    relevantes: [lei-11340-2006:art11]
+    status: rascunho
+  - id: q025
+    pergunta: Se eu desistir da denúncia, o que acontece?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art16]
+    status: rascunho
+  - id: q026
+    pergunta: Preciso de advogado? E se eu não puder pagar?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art27, lei-11340-2006:art28]
+    status: rascunho
+  - id: q027
+    pergunta: posso pedir o divorcio no juizado de violencia domestica?
+    tipo: adversa
+    relevantes: [lei-11340-2006:art14-A]
+    status: rascunho
+  - id: q028
+    pergunta: O que é o programa Sinal Vermelho?
+    tipo: direta
+    relevantes: [lei-14188-2021:art1, lei-14188-2021:art2]
+    status: rascunho
+  - id: q029
+    pergunta: pra que serve o formulario de avaliacao de risco
+    tipo: adversa
+    relevantes: [lei-14149-2021:art1, lei-14149-2021:art2]
+    status: rascunho
+
+  # --- sem resposta na base (o sistema deve recusar e encaminhar) ---
+  - id: q030
+    pergunta: Onde fica a delegacia da mulher mais perto de mim?
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
+  - id: q031
+    pergunta: posso viajar com meus filhos pra fora do país sem autorização do pai?
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
+  - id: q032
+    pergunta: quanto tempo demora um processo de divórcio?
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
