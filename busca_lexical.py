@@ -1,8 +1,8 @@
 """Busca lexical (BM25) sobre o corpus, com SQLite FTS5.
 
-Uso (na raiz do repositório):
-    rag/.venv/Scripts/python rag/busca_lexical.py --indexar
-    rag/.venv/Scripts/python rag/busca_lexical.py "o que é violência patrimonial?"
+Uso (na raiz deste repositório):
+    .venv/Scripts/python busca_lexical.py --indexar
+    .venv/Scripts/python busca_lexical.py "o que é violência patrimonial?"
 """
 
 import argparse

@@ -1,18 +1,24 @@
-# RAG jurídico (Trilha 2)
+# notas-ia-rag
 
-Recupera trechos de leis oficiais para responder dúvidas com citação. Desenho em
-`arquitetura-chat-codex-eduardo-f/resposta-rag.md` (SQLite FTS5 + FAISS + RRF).
+RAG jurídico do [Notas.ia](https://github.com/aline-fraga/notas-ia): recupera trechos de
+leis oficiais para responder dúvidas com citação. No repositório principal, este
+repositório fica na pasta `rag/` como submodule.
+
+Desenho da solução em
+[`arquitetura-chat-codex-eduardo-f/resposta-rag.md`](https://github.com/aline-fraga/notas-ia/blob/main/arquitetura-chat-codex-eduardo-f/resposta-rag.md)
+(SQLite FTS5 + FAISS + RRF).
 
 ## Como rodar
 
-Na raiz do repositório (Windows; em Linux/Mac troque `Scripts` por `bin`):
+Na raiz deste repositório (ou em `notas-ia/rag/`). No Windows; em Linux/Mac troque
+`Scripts` por `bin`:
 
 ```bash
-python -m venv rag/.venv
-rag/.venv/Scripts/python -m pip install -r rag/requirements.txt
-rag/.venv/Scripts/python rag/ingestao.py              # gera o corpus a partir de rag/fontes.yaml
-rag/.venv/Scripts/python rag/busca_lexical.py --indexar
-rag/.venv/Scripts/python rag/busca_lexical.py "o que acontece se ele descumprir a medida protetiva"
+python -m venv .venv
+.venv/Scripts/python -m pip install -r requirements.txt
+.venv/Scripts/python ingestao.py              # gera o corpus a partir de fontes.yaml
+.venv/Scripts/python busca_lexical.py --indexar
+.venv/Scripts/python busca_lexical.py "o que acontece se ele descumprir a medida protetiva"
 ```
 
 ## Arquivos

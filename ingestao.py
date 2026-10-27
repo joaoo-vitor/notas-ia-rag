@@ -1,13 +1,13 @@
 """Ingestão do corpus jurídico: baixa as fontes oficiais e divide em trechos por artigo.
 
-Uso (na raiz do repositório):
-    rag/.venv/Scripts/python rag/ingestao.py            # baixa o que faltar e gera o corpus
-    rag/.venv/Scripts/python rag/ingestao.py --baixar   # força baixar tudo de novo
+Uso (na raiz deste repositório):
+    .venv/Scripts/python ingestao.py            # baixa o que faltar e gera o corpus
+    .venv/Scripts/python ingestao.py --baixar   # força baixar tudo de novo
 
 Saídas:
-    rag/dados/brutos/<id>.htm      página original, como veio do site
-    rag/corpus/trechos.jsonl       um trecho por linha, com metadados
-    rag/corpus/manifesto.json      versão do corpus, fontes e contagens
+    dados/brutos/<id>.htm      página original, como veio do site
+    corpus/trechos.jsonl       um trecho por linha, com metadados
+    corpus/manifesto.json      versão do corpus, fontes e contagens
 """
 
 import argparse
