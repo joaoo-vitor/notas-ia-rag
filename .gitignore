@@ -2,3 +2,6 @@
 __pycache__/
 # índices são gerados a partir do corpus; rode busca_lexical.py --indexar
 indice/
+
+# cópia de segurança gerada pelo editor do gabarito
+avaliacao/*.bak

@@ -39,10 +39,14 @@ O índice denso precisa ser refeito sempre que o corpus mudar (o script avisa).
 | `avaliacao/gabarito.yaml` | Perguntas leigas com os artigos que as respondem |
 | `avaliar.py` | Mede acerto@k, recall@k, MRR e nDCG@10 contra o gabarito |
 | `avaliacao/resultados/` | Resultado de cada avaliação, por recuperador e versão do corpus |
+| `editor/` | Aplicação local para escrever e revisar o gabarito ([como usar](editor/README.md)) |
 
 ## Gabarito
 
 O gabarito é a referência para comparar as buscas, então precisa ser feito por pessoas:
+
+O jeito mais fácil é pelo **editor do gabarito**: `python editor/servidor.py` (ver
+[editor/README.md](editor/README.md)). O processo:
 
 1. Escrever a pergunta como uma usuária escreveria e indicar o `tipo`.
 2. Apontar os artigos que respondem (`relevantes`) e os que ajudam (`parciais`).

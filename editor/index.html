@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editor do gabarito</title>
+  <link rel="stylesheet" href="/estilo.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.4.38/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+<body>
+<div id="app" v-cloak>
+  <header class="topo">
+    <h1>Editor do gabarito</h1>
+    <nav class="abas">
+      <button :class="{ ativa: aba === 'nova' }" @click="aba = 'nova'">Nova pergunta</button>
+      <button :class="{ ativa: aba === 'trechos' }" @click="aba = 'trechos'">Trechos</button>
+      <button :class="{ ativa: aba === 'gabarito' }" @click="aba = 'gabarito'">
+        Gabarito <span class="contador">{{ perguntas.length }}</span>
+      </button>
+    </nav>
+    <div class="topo-dir">
+      <label class="nome">Seu nome
+        <input v-model.trim="nome" placeholder="para marcar revisões">
+      </label>
+      <span class="estado" :class="estado.tipo">{{ estado.texto }}</span>
+    </div>
+  </header>
+
+  <main v-if="carregado">
+    <!-- ======================= NOVA PERGUNTA ======================= -->
+    <section v-show="aba === 'nova'" class="painel estreito">
+      <h2>Nova pergunta</h2>
+      <p class="dica">Escreva como uma usuária escreveria no chat. Escreva a pergunta <b>antes</b> de procurar o artigo.</p>
+
+      <label class="campo">Pergunta
+        <textarea v-model="rascunho.pergunta" rows="3" placeholder="ex.: meu ex fica me seguindo e aparecendo onde eu estou"></textarea>
+      </label>
+
+      <div class="linha">
+        <label class="campo">Tipo
+          <select v-model="rascunho.tipo">
+            <option v-for="t in TIPOS" :value="t.valor">{{ t.rotulo }}</option>
+          </select>
+        </label>
+        <label class="campo">Origem
+          <select v-model="rascunho.origem">
+            <option v-for="o in ORIGENS" :value="o">{{ o }}</option>
+          </select>
+        </label>
+      </div>
+      <p class="dica">{{ TIPOS.find(t => t.valor === rascunho.tipo).ajuda }}</p>
+
+      <div class="campo">Relevantes <small>artigos que respondem a pergunta</small>
+        <campo-artigos v-model="rascunho.relevantes" :artigos="artigos" :desabilitado="rascunho.tipo === 'sem_resposta'"></campo-artigos>
+      </div>
+      <div class="campo">Parciais <small>ajudam, mas não respondem sozinhos (opcional)</small>
+        <campo-artigos v-model="rascunho.parciais" :artigos="artigos" :desabilitado="rascunho.tipo === 'sem_resposta'"></campo-artigos>
+      </div>
+
+      <p v-if="erroRascunho" class="erro">{{ erroRascunho }}</p>
+      <div class="acoes">
+        <button class="principal" @click="adicionar">Adicionar</button>
+        <button @click="limparRascunho">Limpar</button>
+      </div>
+    </section>
+
+    <!-- ======================= TRECHOS ======================= -->
+    <section v-show="aba === 'trechos'" class="painel duas-colunas">
+      <aside class="lista-trechos">
+        <div class="filtros">
+          <input v-model="filtroTrecho" placeholder="Buscar no texto, artigo ou lei…">
+          <select v-model="filtroDocumento">
+            <option value="">Todas as fontes</option>
+            <option v-for="d in documentos" :value="d">{{ d }}</option>
+          </select>
+        </div>
+        <ul>
+          <li v-for="t in trechosFiltrados" :key="t.id" :class="{ selecionado: trechoAtual && t.id === trechoAtual.id }" @click="trechoAtual = t">
+            <b>{{ curto(t) }}</b>
+            <span>{{ primeiraFrase(t) }}</span>
+          </li>
+        </ul>
+        <p class="dica">{{ trechosFiltrados.length }} de {{ trechos.length }} trechos</p>
+      </aside>
+
+      <article v-if="trechoAtual" class="trecho">
+        <p class="contexto">{{ trechoAtual.documento }}<br><small>{{ trechoAtual.contexto }}</small></p>
+        <h2>{{ trechoAtual.secao }}</h2>
+        <div class="texto-lei">
+          <p v-for="(linha, i) in trechoAtual.texto.split('\n')" :key="i" :class="classeLinha(linha)">{{ linha }}</p>
+        </div>
+        <p class="meta">
+          <code>{{ artigoDe(trechoAtual.id) }}</code> ·
+          <a :href="trechoAtual.url" target="_blank" rel="noopener">abrir no Planalto</a>
+          <span v-if="trechoAtual.alterado_por.length"> · alterado por {{ trechoAtual.alterado_por.join('; ') }}</span>
+        </p>
+        <div class="acoes fixas">
+          <button class="principal" @click="usarTrecho('relevantes')" :disabled="noRascunho(trechoAtual) === 'relevantes'">
+            {{ noRascunho(trechoAtual) === 'relevantes' ? '✓ Já é resposta' : 'Adicionar trecho como resposta' }}
+          </button>
+          <button @click="usarTrecho('parciais')" :disabled="noRascunho(trechoAtual) === 'parciais'">
+            {{ noRascunho(trechoAtual) === 'parciais' ? '✓ Já é parcial' : 'Adicionar como parcial' }}
+          </button>
+          <span class="dica">vai para a pergunta em edição na aba "Nova pergunta"
+            <template v-if="rascunho.pergunta">: <i>“{{ rascunho.pergunta }}”</i></template>
+          </span>
+        </div>
+      </article>
+      <article v-else class="trecho vazio">Escolha um trecho na lista.</article>
+    </section>
+
+    <!-- ======================= GABARITO ======================= -->
+    <section v-show="aba === 'gabarito'" class="painel">
+      <div class="resumo">
+        <span><b>{{ perguntas.length }}</b> perguntas</span>
+        <span><b>{{ contar(p => p.status === 'revisado') }}</b> revisadas</span>
+        <span v-for="t in TIPOS">{{ t.valor }}: <b>{{ contar(p => p.tipo === t.valor) }}</b></span>
+      </div>
+      <div class="filtros">
+        <input v-model="filtroPergunta" placeholder="Buscar pergunta…">
+        <select v-model="filtroStatus">
+          <option value="">Qualquer status</option>
+          <option value="rascunho">Rascunho</option>
+          <option value="revisado">Revisado</option>
+          <option value="falta-eu">Falta a minha revisão</option>
+        </select>
+        <select v-model="filtroTipo">
+          <option value="">Qualquer tipo</option>
+          <option v-for="t in TIPOS" :value="t.valor">{{ t.valor }}</option>
+        </select>
+      </div>
+
+      <div v-for="p in perguntasFiltradas" :key="p.id" class="cartao" :class="p.status">
+        <div class="cartao-topo">
+          <code>{{ p.id }}</code>
+          <select v-model="p.tipo" @change="alterou">
+            <option v-for="t in TIPOS" :value="t.valor">{{ t.valor }}</option>
+          </select>
+          <select v-model="p.origem" @change="alterou">
+            <option :value="undefined">origem?</option>
+            <option v-for="o in ORIGENS" :value="o">{{ o }}</option>
+          </select>
+          <select v-model="p.status" @change="alterou">
+            <option value="rascunho">rascunho</option>
+            <option value="revisado">revisado</option>
+          </select>
+          <button class="perigo" @click="remover(p)" title="Apagar pergunta">Apagar</button>
+        </div>
+        <textarea v-model="p.pergunta" rows="2" @input="alterou"></textarea>
+        <div class="campo">Relevantes
+          <campo-artigos v-model="p.relevantes" :artigos="artigos" @update:model-value="alterou"></campo-artigos>
+        </div>
+        <div class="campo">Parciais
+          <campo-artigos v-model="p.parciais" :artigos="artigos" @update:model-value="alterou"></campo-artigos>
+        </div>
+        <div class="revisao">
+          <span>Revisores:</span>
+          <span v-for="r in p.revisores" class="chip pessoa">{{ r }}
+            <button @click="tirarRevisor(p, r)" title="Remover">×</button>
+          </span>
+          <span v-if="!p.revisores.length" class="dica">ninguém ainda</span>
+          <button v-if="nome && !p.revisores.includes(nome)" @click="revisei(p)">✓ Revisei ({{ nome }})</button>
+          <span v-if="!nome" class="dica">preencha "Seu nome" no topo para marcar revisão</span>
+        </div>
+      </div>
+      <p v-if="!perguntasFiltradas.length" class="dica">Nenhuma pergunta com esses filtros.</p>
+    </section>
+  </main>
+  <main v-else class="painel estreito"><p>{{ estado.texto }}</p></main>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

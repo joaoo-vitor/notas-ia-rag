@@ -9,6 +9,7 @@
 #   parciais        artigos que ajudam, mas não respondem sozinhos (opcional)
 #   status          rascunho | revisado   (só "revisado" entra nos números oficiais)
 #   revisores       quem conferiu (duas pessoas, sem ver a resposta uma da outra)
+#   origem          de onde veio a pergunta: grupo | ia | faq | pesquisa (opcional)
 #
 # Os itens abaixo são um RASCUNHO inicial escrito com auxílio de IA. Cada relevância foi
 # conferida contra o texto do corpus, mas precisa da revisão do grupo antes de valer.
