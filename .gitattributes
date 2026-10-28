@@ -1,2 +1,5 @@
 # páginas originais: guardar byte a byte (o hash delas vai para os metadados do corpus)
 dados/brutos/*.htm binary
+
+# scripts do Windows precisam de fim de linha CRLF
+*.bat text eol=crlf
