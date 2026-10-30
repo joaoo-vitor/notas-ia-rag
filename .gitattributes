@@ -1,3 +1,6 @@
+# Arquivos de texto do repositório usam LF, independentemente do sistema operacional.
+* text=auto eol=lf
+
 # páginas originais: guardar byte a byte (o hash delas vai para os metadados do corpus)
 dados/brutos/*.htm binary
 

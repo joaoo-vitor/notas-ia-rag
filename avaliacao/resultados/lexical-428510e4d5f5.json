@@ -1,18 +1,18 @@
 {
   "recuperador": "lexical",
   "corpus": "428510e4d5f5",
-  "data": "2026-10-27",
+  "data": "2026-10-30",
   "inclui_rascunho": true,
   "medias": {
     "todas": {
       "acerto@1": 0.4482758620689655,
-      "acerto@3": 0.5517241379310345,
-      "acerto@5": 0.7241379310344828,
+      "acerto@3": 0.5172413793103449,
+      "acerto@5": 0.6896551724137931,
       "acerto@10": 0.8620689655172413,
-      "recall@5": 0.6724137931034483,
+      "recall@5": 0.6379310344827587,
       "recall@10": 0.8103448275862069,
-      "MRR": 0.5511494252873563,
-      "nDCG@10": 0.5850650775410036
+      "MRR": 0.5383141762452107,
+      "nDCG@10": 0.5781638648109195
     },
     "adversa": {
       "acerto@1": 0.6,
@@ -22,34 +22,130 @@
       "recall@5": 0.6,
       "recall@10": 0.6,
       "MRR": 0.6,
-      "nDCG@10": 0.5839441578296375
+      "nDCG@10": 0.6
     },
     "coloquial": {
       "acerto@1": 0.29411764705882354,
-      "acerto@3": 0.47058823529411764,
+      "acerto@3": 0.4117647058823529,
       "acerto@5": 0.7058823529411765,
       "acerto@10": 0.8823529411764706,
       "recall@5": 0.6176470588235294,
       "recall@10": 0.7941176470588235,
-      "MRR": 0.4490196078431372,
-      "nDCG@10": 0.48844133157330677
+      "MRR": 0.4313725490196078,
+      "nDCG@10": 0.4743119784155283
     },
     "direta": {
       "acerto@1": 0.7142857142857143,
       "acerto@3": 0.7142857142857143,
-      "acerto@5": 0.8571428571428571,
+      "acerto@5": 0.7142857142857143,
       "acerto@10": 1.0,
-      "recall@5": 0.8571428571428571,
+      "recall@5": 0.7142857142857143,
       "recall@10": 1.0,
-      "MRR": 0.7642857142857142,
-      "nDCG@10": 0.820523403256386
+      "MRR": 0.753968253968254,
+      "nDCG@10": 0.8147783494932411
     }
+  },
+  "medias_trecho": {
+    "todas": {
+      "acerto@1": 0.5238095238095238,
+      "acerto@3": 0.5714285714285714,
+      "acerto@5": 0.6666666666666666,
+      "acerto@10": 0.8571428571428571,
+      "recall@5": 0.6190476190476191,
+      "recall@10": 0.8095238095238095,
+      "MRR": 0.5965608465608466,
+      "nDCG@10": 0.6280134556616851
+    },
+    "adversa": {
+      "acerto@1": 0.75,
+      "acerto@3": 0.75,
+      "acerto@5": 0.75,
+      "acerto@10": 0.75,
+      "recall@5": 0.75,
+      "recall@10": 0.75,
+      "MRR": 0.75,
+      "nDCG@10": 0.75
+    },
+    "coloquial": {
+      "acerto@1": 0.36363636363636365,
+      "acerto@3": 0.45454545454545453,
+      "acerto@5": 0.6363636363636364,
+      "acerto@10": 0.8181818181818182,
+      "recall@5": 0.5454545454545454,
+      "recall@10": 0.7272727272727273,
+      "MRR": 0.4772727272727273,
+      "nDCG@10": 0.48745903979824984
+    },
+    "direta": {
+      "acerto@1": 0.6666666666666666,
+      "acerto@3": 0.6666666666666666,
+      "acerto@5": 0.6666666666666666,
+      "acerto@10": 1.0,
+      "recall@5": 0.6666666666666666,
+      "recall@10": 1.0,
+      "MRR": 0.7129629629629629,
+      "nDCG@10": 0.8043721885191064
+    }
+  },
+  "cobertura_trecho": {
+    "avaliadas": 21,
+    "total_com_resposta": 29,
+    "pendentes": [
+      {
+        "id": "q007",
+        "artigos": [
+          "lei-11340-2006:art22"
+        ]
+      },
+      {
+        "id": "q009",
+        "artigos": [
+          "lei-11340-2006:art22"
+        ]
+      },
+      {
+        "id": "q010",
+        "artigos": [
+          "lei-11340-2006:art22"
+        ]
+      },
+      {
+        "id": "q011",
+        "artigos": [
+          "lei-11340-2006:art22"
+        ]
+      },
+      {
+        "id": "q013",
+        "artigos": [
+          "lei-11340-2006:art22"
+        ]
+      },
+      {
+        "id": "q018",
+        "artigos": [
+          "lei-11340-2006:art22"
+        ]
+      },
+      {
+        "id": "q020",
+        "artigos": [
+          "codigo-penal:art129"
+        ]
+      },
+      {
+        "id": "q023",
+        "artigos": [
+          "lei-11340-2006:art9"
+        ]
+      }
+    ]
   },
   "perguntas": [
     {
       "id": "q001",
       "tipo": "direta",
-      "score_topo": 1.3338894288470655,
+      "score_topo": 2.5881071789252945,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
@@ -58,13 +154,25 @@
       "recall@5": 0.0,
       "acerto@10": 1.0,
       "recall@10": 1.0,
-      "MRR": 0.1,
-      "nDCG@10": 0.2890648263178879
+      "MRR": 0.1111111111111111,
+      "nDCG@10": 0.3010299956639812,
+      "metricas_trecho": {
+        "acerto@1": 0.0,
+        "recall@1": 0.0,
+        "acerto@3": 0.0,
+        "recall@3": 0.0,
+        "acerto@5": 0.0,
+        "recall@5": 0.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 0.1111111111111111,
+        "nDCG@10": 0.3010299956639812
+      }
     },
     {
       "id": "q002",
       "tipo": "coloquial",
-      "score_topo": 1.6440818227622016,
+      "score_topo": 3.0481954891502614,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
@@ -74,22 +182,46 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 0.125,
-      "nDCG@10": 0.31546487678572877
+      "nDCG@10": 0.31546487678572877,
+      "metricas_trecho": {
+        "acerto@1": 0.0,
+        "recall@1": 0.0,
+        "acerto@3": 0.0,
+        "recall@3": 0.0,
+        "acerto@5": 0.0,
+        "recall@5": 0.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 0.125,
+        "nDCG@10": 0.31546487678572877
+      }
     },
     {
       "id": "q003",
       "tipo": "direta",
-      "score_topo": 1.1658236261436563,
+      "score_topo": 2.1020104624998015,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
       "recall@3": 0.0,
-      "acerto@5": 1.0,
-      "recall@5": 1.0,
+      "acerto@5": 0.0,
+      "recall@5": 0.0,
       "acerto@10": 1.0,
       "recall@10": 1.0,
-      "MRR": 0.25,
-      "nDCG@10": 0.5773836811387643
+      "MRR": 0.16666666666666666,
+      "nDCG@10": 0.5252031354506572,
+      "metricas_trecho": {
+        "acerto@1": 0.0,
+        "recall@1": 0.0,
+        "acerto@3": 0.0,
+        "recall@3": 0.0,
+        "acerto@5": 0.0,
+        "recall@5": 0.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 0.16666666666666666,
+        "nDCG@10": 0.5252031354506572
+      }
     },
     {
       "id": "q004",
@@ -104,12 +236,24 @@
       "acerto@10": 0.0,
       "recall@10": 0.0,
       "MRR": 0.0,
-      "nDCG@10": 0.0
+      "nDCG@10": 0.0,
+      "metricas_trecho": {
+        "acerto@1": 0.0,
+        "recall@1": 0.0,
+        "acerto@3": 0.0,
+        "recall@3": 0.0,
+        "acerto@5": 0.0,
+        "recall@5": 0.0,
+        "acerto@10": 0.0,
+        "recall@10": 0.0,
+        "MRR": 0.0,
+        "nDCG@10": 0.0
+      }
     },
     {
       "id": "q005",
       "tipo": "coloquial",
-      "score_topo": 3.139180774982507,
+      "score_topo": 5.788301126916464,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
@@ -119,12 +263,24 @@
       "acerto@10": 1.0,
       "recall@10": 0.5,
       "MRR": 0.25,
-      "nDCG@10": 0.2640681225725909
+      "nDCG@10": 0.2640681225725909,
+      "metricas_trecho": {
+        "acerto@1": 0.0,
+        "recall@1": 0.0,
+        "acerto@3": 0.0,
+        "recall@3": 0.0,
+        "acerto@5": 1.0,
+        "recall@5": 0.5,
+        "acerto@10": 1.0,
+        "recall@10": 0.5,
+        "MRR": 0.25,
+        "nDCG@10": 0.2640681225725909
+      }
     },
     {
       "id": "q006",
       "tipo": "adversa",
-      "score_topo": 1.8203136042327042,
+      "score_topo": 3.807623619149175,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
@@ -134,12 +290,24 @@
       "acerto@10": 0.0,
       "recall@10": 0.0,
       "MRR": 0.0,
-      "nDCG@10": 0.0
+      "nDCG@10": 0.0,
+      "metricas_trecho": {
+        "acerto@1": 0.0,
+        "recall@1": 0.0,
+        "acerto@3": 0.0,
+        "recall@3": 0.0,
+        "acerto@5": 0.0,
+        "recall@5": 0.0,
+        "acerto@10": 0.0,
+        "recall@10": 0.0,
+        "MRR": 0.0,
+        "nDCG@10": 0.0
+      }
     },
     {
       "id": "q007",
       "tipo": "direta",
-      "score_topo": 3.8390819914235212,
+      "score_topo": 5.6106328489874,
       "acerto@1": 1.0,
       "recall@1": 0.5,
       "acerto@3": 1.0,
@@ -149,12 +317,13 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 0.8772153153380493
+      "nDCG@10": 0.8772153153380493,
+      "metricas_trecho": null
     },
     {
       "id": "q008",
       "tipo": "coloquial",
-      "score_topo": 3.9045406245994125,
+      "score_topo": 8.186267517378644,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 1.0,
@@ -164,12 +333,24 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 0.5,
-      "nDCG@10": 0.6309297535714575
+      "nDCG@10": 0.6309297535714575,
+      "metricas_trecho": {
+        "acerto@1": 0.0,
+        "recall@1": 0.0,
+        "acerto@3": 1.0,
+        "recall@3": 1.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 0.5,
+        "nDCG@10": 0.6309297535714575
+      }
     },
     {
       "id": "q009",
       "tipo": "coloquial",
-      "score_topo": 2.324714218585459,
+      "score_topo": 4.105529827421426,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
@@ -179,12 +360,13 @@
       "acerto@10": 1.0,
       "recall@10": 0.5,
       "MRR": 0.2,
-      "nDCG@10": 0.23719771276929622
+      "nDCG@10": 0.23719771276929622,
+      "metricas_trecho": null
     },
     {
       "id": "q010",
       "tipo": "coloquial",
-      "score_topo": 2.235952572161182,
+      "score_topo": 4.97290463994538,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 1.0,
@@ -194,12 +376,13 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 0.3333333333333333,
-      "nDCG@10": 0.5
+      "nDCG@10": 0.5,
+      "metricas_trecho": null
     },
     {
       "id": "q011",
       "tipo": "coloquial",
-      "score_topo": 2.885643350317271,
+      "score_topo": 5.819784742320188,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
@@ -209,12 +392,13 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 0.25,
-      "nDCG@10": 0.43067655807339306
+      "nDCG@10": 0.43067655807339306,
+      "metricas_trecho": null
     },
     {
       "id": "q012",
       "tipo": "direta",
-      "score_topo": 4.7899358243064825,
+      "score_topo": 7.302339257179266,
       "acerto@1": 1.0,
       "recall@1": 1.0,
       "acerto@3": 1.0,
@@ -224,27 +408,40 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 1.0
+      "nDCG@10": 1.0,
+      "metricas_trecho": {
+        "acerto@1": 1.0,
+        "recall@1": 1.0,
+        "acerto@3": 1.0,
+        "recall@3": 1.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 1.0,
+        "nDCG@10": 1.0
+      }
     },
     {
       "id": "q013",
       "tipo": "coloquial",
-      "score_topo": 1.860326569657297,
+      "score_topo": 3.870650727375692,
       "acerto@1": 0.0,
       "recall@1": 0.0,
-      "acerto@3": 1.0,
-      "recall@3": 1.0,
+      "acerto@3": 0.0,
+      "recall@3": 0.0,
       "acerto@5": 1.0,
       "recall@5": 1.0,
       "acerto@10": 1.0,
       "recall@10": 1.0,
-      "MRR": 0.5,
-      "nDCG@10": 0.8597186998521972
+      "MRR": 0.2,
+      "nDCG@10": 0.4841275646907874,
+      "metricas_trecho": null
     },
     {
       "id": "q014",
       "tipo": "coloquial",
-      "score_topo": 2.1452635398045627,
+      "score_topo": 4.477052543444293,
       "acerto@1": 1.0,
       "recall@1": 1.0,
       "acerto@3": 1.0,
@@ -254,12 +451,24 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 1.0
+      "nDCG@10": 1.0,
+      "metricas_trecho": {
+        "acerto@1": 1.0,
+        "recall@1": 1.0,
+        "acerto@3": 1.0,
+        "recall@3": 1.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 1.0,
+        "nDCG@10": 1.0
+      }
     },
     {
       "id": "q015",
       "tipo": "direta",
-      "score_topo": 2.8563985893485038,
+      "score_topo": 5.702245645360264,
       "acerto@1": 1.0,
       "recall@1": 1.0,
       "acerto@3": 1.0,
@@ -269,12 +478,24 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 1.0
+      "nDCG@10": 1.0,
+      "metricas_trecho": {
+        "acerto@1": 1.0,
+        "recall@1": 1.0,
+        "acerto@3": 1.0,
+        "recall@3": 1.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 1.0,
+        "nDCG@10": 1.0
+      }
     },
     {
       "id": "q016",
       "tipo": "coloquial",
-      "score_topo": 1.7620978389424344,
+      "score_topo": 4.144010940408074,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
@@ -284,12 +505,24 @@
       "acerto@10": 0.0,
       "recall@10": 0.0,
       "MRR": 0.0,
-      "nDCG@10": 0.0
+      "nDCG@10": 0.0,
+      "metricas_trecho": {
+        "acerto@1": 0.0,
+        "recall@1": 0.0,
+        "acerto@3": 0.0,
+        "recall@3": 0.0,
+        "acerto@5": 0.0,
+        "recall@5": 0.0,
+        "acerto@10": 0.0,
+        "recall@10": 0.0,
+        "MRR": 0.0,
+        "nDCG@10": 0.0
+      }
     },
     {
       "id": "q017",
       "tipo": "coloquial",
-      "score_topo": 2.3973484054647165,
+      "score_topo": 5.096705836876025,
       "acerto@1": 1.0,
       "recall@1": 1.0,
       "acerto@3": 1.0,
@@ -299,12 +532,24 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 0.7601875334318685
+      "nDCG@10": 0.8955796649110442,
+      "metricas_trecho": {
+        "acerto@1": 1.0,
+        "recall@1": 1.0,
+        "acerto@3": 1.0,
+        "recall@3": 1.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 1.0,
+        "nDCG@10": 0.8955796649110442
+      }
     },
     {
       "id": "q018",
       "tipo": "coloquial",
-      "score_topo": 1.799654159792982,
+      "score_topo": 3.2021617769437505,
       "acerto@1": 1.0,
       "recall@1": 1.0,
       "acerto@3": 1.0,
@@ -314,12 +559,13 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 0.7601875334318685
+      "nDCG@10": 0.7601875334318685,
+      "metricas_trecho": null
     },
     {
       "id": "q019",
       "tipo": "direta",
-      "score_topo": 2.0029626223394748,
+      "score_topo": 3.4769105967511194,
       "acerto@1": 1.0,
       "recall@1": 1.0,
       "acerto@3": 1.0,
@@ -329,12 +575,24 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 1.0
+      "nDCG@10": 1.0,
+      "metricas_trecho": {
+        "acerto@1": 1.0,
+        "recall@1": 1.0,
+        "acerto@3": 1.0,
+        "recall@3": 1.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 1.0,
+        "nDCG@10": 1.0
+      }
     },
     {
       "id": "q020",
       "tipo": "adversa",
-      "score_topo": 1.3869588664999757e-06,
+      "score_topo": 1.8709690219835454e-06,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
@@ -344,12 +602,13 @@
       "acerto@10": 0.0,
       "recall@10": 0.0,
       "MRR": 0.0,
-      "nDCG@10": 0.0
+      "nDCG@10": 0.0,
+      "metricas_trecho": null
     },
     {
       "id": "q021",
       "tipo": "coloquial",
-      "score_topo": 3.384652248016281,
+      "score_topo": 6.5999089202292875,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
@@ -359,12 +618,24 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 0.25,
-      "nDCG@10": 0.3273949503887395
+      "nDCG@10": 0.3273949503887395,
+      "metricas_trecho": {
+        "acerto@1": 0.0,
+        "recall@1": 0.0,
+        "acerto@3": 0.0,
+        "recall@3": 0.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 0.25,
+        "nDCG@10": 0.3273949503887395
+      }
     },
     {
       "id": "q022",
       "tipo": "coloquial",
-      "score_topo": 3.001047673410044,
+      "score_topo": 4.3930986312859215,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
@@ -374,12 +645,24 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 0.125,
-      "nDCG@10": 0.31546487678572877
+      "nDCG@10": 0.31546487678572877,
+      "metricas_trecho": {
+        "acerto@1": 0.0,
+        "recall@1": 0.0,
+        "acerto@3": 0.0,
+        "recall@3": 0.0,
+        "acerto@5": 0.0,
+        "recall@5": 0.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 0.125,
+        "nDCG@10": 0.31546487678572877
+      }
     },
     {
       "id": "q023",
       "tipo": "coloquial",
-      "score_topo": 3.0028412501902535,
+      "score_topo": 5.646486232174258,
       "acerto@1": 0.0,
       "recall@1": 0.0,
       "acerto@3": 0.0,
@@ -389,12 +672,13 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 0.1,
-      "nDCG@10": 0.2890648263178879
+      "nDCG@10": 0.2890648263178879,
+      "metricas_trecho": null
     },
     {
       "id": "q024",
       "tipo": "adversa",
-      "score_topo": 2.201841986075748,
+      "score_topo": 4.5530844497864535,
       "acerto@1": 1.0,
       "recall@1": 1.0,
       "acerto@3": 1.0,
@@ -404,12 +688,24 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 1.0
+      "nDCG@10": 1.0,
+      "metricas_trecho": {
+        "acerto@1": 1.0,
+        "recall@1": 1.0,
+        "acerto@3": 1.0,
+        "recall@3": 1.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 1.0,
+        "nDCG@10": 1.0
+      }
     },
     {
       "id": "q025",
       "tipo": "coloquial",
-      "score_topo": 2.2422761330638985,
+      "score_topo": 4.027087448117056,
       "acerto@1": 1.0,
       "recall@1": 1.0,
       "acerto@3": 1.0,
@@ -419,12 +715,24 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 1.0
+      "nDCG@10": 1.0,
+      "metricas_trecho": {
+        "acerto@1": 1.0,
+        "recall@1": 1.0,
+        "acerto@3": 1.0,
+        "recall@3": 1.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 1.0,
+        "nDCG@10": 1.0
+      }
     },
     {
       "id": "q026",
       "tipo": "coloquial",
-      "score_topo": 2.567425751524529,
+      "score_topo": 4.872553175649589,
       "acerto@1": 1.0,
       "recall@1": 0.5,
       "acerto@3": 1.0,
@@ -434,12 +742,24 @@
       "acerto@10": 1.0,
       "recall@10": 0.5,
       "MRR": 1.0,
-      "nDCG@10": 0.6131471927654584
+      "nDCG@10": 0.6131471927654584,
+      "metricas_trecho": {
+        "acerto@1": 1.0,
+        "recall@1": 0.5,
+        "acerto@3": 1.0,
+        "recall@3": 0.5,
+        "acerto@5": 1.0,
+        "recall@5": 0.5,
+        "acerto@10": 1.0,
+        "recall@10": 0.5,
+        "MRR": 1.0,
+        "nDCG@10": 0.6131471927654584
+      }
     },
     {
       "id": "q027",
       "tipo": "adversa",
-      "score_topo": 4.644182389347665,
+      "score_topo": 8.073182457797154,
       "acerto@1": 1.0,
       "recall@1": 1.0,
       "acerto@3": 1.0,
@@ -449,12 +769,24 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 1.0
+      "nDCG@10": 1.0,
+      "metricas_trecho": {
+        "acerto@1": 1.0,
+        "recall@1": 1.0,
+        "acerto@3": 1.0,
+        "recall@3": 1.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 1.0,
+        "nDCG@10": 1.0
+      }
     },
     {
       "id": "q028",
       "tipo": "direta",
-      "score_topo": 10.931633738387239,
+      "score_topo": 11.966120594106929,
       "acerto@1": 1.0,
       "recall@1": 0.5,
       "acerto@3": 1.0,
@@ -464,12 +796,24 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 1.0
+      "nDCG@10": 1.0,
+      "metricas_trecho": {
+        "acerto@1": 1.0,
+        "recall@1": 0.5,
+        "acerto@3": 1.0,
+        "recall@3": 1.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 1.0,
+        "nDCG@10": 1.0
+      }
     },
     {
       "id": "q029",
       "tipo": "adversa",
-      "score_topo": 10.931095582487101,
+      "score_topo": 11.906586116035996,
       "acerto@1": 1.0,
       "recall@1": 0.5,
       "acerto@3": 1.0,
@@ -479,24 +823,36 @@
       "acerto@10": 1.0,
       "recall@10": 1.0,
       "MRR": 1.0,
-      "nDCG@10": 0.9197207891481876
+      "nDCG@10": 1.0,
+      "metricas_trecho": {
+        "acerto@1": 1.0,
+        "recall@1": 0.5,
+        "acerto@3": 1.0,
+        "recall@3": 1.0,
+        "acerto@5": 1.0,
+        "recall@5": 1.0,
+        "acerto@10": 1.0,
+        "recall@10": 1.0,
+        "MRR": 1.0,
+        "nDCG@10": 1.0
+      }
     }
   ],
   "sem_resposta": [
     {
       "id": "q030",
       "pergunta": "Onde fica a delegacia da mulher mais perto de mim?",
-      "score_topo": 1.7341703340147252
+      "score_topo": 3.6925222498770593
     },
     {
       "id": "q031",
       "pergunta": "posso viajar com meus filhos pra fora do país sem autorização do pai?",
-      "score_topo": 1.7432154533455686
+      "score_topo": 4.0187482746392345
     },
     {
       "id": "q032",
       "pergunta": "quanto tempo demora um processo de divórcio?",
-      "score_topo": 2.6131980698907094
+      "score_topo": 4.476074562702894
     }
   ]
 }

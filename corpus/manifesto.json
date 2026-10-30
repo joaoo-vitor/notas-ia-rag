@@ -1,7 +1,7 @@
 {
-  "versao": "428510e4d5f5",
-  "gerado_em": "2026-10-27",
-  "total_trechos": 93,
+  "versao": "68fa3d5ea28f",
+  "gerado_em": "2026-10-30",
+  "total_trechos": 96,
   "fontes": [
     {
       "id": "lei-11340-2006",
@@ -32,6 +32,21 @@
       "id": "decreto-1973-1996",
       "artigos": 12,
       "trechos": 12
+    },
+    {
+      "id": "stj-pesquisa-pronta-lmp-2026",
+      "artigos": 0,
+      "trechos": 1
+    },
+    {
+      "id": "stj-precedentes-lmp-2026",
+      "artigos": 0,
+      "trechos": 1
+    },
+    {
+      "id": "stf-mi-7452-2025",
+      "artigos": 0,
+      "trechos": 1
     }
   ]
 }

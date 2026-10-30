@@ -154,6 +154,16 @@
         <div class="campo">Parciais
           <campo-artigos v-model="p.parciais" :artigos="artigos" @update:model-value="alterou"></campo-artigos>
         </div>
+        <details class="campo">
+          <summary>Partes exatas de artigos divididos</summary>
+          <p class="dica">Preencha somente quando um artigo relevante ou parcial possuir parte 1/2, parte 2/2 etc.</p>
+          <div class="campo">Trechos relevantes
+            <campo-artigos v-model="p.trechos_relevantes" :artigos="opcoesTrechos" @update:model-value="alterou"></campo-artigos>
+          </div>
+          <div class="campo">Trechos parciais
+            <campo-artigos v-model="p.trechos_parciais" :artigos="opcoesTrechos" @update:model-value="alterou"></campo-artigos>
+          </div>
+        </details>
         <div class="revisao">
           <span>Revisores:</span>
           <span v-for="r in p.revisores" class="chip pessoa">{{ r }}
