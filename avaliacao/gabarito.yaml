@@ -7,6 +7,9 @@
 #                   abreviação, erro de digitação) | sem_resposta (a base não responde)
 #   relevantes      artigos que respondem a pergunta (id do artigo no corpus, sem "-p1/-p2")
 #   parciais        artigos que ajudam, mas não respondem sozinhos (opcional)
+#   trechos_relevantes partes exatas quando um artigo relevante foi dividido (opcional;
+#                   ex.: lei-11340-2006:art22-p1). Para artigo não dividido é automático.
+#   trechos_parciais partes exatas quando um artigo parcial foi dividido (opcional)
 #   status          rascunho | revisado   (só "revisado" entra nos números oficiais)
 #   revisores       quem conferiu (duas pessoas, sem ver a resposta uma da outra)
 #   origem          de onde veio a pergunta: grupo | ia | faq | pesquisa (opcional)
@@ -16,177 +19,532 @@
 # Meta: 150 a 300 perguntas, com pelo menos 15% sem_resposta e 20% adversas.
 
 perguntas:
-  # --- formas de violência (Lei Maria da Penha, art. 7º) ---
   - id: q001
     pergunta: O que é violência patrimonial?
     tipo: direta
     relevantes: [lei-11340-2006:art7]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q002
     pergunta: ele pega meu salário e não deixa eu trabalhar, isso é violência?
     tipo: coloquial
     relevantes: [lei-11340-2006:art7]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q003
     pergunta: Quais são as formas de violência doméstica contra a mulher?
     tipo: direta
     relevantes: [lei-11340-2006:art7]
     parciais: [lei-11340-2006:art5, decreto-1973-1996:art2]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q004
     pergunta: ele quebrou meu celular de raiva
     tipo: coloquial
     relevantes: [lei-11340-2006:art7, codigo-penal:art163]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q005
     pergunta: ele pegou meus documentos e não quer devolver
     tipo: coloquial
     relevantes: [lei-11340-2006:art7, lei-11340-2006:art24]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q006
     pergunta: ele xinga eu de burra e vagabunda o tempo todo
     tipo: adversa
     relevantes: [codigo-penal:art140, lei-11340-2006:art7]
     status: rascunho
-
-  # --- medidas protetivas ---
+    revisores: [eduardo-f]
   - id: q007
     pergunta: O que é medida protetiva de urgência?
     tipo: direta
     relevantes: [lei-11340-2006:art22, lei-11340-2006:art19]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q008
     pergunta: preciso fazer boletim de ocorrência pra pedir medida protetiva?
     tipo: coloquial
     relevantes: [lei-11340-2006:art19]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q009
     pergunta: ele pode ser obrigado a sair de casa?
     tipo: coloquial
     relevantes: [lei-11340-2006:art22, lei-11340-2006:art12-C]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q010
     pergunta: o juiz pode proibir ele de chegar perto de mim e dos meus filhos?
     tipo: coloquial
     relevantes: [lei-11340-2006:art22]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q011
     pergunta: posso pedir pensão pros meus filhos junto com a medida protetiva?
     tipo: coloquial
     relevantes: [lei-11340-2006:art22]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q012
     pergunta: O que acontece se o agressor descumprir a medida protetiva?
     tipo: direta
     relevantes: [lei-11340-2006:art24-A]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q013
     pergunta: ele continua me mandando mensagem mesmo com a medida, isso é crime?
     tipo: coloquial
     relevantes: [lei-11340-2006:art24-A]
     parciais: [lei-11340-2006:art22]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q014
     pergunta: a cidade não tem juiz, o delegado pode tirar ele de casa?
     tipo: coloquial
     relevantes: [lei-11340-2006:art12-C]
     status: rascunho
-
-  # --- crimes (Código Penal) ---
+    revisores: [eduardo-f]
   - id: q015
     pergunta: Perseguição é crime?
     tipo: direta
     relevantes: [codigo-penal:art147-A]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q016
     pergunta: meu ex fica me seguindo e aparecendo onde eu estou
     tipo: coloquial
     relevantes: [codigo-penal:art147-A]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q017
     pergunta: ele vive me humilhando e controlando tudo que eu faço, isso é crime?
     tipo: coloquial
     relevantes: [codigo-penal:art147-B]
     parciais: [lei-11340-2006:art7]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q018
     pergunta: ele ameaçou me matar
     tipo: coloquial
     relevantes: [codigo-penal:art147]
     parciais: [lei-11340-2006:art22]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q019
     pergunta: O que é feminicídio?
     tipo: direta
     relevantes: [codigo-penal:art121-A]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q020
     pergunta: q acontece c/ quem bate na mulher
     tipo: adversa
     relevantes: [codigo-penal:art129]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q021
     pergunta: meu marido me obrigou a ter relação, isso é estupro?
     tipo: coloquial
     relevantes: [codigo-penal:art213]
     parciais: [lei-11340-2006:art7]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q022
     pergunta: ele espalhou fotos íntimas minhas no grupo da família
     tipo: coloquial
     relevantes: [codigo-penal:art218-C]
     status: rascunho
-
-  # --- atendimento, processo e direitos ---
+    revisores: [eduardo-f]
   - id: q023
     pergunta: Posso perder meu emprego se precisar me afastar por causa da violência?
     tipo: coloquial
     relevantes: [lei-11340-2006:art9]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q024
     pergunta: a policia leva eu e meus filhos pra um abrigo?
     tipo: adversa
     relevantes: [lei-11340-2006:art11]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q025
     pergunta: Se eu desistir da denúncia, o que acontece?
     tipo: coloquial
     relevantes: [lei-11340-2006:art16]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q026
     pergunta: Preciso de advogado? E se eu não puder pagar?
     tipo: coloquial
     relevantes: [lei-11340-2006:art27, lei-11340-2006:art28]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q027
     pergunta: posso pedir o divorcio no juizado de violencia domestica?
     tipo: adversa
     relevantes: [lei-11340-2006:art14-A]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q028
     pergunta: O que é o programa Sinal Vermelho?
     tipo: direta
     relevantes: [lei-14188-2021:art1, lei-14188-2021:art2]
     status: rascunho
+    revisores: [eduardo-f]
   - id: q029
     pergunta: pra que serve o formulario de avaliacao de risco
     tipo: adversa
     relevantes: [lei-14149-2021:art1, lei-14149-2021:art2]
     status: rascunho
-
-  # --- sem resposta na base (o sistema deve recusar e encaminhar) ---
+    revisores: [eduardo-f]
   - id: q030
     pergunta: Onde fica a delegacia da mulher mais perto de mim?
     tipo: sem_resposta
     relevantes: []
     status: rascunho
+    revisores: [eduardo-f]
   - id: q031
     pergunta: posso viajar com meus filhos pra fora do país sem autorização do pai?
     tipo: sem_resposta
     relevantes: []
     status: rascunho
+    revisores: [eduardo-f]
   - id: q032
     pergunta: quanto tempo demora um processo de divórcio?
     tipo: sem_resposta
     relevantes: []
     status: rascunho
+    revisores: [eduardo-f]
+  - id: q033
+    pergunta: A Lei Maria da Penha vale mesmo se a gente namora e nunca morou junto?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art5]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q034
+    pergunta: A lei Maria da Penha vale quando quem agride é uma mulher?
+    tipo: coloquial
+    relevantes: [stj-precedentes-lmp-2026:pessoa-agressora-homem-ou-mulher]
+    parciais: [lei-11340-2006:art5]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q035
+    pergunta: A maria da penha vale para casais gays?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art5, stf-mi-7452-2025:protecao-casais-homoafetivos-travestis-trans]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q036
+    pergunta: Sou mulher trans, a lei vale para mim?
+    tipo: coloquial
+    relevantes: [stj-pesquisa-pronta-lmp-2026:genero-do-agressor-e-mulheres-trans, stf-mi-7452-2025:protecao-casais-homoafetivos-travestis-trans]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q037
+    pergunta: A lei maria da penha vale pra qualquer mulher?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art2]
+    parciais: [decreto-1973-1996:art9]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q038
+    pergunta: ele me bateu porque trai ele isso muda alguma coisa
+    tipo: adversa
+    relevantes: [lei-11340-2006:art40-A]
+    parciais: [lei-11340-2006:art5]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q039
+    pergunta: Vou precisar contar tudo várias vezes?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art10-A]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q040
+    pergunta: vou ter que ficar perto dele na delegacia?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art10-A]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q041
+    pergunta: Posso pedir pra ser atendida por uma mulher?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art10-A]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q042
+    pergunta: Saí de casa com medo e minhas coisas ficaram lá. A polícia pode ir comigo buscar?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art11]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q043
+    pergunta: a polícia pode me encaminhar para o hospital?
+    tipo: adversa
+    relevantes: [lei-11340-2006:art11]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q044
+    pergunta: Fiz o boletim e pedi uma medida protetiva. O que a polícia faz depois disso?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art12]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q045
+    pergunta: Ele tem uma arma registrada. A polícia verifica isso quando eu faço a denúncia?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art12]
+    parciais: [lei-11340-2006:art18]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q046
+    pergunta: O papel do hospital de quando fui machucada pode servir como prova?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art12]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q047
+    pergunta: Trabalho como doméstica e sofro violência na casa onde trabalho. A polícia comunica algum órgão do trabalho?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art11]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q048
+    pergunta: Existe algum programa que eu possa entrar depois de sair de casa?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art9]
+    trechos_relevantes: [lei-11340-2006:art9-p1]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q049
+    pergunta: Que atendimento de saúde posso receber depois de sofrer violência sexual?
+    tipo: direta
+    relevantes: [lei-11340-2006:art9]
+    trechos_relevantes: [lei-11340-2006:art9-p1]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q050
+    pergunta: Sou servidora pública e ele sabe onde trabalho. Posso pedir remoção para outro local?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art9]
+    trechos_relevantes: [lei-11340-2006:art9-p1]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q051
+    pergunta: não tenho onde ficar se sair de casa tem algum lugar?
+    tipo: adversa
+    relevantes: [lei-11340-2006:art11, lei-11340-2006:art35, lei-11340-2006:art23]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q052
+    pergunta: Além da polícia, quais serviços públicos podem me ajudar nessa situação?
+    tipo: direta
+    relevantes: [lei-11340-2006:art9, lei-11340-2006:art35]
+    trechos_relevantes: [lei-11340-2006:art9-p1]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q053
+    pergunta: Depois que o pedido de medida protetiva chega ao juiz, quanto tempo ele tem para decidir?
+    tipo: direta
+    relevantes: [lei-11340-2006:art18]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q054
+    pergunta: eu vou ser avisada se ele for solto?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art21]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q055
+    pergunta: é eu que tenho que entregar intimação pra ele?
+    tipo: adversa
+    relevantes: [lei-11340-2006:art21]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q056
+    pergunta: Meu nome fica público ou pode ficar em sigilo?
+    tipo: direta
+    relevantes: [lei-11340-2006:art17-A]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q057
+    pergunta: Um caso de violência doméstica pode terminar só com pagamento de cesta básica ou multa?
+    tipo: direta
+    relevantes: [lei-11340-2006:art17]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q058
+    pergunta: posso retornar pra casa quando ele sair?
+    tipo: adversa
+    relevantes: [lei-11340-2006:art23]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q059
+    pergunta: Se eu sair de casa para me proteger, posso perder meus bens ou a guarda dos meus filhos?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art23]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q060
+    pergunta: Dei uma procuração para ele cuidar dos nossos bens. Isso pode ser suspenso para ele não vender nada?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art24]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q061
+    pergunta: A prisão preventiva dele pode ser retirada e depois decretada de novo?
+    tipo: direta
+    relevantes: [lei-11340-2006:art20]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q062
+    pergunta: O Juizado tem psicólogo, assistente social ou outros profissionais para ajudar?
+    tipo: direta
+    relevantes: [lei-11340-2006:art29, lei-11340-2006:art30]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q063
+    pergunta: Que tipos de serviço público podem atender uma mulher e os filhos depois da violência?
+    tipo: direta
+    relevantes: [lei-11340-2006:art35]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q064
+    pergunta: O que o ministerio publico faz em casos de violencia?
+    tipo: coloquial
+    relevantes: [lei-11340-2006:art25, lei-11340-2006:art26]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q065
+    pergunta: a policia e o governo consegue ver que eu tenho uma media protetiva?
+    tipo: adversa
+    relevantes: [lei-11340-2006:art38-A]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q066
+    pergunta: Ele trancou a porta e não me deixou sair de casa, isso e crime?
+    tipo: adversa
+    relevantes: [codigo-penal:art148]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q067
+    pergunta: Ele me tocou de forma sexual sem eu permitir, isso e crime?
+    tipo: adversa
+    relevantes: [codigo-penal:art215-A]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q068
+    pergunta: é crime ele ter me filmado em momento intimo?
+    tipo: adversa
+    relevantes: [codigo-penal:art216-B]
+    parciais: [codigo-penal:art218-C]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q069
+    pergunta: Meu ex contou para várias pessoas que eu cometi um crime, mas é mentira. O que isso pode ser?
+    tipo: coloquial
+    relevantes: [codigo-penal:art138]
+    parciais: [codigo-penal:art139]
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q070
+    pergunta: Fiz um boletim na semana passada. Você consegue ver se ele já foi encaminhado ao juiz?
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q071
+    pergunta: Com o que eu contei, você acha que o juiz vai me dar a guarda dos meus filhos?
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q072
+    pergunta: Quanto exatamente eu vou receber de pensão se eu pedir agora?
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q073
+    pergunta: A delegacia da minha cidade vai demorar quantos dias para me responder?
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q074
+    pergunta: Ele apagou as mensagens do meu celular. Você consegue recuperar para mim?
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q075
+    pergunta: Qual é o melhor advogado de família aqui na minha cidade?
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q076
+    pergunta: Posso viajar para outro país com meus filhos sem autorização do pai?
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q077
+    pergunta: Coloca arroz, leite e sabão na minha lista de compras.
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo
+  - id: q078
+    pergunta: Isso vale pra mim?
+    tipo: sem_resposta
+    relevantes: []
+    status: rascunho
+    revisores: [eduardo-f]
+    origem: grupo

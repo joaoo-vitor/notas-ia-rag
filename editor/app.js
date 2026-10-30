@@ -7,7 +7,7 @@ const TIPOS = [
   { valor: "sem_resposta", rotulo: "sem_resposta", ajuda: "A base não responde (o sistema deve recusar). Deixe os relevantes vazios." },
 ];
 const ORIGENS = ["grupo", "ia", "faq", "pesquisa"];
-const ORDEM_CAMPOS = ["id", "pergunta", "tipo", "relevantes", "parciais", "status", "revisores", "origem"];
+const ORDEM_CAMPOS = ["id", "pergunta", "tipo", "relevantes", "parciais", "trechos_relevantes", "trechos_parciais", "status", "revisores", "origem"];
 
 // "lei-11340-2006:art22-p2" -> "lei-11340-2006:art22"
 const artigoDe = (id) => id.replace(/-p\d+$/, "");
@@ -154,6 +154,13 @@ createApp({
       return [...mapa.values()];
     });
 
+    const opcoesTrechos = computed(() => trechos.value.map((t) => ({
+      id: t.id,
+      rotulo: `${rotulo(t)}${/-p\d+$/.test(t.id) ? ` · ${t.secao.match(/parte [^)]+/)?.[0] || t.id}` : ""}`,
+      previa: t.texto.slice(0, 220),
+      busca: semAcento(`${rotulo(t)} ${t.id} ${t.texto}`),
+    })));
+
     // ---------------- carregar e salvar
     async function carregar() {
       const r = await fetch("/api/dados");
@@ -163,7 +170,9 @@ createApp({
       cabecalho = i >= 0 ? dados.gabarito.slice(0, i) : dados.gabarito;
       const doc = jsyaml.load(dados.gabarito) || {};
       perguntas.value = (doc.perguntas || []).map((p) => ({
-        ...p, relevantes: p.relevantes || [], parciais: p.parciais || [], revisores: p.revisores || [],
+        ...p, relevantes: p.relevantes || [], parciais: p.parciais || [],
+        trechos_relevantes: p.trechos_relevantes || [], trechos_parciais: p.trechos_parciais || [],
+        revisores: p.revisores || [],
       }));
       versao = dados.versao;
       carregado.value = true;
@@ -219,6 +228,7 @@ createApp({
       perguntas.value.push({
         id: proximoId(), pergunta: rascunho.pergunta.trim(), tipo: rascunho.tipo,
         relevantes: [...rascunho.relevantes], parciais: [...rascunho.parciais],
+        trechos_relevantes: [], trechos_parciais: [],
         status: "rascunho", revisores: [], origem: rascunho.origem,
       });
       limparRascunho();
@@ -294,7 +304,7 @@ createApp({
     carregar().catch((e) => { estado.texto = "Não consegui carregar os dados: " + e.message; estado.tipo = "erro"; });
 
     return {
-      TIPOS, ORIGENS, aba, carregado, estado, nome, trechos, perguntas, artigos,
+      TIPOS, ORIGENS, aba, carregado, estado, nome, trechos, perguntas, artigos, opcoesTrechos,
       rascunho, erroRascunho, adicionar, limparRascunho,
       trechoAtual, filtroTrecho, filtroDocumento, documentos, trechosFiltrados, noRascunho, usarTrecho, classeLinha,
       filtroPergunta, filtroStatus, filtroTipo, perguntasFiltradas, contar, revisei, tirarRevisor, remover,

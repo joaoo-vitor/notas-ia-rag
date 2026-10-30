@@ -25,6 +25,10 @@ pelo pelos por qual quais quando que quem se sem ser seu sua são só também te
 umas vai você vou posso pode fazer faz sobre quero saber tá ta to tô pra pro
 """.split())
 
+# A ordem acompanha todas as colunas da tabela FTS, inclusive o id UNINDEXED:
+# id=0, texto=1, contexto=0.3, documento=0.2.
+PESOS_BM25 = (0.0, 1.0, 0.3, 0.2)
+
 
 def normalizar(texto):
     sem_acento = unicodedata.normalize("NFKD", texto.lower())
@@ -72,8 +76,9 @@ class BuscaLexical:
         # OR entre os termos: perguntas longas raramente têm todas as palavras no mesmo artigo.
         # radical: "agredida" também acha "agressão"... só quando os 5 primeiros caracteres coincidem.
         expressao = " OR ".join(f'"{p[:5]}"*' if radical and len(p) > 5 else f'"{p}"' for p in lista)
+        pesos = ", ".join(str(p) for p in PESOS_BM25)
         linhas = self.con.execute(
-            """SELECT fts.id, bm25(fts, 1.0, 0.3, 0.2) AS score, trechos.dados
+            f"""SELECT fts.id, bm25(fts, {pesos}) AS score, trechos.dados
                FROM fts JOIN trechos ON trechos.id = fts.id
                WHERE fts MATCH ? ORDER BY score LIMIT ?""",
             (expressao, limit),

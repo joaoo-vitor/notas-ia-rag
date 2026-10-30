@@ -16,6 +16,7 @@ import hashlib
 import json
 import re
 import sys
+import unicodedata
 import urllib.request
 from pathlib import Path
 
@@ -102,6 +103,52 @@ def paragrafos(html):
         texto = limpar(linha)
         if texto:
             yield texto
+
+
+def normalizar_busca(texto):
+    """Normaliza uma frase para localizar trechos mesmo com diferenças de acentuação."""
+    texto = unicodedata.normalize("NFKD", limpar(texto).casefold())
+    return "".join(c for c in texto if not unicodedata.combining(c))
+
+
+def extrair_trechos_textuais(html, selecoes):
+    """Extrai pequenos blocos declarados em ``fontes.yaml``.
+
+    É usado para decisões, informativos e notícias institucionais que não são
+    organizados em artigos. Cada seleção informa uma frase distintiva em ``contem``;
+    fica o menor parágrafo/bloco visível que contém a frase. Se a página mudar e a
+    frase desaparecer, a ingestão falha em vez de produzir um trecho incorreto.
+    """
+    sopa = BeautifulSoup(html, "html.parser")
+    for tag in sopa(["script", "style", "head", "nav", "footer"]):
+        tag.decompose()
+
+    candidatos = []
+    for tag in sopa.find_all(["p", "li", "blockquote", "h1", "h2", "h3", "h4"]):
+        texto = limpar(tag.get_text(" ", strip=True))
+        if texto:
+            candidatos.append(texto)
+    # Fallback para páginas oficiais com HTML malformado ou texto fora de <p>.
+    candidatos.extend(paragrafos(html))
+    candidatos = list(dict.fromkeys(candidatos))
+
+    resultado = []
+    for selecao in selecoes:
+        agulha = normalizar_busca(selecao["contem"])
+        encontrados = [t for t in candidatos if agulha in normalizar_busca(t)]
+        if not encontrados:
+            raise ValueError(
+                f"trecho {selecao['id']!r} não encontrado; a fonte pode ter mudado "
+                f"(busca: {selecao['contem']!r})"
+            )
+        texto = min(encontrados, key=len)
+        resultado.append({
+            "id": selecao["id"],
+            "secao": selecao["secao"],
+            "contexto": selecao.get("contexto", ""),
+            "texto": texto,
+        })
+    return resultado
 
 
 def extrair_artigos(html):
@@ -235,6 +282,34 @@ def gerar(forcar_download=False):
     for fonte in fontes:
         dados = baixar(fonte, forcar_download)
         html = decodificar(dados)
+
+        if fonte.get("extracao") == "trechos_textuais":
+            selecionados = extrair_trechos_textuais(html, fonte.get("trechos", []))
+            for trecho in selecionados:
+                texto = trecho["texto"]
+                trechos.append({
+                    "id": f"{fonte['id']}:{trecho['id']}",
+                    "documento": fonte["documento"],
+                    "secao": trecho["secao"],
+                    "contexto": trecho["contexto"],
+                    "texto": texto,
+                    "orgao": fonte["orgao"],
+                    "tipo": fonte["tipo"],
+                    "jurisdicao": fonte["jurisdicao"],
+                    "localidade": None,
+                    "url": fonte["url"],
+                    "publicado_em": fonte["publicado_em"],
+                    "verificado_em": hoje,
+                    "alterado_por": [],
+                    "fonte_hash": hashlib.sha256(dados).hexdigest(),
+                    "hash": hashlib.sha256(texto.encode("utf-8")).hexdigest(),
+                })
+            resumo.append({
+                "id": fonte["id"], "artigos": 0, "trechos": len(selecionados)
+            })
+            print(f"  {fonte['id']}: {len(selecionados)} trechos selecionados")
+            continue
+
         artigos = [limpar_artigo(a) for a in extrair_artigos(html)]
         artigos = [a for a in artigos if not descartar(a)]
 

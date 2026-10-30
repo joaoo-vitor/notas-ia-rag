@@ -5,6 +5,9 @@
 #
 # artigos: quando presente, só esses artigos do documento entram no corpus
 #          (para documentos grandes como o Código Penal e a Constituição).
+# extracao: trechos_textuais permite selecionar parágrafos de páginas oficiais que
+#          não são divididas em artigos. Cada item usa uma frase distintiva em
+#          "contem"; se a página mudar e a frase sumir, a ingestão falha.
 
 fontes:
   - id: lei-11340-2006
@@ -81,3 +84,45 @@ fontes:
     # artigos 1 a 12 da Convenção (definições, direitos e deveres dos Estados);
     # os demais tratam de assinatura, ratificação e vigência do tratado
     artigos: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+
+  - id: stj-pesquisa-pronta-lmp-2026
+    documento: Pesquisa Pronta — aplicação da Lei Maria da Penha (STJ)
+    orgao: Superior Tribunal de Justiça
+    tipo: jurisprudencia
+    jurisdicao: Brasil
+    publicado_em: "2026-08-12"
+    url: https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Nova-edicao-da-Pesquisa-Pronta-destaca-entendimentos-sobre-a-aplicacao-da-Lei-Maria-da-Penha.aspx
+    extracao: trechos_textuais
+    trechos:
+      - id: genero-do-agressor-e-mulheres-trans
+        secao: Entendimento do STJ sobre pessoa agressora e mulher trans
+        contexto: Jurisprudência — âmbito de aplicação da Lei Maria da Penha
+        contem: inclusive mulheres trans, independentemente do gênero de quem pratica a agressão
+
+  - id: stj-precedentes-lmp-2026
+    documento: Precedentes do STJ sobre a Lei Maria da Penha
+    orgao: Superior Tribunal de Justiça
+    tipo: jurisprudencia
+    jurisdicao: Brasil
+    publicado_em: "2026-09-13"
+    url: https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/13092026-Lei-Maria-da-Penha--20-anos-os-precedentes-do-STJ-que-fortaleceram-o-combate-a-violencia-contra-a-mulher.aspx
+    extracao: trechos_textuais
+    trechos:
+      - id: pessoa-agressora-homem-ou-mulher
+        secao: Proteção da vítima independe do gênero de quem agride
+        contexto: Jurisprudência — pessoa agressora na violência doméstica
+        contem: sujeito ativo da violência doméstica pode ser homem ou mulher
+
+  - id: stf-mi-7452-2025
+    documento: Mandado de Injunção 7.452 — proteção em relações homoafetivas (STF)
+    orgao: Supremo Tribunal Federal
+    tipo: jurisprudencia
+    jurisdicao: Brasil
+    publicado_em: "2025-02-24"
+    url: https://noticias.stf.jus.br/postsnoticias/stf-amplia-protecao-da-lei-maria-da-penha-a-casais-homoafetivos-do-sexo-masculino-travestis-e-transexuais/
+    extracao: trechos_textuais
+    trechos:
+      - id: protecao-casais-homoafetivos-travestis-trans
+        secao: Decisão do STF no MI 7.452
+        contexto: Jurisprudência — aplicação analógica da Lei Maria da Penha
+        contem: casais homoafetivos do sexo masculino ou que envolvam travestis e mulheres transexuais
