@@ -33,8 +33,8 @@ class RagTests(unittest.TestCase):
             }])
 
     def test_bm25_weights_follow_all_fts_columns(self):
-        # id, texto, contexto, documento
-        self.assertEqual(PESOS_BM25, (0.0, 1.0, 0.3, 0.2))
+        # id, texto, contexto, documento, expressões curadas
+        self.assertEqual(PESOS_BM25, (0.0, 1.0, 0.3, 0.2, 1.2))
 
     def test_split_by_inciso_repeats_caput(self):
         partes = dividir_por_inciso([

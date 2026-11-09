@@ -13,6 +13,8 @@ import sys
 import unicodedata
 from pathlib import Path
 
+from recuperacao import carregar_trechos, versao_indice
+
 RAIZ = Path(__file__).resolve().parent
 TRECHOS = RAIZ / "corpus" / "trechos.jsonl"
 INDICE = RAIZ / "indice" / "lexical.sqlite"
@@ -26,8 +28,8 @@ umas vai você vou posso pode fazer faz sobre quero saber tá ta to tô pra pro
 """.split())
 
 # A ordem acompanha todas as colunas da tabela FTS, inclusive o id UNINDEXED:
-# id=0, texto=1, contexto=0.3, documento=0.2.
-PESOS_BM25 = (0.0, 1.0, 0.3, 0.2)
+# id=0, texto=1, contexto=0.3, documento=0.2, expressions=1.2.
+PESOS_BM25 = (0.0, 1.0, 0.3, 0.2, 1.2)
 
 
 def normalizar(texto):
@@ -40,33 +42,43 @@ def termos(consulta):
     return [p for p in palavras if p not in {normalizar(s) for s in STOPWORDS} and len(p) > 1]
 
 
-def indexar():
-    INDICE.parent.mkdir(parents=True, exist_ok=True)
-    if INDICE.exists():
-        INDICE.unlink()
-    con = sqlite3.connect(INDICE)
+def indexar(raiz=RAIZ):
+    indice = Path(raiz) / "indice" / "lexical.sqlite"
+    indice.parent.mkdir(parents=True, exist_ok=True)
+    if indice.exists():
+        indice.unlink()
+    con = sqlite3.connect(indice)
     con.execute("CREATE TABLE trechos (id TEXT PRIMARY KEY, dados TEXT)")
+    con.execute("CREATE TABLE meta (chave TEXT PRIMARY KEY, valor TEXT)")
     # remove_diacritics: "agressão" e "agressao" casam; prefix: permite busca por prefixo (radical)
     con.execute("""CREATE VIRTUAL TABLE fts USING fts5(
-        id UNINDEXED, texto, contexto, documento,
+        id UNINDEXED, texto, contexto, documento, expressions,
         tokenize = 'unicode61 remove_diacritics 2', prefix = '4 5 6')""")
     n = 0
-    for linha in TRECHOS.read_text(encoding="utf-8").splitlines():
-        t = json.loads(linha)
+    for t in carregar_trechos(Path(raiz)):
+        linha = json.dumps(t, ensure_ascii=False)
         con.execute("INSERT INTO trechos VALUES (?, ?)", (t["id"], linha))
-        con.execute("INSERT INTO fts VALUES (?, ?, ?, ?)", (t["id"], t["texto"], t["contexto"], t["documento"]))
+        con.execute("INSERT INTO fts VALUES (?, ?, ?, ?, ?)",
+                    (t["id"], t["texto"], t["contexto"], t["documento"], " ; ".join(t["expressions"])))
         n += 1
+    con.execute("INSERT INTO meta VALUES (?, ?)", ("versao", versao_indice(Path(raiz))))
     con.commit()
     con.close()
-    print(f"{n} trechos indexados em {INDICE}")
+    print(f"{n} trechos indexados em {indice}")
 
 
 class BuscaLexical:
     """Mesmo formato de saída que os outros recuperadores: lista de trechos com 'score'."""
 
-    def __init__(self, caminho=INDICE):
-        if not Path(caminho).exists():
+    def __init__(self, raiz=RAIZ):
+        self.raiz = Path(raiz)
+        caminho = self.raiz / "indice" / "lexical.sqlite"
+        if not caminho.exists():
             sys.exit("Índice não encontrado. Rode antes: busca_lexical.py --indexar")
+        with sqlite3.connect(caminho) as con:
+            linha = con.execute("SELECT valor FROM meta WHERE chave='versao'").fetchone()
+        if not linha or linha[0] != versao_indice(self.raiz):
+            sys.exit("Índice lexical é de outra versão do corpus. Reindexe com --indexar.")
         self.con = sqlite3.connect(caminho)
 
     def search(self, consulta, limit=5, radical=True):

@@ -16,6 +16,9 @@ import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from recuperacao import validar_catalogo
+
 PASTA_APP = Path(__file__).resolve().parent
 ESTATICOS = {"/": "index.html", "/app.js": "app.js", "/estilo.css": "estilo.css"}
 TIPOS = {".html": "text/html", ".js": "text/javascript", ".css": "text/css"}
@@ -24,6 +27,7 @@ TIPOS = {".html": "text/html", ".js": "text/javascript", ".css": "text/css"}
 def criar_handler(rag):
     trechos = rag / "corpus" / "trechos.jsonl"
     gabarito = rag / "avaliacao" / "gabarito.yaml"
+    metadata = rag / "corpus" / "retrieval-metadata.v1.json"
 
     class Handler(BaseHTTPRequestHandler):
         def log_message(self, *args):  # sem log de cada requisição no terminal
@@ -46,15 +50,30 @@ def criar_handler(rag):
                     "trechos": trechos.read_text(encoding="utf-8"),
                     "gabarito": gabarito.read_text(encoding="utf-8"),
                     "versao": str(gabarito.stat().st_mtime_ns),
+                    "metadata": metadata.read_text(encoding="utf-8"),
+                    "metadata_versao": str(metadata.stat().st_mtime_ns),
                 }))
             self.responder(404, '{"erro": "não encontrado"}')
 
+        def do_PUT_metadata(self):
+            pedido = json.loads(self.rfile.read(int(self.headers["Content-Length"])).decode("utf-8"))
+            if pedido.get("versao") != str(metadata.stat().st_mtime_ns):
+                return self.responder(409, '{"erro": "o catálogo foi alterado fora do editor"}')
+            erros = validar_catalogo(rag, pedido.get("texto", ""))
+            if erros:
+                return self.responder(422, json.dumps({"erros": erros}, ensure_ascii=False))
+            shutil.copyfile(metadata, metadata.with_suffix(".json.bak"))
+            metadata.write_text(pedido["texto"], encoding="utf-8", newline="\n")
+            self.responder(200, json.dumps({"versao": str(metadata.stat().st_mtime_ns)}))
+
+        # BaseHTTPRequestHandler dispatches manually so the two editable files
+        # remain explicit and receive independent optimistic-lock versions.
         def do_PUT(self):
+            if self.path == "/api/metadata":
+                return self.do_PUT_metadata()
             if self.path != "/api/gabarito":
                 return self.responder(404, '{"erro": "não encontrado"}')
             pedido = json.loads(self.rfile.read(int(self.headers["Content-Length"])).decode("utf-8"))
-            # versão como texto: o número em nanossegundos não cabe num número do JavaScript.
-            # se o arquivo mudou por fora (git pull, outro editor), não sobrescreve
             if pedido["versao"] != str(gabarito.stat().st_mtime_ns):
                 return self.responder(409, '{"erro": "o gabarito foi alterado fora do editor"}')
             shutil.copyfile(gabarito, gabarito.with_suffix(".yaml.bak"))
@@ -72,7 +91,11 @@ def main():
     args = parser.parse_args()
 
     rag = Path(args.rag).resolve()
-    for necessario in (rag / "corpus" / "trechos.jsonl", rag / "avaliacao" / "gabarito.yaml"):
+    for necessario in (
+        rag / "corpus" / "trechos.jsonl",
+        rag / "avaliacao" / "gabarito.yaml",
+        rag / "corpus" / "retrieval-metadata.v1.json",
+    ):
         if not necessario.exists():
             sys.exit(f"Não encontrei {necessario}. Indique a pasta do RAG com --rag.")
 

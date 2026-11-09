@@ -1,64 +1,82 @@
 # notas-ia-rag
 
-RAG jurídico do [Notas.ia](https://github.com/aline-fraga/notas-ia): recupera trechos de
-leis oficiais para responder dúvidas com citação. No repositório principal, este
-repositório fica na pasta `rag/` como submodule.
+RAG jurídico do [Notas.IA](https://github.com/aline-fraga/notas-ia): recupera trechos
+de fontes oficiais para fundamentar respostas com citação. No repositório principal,
+fica em `services/legal-mcp/` como submódulo. Apesar do nome histórico, esta versão não
+expõe um servidor MCP próprio: o backend usa a biblioteca local como a ferramenta
+`legal_search_legal_sources`.
 
-Desenho da solução em
-[`arquitetura-chat-codex-eduardo-f/resposta-rag.md`](https://github.com/aline-fraga/notas-ia/blob/main/arquitetura-chat-codex-eduardo-f/resposta-rag.md)
-(SQLite FTS5 + FAISS + RRF).
+O desenho de recuperação mantém SQLite FTS5 (BM25), FAISS (busca densa) e RRF (busca
+híbrida). A avaliação abaixo mede **a recuperação direta**, não a qualidade da conversa
+ou da resposta final da LLM.
 
 ## Como rodar
 
-Na raiz deste repositório (ou em `notas-ia/rag/`). No Windows; em Linux/Mac troque
-`Scripts` por `bin`:
+Na raiz deste repositório. No Windows; em Linux/macOS troque `Scripts` por `bin`.
 
-```bash
+```powershell
 python -m venv .venv
 .venv/Scripts/python -m pip install -r requirements.txt
-.venv/Scripts/python ingestao.py              # gera o corpus a partir de fontes.yaml
+.venv/Scripts/python ingestao.py
 .venv/Scripts/python busca_lexical.py --indexar
-.venv/Scripts/python busca_densa.py --indexar --modelo e5-small   # baixa o modelo na 1ª vez
+.venv/Scripts/python busca_densa.py --indexar --modelo e5-small
 .venv/Scripts/python busca_densa.py "meu ex fica me seguindo" --hibrida
 .venv/Scripts/python avaliar.py --recuperador hibrida-e5-small --incluir-rascunho
 ```
 
-O índice denso precisa ser refeito sempre que o corpus mudar (o script avisa).
+Para PyTorch apenas em CPU, instale-o antes com:
+
+```powershell
+.venv/Scripts/python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+```
+
+Índices precisam ser refeitos quando o corpus ou as anotações de recuperação mudam. Os
+scripts detectam essa incompatibilidade. No Compose principal, o agente faz essa
+verificação antes de iniciar a API.
 
 ## Arquivos
 
 | Arquivo | O que é |
 |---|---|
-| `fontes.yaml` | Lista das fontes oficiais. Só entra no corpus o que estiver aqui |
-| `ingestao.py` | Baixa as páginas do Planalto e divide em trechos por artigo |
-| `dados/brutos/` | Páginas originais, como vieram do site (para reproduzir o corpus) |
-| `corpus/trechos.jsonl` | Um trecho por linha, com texto e metadados |
-| `corpus/manifesto.json` | Versão do corpus (hash), data e contagem por fonte |
-| `busca_lexical.py` | Busca BM25 com SQLite FTS5 (linha de base) |
-| `busca_densa.py` | Busca densa (embeddings + FAISS) e híbrida (BM25 + densa por RRF) |
-| `avaliacao/gabarito.yaml` | Perguntas leigas com os artigos que as respondem |
-| `avaliar.py` | Mede acerto@k, recall@k, MRR e nDCG@10 contra o gabarito |
-| `comparar.py` | Compara recuperadores de uma mesma prova, com intervalos de confiança |
-| `avaliacao/resultados/` | Resultado de cada avaliação, por recuperador e versão do corpus |
-| `editor/` | Aplicação local para escrever e revisar o gabarito ([como usar](editor/README.md)) |
+| `fontes.yaml` | Lista de fontes oficiais permitidas no corpus |
+| `ingestao.py` | Baixa páginas e divide o conteúdo em trechos |
+| `dados/brutos/` | Páginas originais para reproduzir o corpus |
+| `corpus/trechos.jsonl` | Um trecho jurídico por linha, com metadados |
+| `corpus/manifesto.json` | Hash, data e contagem da versão do corpus |
+| `corpus/retrieval-metadata.v1.json` | Expressões e descrições usadas somente para recuperação |
+| `busca_lexical.py` | BM25 com SQLite FTS5 |
+| `busca_densa.py` | Busca densa FAISS e híbrida por RRF |
+| `avaliacao/gabarito.yaml` | Perguntas e fontes esperadas para avaliação |
+| `avaliar.py` | Mede acerto@k, recall@k, MRR e nDCG@10 |
+| `comparar.py` | Compara recuperadores com bootstrap pareado |
+| `avaliacao/resultados/` | Resultados versionados de cada execução |
+| `editor/` | Editor local do gabarito e das anotações de recuperação |
 
-## Gabarito
+## Gabarito e revisão humana
 
-O gabarito é a referência para comparar as buscas, então precisa ser feito por pessoas:
+O gabarito é a referência da avaliação, portanto deve ser curado por pessoas. Abra o
+editor com `python editor/servidor.py` e siga este fluxo:
 
-O jeito mais fácil é pelo **editor do gabarito**: `python editor/servidor.py` (ver
-[editor/README.md](editor/README.md)). O processo:
+1. Escreva a pergunta como uma usuária a escreveria, antes de procurar a fonte.
+2. Marque trechos `relevantes` e `parciais`; para artigos divididos, indique a parte
+   que de fato responde.
+3. Duas pessoas revisam o item e discutem divergências.
+4. Só então o status passa a `revisado`; por padrão, a avaliação usa apenas revisados.
 
-1. Escrever a pergunta como uma usuária escreveria e indicar o `tipo`.
-2. Apontar os artigos que respondem (`relevantes`) e os que ajudam (`parciais`).
-   Quando um artigo tiver sido dividido em partes, abrir "Partes exatas de artigos
-   divididos" e indicar quais trechos realmente contêm a resposta.
-3. Duas pessoas conferem, sem ver a resposta uma da outra; divergências são discutidas.
-4. Só então o `status` vira `revisado`. Por padrão, o `avaliar.py` usa só os revisados.
+O arquivo atual possui 165 perguntas: 31 revisadas e 134 em rascunho. Resultados que
+incluem rascunhos são úteis para comparar métodos, mas não constituem validação final.
 
-O gabarito tem agora 77 perguntas em **rascunho**: 31 iniciais, escritas com auxílio de
-IA, e 46 escritas pelo grupo a partir de temas da legislação. Quem escreve uma pergunta
-não é revisor dela. Meta: 150 a 300.
+## Anotações de recuperação
+
+Cada trecho recebe anotações curadas em `retrieval-metadata.v1.json`:
+
+- `expressions`: palavras, expressões e formulações leigas com peso adicional no BM25;
+- `dense_descriptions`: uma a três descrições temáticas distintas. Cada descrição recebe
+  um vetor, e resultados do mesmo trecho são agrupados antes de retornar à LLM.
+
+Essas anotações não são fontes jurídicas, nem autorizam conclusões. A aba
+**Anotações de recuperação** do editor valida cobertura, campos vazios, duplicatas,
+temas repetidos e o limite de três descrições; ela cria backup, mas não reindexa.
 
 ## Resultados (provisórios)
 

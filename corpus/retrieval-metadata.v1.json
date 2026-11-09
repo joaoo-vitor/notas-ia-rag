@@ -1,0 +1,1238 @@
+{
+  "schema_version": "retrieval-metadata.v1",
+  "corpus_version": "174e8766c4b2",
+  "chunks": {
+    "lei-11340-2006:art1": {
+      "expressions": [
+        "objetivo da Lei Maria da Penha"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "finalidade da lei",
+          "text": "Objetivo da Lei Maria da Penha de prevenir e coibir violência doméstica e familiar."
+        }
+      ]
+    },
+    "lei-11340-2006:art2": {
+      "expressions": [
+        "direitos da mulher",
+        "mulher sem violência"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "direitos fundamentais",
+          "text": "Direitos assegurados às mulheres para viver sem violência."
+        }
+      ]
+    },
+    "lei-11340-2006:art3": {
+      "expressions": [
+        "direitos sociais",
+        "moradia saúde educação"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "garantias à mulher",
+          "text": "Condições e direitos sociais assegurados à mulher em situação de violência."
+        }
+      ]
+    },
+    "lei-11340-2006:art4": {
+      "expressions": [
+        "interpretação da lei",
+        "como aplicar Maria da Penha"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "interpretação protetiva",
+          "text": "Critérios de interpretação da Lei Maria da Penha conforme sua finalidade social."
+        }
+      ]
+    },
+    "lei-11340-2006:art5": {
+      "expressions": [
+        "o que é violência doméstica",
+        "violência baseada no gênero",
+        "relação íntima"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "conceito de violência doméstica",
+          "text": "Definição de violência doméstica e familiar contra a mulher e seus contextos."
+        },
+        {
+          "topic": "relações abrangidas",
+          "text": "Relações familiares, domésticas e afetivas alcançadas pela Lei Maria da Penha."
+        }
+      ]
+    },
+    "lei-11340-2006:art6": {
+      "expressions": [
+        "violência contra mulher direitos humanos"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "direitos humanos",
+          "text": "Violência doméstica como violação de direitos humanos."
+        }
+      ]
+    },
+    "lei-11340-2006:art7-p1": {
+      "expressions": [
+        "violência física",
+        "empurrão soco chute",
+        "agressão no corpo"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "violência física",
+          "text": "Definição legal de violência física contra a mulher, incluindo condutas que ofendem a integridade ou saúde corporal."
+        }
+      ]
+    },
+    "lei-11340-2006:art7-p2": {
+      "expressions": [
+        "violência psicológica",
+        "humilhação ameaça manipulação",
+        "controle isolamento perseguição"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "violência psicológica",
+          "text": "Definição legal de violência psicológica, incluindo ameaça, humilhação, manipulação, isolamento, vigilância e controle."
+        }
+      ]
+    },
+    "lei-11340-2006:art7-p3": {
+      "expressions": [
+        "violência sexual",
+        "sexo sem consentimento",
+        "coação sexual contraceptivo gravidez aborto"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "violência sexual",
+          "text": "Definição legal de violência sexual, incluindo constrangimento a relação sexual não desejada e violação de direitos sexuais e reprodutivos."
+        }
+      ]
+    },
+    "lei-11340-2006:art7-p4": {
+      "expressions": [
+        "violência patrimonial",
+        "quebrou meu celular",
+        "reteve documentos dinheiro bens"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "violência patrimonial",
+          "text": "Definição legal de violência patrimonial, incluindo retenção, subtração ou destruição de objetos, documentos, bens e recursos econômicos."
+        }
+      ]
+    },
+    "lei-11340-2006:art7-p5": {
+      "expressions": [
+        "violência moral",
+        "calúnia difamação injúria",
+        "xingamento ofensa reputação"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "violência moral",
+          "text": "Definição legal de violência moral, incluindo calúnia, difamação e injúria."
+        }
+      ]
+    },
+    "lei-11340-2006:art7-p6": {
+      "expressions": [
+        "violência vicária",
+        "usar filhos para atingir mãe",
+        "agredir filho para machucar mãe"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "violência vicária",
+          "text": "Definição legal de violência vicária praticada contra familiares, dependentes ou rede de apoio para atingir a mulher."
+        }
+      ]
+    },
+    "lei-11340-2006:art8": {
+      "expressions": [
+        "política pública contra violência",
+        "prevenção violência mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "políticas de prevenção",
+          "text": "Ações articuladas do poder público para prevenir violência contra mulheres."
+        }
+      ]
+    },
+    "lei-11340-2006:art9-p1": {
+      "expressions": [
+        "atendimento prioritário SUS",
+        "assistência mulher violência"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "assistência e saúde",
+          "text": "Atendimento prioritário à mulher em situação de violência nos sistemas de saúde e segurança."
+        }
+      ]
+    },
+    "lei-11340-2006:art9-p2": {
+      "expressions": [
+        "auxílio aluguel",
+        "prioridade programas sociais",
+        "manutenção vínculo trabalho"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "assistência social",
+          "text": "Medidas de assistência, benefícios e manutenção de vínculo de trabalho para mulher em situação de violência."
+        }
+      ]
+    },
+    "lei-11340-2006:art10": {
+      "expressions": [
+        "delegacia violência doméstica",
+        "polícia deve agir"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "providências policiais",
+          "text": "Dever de atuação imediata da autoridade policial diante de violência doméstica."
+        }
+      ]
+    },
+    "lei-11340-2006:art10-A": {
+      "expressions": [
+        "atendimento policial especializado",
+        "atendimento mulher delegacia"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "atendimento especializado",
+          "text": "Direito a atendimento policial e pericial especializado para mulher em situação de violência."
+        }
+      ]
+    },
+    "lei-11340-2006:art11": {
+      "expressions": [
+        "proteção policial",
+        "levar hospital delegacia",
+        "retirar pertences"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "medidas no atendimento policial",
+          "text": "Providências policiais como proteção, atendimento de saúde e retirada de pertences."
+        }
+      ]
+    },
+    "lei-11340-2006:art12": {
+      "expressions": [
+        "boletim de ocorrência",
+        "registro ocorrência violência"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "registro da ocorrência",
+          "text": "Procedimentos policiais após registrar violência doméstica."
+        }
+      ]
+    },
+    "lei-11340-2006:art12-A": {
+      "expressions": [
+        "políticas para mulheres",
+        "capacitação servidores"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "políticas estaduais",
+          "text": "Prioridades em políticas e planos estaduais de atendimento à mulher."
+        }
+      ]
+    },
+    "lei-11340-2006:art12-B": {
+      "expressions": [
+        "formulário risco polícia",
+        "serviços públicos defesa mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "requisição de serviços",
+          "text": "Atuação policial para requisitar serviços públicos de defesa da mulher."
+        }
+      ]
+    },
+    "lei-11340-2006:art12-C": {
+      "expressions": [
+        "afastamento imediato agressor",
+        "delegado tirar de casa",
+        "risco atual iminente"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "afastamento imediato",
+          "text": "Afastamento do agressor do lar diante de risco atual ou iminente."
+        },
+        {
+          "topic": "risco atual",
+          "text": "Medidas urgentes quando há risco à vida ou integridade da mulher."
+        }
+      ]
+    },
+    "lei-11340-2006:art12-D": {
+      "expressions": [
+        "medida protetiva delegado",
+        "risco mulher dependentes"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "proteção emergencial",
+          "text": "Providências de proteção em situações de risco atual ou iminente."
+        }
+      ]
+    },
+    "lei-11340-2006:art13": {
+      "expressions": [
+        "processo violência doméstica",
+        "regras processo penal"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "processo e julgamento",
+          "text": "Normas aplicáveis a processos decorrentes de violência doméstica."
+        }
+      ]
+    },
+    "lei-11340-2006:art14": {
+      "expressions": [
+        "juizado violência doméstica",
+        "vara especializada"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "juizado especializado",
+          "text": "Competência dos Juizados de Violência Doméstica e Familiar."
+        }
+      ]
+    },
+    "lei-11340-2006:art14-A": {
+      "expressions": [
+        "divórcio no juizado",
+        "dissolução união estável"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "divórcio e união estável",
+          "text": "Possibilidade de ação de divórcio ou dissolução no juizado especializado."
+        }
+      ]
+    },
+    "lei-11340-2006:art15": {
+      "expressions": [
+        "onde entrar processo",
+        "competência juizado"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "local do processo",
+          "text": "Opções de competência territorial para processos cíveis da Lei Maria da Penha."
+        }
+      ]
+    },
+    "lei-11340-2006:art16": {
+      "expressions": [
+        "desistir denúncia",
+        "renúncia representação"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "renúncia à representação",
+          "text": "Regras para renúncia à representação em certas ações penais."
+        }
+      ]
+    },
+    "lei-11340-2006:art16-A": {
+      "expressions": [
+        "prazo representação",
+        "prazo queixa"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "prazo processual",
+          "text": "Prazo para exercer direito de queixa ou representação."
+        }
+      ]
+    },
+    "lei-11340-2006:art17": {
+      "expressions": [
+        "cesta básica agressor",
+        "pena dinheiro violência doméstica"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "penas vedadas",
+          "text": "Vedações a penas de cesta básica ou prestação pecuniária."
+        }
+      ]
+    },
+    "lei-11340-2006:art17-A": {
+      "expressions": [
+        "sigilo nome vítima",
+        "processo segredo identidade"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "sigilo da ofendida",
+          "text": "Proteção do nome da ofendida em processos de violência doméstica."
+        }
+      ]
+    },
+    "lei-11340-2006:art18": {
+      "expressions": [
+        "48 horas medida protetiva",
+        "tempo medida protetiva"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "decisão sobre medida protetiva",
+          "text": "Prazo legal para decisão judicial sobre pedido de medida protetiva."
+        }
+      ]
+    },
+    "lei-11340-2006:art19": {
+      "expressions": [
+        "pedir medida protetiva",
+        "precisa boletim medida protetiva"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "pedido de medida protetiva",
+          "text": "Concessão de medida protetiva a pedido da mulher ou do Ministério Público."
+        }
+      ]
+    },
+    "lei-11340-2006:art20": {
+      "expressions": [
+        "prisão preventiva agressor",
+        "prender agressor"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "prisão preventiva",
+          "text": "Possibilidade de prisão preventiva em investigação ou processo de violência doméstica."
+        }
+      ]
+    },
+    "lei-11340-2006:art21": {
+      "expressions": [
+        "avisar saída prisão",
+        "notificação vítima"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "notificação da ofendida",
+          "text": "Direito de ser informada sobre atos processuais e situação prisional do agressor."
+        }
+      ]
+    },
+    "lei-11340-2006:art22-p1": {
+      "expressions": [
+        "proibir aproximação",
+        "medida protetiva afastamento",
+        "suspender porte arma"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "restrições ao agressor",
+          "text": "Medidas protetivas como suspensão de arma, afastamento do lar e proibição de contato."
+        },
+        {
+          "topic": "proibição de aproximação",
+          "text": "Restrição de aproximação e comunicação como medida protetiva."
+        }
+      ]
+    },
+    "lei-11340-2006:art22-p2": {
+      "expressions": [
+        "visita filhos medida protetiva",
+        "alimentos provisórios"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "filhos e alimentos",
+          "text": "Restrição de visitas e prestação de alimentos em medidas protetivas."
+        }
+      ]
+    },
+    "lei-11340-2006:art23": {
+      "expressions": [
+        "programa proteção mulher",
+        "matrícula filhos escola"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "proteção da ofendida",
+          "text": "Encaminhamento da mulher e dependentes a proteção, saúde e outros serviços."
+        }
+      ]
+    },
+    "lei-11340-2006:art24": {
+      "expressions": [
+        "proteger bens",
+        "bloquear conta agressor",
+        "devolver documentos"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "proteção patrimonial",
+          "text": "Medidas judiciais para proteger bens, documentos e recursos da mulher."
+        }
+      ]
+    },
+    "lei-11340-2006:art24-A": {
+      "expressions": [
+        "descumprir medida protetiva",
+        "quebrar medida protetiva"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "descumprimento de medida",
+          "text": "Consequência penal do descumprimento de medida protetiva."
+        }
+      ]
+    },
+    "lei-11340-2006:art25": {
+      "expressions": [
+        "Ministério Público violência doméstica"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "atuação do Ministério Público",
+          "text": "Intervenção do Ministério Público em causas de violência doméstica."
+        }
+      ]
+    },
+    "lei-11340-2006:art26": {
+      "expressions": [
+        "o que MP pode fazer",
+        "Ministério Público proteção"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "atribuições do Ministério Público",
+          "text": "Atribuições do Ministério Público na proteção contra violência doméstica."
+        }
+      ]
+    },
+    "lei-11340-2006:art27": {
+      "expressions": [
+        "advogado obrigatório",
+        "audiência sem advogado"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "assistência jurídica",
+          "text": "Acompanhamento por advogado nos atos processuais."
+        }
+      ]
+    },
+    "lei-11340-2006:art28": {
+      "expressions": [
+        "Defensoria Pública gratuita",
+        "assistência judiciária"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "defensoria pública",
+          "text": "Acesso à Defensoria Pública e assistência jurídica gratuita."
+        }
+      ]
+    },
+    "lei-11340-2006:art29": {
+      "expressions": [
+        "equipe multidisciplinar",
+        "psicólogo juizado"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "equipe multidisciplinar",
+          "text": "Equipe multidisciplinar de atendimento no juizado especializado."
+        }
+      ]
+    },
+    "lei-11340-2006:art30": {
+      "expressions": [
+        "laudo equipe multidisciplinar",
+        "subsídio juiz"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "função da equipe",
+          "text": "Subsídios técnicos da equipe multidisciplinar ao sistema de justiça."
+        }
+      ]
+    },
+    "lei-11340-2006:art31": {
+      "expressions": [
+        "avaliação profissional especializada",
+        "caso complexo"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "avaliação especializada",
+          "text": "Manifestação de profissional especializado em casos complexos."
+        }
+      ]
+    },
+    "lei-11340-2006:art32": {
+      "expressions": [
+        "orçamento equipe multidisciplinar"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "estrutura de atendimento",
+          "text": "Recursos para criação e manutenção de equipe multidisciplinar."
+        }
+      ]
+    },
+    "lei-11340-2006:art33": {
+      "expressions": [
+        "sem juizado especializado",
+        "vara criminal violência doméstica"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "competência sem juizado",
+          "text": "Competência das varas criminais quando não houver juizado especializado."
+        }
+      ]
+    },
+    "lei-11340-2006:art34": {
+      "expressions": [
+        "curadoria assistência judiciária"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "serviços do juizado",
+          "text": "Estruturas de curadoria e assistência judiciária ligadas aos juizados."
+        }
+      ]
+    },
+    "lei-11340-2006:art35": {
+      "expressions": [
+        "casa da mulher brasileira",
+        "centro atendimento mulher",
+        "abrigo mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "rede de atendimento",
+          "text": "Centros, casas-abrigo e programas públicos de atendimento à mulher."
+        }
+      ]
+    },
+    "lei-11340-2006:art36": {
+      "expressions": [
+        "adaptação órgãos públicos",
+        "programas violência mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "adaptação institucional",
+          "text": "Adaptação de órgãos e programas públicos às diretrizes da lei."
+        }
+      ]
+    },
+    "lei-11340-2006:art37": {
+      "expressions": [
+        "ação coletiva direitos mulheres",
+        "associação Ministério Público"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "defesa coletiva",
+          "text": "Defesa coletiva de interesses ligados à violência doméstica."
+        }
+      ]
+    },
+    "lei-11340-2006:art38": {
+      "expressions": [
+        "estatísticas violência mulher",
+        "dados violência doméstica"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "dados e estatísticas",
+          "text": "Registro de estatísticas oficiais sobre violência doméstica."
+        }
+      ]
+    },
+    "lei-11340-2006:art38-A": {
+      "expressions": [
+        "registro medida protetiva",
+        "banco nacional medidas"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "registro de medidas",
+          "text": "Registro e comunicação de medidas protetivas concedidas."
+        }
+      ]
+    },
+    "lei-11340-2006:art39": {
+      "expressions": [
+        "convênio prevenção violência",
+        "programa ressocialização agressor"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "programas e convênios",
+          "text": "Programas e convênios de prevenção e atendimento."
+        }
+      ]
+    },
+    "lei-11340-2006:art40": {
+      "expressions": [
+        "outras obrigações lei"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "normas complementares",
+          "text": "Obrigações da lei somadas a outras normas aplicáveis."
+        }
+      ]
+    },
+    "lei-11340-2006:art40-A": {
+      "expressions": [
+        "agressor mulher",
+        "casal lésbico Maria da Penha"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "aplicação ampla da lei",
+          "text": "Aplicação da lei independentemente da condição da pessoa agressora."
+        }
+      ]
+    },
+    "lei-11340-2006:art41": {
+      "expressions": [
+        "Juizado Especial Criminal",
+        "lei 9099 violência doméstica"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "inaplicabilidade da lei 9099",
+          "text": "Não aplicação da Lei dos Juizados Especiais aos crimes de violência doméstica."
+        }
+      ]
+    },
+    "codigo-penal:art121-p1": {
+      "expressions": [
+        "homicídio",
+        "matar alguém"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "homicídio",
+          "text": "Crime de matar alguém e suas formas previstas no Código Penal."
+        }
+      ]
+    },
+    "codigo-penal:art121-p2": {
+      "expressions": [
+        "homicídio qualificado",
+        "aumento pena homicídio"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "qualificadoras do homicídio",
+          "text": "Circunstâncias e causas de aumento relacionadas ao homicídio."
+        }
+      ]
+    },
+    "codigo-penal:art121-A": {
+      "expressions": [
+        "feminicídio",
+        "matar mulher por ser mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "feminicídio",
+          "text": "Crime de matar mulher por razões da condição do sexo feminino."
+        }
+      ]
+    },
+    "codigo-penal:art129-p1": {
+      "expressions": [
+        "lesão corporal",
+        "agressão física"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "lesão corporal",
+          "text": "Crime de ofender a integridade corporal ou saúde de outra pessoa."
+        }
+      ]
+    },
+    "codigo-penal:art129-p2": {
+      "expressions": [
+        "lesão corporal violência doméstica",
+        "bater na mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "lesão em violência doméstica",
+          "text": "Lesão corporal praticada no contexto de violência doméstica."
+        }
+      ]
+    },
+    "codigo-penal:art138": {
+      "expressions": [
+        "calúnia",
+        "acusação falsa crime"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "calúnia",
+          "text": "Imputação falsa de fato definido como crime."
+        }
+      ]
+    },
+    "codigo-penal:art139": {
+      "expressions": [
+        "difamação",
+        "espalhar mentira reputação"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "difamação",
+          "text": "Imputação de fato ofensivo à reputação."
+        }
+      ]
+    },
+    "codigo-penal:art140": {
+      "expressions": [
+        "injúria",
+        "xingamento ofensa"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "injúria",
+          "text": "Ofensa à dignidade ou ao decoro de uma pessoa."
+        }
+      ]
+    },
+    "codigo-penal:art147": {
+      "expressions": [
+        "ameaça de morte",
+        "ameaçar matar"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "ameaça",
+          "text": "Ameaça de causar mal injusto e grave por palavra, escrito ou gesto."
+        }
+      ]
+    },
+    "codigo-penal:art147-A": {
+      "expressions": [
+        "perseguição",
+        "stalking",
+        "ex me segue"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "perseguição",
+          "text": "Perseguição reiterada que ameaça ou restringe liberdade."
+        }
+      ]
+    },
+    "codigo-penal:art147-B": {
+      "expressions": [
+        "violência psicológica crime",
+        "controle humilhação"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "violência psicológica",
+          "text": "Crime de causar dano emocional ou controlar e degradar mulher."
+        }
+      ]
+    },
+    "codigo-penal:art148": {
+      "expressions": [
+        "cárcere privado",
+        "sequestro",
+        "não deixa sair"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "cárcere privado",
+          "text": "Privação da liberdade por sequestro ou cárcere privado."
+        }
+      ]
+    },
+    "codigo-penal:art163": {
+      "expressions": [
+        "dano",
+        "quebrou meu celular",
+        "destruiu minhas coisas"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "dano a bens",
+          "text": "Destruição, inutilização ou deterioração de coisa alheia."
+        }
+      ]
+    },
+    "codigo-penal:art181": {
+      "expressions": [
+        "crime contra patrimônio cônjuge",
+        "isenção pena família"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "imunidade patrimonial",
+          "text": "Hipóteses de isenção de pena em crimes patrimoniais entre familiares."
+        }
+      ]
+    },
+    "codigo-penal:art182": {
+      "expressions": [
+        "representação crime patrimônio família"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "ação por representação",
+          "text": "Hipóteses de representação em crimes patrimoniais entre familiares."
+        }
+      ]
+    },
+    "codigo-penal:art183": {
+      "expressions": [
+        "exceção crime patrimônio violência",
+        "ameaça crime patrimônio"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "exceções patrimoniais",
+          "text": "Exceções às regras de crimes patrimoniais entre familiares."
+        }
+      ]
+    },
+    "codigo-penal:art213": {
+      "expressions": [
+        "estupro",
+        "obrigou relação sexual",
+        "sexo sem consentimento"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "estupro",
+          "text": "Constrangimento mediante violência ou grave ameaça para ato sexual."
+        }
+      ]
+    },
+    "codigo-penal:art215-A": {
+      "expressions": [
+        "importunação sexual",
+        "tocou sem consentimento"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "importunação sexual",
+          "text": "Ato libidinoso sem anuência para satisfazer lascívia."
+        }
+      ]
+    },
+    "codigo-penal:art216-B": {
+      "expressions": [
+        "filmou sem consentimento",
+        "registro intimidade"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "registro íntimo sem autorização",
+          "text": "Registro não autorizado de nudez ou ato sexual."
+        }
+      ]
+    },
+    "codigo-penal:art218-C": {
+      "expressions": [
+        "divulgação imagens íntimas",
+        "vazou nudes",
+        "espalhou fotos íntimas"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "divulgação de intimidade",
+          "text": "Divulgação de cena íntima sem consentimento."
+        }
+      ]
+    },
+    "lei-14149-2021:art1": {
+      "expressions": [
+        "formulário nacional risco",
+        "avaliação de risco violência"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "formulário de risco",
+          "text": "Instituição do formulário nacional de avaliação de risco."
+        }
+      ]
+    },
+    "lei-14149-2021:art2": {
+      "expressions": [
+        "quem aplica formulário risco",
+        "polícia formulário nacional"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "aplicação do formulário",
+          "text": "Aplicação do formulário de risco por órgãos de segurança e justiça."
+        }
+      ]
+    },
+    "lei-14149-2021:art3": {
+      "expressions": [
+        "dados formulário risco",
+        "sigilo formulário"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "dados de risco",
+          "text": "Tratamento de dados produzidos pelo formulário nacional de risco."
+        }
+      ]
+    },
+    "lei-14188-2021:art1": {
+      "expressions": [
+        "sinal vermelho",
+        "programa sinal vermelho"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "programa sinal vermelho",
+          "text": "Programa de cooperação para enfrentamento da violência doméstica."
+        }
+      ]
+    },
+    "lei-14188-2021:art2": {
+      "expressions": [
+        "violência psicológica lei",
+        "ameaça controle mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "crime de violência psicológica",
+          "text": "Criação e tratamento legal da violência psicológica contra a mulher."
+        }
+      ]
+    },
+    "lei-14188-2021:art3": {
+      "expressions": [
+        "campanha sinal vermelho",
+        "divulgação violência mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "divulgação do programa",
+          "text": "Campanhas e divulgação do Programa Sinal Vermelho."
+        }
+      ]
+    },
+    "constituicao-1988:art226": {
+      "expressions": [
+        "família constituição",
+        "violência família dever estado"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "proteção da família",
+          "text": "Dever estatal de coibir violência no âmbito das relações familiares."
+        }
+      ]
+    },
+    "decreto-1973-1996:art1": {
+      "expressions": [
+        "Convenção Belém do Pará",
+        "convenção violência mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "convenção internacional",
+          "text": "Aprovação da Convenção Interamericana para prevenir violência contra a mulher."
+        }
+      ]
+    },
+    "decreto-1973-1996:art2": {
+      "expressions": [
+        "violência contra mulher convenção",
+        "direito sem violência"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "conceito internacional",
+          "text": "Definição internacional de violência contra a mulher."
+        }
+      ]
+    },
+    "decreto-1973-1996:art3": {
+      "expressions": [
+        "direito mulher vida sem violência"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "direito sem violência",
+          "text": "Direito da mulher a uma vida livre de violência."
+        }
+      ]
+    },
+    "decreto-1973-1996:art4": {
+      "expressions": [
+        "direitos humanos mulher violência"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "direitos protegidos",
+          "text": "Direitos humanos das mulheres protegidos pela convenção."
+        }
+      ]
+    },
+    "decreto-1973-1996:art5": {
+      "expressions": [
+        "violência impede direitos mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "efeitos da violência",
+          "text": "Reconhecimento do impacto da violência no exercício de direitos."
+        }
+      ]
+    },
+    "decreto-1973-1996:art6": {
+      "expressions": [
+        "educação sem violência",
+        "igualdade mulher violência"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "direitos de proteção",
+          "text": "Direitos da mulher a educação e vida livre de violência."
+        }
+      ]
+    },
+    "decreto-1973-1996:art7": {
+      "expressions": [
+        "dever estado prevenir violência",
+        "diligência violência mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "deveres do estado",
+          "text": "Deveres estatais de prevenir, investigar e punir violência contra a mulher."
+        }
+      ]
+    },
+    "decreto-1973-1996:art8": {
+      "expressions": [
+        "medidas estado violência mulher",
+        "serviços especializados"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "medidas de prevenção",
+          "text": "Medidas estatais de prevenção, atendimento e educação."
+        }
+      ]
+    },
+    "decreto-1973-1996:art9": {
+      "expressions": [
+        "vulnerabilidade mulher violência",
+        "fatores risco mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "vulnerabilidades",
+          "text": "Consideração de fatores de vulnerabilidade em políticas contra violência."
+        }
+      ]
+    },
+    "decreto-1973-1996:art10": {
+      "expressions": [
+        "relatório violência mulher",
+        "informação convenção"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "relatórios internacionais",
+          "text": "Informações e relatórios sobre medidas adotadas pelos Estados."
+        }
+      ]
+    },
+    "decreto-1973-1996:art11": {
+      "expressions": [
+        "petição comissão interamericana",
+        "denúncia internacional"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "petições internacionais",
+          "text": "Possibilidade de petições perante a Comissão Interamericana."
+        }
+      ]
+    },
+    "decreto-1973-1996:art12": {
+      "expressions": [
+        "comissão interamericana violência mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "procedimento internacional",
+          "text": "Procedimento perante a Comissão Interamericana em violações da convenção."
+        }
+      ]
+    },
+    "stj-pesquisa-pronta-lmp-2026:genero-do-agressor-e-mulheres-trans": {
+      "expressions": [
+        "mulher trans Maria da Penha",
+        "agressora mulher lei Maria da Penha"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "abrangência da lei",
+          "text": "Jurisprudência sobre gênero da pessoa agressora e proteção de mulheres trans."
+        }
+      ]
+    },
+    "stj-precedentes-lmp-2026:pessoa-agressora-homem-ou-mulher": {
+      "expressions": [
+        "mulher agride mulher Maria da Penha",
+        "agressor pode ser mulher"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "pessoa agressora",
+          "text": "Precedentes sobre aplicação da lei sem exigência de agressor homem."
+        }
+      ]
+    },
+    "stf-mi-7452-2025:protecao-casais-homoafetivos-travestis-trans": {
+      "expressions": [
+        "casal gay Maria da Penha",
+        "casal lésbico violência",
+        "travesti trans proteção"
+      ],
+      "dense_descriptions": [
+        {
+          "topic": "relações homoafetivas",
+          "text": "Proteção jurídica em relações homoafetivas e para travestis e mulheres trans."
+        }
+      ]
+    }
+  }
+}

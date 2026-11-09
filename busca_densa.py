@@ -13,6 +13,8 @@ import json
 import sys
 from pathlib import Path
 
+from recuperacao import carregar_trechos, versao_indice
+
 import numpy as np
 
 RAIZ = Path(__file__).resolve().parent
@@ -27,9 +29,12 @@ MODELOS = {
 }
 
 
-def texto_do_trecho(t):
+def texto_do_trecho(t, descricao=None):
     """O que vira embedding: documento e seção dão contexto ao texto do artigo."""
-    return f"{t['documento']}, {t['secao']}. {t['contexto']}\n{t['texto']}"
+    texto = f"{t['documento']}, {t['secao']}. {t['contexto']}\n{t['texto']}"
+    if descricao:
+        texto += f"\nTema: {descricao['topic']}. {descricao['text']}"
+    return texto
 
 
 def carregar_modelo(nome):
@@ -37,54 +42,69 @@ def carregar_modelo(nome):
     return SentenceTransformer(MODELOS[nome][0], device="cpu")
 
 
-def versao_do_corpus():
-    return json.loads((RAIZ / "corpus" / "manifesto.json").read_text(encoding="utf-8"))["versao"]
+def versao_do_corpus(raiz=RAIZ):
+    return json.loads((Path(raiz) / "corpus" / "manifesto.json").read_text(encoding="utf-8"))["versao"]
 
 
-def indexar(nome):
+def indexar(nome, raiz=RAIZ):
     import faiss
-    trechos = [json.loads(l) for l in TRECHOS.read_text(encoding="utf-8").splitlines()]
+    raiz = Path(raiz)
+    trechos = carregar_trechos(raiz)
     modelo = carregar_modelo(nome)
     prefixo = MODELOS[nome][2]
-    vetores = modelo.encode([prefixo + texto_do_trecho(t) for t in trechos], batch_size=8,
+    passagens = [(t, descricao) for t in trechos for descricao in t["dense_descriptions"]]
+    vetores = modelo.encode([prefixo + texto_do_trecho(t, descricao) for t, descricao in passagens], batch_size=8,
                             normalize_embeddings=True, show_progress_bar=True)
     indice = faiss.IndexFlatIP(vetores.shape[1])  # produto interno de vetores normalizados = cosseno
     indice.add(np.asarray(vetores, dtype="float32"))
-    INDICES.mkdir(parents=True, exist_ok=True)
-    faiss.write_index(indice, str(INDICES / f"densa-{nome}.faiss"))
-    (INDICES / f"densa-{nome}.json").write_text(json.dumps({
-        "modelo": MODELOS[nome][0], "corpus": versao_do_corpus(), "ids": [t["id"] for t in trechos],
+    indices = raiz / "indice"
+    indices.mkdir(parents=True, exist_ok=True)
+    faiss.write_index(indice, str(indices / f"densa-{nome}.faiss"))
+    (indices / f"densa-{nome}.json").write_text(json.dumps({
+        "modelo": MODELOS[nome][0], "versao": versao_indice(raiz),
+        "passagens": [{"id": t["id"], "description": descricao} for t, descricao in passagens],
     }, ensure_ascii=False), encoding="utf-8")
     print(f"{len(trechos)} trechos indexados com {MODELOS[nome][0]} ({vetores.shape[1]} dimensões)")
 
 
 class BuscaDensa:
-    def __init__(self, nome="e5-small"):
+    def __init__(self, nome="e5-small", raiz=RAIZ):
         import faiss
-        meta_caminho = INDICES / f"densa-{nome}.json"
+        self.raiz = Path(raiz)
+        indices = self.raiz / "indice"
+        meta_caminho = indices / f"densa-{nome}.json"
         if not meta_caminho.exists():
             sys.exit(f"Índice denso não encontrado. Rode antes: busca_densa.py --indexar --modelo {nome}")
         meta = json.loads(meta_caminho.read_text(encoding="utf-8"))
-        if meta["corpus"] != versao_do_corpus():
-            sys.exit(f"Índice denso ({meta['corpus']}) é de outra versão do corpus. Reindexe com --indexar.")
+        if meta.get("versao") != versao_indice(self.raiz):
+            sys.exit("Índice denso é de outra versão do corpus. Reindexe com --indexar.")
         self.nome = nome
-        self.indice = faiss.read_index(str(INDICES / f"densa-{nome}.faiss"))
-        self.ids = meta["ids"]
-        self.trechos = {json.loads(l)["id"]: json.loads(l) for l in TRECHOS.read_text(encoding="utf-8").splitlines()}
+        self.indice = faiss.read_index(str(indices / f"densa-{nome}.faiss"))
+        self.passagens = meta["passagens"]
+        self.trechos = {t["id"]: t for t in carregar_trechos(self.raiz)}
         self.modelo = carregar_modelo(nome)
 
     def search(self, consulta, limit=5):
         vetor = self.modelo.encode([MODELOS[self.nome][1] + consulta], normalize_embeddings=True)
-        scores, posicoes = self.indice.search(np.asarray(vetor, dtype="float32"), min(limit, len(self.ids)))
-        return [{**self.trechos[self.ids[p]], "score": float(s)} for s, p in zip(scores[0], posicoes[0]) if p >= 0]
+        scores, posicoes = self.indice.search(np.asarray(vetor, dtype="float32"), min(limit * 3, len(self.passagens)))
+        agrupados = {}
+        for score, posicao in zip(scores[0], posicoes[0]):
+            if posicao < 0:
+                continue
+            passagem = self.passagens[posicao]
+            atual = agrupados.get(passagem["id"])
+            if atual is None or score > atual["score"]:
+                agrupados[passagem["id"]] = {**self.trechos[passagem["id"]], "score": float(score),
+                                              "matched_description": passagem["description"]}
+        return sorted(agrupados.values(), key=lambda r: r["score"], reverse=True)[:limit]
 
 
 class BuscaHibrida:
     """Reciprocal rank fusion: soma 1/(k + posição) de cada lista. Não depende da escala dos escores."""
 
-    def __init__(self, nome="e5-small", k=60, candidatos=30):
+    def __init__(self, nome="e5-small", k=60, candidatos=30, raiz=RAIZ):
         from busca_lexical import BuscaLexical
-        self.lexical, self.densa = BuscaLexical(), BuscaDensa(nome)
+        self.lexical, self.densa = BuscaLexical(raiz), BuscaDensa(nome, raiz)
         self.k, self.candidatos = k, candidatos
 
     def search(self, consulta, limit=5):

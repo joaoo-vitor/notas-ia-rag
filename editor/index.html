@@ -15,6 +15,7 @@
     <nav class="abas">
       <button :class="{ ativa: aba === 'nova' }" @click="aba = 'nova'">Nova pergunta</button>
       <button :class="{ ativa: aba === 'trechos' }" @click="aba = 'trechos'">Trechos</button>
+      <button :class="{ ativa: aba === 'metadados' }" @click="aba = 'metadados'">Anotações de recuperação</button>
       <button :class="{ ativa: aba === 'gabarito' }" @click="aba = 'gabarito'">
         Gabarito <span class="contador">{{ perguntas.length }}</span>
       </button>
@@ -106,6 +107,34 @@
             <template v-if="rascunho.pergunta">: <i>“{{ rascunho.pergunta }}”</i></template>
           </span>
         </div>
+      </article>
+      <article v-else class="trecho vazio">Escolha um trecho na lista.</article>
+    </section>
+
+    <!-- ======================= ANOTAÇÕES DE RECUPERAÇÃO ======================= -->
+    <section v-show="aba === 'metadados'" class="painel duas-colunas">
+      <aside class="lista-trechos">
+        <div class="filtros"><input v-model="filtroMetadata" placeholder="Buscar trecho, tema ou expressão…"></div>
+        <ul>
+          <li v-for="t in trechosMetadata" :key="t.id" :class="{ selecionado: metadataSelecionado === t.id }" @click="metadataSelecionado = t.id">
+            <b>{{ curto(t) }}</b><span>{{ primeiraFrase(t) }}</span>
+          </li>
+        </ul>
+      </aside>
+      <article v-if="anotacaoAtual" class="trecho anotacoes">
+        <p class="contexto"><code>{{ metadataSelecionado }}</code> · estes textos servem apenas ao ranking, não são fonte jurídica.</p>
+        <h2>Expressões para a busca lexical</h2>
+        <div class="campo-artigos">
+          <span v-for="(expressao, i) in anotacaoAtual.expressions" :key="i" class="chip">{{ expressao }}<button @click="removerExpressao(i)">×</button></span>
+          <div class="entrada"><input v-model="novaExpressao" @keydown.enter.prevent="adicionarExpressao" placeholder="palavra, expressão ou formulação leiga"><button @click="adicionarExpressao">Adicionar</button></div>
+        </div>
+        <h2 class="subtitulo">Descrições temáticas para a busca densa</h2>
+        <p class="dica">Cada trecho pode ter de uma a três descrições de aspectos diferentes do mesmo conteúdo.</p>
+        <div v-for="(descricao, i) in anotacaoAtual.dense_descriptions" :key="i" class="descricao">
+          <input v-model.trim="descricao.topic" placeholder="Tema"><textarea v-model.trim="descricao.text" rows="3" placeholder="Descrição factual do aspecto recuperável"></textarea><button class="perigo" @click="removerDescricao(i)" :disabled="anotacaoAtual.dense_descriptions.length === 1">Remover</button>
+        </div>
+        <div class="acoes"><button @click="adicionarDescricao" :disabled="anotacaoAtual.dense_descriptions.length >= 3">Adicionar descrição</button><button class="principal" @click="salvarMetadata">Validar e salvar</button></div>
+        <p class="dica">Depois de salvar, reconstrua os índices lexical e denso. O editor não reindexa.</p>
       </article>
       <article v-else class="trecho vazio">Escolha um trecho na lista.</article>
     </section>

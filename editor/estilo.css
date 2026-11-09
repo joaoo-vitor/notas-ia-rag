@@ -93,6 +93,13 @@ code { font-size: 12px; background: var(--roxo-claro); padding: 1px 6px; border-
 .meta a { color: var(--roxo); }
 .acoes.fixas { position: sticky; bottom: 0; background: #fff; border-top: 1px solid var(--borda); padding: 12px 0; margin: 16px 0 0; }
 
+/* anotações de recuperação */
+.anotacoes h2.subtitulo { margin-top: 28px; }
+.descricao { display: grid; grid-template-columns: 180px 1fr auto; gap: 8px; align-items: start; margin: 10px 0; }
+.descricao textarea { min-height: 76px; }
+.anotacoes .campo-artigos .entrada { display: flex; gap: 6px; align-items: center; }
+.anotacoes .campo-artigos .entrada input { border: 1px solid var(--borda); }
+
 /* gabarito */
 .resumo { display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; color: var(--suave); margin-bottom: 12px; }
 .resumo b { color: var(--texto); }
@@ -111,4 +118,5 @@ code { font-size: 12px; background: var(--roxo-claro); padding: 1px 6px; border-
   .duas-colunas { grid-template-columns: 1fr; }
   .linha { flex-direction: column; }
   .topo-dir { margin-left: 0; }
+  .descricao { grid-template-columns: 1fr; }
 }

@@ -144,8 +144,13 @@ createApp({
 
     const trechos = ref([]);
     const perguntas = ref([]);
+    const metadata = ref({ chunks: {} });
+    const metadataSelecionado = ref(null);
+    const filtroMetadata = ref("");
+    const novaExpressao = ref("");
     let cabecalho = "";
     let versao = null;
+    let metadataVersao = null;
 
     // um artigo pode ter várias partes (-p1, -p2): para o gabarito conta o artigo
     const artigos = computed(() => {
@@ -172,6 +177,9 @@ createApp({
       const r = await fetch("/api/dados");
       const dados = await r.json();
       trechos.value = dados.trechos.split("\n").filter(Boolean).map((l) => JSON.parse(l));
+      metadata.value = JSON.parse(dados.metadata);
+      metadataVersao = dados.metadata_versao;
+      metadataSelecionado.value = trechos.value[0]?.id || null;
       const i = dados.gabarito.search(/^perguntas:/m);
       cabecalho = i >= 0 ? dados.gabarito.slice(0, i) : dados.gabarito;
       const doc = jsyaml.load(dados.gabarito) || {};
@@ -211,6 +219,37 @@ createApp({
     }
     window.addEventListener("beforeunload", (e) => { if (estado.tipo === "pendente") e.preventDefault(); });
     window.addEventListener("keydown", (e) => { if ((e.ctrlKey || e.metaKey) && e.key === "s") { e.preventDefault(); salvar(); } });
+
+    // ---------------- anotações de recuperação
+    const trechosMetadata = computed(() => {
+      const termos = semAcento(filtroMetadata.value).split(/\s+/).filter(Boolean);
+      return trechos.value.filter((t) => {
+        const a = metadata.value.chunks?.[t.id] || {};
+        const alvo = semAcento(`${rotulo(t)} ${t.texto} ${(a.expressions || []).join(" ")} ${(a.dense_descriptions || []).map((d) => `${d.topic} ${d.text}`).join(" ")}`);
+        return termos.every((termo) => alvo.includes(termo));
+      });
+    });
+    const anotacaoAtual = computed(() => metadata.value.chunks?.[metadataSelecionado.value] || null);
+    function adicionarExpressao() {
+      const valor = novaExpressao.value.trim();
+      if (!valor || anotacaoAtual.value.expressions.some((x) => semAcento(x) === semAcento(valor))) return;
+      anotacaoAtual.value.expressions.push(valor); novaExpressao.value = "";
+    }
+    function removerExpressao(indice) { anotacaoAtual.value.expressions.splice(indice, 1); }
+    function adicionarDescricao() {
+      if (anotacaoAtual.value.dense_descriptions.length < 3) anotacaoAtual.value.dense_descriptions.push({ topic: "", text: "" });
+    }
+    function removerDescricao(indice) {
+      if (anotacaoAtual.value.dense_descriptions.length > 1) anotacaoAtual.value.dense_descriptions.splice(indice, 1);
+    }
+    async function salvarMetadata() {
+      estado.texto = "Validando anotações…"; estado.tipo = "pendente";
+      const r = await fetch("/api/metadata", { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ texto: JSON.stringify(metadata.value, null, 2) + "\n", versao: metadataVersao }) });
+      const dados = await r.json();
+      if (r.status === 409) { estado.texto = "Catálogo mudou fora do editor: recarregue"; estado.tipo = "erro"; return; }
+      if (!r.ok) { estado.texto = (dados.erros || ["Erro ao salvar"])[0]; estado.tipo = "erro"; return; }
+      metadataVersao = dados.versao; estado.texto = "Anotações salvas; reindexação necessária"; estado.tipo = "ok";
+    }
 
     // ---------------- nova pergunta
     const rascunhoVazio = () => ({ pergunta: "", tipo: "coloquial", origem: "grupo", relevantes: [], parciais: [] });
@@ -311,6 +350,8 @@ createApp({
 
     return {
       TIPOS, ORIGENS, aba, carregado, estado, nome, trechos, perguntas, artigos, opcoesTrechos,
+      metadataSelecionado, filtroMetadata, trechosMetadata, anotacaoAtual, novaExpressao,
+      adicionarExpressao, removerExpressao, adicionarDescricao, removerDescricao, salvarMetadata,
       rascunho, erroRascunho, adicionar, limparRascunho,
       trechoAtual, filtroTrecho, filtroDocumento, documentos, trechosFiltrados, noRascunho, usarTrecho, classeLinha,
       filtroPergunta, filtroStatus, filtroTipo, perguntasFiltradas, contar, revisei, tirarRevisor, remover,
