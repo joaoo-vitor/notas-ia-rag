@@ -25,6 +25,26 @@ python -m venv .venv
 
 O índice denso precisa ser refeito sempre que o corpus mudar (o script avisa).
 
+### Servidor MCP (integração com o backend)
+
+O backend do Notas.ia consulta o RAG pelo servidor MCP do pacote `legal_rag`, com a
+ferramenta `search_legal_sources(query, limit)` (para a LLM do backend,
+`legal_search_legal_sources`):
+
+```bash
+.venv/Scripts/python -m legal_rag index --strategy hibrida-bge-m3   # BM25 + índice denso
+.venv/Scripts/python -m legal_rag search "meu ex fica me seguindo"  # testa sem servidor
+.venv/Scripts/python -m legal_rag serve --host 127.0.0.1 --port 8001  # MCP em /mcp
+```
+
+- `serve` usa a estratégia do último `index` (padrão `hibrida-bge-m3`; `bm25` usa só a BM25).
+- Se o índice denso faltar ou for de outro corpus, ou o modelo não carregar, a busca cai
+  para a BM25 e informa o motivo em `fallback_reason`. `GET /health/ready` mostra a
+  estratégia em uso.
+- A resposta traz `chunk_id`, `document`, `section`, `url`, `verified_at` e `text` (só o
+  texto oficial; as palavras-chave nunca vão para a LLM), além de `corpus_version`,
+  `effective_strategy` e `fallback_reason`.
+
 ## Arquivos
 
 | Arquivo | O que é |
@@ -38,9 +58,11 @@ O índice denso precisa ser refeito sempre que o corpus mudar (o script avisa).
 | `busca_lexical.py` | Busca BM25 com SQLite FTS5 (linha de base) |
 | `busca_densa.py` | Busca densa (embeddings + FAISS) e híbrida (BM25 + densa por RRF) |
 | `gerar_palavras_chave.py` | Gera o `enriquecimento.yaml` com o Gemini, a partir só do texto da lei |
+| `legal_rag/` | Servidor MCP que o backend consulta ([como rodar](#servidor-mcp-integração-com-o-backend)) |
 | `reranqueador.py` | Reordena os candidatos da busca com um cross-encoder (experimento) |
 | `avaliacao/gabarito.yaml` | Perguntas leigas com os artigos que as respondem |
 | `avaliar.py` | Mede acerto@k, recall@k, MRR e nDCG@10 contra o gabarito |
+| `test_rag.py`, `test_legal_rag.py` | Testes (`python -m unittest test_rag test_legal_rag`) |
 | `comparar.py` | Compara recuperadores de uma mesma prova, com intervalos de confiança |
 | `avaliacao/resultados/` | Resultado de cada avaliação, por recuperador e versão do corpus |
 | `editor/` | Aplicação local para escrever e revisar o gabarito ([como usar](editor/README.md)) |

@@ -2,6 +2,9 @@ beautifulsoup4==4.12.3
 lxml==5.3.0
 pyyaml==6.0.2
 
+# servidor MCP (mesma versão maior do backend do Notas.ia)
+fastmcp==4.2.3
+
 # busca densa (para instalar o PyTorch só de CPU, mais leve:
 #   pip install torch --index-url https://download.pytorch.org/whl/cpu)
 torch==2.14.1

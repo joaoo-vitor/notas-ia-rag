@@ -74,7 +74,8 @@ class BuscaLexical:
     def __init__(self, caminho=INDICE):
         if not Path(caminho).exists():
             sys.exit("Índice não encontrado. Rode antes: busca_lexical.py --indexar")
-        self.con = sqlite3.connect(caminho)
+        # só leitura; o servidor MCP chama a busca de outras threads
+        self.con = sqlite3.connect(caminho, check_same_thread=False)
 
     def search(self, consulta, limit=5, radical=True):
         lista = termos(consulta)
