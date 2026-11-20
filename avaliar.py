@@ -51,6 +51,13 @@ def recuperadores():
             return BuscaHibrida(m)
         opcoes[f"densa-{modelo}"] = densa
         opcoes[f"hibrida-{modelo}"] = hibrida
+    # reranqueadores sobre os 30 primeiros da BGE-M3 densa (ou da união densa + BM25)
+    for reranqueador in ("bge-v2-m3", "mmarco"):
+        for base in ("densa", "uniao"):
+            def reranqueada(r=reranqueador, b=base):
+                from reranqueador import BuscaReranqueada
+                return BuscaReranqueada(r, b)
+            opcoes[f"rerank-{reranqueador}-{base}"] = reranqueada
     return opcoes
 
 

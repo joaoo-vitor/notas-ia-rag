@@ -28,8 +28,12 @@ MODELOS = {
 
 
 def texto_do_trecho(t):
-    """O que vira embedding: documento e seção dão contexto ao texto do artigo."""
-    return f"{t['documento']}, {t['secao']}. {t['contexto']}\n{t['texto']}"
+    """O que vira embedding: documento e seção dão contexto ao texto do artigo. Palavras-chave
+    e expressões do enriquecimento.yaml entram no fim (só no índice; a LLM recebe t['texto'])."""
+    texto = f"{t['documento']}, {t['secao']}. {t['contexto']}\n{t['texto']}"
+    extra = t.get("enriquecimento") or {}
+    termos = extra.get("palavras_chave", []) + extra.get("expressoes", [])
+    return texto + ("\nTermos relacionados: " + "; ".join(termos) if termos else "")
 
 
 def carregar_modelo(nome):

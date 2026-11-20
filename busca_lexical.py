@@ -26,8 +26,8 @@ umas vai você vou posso pode fazer faz sobre quero saber tá ta to tô pra pro
 """.split())
 
 # A ordem acompanha todas as colunas da tabela FTS, inclusive o id UNINDEXED:
-# id=0, texto=1, contexto=0.3, documento=0.2.
-PESOS_BM25 = (0.0, 1.0, 0.3, 0.2)
+# id=0, texto=1, contexto=0.3, documento=0.2, enriquecimento=1.
+PESOS_BM25 = (0.0, 1.0, 0.3, 0.2, 1.0)
 
 
 def normalizar(texto):
@@ -40,6 +40,12 @@ def termos(consulta):
     return [p for p in palavras if p not in {normalizar(s) for s in STOPWORDS} and len(p) > 1]
 
 
+def texto_enriquecimento(t):
+    """Palavras-chave e expressões do enriquecimento.yaml (vazio se o trecho não tiver)."""
+    extra = t.get("enriquecimento") or {}
+    return " ".join(extra.get("palavras_chave", []) + extra.get("expressoes", []))
+
+
 def indexar():
     INDICE.parent.mkdir(parents=True, exist_ok=True)
     if INDICE.exists():
@@ -48,13 +54,14 @@ def indexar():
     con.execute("CREATE TABLE trechos (id TEXT PRIMARY KEY, dados TEXT)")
     # remove_diacritics: "agressão" e "agressao" casam; prefix: permite busca por prefixo (radical)
     con.execute("""CREATE VIRTUAL TABLE fts USING fts5(
-        id UNINDEXED, texto, contexto, documento,
+        id UNINDEXED, texto, contexto, documento, enriquecimento,
         tokenize = 'unicode61 remove_diacritics 2', prefix = '4 5 6')""")
     n = 0
     for linha in TRECHOS.read_text(encoding="utf-8").splitlines():
         t = json.loads(linha)
         con.execute("INSERT INTO trechos VALUES (?, ?)", (t["id"], linha))
-        con.execute("INSERT INTO fts VALUES (?, ?, ?, ?)", (t["id"], t["texto"], t["contexto"], t["documento"]))
+        con.execute("INSERT INTO fts VALUES (?, ?, ?, ?, ?)",
+                    (t["id"], t["texto"], t["contexto"], t["documento"], texto_enriquecimento(t)))
         n += 1
     con.commit()
     con.close()

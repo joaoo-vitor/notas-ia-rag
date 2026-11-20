@@ -1,0 +1,1626 @@
+# Enriquecimento dos trechos: termos extras que entram SÓ no índice de busca.
+# A LLM continua recebendo apenas o texto oficial da lei; nada daqui aparece na resposta.
+#
+# Para que serve: aproximar o trecho do jeito como a usuária escreve, que quase nunca usa
+# os termos da lei.
+#
+# Como é gerado: gerar_palavras_chave.py manda ao Gemini SÓ o texto de cada trecho.
+# A revisão humana serve só para TIRAR termos errados (que mudam o sentido jurídico ou
+# fogem do que o trecho diz). Nunca acrescente termos vindos das perguntas do gabarito:
+# isso faz o número subir sem medir nada (é como estudar com a prova na mão).
+#
+# Campos (todos opcionais):
+#   palavras_chave  termos soltos, sinônimos e gírias
+#   expressoes      frases curtas como a usuária diria, em primeira pessoa ou como pergunta
+#   categorias      tipos de violência a que o trecho se aplica, com os mesmos rótulos do
+#                   classificador: fisica, psicologica, sexual, patrimonial, moral, vicaria.
+#                   Deixe vazio para trechos gerais (ex.: medidas protetivas valem para todos).
+#                   Ainda não são usadas na busca: servirão para o reforço por categoria.
+#
+# Chave: id do trecho, como em corpus/trechos.jsonl (ex.: lei-11340-2006:art21,
+# lei-11340-2006:art7-p4). A ingestão recusa ids que não existem e categorias fora da lista.
+# Depois de editar: rodar ingestao.py e reindexar (a versão do corpus muda).
+#
+# Exemplo de formato (comentado de propósito):
+#
+#   lei-11340-2006:art7-p1:
+#     palavras_chave: [...]
+#     expressoes: ["..."]
+#     categorias: [fisica]
+
+trechos:
+  lei-11340-2006:art1:
+    palavras_chave:
+    - lei maria da penha
+    - proteger mulher
+    - agressao em casa
+    - juizado da mulher
+    - defesa da mulher
+    - direitos da esposa
+    expressoes:
+    - como a lei protege a mulher em casa?
+    - existe lei que protege contra agressao domestica?
+    - onde tem juizado para casos de violencia contra mulher?
+    - quais meus direitos se sou espancada pelo marido?
+    - como funciona a protecao para mulher agredida?
+    categorias: []
+  lei-11340-2006:art2:
+    palavras_chave:
+    - direitos iguais
+    - respeito
+    - saude mental
+    - saude fisica
+    - sem preconceito
+    - vida digna
+    - protecao contra abuso
+    expressoes:
+    - tenho direito de viver sem agressao?
+    - marido pode maltratar esposa pobre ou rica?
+    - tenho direito a saude mental mesmo sofrendo em casa
+    - qualquer mulher tem direito a protecao?
+    - meu marido nao pode me humilhar por causa da minha idade
+    categorias:
+    - fisica
+    - psicologica
+    - moral
+  lei-11340-2006:art3:
+    palavras_chave:
+    - moradia
+    - trabalho
+    - seguranca
+    - dignidade
+    - liberdade
+    - justica
+    expressoes:
+    - tenho direito de trabalhar e ter minha casa?
+    - quem deve me proteger da violencia em casa?
+    - o governo tem que me ajudar a sair da violencia?
+    - tenho direito a seguranca e respeito?
+    - ninguém pode me oprimir dentro de casa
+    categorias:
+    - psicologica
+  lei-11340-2006:art4:
+    palavras_chave:
+    - entender a lei
+    - situacao de abuso
+    - olhar o lado da mulher
+    expressoes:
+    - o juiz tem que me entender?
+    - como a lei olha para a mulher que sofre agressao?
+    - o juiz leva em conta o que passo em casa?
+    - como interpretam a violencia que sofro?
+    categorias: []
+  lei-11340-2006:art5:
+    palavras_chave:
+    - dentro de casa
+    - marido
+    - companheiro
+    - namorado
+    - parente agressor
+    - moram juntos
+    - ex parceiro
+    expressoes:
+    - meu ex namorado me bate mesmo a gente nao morando junto
+    - apanhei do meu marido dentro de casa
+    - parente pode cometer violencia domestica?
+    - meu companheiro me machuca e a gente vive junto
+    - sofro agressao de quem eu tenho relacionamento
+    categorias:
+    - fisica
+    - psicologica
+    - sexual
+    - patrimonial
+    - moral
+  lei-11340-2006:art6:
+    palavras_chave:
+    - direito humano
+    - violencia e crime grave
+    expressoes:
+    - bater em mulher e violacao de direitos?
+    - violencia domestica é grave?
+    - meu marido esta violando meus direitos humanos?
+    - isso que passo em casa é considerado grave?
+    categorias:
+    - fisica
+    - psicologica
+    - sexual
+    - patrimonial
+    - moral
+  lei-11340-2006:art7-p1:
+    palavras_chave:
+    - bofetada
+    - soco
+    - empurrao
+    - machucada
+    - corpo doendo
+    - apanhei
+    - surra
+    expressoes:
+    - meu marido me bateu e fiquei toda roxa
+    - ele me deu um soco
+    - apanhei feio em casa
+    - ele me empurrou contra a parede
+    - estou com marcas de agressao no corpo
+    categorias:
+    - fisica
+  lei-11340-2006:art7-p2:
+    palavras_chave:
+    - xingamento
+    - humilhacao
+    - ameaca
+    - ciume doentio
+    - perseguicao
+    - controlando celular
+    - chantagem emocional
+    expressoes:
+    - meu marido me xinga e me diminui o tempo todo
+    - ele vigia meu celular e quer saber onde vou
+    - ele me ameaca de morte toda hora
+    - estou com a cabeca fraca de tanto que ele me humilha
+    - ele fica me perseguindo na rua
+    categorias:
+    - psicologica
+  lei-11340-2006:art7-p3:
+    palavras_chave:
+    - forcar relacao
+    - nao quis transar
+    - proibida de tomar remedio
+    - obrigada a engravidar
+    - toque forçado
+    - estupro marital
+    expressoes:
+    - meu marido me obrigou a transar sem eu querer
+    - ele esconde minha pilula anticoncepcional
+    - ele me obriga a ter relacoes
+    - fui forçada a fazer coisas que nao queria na cama
+    - ele me ameaca se eu nao deitar com ele
+    categorias:
+    - sexual
+  lei-11340-2006:art7-p4:
+    palavras_chave:
+    - escondeu documentos
+    - quebrou celular
+    - nao da dinheiro
+    - roubou meu dinheiro
+    - tomou minha bolsa
+    - destruiu minhas coisas
+    expressoes:
+    - ele rasgou meus documentos
+    - meu marido escondeu meu cartao do banco
+    - ele quebrou meu celular de raiva
+    - ele nao me deixa pegar meu dinheiro
+    - ele destruiu minhas roupas e minhas coisas
+    categorias:
+    - patrimonial
+  lei-11340-2006:art7-p5:
+    palavras_chave:
+    - fofoca
+    - xingamento
+    - mentira
+    - humilhação
+    - difamação
+    - calúnia
+    - injúria
+    - acusações falsas
+    - acusa
+    expressoes:
+    - Ele inventou mentiras sobre mim para os outros
+    - Me xingou e fica espalhando fofoca pra me queimar
+    - Ele me ofende com palavras horríveis e acaba com minha honra
+    - Disse que eu sou uma vagabunda para todo mundo na rua
+    - Ficou falando mentiras para a vizinhança para me sujar
+    categorias:
+    - moral
+  lei-11340-2006:art7-p6:
+    palavras_chave:
+    - filhos
+    - parentes
+    - machucar os filhos
+    - ameaçar a família
+    - atingir os filhos
+    - parentes dela
+    expressoes:
+    - Ele machucou meu filho para me fazer sofrer
+    - Ameaçou fazer mal para a minha mãe só para me atingir
+    - Ele desconta a raiva batendo nas crianças
+    - Disse que vai machucar quem eu amo para me destruir
+    - Bateu no meu enteado para me castigar
+    categorias:
+    - vicaria
+  lei-11340-2006:art8:
+    palavras_chave:
+    - rede de apoio
+    - governo
+    - prevenção
+    - políticas públicas
+    - campanhas
+    - atendimento
+    - escola
+    - capacitação
+    expressoes:
+    - Quais órgãos ajudam a combater isso
+    - Tem campanha nas escolas sobre a lei
+    - Como o governo protege a mulher
+    - Existem programas para evitar isso
+    categorias: []
+  lei-11340-2006:art9-p1:
+    palavras_chave:
+    - hospital
+    - saúde
+    - atendimento médico
+    - trabalho
+    - afastamento
+    - despesas
+    - pagar o tratamento
+    expressoes:
+    - Preciso me afastar do trabalho por causa da agressão
+    - Quem vai pagar os custos do meu hospital
+    - Preciso de atendimento médico urgente pelo SUS
+    - Ele tem que pagar pelo tratamento que fiz no posto
+    - Posso me afastar do emprego sem perder o vínculo
+    categorias:
+    - fisica
+    - psicologica
+    - sexual
+    - patrimonial
+    - moral
+  lei-11340-2006:art9-p2:
+    palavras_chave:
+    - escola dos filhos
+    - matrícula
+    - transferência
+    - sigilo
+    - proteger dados
+    - segredo
+    - mudança de escola
+    expressoes:
+    - Consigo mudar meus filhos de escola mais perto de casa
+    - Preciso transferir meus filhos de colégio urgente por segurança
+    - A escola dos meus filhos precisa manter meu endereço em segredo
+    - Ninguém pode saber onde meus filhos estão estudando por causa dele
+    - Tenho prioridade para matricular as crianças na escola do bairro
+    categorias: []
+  lei-11340-2006:art10:
+    palavras_chave:
+    - polícia
+    - medida protetiva
+    - descumpriu
+    - socorro
+    - urgente
+    expressoes:
+    - Ele desrespeitou a medida protetiva e veio aqui
+    - A polícia tem que agir agora que ele descumpriu a ordem
+    - Ele está aqui na porta e eu tenho medida contra ele
+    - O que a polícia faz se ele desrespeitar o juiz
+    - Preciso que a polícia venha agora porque ele apareceu
+    categorias: []
+  lei-11340-2006:art10-A:
+    palavras_chave:
+    - delegacia
+    - depoimento
+    - policial mulher
+    - atendimento
+    - perícia
+    - falar de novo
+    - perguntas
+    expressoes:
+    - Tenho que repetir a mesma história várias vezes
+    - Quero ser atendida por uma policial mulher
+    - Não quero ficar de frente para ele na delegacia
+    - Vão ficar perguntando da minha vida íntima no depoimento
+    - Tem sala especial para eu prestar depoimento sem medo
+    categorias: []
+  lei-11340-2006:art11:
+    palavras_chave:
+    - pegar roupas
+    - buscar pertences
+    - abrigo
+    - transporte
+    - médico
+    - trabalhadora doméstica
+    expressoes:
+    - A polícia pode ir comigo buscar minhas coisas em casa
+    - Preciso de transporte seguro para um abrigo
+    - Quero ir para o hospital e preciso que a polícia me leve
+    - Ele me trancou em casa e me obriga a trabalhar sem folga
+    categorias:
+    - fisica
+    - psicologica
+  lei-11340-2006:art12:
+    palavras_chave:
+    - boletim de ocorrência
+    - delegacia
+    - provas
+    - medida protetiva
+    - arma de fogo
+    - exame de corpo de delito
+    expressoes:
+    - Como faço o boletim de ocorrência na delegacia
+    - Eles vão pedir medida protetiva para o juiz rápido
+    - Preciso fazer o exame de corpo de delito do que ele fez
+    - O delegado vai ouvir ele e as testemunhas
+    categorias: []
+  lei-11340-2006:art12-A:
+    palavras_chave:
+    - delegacia da mulher
+    - deam
+    - feminicídio
+    - investigação
+    - especializada
+    - polícia civil
+    expressoes:
+    - Onde fica a Delegacia da Mulher mais próxima
+    - Tem equipe especializada para investigar casos graves
+    - Quero ser atendida em uma delegacia própria para mulheres
+    - O estado tem delegacia especializada para isso
+    - Tem núcleo para investigar tentativa de feminicídio
+    categorias: []
+  lei-11340-2006:art12-B:
+    palavras_chave:
+    - delegacia
+    - policia
+    - ajuda medica
+    - abrigo
+    - servico publico
+    - apoio
+    - filhos
+    - dependente
+    expressoes:
+    - a policia pode chamar servicos para me ajudar
+    - preciso que a policia traga assistencia para mim e meus filhos
+    - a autoridade policial consegue ajuda publica para minha defesa
+    - meu dependente precisa de atendimento e a policia pode pedir
+    - como a policia aciona orgaos para me defender em casa
+    categorias: []
+  lei-11340-2006:art12-C:
+    palavras_chave:
+    - tirar de casa
+    - expulsar
+    - sair de casa
+    - medida
+    - prisao
+    - perigo
+    - medo de morrer
+    - fuga
+    - agressor preso
+    expressoes:
+    - ele tem que sair de casa agora porque estou em perigo
+    - o policial pode tirar ele de casa se eu estiver correndo risco
+    - ele foi preso e nao pode sair da cadeia
+    - o juiz vai mandar ele embora da nossa casa
+    - estou com medo da minha vida e ele precisa ser afastado
+    categorias:
+    - fisica
+    - psicologica
+    - sexual
+    - patrimonial
+    - moral
+  lei-11340-2006:art12-D:
+    palavras_chave:
+    - tornozeleira
+    - monitoramento
+    - rastreador
+    - perigo
+    - agressor vigiado
+    expressoes:
+    - ele vai ter que usar tornozeleira eletronica
+    - vigiada pelo rastreador porque ele me ameaçou
+    - o delegado pode mandar colocar tornozeleira nele
+    - ele esta sendo monitorado para nao chegar perto
+    - vao colocar aparelho nele para vigiar meus passos
+    categorias:
+    - fisica
+    - psicologica
+  lei-11340-2006:art13:
+    palavras_chave:
+    - processo
+    - forum
+    - audiencia
+    - juiz
+    - codigo
+    expressoes:
+    - como funciona o processo contra ele
+    - quais sao as leis que seguem no meu caso
+    - regras do codigo penal para o meu processo
+    - como o forum trata a minha briga de familia
+    - vao usar as regras de crianca e idoso no meu caso
+    categorias: []
+  lei-11340-2006:art14:
+    palavras_chave:
+    - juizado
+    - vara da mulher
+    - forum
+    - juiz
+    - audiencia de noite
+    expressoes:
+    - onde fica o juizado de violencia contra a mulher
+    - pode ter audiencia de noite no forum
+    - vara especial para julgar meu caso
+    - juiz da minha cidade cuida de violencia domestica
+    - atendimento noturno no forum
+    categorias: []
+  lei-11340-2006:art14-A:
+    palavras_chave:
+    - divorcio
+    - separacao
+    - fim do casamento
+    - uniao estavel
+    - juizado da mulher
+    - bens
+    - partilha
+    expressoes:
+    - posso pedir o divorcio direto no juizado da mulher
+    - quero me separar dele por causa da violencia
+    - posso acertar a separacao na vara da mulher
+    - a partilha dos moveis vai ser julgada aqui
+    - meu processo de divorcio tem prioridade
+    categorias: []
+  lei-11340-2006:art15:
+    palavras_chave:
+    - qual forum
+    - minha cidade
+    - endereco
+    - juizado
+    - escolher o lugar
+    - casa do agressor
+    expressoes:
+    - em qual forum eu entro com o processo
+    - posso abrir o caso na minha cidade
+    - quero processar ele na cidade onde aconteceu a agressao
+    - posso abrir o processo na comarca da casa dele
+    - onde acho o juizado mais perto de mim
+    categorias: []
+  lei-11340-2006:art16:
+    palavras_chave:
+    - retirar queixa
+    - voltar atras
+    - desistir
+    - perdoar
+    - juiz
+    - parar o processo
+    expressoes:
+    - quero tirar a queixa que fiz contra ele
+    - posso desistir do processo na frente do juiz
+    - quero voltar atras na delegacia
+    - falei que nao quero mais processar mas tenho que ir ao juiz
+    - como faco para cancelar a denuncia
+    categorias: []
+  lei-11340-2006:art16-A:
+    palavras_chave:
+    - prazo
+    - demora
+    - prescrever
+    - data limite
+    - queixa
+    expressoes:
+    - quanto tempo tenho para denunciar ele
+    - perdi o prazo de doze meses para prestar queixa
+    - ja passou muito tempo desde que ele me agrediu
+    - qual o limite para dar entrada no processo
+    - passou de um ano e agora posso processar
+    categorias: []
+  lei-11340-2006:art17:
+    palavras_chave:
+    - cesta basica
+    - multa
+    - punicao
+    - pagamento
+    - castigo
+    expressoes:
+    - ele vai pagar cesta basica por ter me agredido
+    - o juiz pode trocar a pena dele por doacao de comida
+    - ele nao pode so pagar multa pelo que fez
+    - quero que ele seja punido de verdade e nao so pagar dinheiro
+    - proibido cesta basica para ele
+    categorias: []
+  lei-11340-2006:art17-A:
+    palavras_chave:
+    - sigilo
+    - segredo
+    - nome protegido
+    - anonimato
+    - esconder meu nome
+    - processo em segredo
+    expressoes:
+    - meu nome vai aparecer no processo?
+    - posso pedir sigilo do meu nome?
+    - ninguém pode saber que eu denunciei
+    - quero que meu nome fique em segredo
+    - o processo de violência tem meu nome exposto?
+    categorias:
+    - psicologica
+    - moral
+  lei-11340-2006:art18:
+    palavras_chave:
+    - prazo juiz
+    - quarenta e oito horas
+    - medida protetiva urgente
+    - tirar arma
+    - divórcio
+    - assistência jurídica
+    expressoes:
+    - quanto tempo o juiz demora para dar a medida protetiva?
+    - ele tem arma em casa, o juiz pode tirar?
+    - como faço para pedir o divórcio urgente?
+    - o juiz já recebeu meu pedido?
+    - preciso de advogado para separar?
+    categorias: []
+  lei-11340-2006:art19:
+    palavras_chave:
+    - medida protetiva imediata
+    - juiz
+    - revogar
+    - sem audiência
+    expressoes:
+    - consigo medida protetiva na hora?
+    - o juiz pode dar a medida sem ele saber?
+    - preciso ter boletim de ocorrência para pedir proteção?
+    - posso pedir mais proteção se o perigo continuar?
+    - o juiz pode tirar a medida protetiva?
+    categorias:
+    - fisica
+    - psicologica
+    - sexual
+    - patrimonial
+    - moral
+  lei-11340-2006:art20:
+    palavras_chave:
+    - prisão preventiva
+    - agressor preso
+    - cadeia
+    - juiz mandar prender
+    expressoes:
+    - ele pode ser preso a qualquer momento?
+    - quando o agressor vai para a cadeia?
+    - o juiz pode mandar prender ele agora?
+    - ele pode sair da prisão se o juiz quiser?
+    - consigo pedir a prisão dele durante a investigação?
+    categorias:
+    - fisica
+    - psicologica
+  lei-11340-2006:art21:
+    palavras_chave:
+    - avisar
+    - soltura
+    - preso
+    - notificação
+    - sair da cadeia
+    - liberdade
+    expressoes:
+    - vão me avisar se ele sair da cadeia?
+    - vou saber quando ele for solto?
+    - eu mesma posso entregar o papel para ele?
+    - como sei se ele foi solto?
+    - fui avisada que ele entrou na prisão
+    categorias:
+    - fisica
+    - psicologica
+  lei-11340-2006:art22-p1:
+    palavras_chave:
+    - afastamento
+    - sair de casa
+    - proibido de chegar perto
+    - não ligar
+    - tornozeleira
+    - pensão provisória
+    - arma de fogo
+    expressoes:
+    - ele tem que sair de casa?
+    - ele não pode chegar perto de mim nem dos meus filhos
+    - ele fica proibido de me ligar ou mandar mensagem?
+    - posso pedir pensão para ele pagar agora?
+    - ele vai ter que usar tornozeleira eletrônica?
+    categorias:
+    - fisica
+    - psicologica
+    - patrimonial
+  lei-11340-2006:art22-p2:
+    palavras_chave:
+    - tornozeleira eletrônica
+    - alarme
+    - perímetro de exclusão
+    - descumprimento
+    - perigo iminente
+    - título executivo
+    expressoes:
+    - a tornozeleira vai apitar se ele chegar perto?
+    - ele quebrou a protetiva, ganho prioridade na tornozeleira?
+    - como funciona o alarme da tornozeleira?
+    - preciso processar ele para receber a pensão da medida protetiva?
+    - a polícia é avisada se ele entrar na minha rua?
+    categorias:
+    - fisica
+    - psicologica
+    - patrimonial
+  lei-11340-2006:art23:
+    palavras_chave:
+    - auxílio aluguel
+    - escola dos filhos
+    - voltar para casa
+    - abrigo
+    - separação de corpos
+    - vulnerabilidade
+    expressoes:
+    - posso conseguir auxílio aluguel?
+    - consigo transferir meus filhos de escola de graça?
+    - posso voltar para minha casa depois que ele sair?
+    - tenho direito a um abrigo seguro?
+    - posso sair de casa sem perder meus direitos aos bens?
+    categorias:
+    - fisica
+    - psicologica
+    - patrimonial
+  lei-11340-2006:art24:
+    palavras_chave:
+    - bens roubados
+    - levaram minhas coisas
+    - procuração
+    - venda de bens
+    - caução
+    - patrimônio
+    expressoes:
+    - ele pegou minhas coisas de volta, como recupero?
+    - ele pode vender nossas coisas sem minha autorização?
+    - como cancelo a procuração que dei para ele?
+    - ele vendeu tudo o que era meu
+    - quero proteger minhas coisas e meu dinheiro
+    categorias:
+    - patrimonial
+  lei-11340-2006:art24-A:
+    palavras_chave:
+    - descumpriu
+    - violou protetiva
+    - veio na minha porta
+    - ligou mesmo proibido
+    - crime
+    - cadeia por descumprir
+    expressoes:
+    - ele descumpriu a medida protetiva, o que acontece?
+    - ele veio na minha casa mesmo com a protetiva, ele vai ser preso?
+    - ele me mandou mensagem e quebrou a medida
+    - é crime desrespeitar a medida protetiva?
+    - ele tirou a tornozeleira eletrônica
+    categorias:
+    - fisica
+    - psicologica
+  lei-11340-2006:art25:
+    palavras_chave:
+    - promotor
+    - promotoria
+    - briga de casal
+    - denuncia
+    expressoes:
+    - o promotor vai participar do meu processo?
+    - o ministerio publico entra na minha causa?
+    - tem promotor nas brigas de casal?
+    - como o promotor ajuda na separacao?
+    - o promotor fica sabendo da agressao?
+    categorias: []
+  lei-11340-2006:art26:
+    palavras_chave:
+    - promotor
+    - fiscalizar
+    - posto de saude
+    - escola
+    - abrigo
+    - delegacia
+    - assistencia social
+    - orgao publico
+    - fiscalizacao
+    expressoes:
+    - o promotor pode mandar a policia me ajudar?
+    - posso pedir para o ministerio publico fiscalizar o atendimento?
+    - o promotor consegue vaga em servico publico?
+    - quem fiscaliza os abrigos de mulheres?
+    - o promotor pode cobrar melhoria nos orgaos publicos?
+    categorias: []
+  lei-11340-2006:art27:
+    palavras_chave:
+    - advogado
+    - defensor
+    - audiencia
+    - processo
+    - acompanhamento
+    - falar com o juiz
+    - ajuda juridica
+    - tribunal
+    expressoes:
+    - preciso de advogado em todas as audiencias?
+    - tenho que ir com advogado na delegacia ou no juiz?
+    - posso ir sozinha no forum ou preciso de advogado?
+    - preciso estar sempre acompanhada de advogado?
+    - o juiz deixa eu falar sem advogado?
+    categorias: []
+  lei-11340-2006:art28:
+    palavras_chave:
+    - defensoria publica
+    - advogado de graca
+    - assistencia gratuita
+    - sem dinheiro
+    - nao tenho grana
+    - atendimento humanizado
+    - ajuda juridica
+    - delegacia
+    - juiz
+    expressoes:
+    - onde acho advogado de graca para me defender?
+    - tenho direito a defensoria publica na delegacia?
+    - nao tenho dinheiro para pagar advogado, e agora?
+    - posso pedir ajuda gratuita na justica?
+    - o atendimento na defensoria e de graca?
+    categorias: []
+  lei-11340-2006:art29:
+    palavras_chave:
+    - juizado
+    - equipe
+    - especialistas
+    - psicologo
+    - assistente social
+    - medico
+    - atendimento
+    - forum
+    - apoio
+    expressoes:
+    - o juizado tem psicologo para ajudar?
+    - vou ser atendida por assistente social no forum?
+    - tem equipe de saude no juizado de violencia?
+    - existem profissionais especializados para atender a gente?
+    - o juizado tem equipe multidisciplinar?
+    categorias: []
+  lei-11340-2006:art30:
+    palavras_chave:
+    - laudo
+    - avaliar
+    - psicologo
+    - assistente social
+    - orientacao
+    - criancas
+    - familiares
+    - juiz
+    - relatorio
+    expressoes:
+    - a assistente social vai fazer um relatorio para o juiz?
+    - o psicologo pode entregar um laudo na audiencia?
+    - a equipe da ajuda psicologica atende meus filhos tambem?
+    - eles dao orientacao para o meu ex tambem?
+    - o que a equipe multidisciplinar faz no processo?
+    categorias: []
+  lei-11340-2006:art31:
+    palavras_chave:
+    - caso dificil
+    - especialista
+    - avaliar
+    - juiz
+    - profissionais
+    - parecer
+    - analise
+    expressoes:
+    - o juiz pode chamar um especialista se o caso for dificil?
+    - precisa de avaliacao mais profunda no meu caso?
+    - o magistrado pode pedir outro parecer tecnico?
+    - quando o caso e complicado o que o juiz faz?
+    - pode pedir avaliacao de outro profissional?
+    categorias: []
+  lei-11340-2006:art32:
+    palavras_chave:
+    - orcamento
+    - verba
+    - dinheiro
+    - tribunal
+    - manutencao
+    - equipe
+    - criacao
+    - recursos
+    expressoes:
+    - o poder publico tem verba para a equipe de atendimento?
+    - o tribunal separa dinheiro para contratar psicologos?
+    - de onde vem o dinheiro para manter o atendimento no forum?
+    - tem previsao de gasto para a equipe multidisciplinar?
+    - o juizado recebe recursos para funcionar?
+    categorias: []
+  lei-11340-2006:art33:
+    palavras_chave:
+    - vara criminal
+    - juizado
+    - julgar
+    - processo
+    - preferencia
+    - forum
+    - justica comum
+    expressoes:
+    - enquanto nao tiver juizado proprio quem julga?
+    - a vara criminal resolve meus problemas de separacao e agressao?
+    - meu processo tem preferencia na vara criminal?
+    - posso ser atendida na vara comum se nao tiver juizado?
+    - o processo de violencia tem prioridade no forum?
+    categorias: []
+  lei-11340-2006:art34:
+    palavras_chave:
+    - curadoria
+    - assistencia judiciaria
+    - juizado
+    - implantacao
+    - apoio legal
+    - forum
+    expressoes:
+    - vao colocar defensor junto com o juizado novo?
+    - tem servico de assistencia junto com o juizado?
+    - posso ter curador e advogado no novo juizado?
+    - o novo juizado vem com assistencia juridica?
+    - como funciona a implantacao da ajuda no juizado?
+    categorias: []
+  lei-11340-2006:art35:
+    palavras_chave:
+    - abrigo
+    - delegacia da mulher
+    - atendimento
+    - apoio psicologico
+    - defensoria
+    - pericia
+    - medida protetiva
+    - campanha
+    - agressor
+    expressoes:
+    - onde tem casa-abrigo para ficar com meus filhos
+    - quero ir para uma delegacia especializada
+    - onde consigo atendimento medico e psicologico
+    - como funciona a medida protetiva
+    - tem grupo de apoio para homens agressores
+    categorias: []
+  lei-11340-2006:art36:
+    palavras_chave:
+    - orgao publico
+    - programa
+    - diretrizes
+    expressoes:
+    - a prefeitura tem programa de ajuda
+    - os orgaos publicos devem me atender direito
+    categorias: []
+  lei-11340-2006:art37:
+    palavras_chave:
+    - ministerio publico
+    - associacao
+    - direitos coletivos
+    expressoes:
+    - o ministerio publico pode me defender
+    - entidade pode entrar com acao coletiva
+    categorias: []
+  lei-11340-2006:art38:
+    palavras_chave:
+    - estatistica
+    - dados
+    - seguranca publica
+    expressoes:
+    - onde ficam os dados de violencia
+    - meu caso entra nas estatisticas da policia
+    categorias: []
+  lei-11340-2006:art38-A:
+    palavras_chave:
+    - registro
+    - medida protetiva
+    - banco de dados
+    - conselho nacional de justica
+    - fiscalizacao
+    expressoes:
+    - a medida protetiva ja foi cadastrada
+    - a policia sabe da minha medida protetiva
+    - onde fica registrada a decisao do juiz
+    categorias: []
+  lei-11340-2006:art39:
+    palavras_chave:
+    - orcamento
+    - recursos
+    - monitoracao eletronica
+    - tornozeleira
+    - dispositivo de seguranca
+    expressoes:
+    - tem dinheiro publico para os programas
+    categorias: []
+  lei-11340-2006:art40:
+    palavras_chave:
+    - obrigacoes
+    - principios
+    expressoes:
+    - quais sao as outras obrigacoes da lei
+    categorias: []
+  lei-11340-2006:art40-A:
+    palavras_chave:
+    - aplicacao da lei
+    - motivacao
+    - condicao do ofensor
+    - qualquer caso
+    expressoes:
+    - essa lei vale para o meu caso
+    - nao importa o motivo do agressor
+    - a lei se aplica a qualquer situacao
+    categorias: []
+  lei-11340-2006:art41:
+    palavras_chave:
+    - crime
+    - violencia domestica
+    - pena
+    - juizado especial
+    expressoes:
+    - o caso dele vai para o juizado comum
+    - violencia domestica nao tem acordo leve
+    categorias:
+    - fisica
+    - psicologica
+    - sexual
+    - patrimonial
+    - moral
+  codigo-penal:art121-p1:
+    palavras_chave:
+    - homicidio
+    - matar
+    - feminicidio
+    - morte
+    - arma de fogo
+    - escola
+    - crianca
+    expressoes:
+    - ele tentou me matar
+    - mataram minha mae
+    - crime cometido dentro da escola
+    categorias:
+    - fisica
+    - vicaria
+  codigo-penal:art121-p2:
+    palavras_chave:
+    - homicidio
+    - assassinato
+    - morte
+    - matar
+    - falecimento
+    - crime
+    - pena
+    - culposo
+    expressoes:
+    - ele matou alguem da familia
+    - quase mataram meu pai
+    - isso foi homicidio
+    - o assassino fugiu
+    - qual a pena para homicidio
+    categorias:
+    - fisica
+  codigo-penal:art121-A:
+    palavras_chave:
+    - feminicidio
+    - morte de mulher
+    - matar mulher
+    - menosprezo
+    - discriminacao
+    - genero
+    - gravidez
+    - medida protetiva
+    - crime contra mulher
+    expressoes:
+    - ele matou ela so porque e mulher
+    - isso foi feminicidio
+    - ele matou minha filha gravida
+    - ele descumpriu a medida protetiva e matou ela
+    - mataram ela com odio de mulher
+    - ele discriminava e matou ela
+    categorias:
+    - fisica
+    - psicologica
+  codigo-penal:art129-p1:
+    palavras_chave:
+    - lesao corporal
+    - machucado
+    - ferimento
+    - agressao fisica
+    - perigo de morte
+    - incapacidade
+    - aborto
+    - surra
+    - espancamento
+    expressoes:
+    - ele me deu uma surra
+    - fiquei com marcas graves no corpo
+    - quase morri com a agressao
+    - ele me machucou muito serio
+    - fiquei semanas sem conseguir andar
+    categorias:
+    - fisica
+  codigo-penal:art129-p2:
+    palavras_chave:
+    - agressao domestica
+    - violencia em casa
+    - marido agride
+    - companheiro bate
+    - briga de casal
+    - lesao
+    - familia
+    - coabitacao
+    expressoes:
+    - meu marido me bateu em casa
+    - meu irmao me agrediu
+    - apanhei do meu companheiro
+    - ele me bateu na frente de todo mundo
+    - sofro violencia domestica
+    - ele vive me agredindo em casa
+    categorias:
+    - fisica
+  codigo-penal:art138:
+    palavras_chave:
+    - calunia
+    - acusacao falsa
+    - falsidade
+    - crime falso
+    - mentira
+    - reputacao
+    expressoes:
+    - ele esta espalhando que roubei
+    - me acusou de um crime que nao fiz
+    - inventou que sou criminosa
+    - estao mentindo que cometi um crime
+    - ele me caluniou na rua
+    categorias:
+    - moral
+  codigo-penal:art139:
+    palavras_chave:
+    - difamacao
+    - fofoca
+    - ofensa
+    - reputacao
+    - honra
+    - mentira
+    - falar mal
+    expressoes:
+    - ele esta manchando minha reputacao
+    - espalhou mentiras sobre mim
+    - falaram mal de mim para destruir minha imagem
+    - ele esta me difamando
+    - estao inventando fofocas da minha honra
+    categorias:
+    - moral
+  codigo-penal:art140:
+    palavras_chave:
+    - injuria
+    - ofensa
+    - xingamento
+    - dignidade
+    - decoro
+    - xingar
+    - humilhacao
+    - preconceito
+    expressoes:
+    - ele me xingou na rua
+    - me chamou de nomes orriveis
+    - ofendeu minha dignidade
+    - ele me humilhou com xingamentos
+    - sofro injuria o tempo todo
+    categorias:
+    - moral
+  codigo-penal:art147:
+    palavras_chave:
+    - ameaca
+    - intimidacao
+    - promessa de mal
+    - gesto
+    - aviso
+    expressoes:
+    - ele disse que vai me pegar
+    - fiquei com medo das ameaças dele
+    - ele me ameacou de morte
+    - mandou recado me ameaçando
+    - ele gesticulou que ia me bater
+    categorias:
+    - psicologica
+  codigo-penal:art147-A:
+    palavras_chave:
+    - perseguicao
+    - stalking
+    - vigilancia
+    - ronda
+    - seguindo
+    - asedio
+    - obsessao
+    expressoes:
+    - ele fica vigiando minha casa
+    - me segue por todo lugar
+    - nao para de me perseguir
+    - fica vigiando minha vida o tempo todo
+    - estou sendo stalkeara
+    - ele me espera na porta do trabalho
+    categorias:
+    - psicologica
+  codigo-penal:art147-B:
+    palavras_chave:
+    - violencia psicologica
+    - dano emocional
+    - manipulacao
+    - isolamento
+    - chantagem
+    - controle
+    - humilhacao
+    - psicoterror
+    expressoes:
+    - ele me controla o tempo todo
+    - acaba com meu psicologico
+    - me isolou da minha familia
+    - faz chantagem emocional comigo
+    - vive me humilhando e manipulando
+    - estou tendo crises por causa da pressao dele
+    categorias:
+    - psicologica
+  codigo-penal:art148:
+    palavras_chave:
+    - trancada
+    - trancado
+    - trancou
+    - nao deixa sair
+    - presa em casa
+    - me prendeu
+    - nao posso sair
+    - proibida de sair
+    - carcere
+    - privada de liberdade
+    expressoes:
+    - ele me trancou em casa e nao deixa eu sair
+    - meu marido me prendeu no quarto
+    - estou sendo trancada a chave em casa
+    - ele nao me deixa sair de jeito nenhum
+    - fui proibida de sair da minha propria casa
+    categorias:
+    - fisica
+    - psicologica
+  codigo-penal:art163:
+    palavras_chave:
+    - quebrou
+    - destruiu
+    - estragou
+    - avaria
+    - danificou
+    - quebrou tudo
+    - estragou minhas coisas
+    expressoes:
+    - ele quebrou meus moveis de raiva
+    - destruiu todas as minhas coisas
+    - ele quebrou o celular que era meu
+    - estragou tudo dentro de casa
+    - ele quebrou as coisas para me assustar
+    categorias:
+    - patrimonial
+  codigo-penal:art181:
+    palavras_chave:
+    - marido
+    - esposo
+    - companheiro
+    - pais
+    - filhos
+    expressoes:
+    - meu marido pegou minhas coisas
+    - foi meu companheiro que fez isso
+    - meu pai mexeu no que era meu
+    - meu esposo pegou o dinheiro sem permissao
+    categorias:
+    - patrimonial
+  codigo-penal:art182:
+    palavras_chave:
+    - ex marido
+    - separados
+    - irmao
+    - tio
+    - sobrinho
+    expressoes:
+    - meu ex marido pegou minhas coisas
+    - meu irmao mexeu no que é meu
+    - foi meu tio que fez isso
+    categorias:
+    - patrimonial
+  codigo-penal:art183:
+    palavras_chave:
+    - roubo
+    - extorsao
+    - ameaca grave
+    - idoso
+    expressoes:
+    - ele me roubou e me ameacou
+    - fui roubada com violencia
+    - ele usou de ameaca grave
+    - isso aconteceu comigo que sou idosa
+    categorias:
+    - patrimonial
+  codigo-penal:art213:
+    palavras_chave:
+    - estupro
+    - forcar relacao
+    - sexo forcado
+    - me obrigou a transar
+    - violencia sexual
+    - nao quis e ele forcou
+    expressoes:
+    - ele me obrigou a ter relacoes com ele
+    - fui forçada a fazer sexo
+    - meu parceiro me estrupou
+    - ele me agrediu e me obrigou
+    - eu disse nao mas ele continuou
+    categorias:
+    - sexual
+  codigo-penal:art215-A:
+    palavras_chave:
+    - passou a mao
+    - toque indesejado
+    - importunacao
+    - pegou no meu corpo
+    expressoes:
+    - ele passou a mao em mim sem eu querer
+    - me apertou no onibus
+    - veio me tocar sem minha permissao
+    - me agarrou a força na rua
+    categorias:
+    - sexual
+  codigo-penal:art216-B:
+    palavras_chave:
+    - filmo escondido
+    - foto intima
+    - gravacao sem autorizacao
+    - nudez
+    - flagra intimo
+    - montagem
+    expressoes:
+    - ele tirou foto minha sem roupa sem eu saber
+    - me filmou no quarto escondido
+    - fizeram uma montagem com foto minha pelada
+    - ele gravou nossa intimidade sem consentimento
+    categorias:
+    - psicologica
+    - sexual
+    - moral
+  codigo-penal:art218-C:
+    palavras_chave:
+    - vazou video
+    - espalhou foto
+    - compartilhou nudes
+    - divulgou nossa intimidade
+    - exposicao
+    - vinganca pornografica
+    expressoes:
+    - ele espalhou minhas fotos intimas no grupo
+    - mandou video meu sem roupa para os outros
+    - publicou minha intimidade para se vingar
+    - espalhou video de sexo na internet
+    categorias:
+    - psicologica
+    - sexual
+    - moral
+  lei-14149-2021:art1:
+    palavras_chave:
+    - risco
+    - formulario
+    - perguntas
+    - agressao
+    - ficha
+    - avaliacao
+    expressoes:
+    - como saber qual o meu nivel de risco
+    - tem algum formulario de perigo para eu preencher
+    - o que faco para avaliar se vou ser atacada de novo
+    - ele me ameacou, como descubro o tamanho do perigo
+    - existe ficha para medir a violencia que sofro
+    categorias: []
+  lei-14149-2021:art2:
+    palavras_chave:
+    - formulario de risco
+    - avaliar perigo
+    - delegacia
+    - policia civil
+    - medir perigo
+    - pergunta de risco
+    - historico de agressao
+    - verificar perigo
+    expressoes:
+    - onde eu preencho o formulario de risco?
+    - a policia tem que fazer perguntas sobre o meu risco?
+    - como a delegacia avalia o perigo que eu corro?
+    - quem pode aplicar o formulario de risco?
+    - eles guardam segredo das minhas respostas?
+    - o juiz vai usar aquele questionario de perigo?
+    categorias: []
+  lei-14149-2021:art3:
+    palavras_chave:
+    - lei maria da penha
+    - aplicacao da lei
+    expressoes:
+    - essa lei segue a maria da penha?
+    - vale o que ta escrito na maria da penha?
+    categorias: []
+  lei-14188-2021:art1:
+    palavras_chave:
+    - sinal vermelho
+    - x na mao
+    - machucada
+    - agressao
+    - psicologico
+    - emocional
+    - xingamento
+    - machucar
+    expressoes:
+    - o que eh o programa sinal vermelho?
+    - ele me xinga o dia todo, isso agora é crime?
+    - bateram em mim, qual eh a pena?
+    - posso mostrar o x na mao em qualquer lugar?
+    - violencia psicologica agora da cadeia?
+    categorias:
+    - fisica
+    - psicologica
+  lei-14188-2021:art2:
+    palavras_chave:
+    - pedir socorro
+    - farmacia
+    - loja
+    - ajuda rapida
+    - atendente
+    - denunciar no comeco
+    - sinal de x
+    - mao vermelha
+    expressoes:
+    - posso pedir socorro na farmacia com um x na mao?
+    - onde eu mostro o x vermelho para me ajudarem?
+    - a farmacia chama a policia se eu fizer o sinal?
+    - como funciona o sinal vermelho no comercio?
+    categorias: []
+  lei-14188-2021:art3:
+    palavras_chave:
+    - atendente treinado
+    - pedir ajuda no mercado
+    - lugar publico
+    - socorro na rua
+    - campanha
+    - encaminhar
+    expressoes:
+    - quem pode ver o meu sinal de socorro?
+    - os balconistas sabem o que significa o x na mao?
+    - posso pedir ajuda em qualquer lugar publico?
+    - para onde eles me mandam depois que peço socorro?
+    categorias: []
+  constituicao-1988:art226:
+    palavras_chave:
+    - familia
+    - uniao estavel
+    - casamento
+    - parar de apanhar
+    - divorcio
+    - protecao do estado
+    - contra violencia
+    expressoes:
+    - o estado tem que me proteger da violencia em casa?
+    - uniao estavel da direito a protecao?
+    - quais sao meus direitos na familia?
+    - o governo tem que criar leis para acabar com a violencia domestica?
+    categorias:
+    - fisica
+    - psicologica
+    - sexual
+    - patrimonial
+    - moral
+  decreto-1973-1996:art1:
+    palavras_chave:
+    - convencao
+    - direito da mulher
+    - machucada
+    - sofrimento
+    - em casa ou na rua
+    - genero
+    - violencia contra mulher
+    expressoes:
+    - o que conta como violencia contra a mulher?
+    - sofrer agressao na rua tambem conta?
+    - qualquer sofrimento fisico ou mental entra na lei?
+    - o que a lei considera violencia de genero?
+    categorias:
+    - fisica
+    - psicologica
+    - sexual
+  decreto-1973-1996:art2:
+    palavras_chave:
+    - abuso
+    - estupro
+    - trabalho
+    - escola
+    - saude
+    - parentes
+    - dentro de casa
+    - na rua
+    - medico
+    expressoes:
+    - sofri abusos do meu ex que mora comigo, isso conta?
+    - me assediaram no trabalho, a lei protege?
+    - fui agredida no posto de saude, o que acontece?
+    - estupro e agressao em casa entram na lei?
+    - e se o agressor nao mora mais comigo?
+    categorias:
+    - fisica
+    - psicologica
+    - sexual
+  decreto-1973-1996:art3:
+    palavras_chave:
+    - vida livre
+    - sem medo
+    - paz
+    - nao ser agredida
+    - direito de viver
+    expressoes:
+    - eu tenho direito de viver sem medo?
+    - posso exigir uma vida livre de violencia?
+    - tenho direito a paz em casa e na rua?
+    categorias:
+    - fisica
+    - psicologica
+    - sexual
+  decreto-1973-1996:art4:
+    palavras_chave:
+    - direitos humanos
+    - respeito
+    - seguranca
+    - dignidade
+    - igualdade
+    expressoes:
+    - eu tenho direito a seguranca e respeito?
+    - a lei me trata igual aos homens?
+    - tenho direito a protecao rapida na justiça?
+    - eles tem que respeitar minha integridade moral e fisica?
+    - onde busco meus direitos humanos?
+    categorias:
+    - fisica
+    - psicologica
+    - moral
+  decreto-1973-1996:art5:
+    palavras_chave:
+    - liberdade
+    - cidadania
+    - garantias
+    expressoes:
+    - eu tenho direito de viver em paz
+    - posso exercer meus direitos livremente
+    - a violencia esta tirando meus direitos
+    - tenho direito a protecao do estado
+    categorias: []
+  decreto-1973-1996:art6:
+    palavras_chave:
+    - discriminacao
+    - preconceito
+    - estereotipo
+    - machismo
+    - submissao
+    - inferioridade
+    expressoes:
+    - ele me trata como se eu fosse inferior
+    - fui discriminada por ser mulher
+    - estou cansada desse machismo e regras absurdas
+    - ele acha que mulher tem que obedecer
+    - por que sou tratada como submissa
+    categorias:
+    - psicologica
+    - moral
+  decreto-1973-1996:art7:
+    palavras_chave:
+    - perseguicao
+    - intimidacao
+    - medida protetiva
+    - justica
+    - agressor
+    expressoes:
+    - a policia tem que me defender
+    categorias:
+    - fisica
+    - psicologica
+  decreto-1973-1996:art8:
+    palavras_chave:
+    - abrigo
+    - apoio
+    - educacao
+    - orientacao
+    - programas
+    expressoes:
+    - onde encontro um abrigo para ficar
+    - preciso de ajuda psicologica e orientacao
+    - existem cursos para eu recomecar minha vida
+    - preciso de atendimento especializado
+    categorias: []
+  decreto-1973-1996:art9:
+    palavras_chave:
+    - vulneravel
+    - gestante
+    - deficiente
+    - idosa
+    - pobreza
+    - migrante
+    expressoes:
+    - estou gravida e sofrendo agressao
+    - sou deficiente e nao consigo fugir dele
+    - por ser idosa ele acha que pode me bater
+    - nao tenho dinheiro para sair de casa
+    - sou imigrante e ele me ameaça por isso
+    categorias:
+    - fisica
+    - psicologica
+  decreto-1973-1996:art10:
+    palavras_chave:
+    - relatorio
+    - informacao
+    - comissao
+    - estatistica
+    - dados
+    expressoes:
+    - o governo recolhe dados sobre violencia
+    - como sao feitos os relatorios de violencia
+    - o estado monitora os casos de agressao
+    - onde vejo os numeros da violencia contra a mulher
+    categorias: []
+  decreto-1973-1996:art11:
+    palavras_chave:
+    - corte
+    - interpretacao
+    - tratado
+    - parecer
+    expressoes:
+    - como a corte internacional avalia nosso caso
+    - qual o parecer sobre este tratado
+    categorias: []
+  decreto-1973-1996:art12:
+    palavras_chave:
+    - denuncia
+    - peticao
+    - queixa
+    - organizacao
+    expressoes:
+    - posso fazer uma denuncia internacional
+    - como apresentar uma peticao na comissao
+    categorias: []
+  stj-pesquisa-pronta-lmp-2026:genero-do-agressor-e-mulheres-trans:
+    palavras_chave:
+    - mulher trans
+    - lei maria da penha
+    - genero
+    - vitima
+    expressoes:
+    - sou mulher trans e sofri violencia domestica
+    - a lei maria da penha me protege sendo trans
+    - mulher trans tem direito a medida protetiva
+    - ele me agrediu, mesmo sendo mulher trans a lei vale
+    categorias:
+    - fisica
+    - psicologica
+  stj-precedentes-lmp-2026:pessoa-agressora-homem-ou-mulher:
+    palavras_chave:
+    - agressora
+    - mae
+    - filha
+    - submissao
+    expressoes:
+    - fui agredida pela minha mae em casa
+    - mulher pode ser a agressora na violencia domestica
+    - minha mae me bate e me controla
+    - a lei vale se a agressora for mulher
+    - estou sofrendo agressao de uma familiar
+    categorias:
+    - fisica
+    - psicologica
+  stf-mi-7452-2025:protecao-casais-homoafetivos-travestis-trans:
+    palavras_chave:
+    - namorado gay
+    - marido trans
+    - relacionamento lgbt
+    - casal homoafetivo
+    - mulher trans
+    - travesti
+    - parceiro gay
+    - homossexual
+    - relacao gay
+    expressoes:
+    - a lei maria da penha vale para casal gay
+    - sou mulher trans e meu parceiro me agride
+    - namoro uma mulher trans e ela sofreu agressao
+    - relacionamento homoafetivo tem direito na lei
+    - casal de homens gays tem protecao da lei
+    - sou travesti e meu namorado me bate
+    - relacao entre mulheres trans entra na lei
+    categorias:
+    - fisica
+    - psicologica
+    - sexual
+    - patrimonial
+    - moral
