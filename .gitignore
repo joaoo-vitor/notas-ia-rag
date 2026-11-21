@@ -7,3 +7,5 @@ indice/
 # cópia de segurança gerada pelo editor do gabarito
 avaliacao/*.bak
 
+# chave do Gemini (gemini.py lê GEMINI_API_KEY daqui)
+.env

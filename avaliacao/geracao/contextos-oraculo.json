@@ -1,0 +1,1393 @@
+{
+ "condicao": "oraculo",
+ "k": null,
+ "corpus": "b64ec663b6c4",
+ "gabarito": "0cc27a5e4188",
+ "data": "2026-11-21",
+ "perguntas": {
+  "q001": {
+   "trechos": [
+    "lei-11340-2006:art7-p4"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q002": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "lei-11340-2006:art7-p4"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q003": {
+   "trechos": [
+    "lei-11340-2006:art7-p1",
+    "lei-11340-2006:art7-p2",
+    "lei-11340-2006:art7-p3",
+    "lei-11340-2006:art7-p4",
+    "lei-11340-2006:art7-p5",
+    "lei-11340-2006:art7-p6"
+   ],
+   "scores": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "q004": {
+   "trechos": [
+    "lei-11340-2006:art7-p4",
+    "codigo-penal:art163"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q005": {
+   "trechos": [
+    "lei-11340-2006:art7-p4",
+    "lei-11340-2006:art24"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q006": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "lei-11340-2006:art7-p5",
+    "codigo-penal:art140"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q007": {
+   "trechos": [
+    "lei-11340-2006:art19",
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q008": {
+   "trechos": [
+    "lei-11340-2006:art19"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q009": {
+   "trechos": [
+    "lei-11340-2006:art12-C",
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q010": {
+   "trechos": [
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q011": {
+   "trechos": [
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q012": {
+   "trechos": [
+    "lei-11340-2006:art24-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q013": {
+   "trechos": [
+    "lei-11340-2006:art22-p1",
+    "lei-11340-2006:art24-A"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q014": {
+   "trechos": [
+    "lei-11340-2006:art12-C"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q015": {
+   "trechos": [
+    "codigo-penal:art147-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q016": {
+   "trechos": [
+    "codigo-penal:art147-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q017": {
+   "trechos": [
+    "codigo-penal:art147-B"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q018": {
+   "trechos": [
+    "codigo-penal:art147"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q019": {
+   "trechos": [
+    "codigo-penal:art121-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q020": {
+   "trechos": [
+    "codigo-penal:art129-p2"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q021": {
+   "trechos": [
+    "codigo-penal:art213"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q022": {
+   "trechos": [
+    "codigo-penal:art218-C"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q023": {
+   "trechos": [
+    "lei-11340-2006:art9-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q024": {
+   "trechos": [
+    "lei-11340-2006:art11",
+    "lei-11340-2006:art23"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q025": {
+   "trechos": [
+    "lei-11340-2006:art16"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q026": {
+   "trechos": [
+    "lei-11340-2006:art27",
+    "lei-11340-2006:art28"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q027": {
+   "trechos": [
+    "lei-11340-2006:art14-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q028": {
+   "trechos": [
+    "lei-14188-2021:art1",
+    "lei-14188-2021:art2"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q029": {
+   "trechos": [
+    "lei-14149-2021:art1",
+    "lei-14149-2021:art2"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q030": {
+   "trechos": [],
+   "scores": []
+  },
+  "q032": {
+   "trechos": [],
+   "scores": []
+  },
+  "q033": {
+   "trechos": [
+    "lei-11340-2006:art5"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q034": {
+   "trechos": [
+    "lei-11340-2006:art5",
+    "stj-precedentes-lmp-2026:pessoa-agressora-homem-ou-mulher"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q035": {
+   "trechos": [
+    "lei-11340-2006:art5",
+    "stf-mi-7452-2025:protecao-casais-homoafetivos-travestis-trans"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q036": {
+   "trechos": [
+    "stj-pesquisa-pronta-lmp-2026:genero-do-agressor-e-mulheres-trans",
+    "stf-mi-7452-2025:protecao-casais-homoafetivos-travestis-trans"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q037": {
+   "trechos": [
+    "lei-11340-2006:art2"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q038": {
+   "trechos": [
+    "lei-11340-2006:art40-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q039": {
+   "trechos": [
+    "lei-11340-2006:art10-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q040": {
+   "trechos": [
+    "lei-11340-2006:art10-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q041": {
+   "trechos": [
+    "lei-11340-2006:art10-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q042": {
+   "trechos": [
+    "lei-11340-2006:art11"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q043": {
+   "trechos": [
+    "lei-11340-2006:art11"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q044": {
+   "trechos": [
+    "lei-11340-2006:art12"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q045": {
+   "trechos": [
+    "lei-11340-2006:art12"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q046": {
+   "trechos": [
+    "lei-11340-2006:art12"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q047": {
+   "trechos": [
+    "lei-11340-2006:art11"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q048": {
+   "trechos": [
+    "lei-11340-2006:art9-p1",
+    "lei-11340-2006:art23"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q049": {
+   "trechos": [
+    "lei-11340-2006:art9-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q050": {
+   "trechos": [
+    "lei-11340-2006:art9-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q051": {
+   "trechos": [
+    "lei-11340-2006:art11",
+    "lei-11340-2006:art23",
+    "lei-11340-2006:art35"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q052": {
+   "trechos": [
+    "lei-11340-2006:art9-p1",
+    "lei-11340-2006:art28"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q053": {
+   "trechos": [
+    "lei-11340-2006:art18"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q054": {
+   "trechos": [
+    "lei-11340-2006:art21"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q055": {
+   "trechos": [
+    "lei-11340-2006:art21"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q056": {
+   "trechos": [
+    "lei-11340-2006:art9-p2",
+    "lei-11340-2006:art17-A"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q057": {
+   "trechos": [
+    "lei-11340-2006:art17"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q058": {
+   "trechos": [
+    "lei-11340-2006:art22-p1",
+    "lei-11340-2006:art23"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q059": {
+   "trechos": [
+    "lei-11340-2006:art23",
+    "lei-11340-2006:art24"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q060": {
+   "trechos": [
+    "lei-11340-2006:art24"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q061": {
+   "trechos": [
+    "lei-11340-2006:art20"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q062": {
+   "trechos": [
+    "lei-11340-2006:art29",
+    "lei-11340-2006:art30"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q063": {
+   "trechos": [
+    "lei-11340-2006:art9-p1",
+    "lei-11340-2006:art28",
+    "lei-11340-2006:art35"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q064": {
+   "trechos": [
+    "lei-11340-2006:art25",
+    "lei-11340-2006:art26"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q065": {
+   "trechos": [
+    "lei-11340-2006:art38-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q066": {
+   "trechos": [
+    "codigo-penal:art148"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q067": {
+   "trechos": [
+    "lei-11340-2006:art7-p3",
+    "codigo-penal:art215-A"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q068": {
+   "trechos": [
+    "codigo-penal:art216-B"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q069": {
+   "trechos": [
+    "codigo-penal:art138",
+    "codigo-penal:art139"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q070": {
+   "trechos": [],
+   "scores": []
+  },
+  "q071": {
+   "trechos": [],
+   "scores": []
+  },
+  "q072": {
+   "trechos": [],
+   "scores": []
+  },
+  "q073": {
+   "trechos": [],
+   "scores": []
+  },
+  "q074": {
+   "trechos": [],
+   "scores": []
+  },
+  "q075": {
+   "trechos": [],
+   "scores": []
+  },
+  "q076": {
+   "trechos": [],
+   "scores": []
+  },
+  "q077": {
+   "trechos": [],
+   "scores": []
+  },
+  "q078": {
+   "trechos": [],
+   "scores": []
+  },
+  "q079": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "codigo-penal:art147-B"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q080": {
+   "trechos": [
+    "lei-11340-2006:art18"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q081": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "codigo-penal:art147-B"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q082": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "lei-11340-2006:art7-p5",
+    "codigo-penal:art147-B"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q083": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "codigo-penal:art147-A"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q084": {
+   "trechos": [
+    "lei-11340-2006:art11"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q085": {
+   "trechos": [
+    "codigo-penal:art148"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q086": {
+   "trechos": [
+    "lei-11340-2006:art7-p4"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q087": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "codigo-penal:art147"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q088": {
+   "trechos": [],
+   "scores": []
+  },
+  "q089": {
+   "trechos": [
+    "lei-11340-2006:art7-p2"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q091": {
+   "trechos": [
+    "lei-11340-2006:art7-p2"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q092": {
+   "trechos": [
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q093": {
+   "trechos": [
+    "lei-11340-2006:art20",
+    "lei-11340-2006:art40-A",
+    "codigo-penal:art129-p2"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q094": {
+   "trechos": [
+    "codigo-penal:art147-B"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q095": {
+   "trechos": [
+    "codigo-penal:art121-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q096": {
+   "trechos": [
+    "lei-11340-2006:art24-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q097": {
+   "trechos": [
+    "lei-11340-2006:art12-C",
+    "lei-11340-2006:art19",
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q098": {
+   "trechos": [
+    "codigo-penal:art163"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q099": {
+   "trechos": [
+    "codigo-penal:art213"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q100": {
+   "trechos": [
+    "codigo-penal:art215-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q102": {
+   "trechos": [
+    "codigo-penal:art121-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q103": {
+   "trechos": [
+    "lei-11340-2006:art7-p4",
+    "codigo-penal:art163"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q104": {
+   "trechos": [
+    "lei-11340-2006:art7-p4",
+    "codigo-penal:art163"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q105": {
+   "trechos": [
+    "codigo-penal:art147"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q106": {
+   "trechos": [
+    "codigo-penal:art129-p2"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q107": {
+   "trechos": [
+    "lei-11340-2006:art22-p1",
+    "lei-11340-2006:art23"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q108": {
+   "trechos": [
+    "lei-11340-2006:art7-p2"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q109": {
+   "trechos": [
+    "lei-11340-2006:art16-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q110": {
+   "trechos": [
+    "lei-11340-2006:art16-A",
+    "codigo-penal:art147"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q111": {
+   "trechos": [
+    "lei-11340-2006:art5",
+    "lei-11340-2006:art7-p2"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q112": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "codigo-penal:art147"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q113": {
+   "trechos": [
+    "codigo-penal:art148"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q114": {
+   "trechos": [
+    "lei-11340-2006:art7-p4",
+    "codigo-penal:art163"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q115": {
+   "trechos": [
+    "lei-11340-2006:art7-p3",
+    "lei-11340-2006:art7-p4"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q116": {
+   "trechos": [
+    "lei-11340-2006:art7-p3",
+    "codigo-penal:art215-A"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q117": {
+   "trechos": [
+    "codigo-penal:art218-C"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q118": {
+   "trechos": [
+    "lei-11340-2006:art5"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q119": {
+   "trechos": [
+    "lei-11340-2006:art9-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q120": {
+   "trechos": [
+    "lei-11340-2006:art2",
+    "decreto-1973-1996:art3"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q121": {
+   "trechos": [
+    "lei-11340-2006:art19"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q122": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "codigo-penal:art147-A",
+    "codigo-penal:art147-B"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q123": {
+   "trechos": [
+    "lei-11340-2006:art7-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q124": {
+   "trechos": [
+    "lei-11340-2006:art24-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q125": {
+   "trechos": [
+    "lei-11340-2006:art24-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q126": {
+   "trechos": [
+    "lei-11340-2006:art24-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q127": {
+   "trechos": [
+    "lei-11340-2006:art23"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q128": {
+   "trechos": [
+    "lei-11340-2006:art23"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q129": {
+   "trechos": [
+    "lei-11340-2006:art23"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q130": {
+   "trechos": [
+    "lei-11340-2006:art23"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q131": {
+   "trechos": [
+    "lei-11340-2006:art23"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q133": {
+   "trechos": [
+    "lei-11340-2006:art21"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q134": {
+   "trechos": [
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q135": {
+   "trechos": [
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q136": {
+   "trechos": [
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q137": {
+   "trechos": [
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q138": {
+   "trechos": [
+    "lei-11340-2006:art22-p1",
+    "lei-11340-2006:art22-p2"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q139": {
+   "trechos": [
+    "codigo-penal:art218-C"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q140": {
+   "trechos": [
+    "lei-14149-2021:art1",
+    "lei-14149-2021:art2"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q141": {
+   "trechos": [
+    "lei-11340-2006:art7-p1"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q142": {
+   "trechos": [
+    "lei-11340-2006:art14-A",
+    "constituicao-1988:art226"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q143": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "lei-11340-2006:art7-p4",
+    "codigo-penal:art148"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q144": {
+   "trechos": [
+    "lei-11340-2006:art7-p4",
+    "codigo-penal:art163"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q145": {
+   "trechos": [
+    "lei-11340-2006:art7-p5",
+    "codigo-penal:art138"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q146": {
+   "trechos": [
+    "lei-11340-2006:art20"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q147": {
+   "trechos": [
+    "lei-11340-2006:art21"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q148": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "lei-11340-2006:art7-p6",
+    "codigo-penal:art147"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q149": {
+   "trechos": [
+    "lei-11340-2006:art12",
+    "lei-11340-2006:art18",
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q150": {
+   "trechos": [
+    "lei-11340-2006:art12",
+    "lei-11340-2006:art18",
+    "lei-11340-2006:art22-p1"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q151": {
+   "trechos": [],
+   "scores": []
+  },
+  "q152": {
+   "trechos": [],
+   "scores": []
+  },
+  "q153": {
+   "trechos": [],
+   "scores": []
+  },
+  "q154": {
+   "trechos": [
+    "lei-11340-2006:art22-p1",
+    "codigo-penal:art147",
+    "codigo-penal:art147-B"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q155": {
+   "trechos": [],
+   "scores": []
+  },
+  "q156": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "lei-11340-2006:art7-p5"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q157": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "codigo-penal:art147-A"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q158": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "lei-11340-2006:art7-p4",
+    "codigo-penal:art148"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q159": {
+   "trechos": [
+    "lei-11340-2006:art22-p1",
+    "codigo-penal:art147-A"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q160": {
+   "trechos": [
+    "lei-11340-2006:art7-p2",
+    "lei-11340-2006:art20",
+    "codigo-penal:art147"
+   ],
+   "scores": [
+    null,
+    null,
+    null
+   ]
+  },
+  "q161": {
+   "trechos": [
+    "lei-11340-2006:art7-p4",
+    "lei-11340-2006:art24"
+   ],
+   "scores": [
+    null,
+    null
+   ]
+  },
+  "q162": {
+   "trechos": [
+    "lei-11340-2006:art24-A"
+   ],
+   "scores": [
+    null
+   ]
+  },
+  "q163": {
+   "trechos": [],
+   "scores": []
+  },
+  "q164": {
+   "trechos": [],
+   "scores": []
+  },
+  "q165": {
+   "trechos": [],
+   "scores": []
+  },
+  "q166": {
+   "trechos": [],
+   "scores": []
+  },
+  "q167": {
+   "trechos": [],
+   "scores": []
+  },
+  "q168": {
+   "trechos": [],
+   "scores": []
+  },
+  "q169": {
+   "trechos": [],
+   "scores": []
+  }
+ }
+}

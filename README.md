@@ -62,10 +62,15 @@ ferramenta `search_legal_sources(query, limit)` (para a LLM do backend,
 | `reranqueador.py` | Reordena os candidatos da busca com um cross-encoder (experimento) |
 | `avaliacao/gabarito.yaml` | Perguntas leigas com os artigos que as respondem |
 | `avaliar.py` | Mede acerto@k, recall@k, MRR e nDCG@10 contra o gabarito |
-| `test_rag.py`, `test_legal_rag.py` | Testes (`python -m unittest test_rag test_legal_rag`) |
+| `test_rag.py`, `test_legal_rag.py`, `test_geracao.py` | Testes (`python -m unittest test_rag test_legal_rag test_geracao`) |
 | `comparar.py` | Compara recuperadores de uma mesma prova, com intervalos de confiança |
 | `avaliacao/resultados/` | Resultado de cada avaliação, por recuperador e versão do corpus |
 | `editor/` | Aplicação local para escrever e revisar o gabarito ([como usar](editor/README.md)) |
+| `gemini.py` | Cliente da API do Gemini (repetição em limite de taxa, chave de `GEMINI_API_KEY` ou `.env`) |
+| `geracao.py` | Geração de respostas com o Gemini: guarda os trechos de cada condição e gera as respostas |
+| `avaliar_geracao.py` | Métricas automáticas da geração (citações e recusas) contra o gabarito |
+| `juiz.py` | Avaliação às cegas por um juiz LLM e por uma pessoa, com concordância ([critérios](avaliacao/geracao/juiz/instrucoes.md)) |
+| `avaliacao/geracao/` | Trechos por condição, respostas geradas e métricas da geração |
 
 ## Gabarito
 

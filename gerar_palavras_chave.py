@@ -19,16 +19,16 @@ import json
 import os
 import sys
 import time
-import urllib.error
 import urllib.request
 from pathlib import Path
 
 import yaml
 
+import gemini
+
 RAIZ = Path(__file__).resolve().parent
 TRECHOS = RAIZ / "corpus" / "trechos.jsonl"
 SAIDA = RAIZ / "enriquecimento.yaml"
-API = "https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent"
 CATEGORIAS = ["fisica", "psicologica", "sexual", "patrimonial", "moral", "vicaria"]
 
 INSTRUCOES = """Você ajuda a montar a busca de um assistente para mulheres em situação de \
@@ -69,35 +69,15 @@ ESQUEMA = {
 }
 
 
-def chamar_gemini(chave, modelo, trechos, tentativas=5):
+def chamar_gemini(chave, modelo, trechos):
     texto = INSTRUCOES + "\n\n" + "\n\n".join(
         f"### id: {t['id']}\n{t['documento']}, {t['secao']}\n{t['texto']}" for t in trechos
     )
-    corpo = json.dumps({
-        "contents": [{"role": "user", "parts": [{"text": texto}]}],
-        "generationConfig": {"temperature": 0.4, "responseMimeType": "application/json",
-                             "responseSchema": ESQUEMA},
-    }).encode("utf-8")
-    pedido = urllib.request.Request(API.format(modelo=modelo), data=corpo, method="POST", headers={
-        "Content-Type": "application/json", "x-goog-api-key": chave})
-    for tentativa in range(tentativas):
-        try:
-            with urllib.request.urlopen(pedido, timeout=300) as resposta:
-                dados = json.loads(resposta.read().decode("utf-8"))
-            return json.loads(dados["candidates"][0]["content"]["parts"][0]["text"])
-        except urllib.error.HTTPError as erro:
-            if erro.code not in (429, 500, 503) or tentativa == tentativas - 1:
-                sys.exit(f"Erro do Gemini (HTTP {erro.code}): {erro.read().decode('utf-8', 'replace')[:500]}")
-            motivo = f"HTTP {erro.code}"
-        except (TimeoutError, urllib.error.URLError, ConnectionError) as erro:
-            # servidor sobrecarregado costuma aparecer como demora sem resposta
-            if tentativa == tentativas - 1:
-                sys.exit(f"O Gemini não respondeu: {erro}")
-            motivo = f"sem resposta ({type(erro).__name__})"
-        espera = 30 * (tentativa + 1)  # limite ou sobrecarga do free tier: espera e tenta de novo
-        print(f"  {motivo}; tentando de novo em {espera} s")
-        time.sleep(espera)
-    sys.exit("O Gemini não respondeu depois de várias tentativas.")
+    corpo = gemini.corpo_do_pedido(texto, esquema=ESQUEMA, temperatura=0.4)
+    try:
+        return gemini.chamar(corpo, modelo=modelo, chave=chave)["json"]
+    except gemini.ErroGemini as erro:
+        sys.exit(str(erro))
 
 
 def limpar(lista):
@@ -119,8 +99,8 @@ def salvar(dados):
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--modelo", default="gemini-3.8-flash",
-                        help="modelo do Gemini (padrão: gemini-3.8-flash)")
+    parser.add_argument("--modelo", default=gemini.MODELO_PADRAO,
+                        help=f"modelo do Gemini (padrão: {gemini.MODELO_PADRAO})")
     parser.add_argument("--lote", type=int, default=5, help="trechos por chamada")
     parser.add_argument("--pausa", type=float, default=7, help="segundos entre chamadas (free tier)")
     parser.add_argument("--sobrescrever", action="store_true")
