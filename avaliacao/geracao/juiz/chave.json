@@ -1,0 +1,2887 @@
+{
+ "j0001": {
+  "condicao": "lexical",
+  "pergunta": "q157",
+  "tipo": "adversa"
+ },
+ "j0002": {
+  "condicao": "oraculo",
+  "pergunta": "q035",
+  "tipo": "coloquial"
+ },
+ "j0003": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q120",
+  "tipo": "coloquial"
+ },
+ "j0004": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q020",
+  "tipo": "adversa"
+ },
+ "j0005": {
+  "condicao": "lexical",
+  "pergunta": "q091",
+  "tipo": "coloquial"
+ },
+ "j0006": {
+  "condicao": "oraculo",
+  "pergunta": "q033",
+  "tipo": "coloquial"
+ },
+ "j0007": {
+  "condicao": "oraculo",
+  "pergunta": "q115",
+  "tipo": "coloquial"
+ },
+ "j0008": {
+  "condicao": "sem-busca",
+  "pergunta": "q072",
+  "tipo": "sem_resposta"
+ },
+ "j0009": {
+  "condicao": "sem-busca",
+  "pergunta": "q155",
+  "tipo": "sem_resposta"
+ },
+ "j0010": {
+  "condicao": "sem-busca",
+  "pergunta": "q052",
+  "tipo": "direta"
+ },
+ "j0011": {
+  "condicao": "lexical",
+  "pergunta": "q056",
+  "tipo": "direta"
+ },
+ "j0012": {
+  "condicao": "sem-busca",
+  "pergunta": "q065",
+  "tipo": "adversa"
+ },
+ "j0013": {
+  "condicao": "sem-busca",
+  "pergunta": "q045",
+  "tipo": "coloquial"
+ },
+ "j0014": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q052",
+  "tipo": "direta"
+ },
+ "j0015": {
+  "condicao": "lexical",
+  "pergunta": "q089",
+  "tipo": "adversa"
+ },
+ "j0016": {
+  "condicao": "oraculo",
+  "pergunta": "q061",
+  "tipo": "direta"
+ },
+ "j0017": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q114",
+  "tipo": "coloquial"
+ },
+ "j0018": {
+  "condicao": "lexical",
+  "pergunta": "q057",
+  "tipo": "direta"
+ },
+ "j0019": {
+  "condicao": "sem-busca",
+  "pergunta": "q108",
+  "tipo": "coloquial"
+ },
+ "j0020": {
+  "condicao": "sem-busca",
+  "pergunta": "q005",
+  "tipo": "coloquial"
+ },
+ "j0021": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q017",
+  "tipo": "coloquial"
+ },
+ "j0022": {
+  "condicao": "lexical",
+  "pergunta": "q162",
+  "tipo": "adversa"
+ },
+ "j0023": {
+  "condicao": "sem-busca",
+  "pergunta": "q063",
+  "tipo": "direta"
+ },
+ "j0024": {
+  "condicao": "oraculo",
+  "pergunta": "q082",
+  "tipo": "coloquial"
+ },
+ "j0025": {
+  "condicao": "lexical",
+  "pergunta": "q053",
+  "tipo": "direta"
+ },
+ "j0026": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q028",
+  "tipo": "direta"
+ },
+ "j0027": {
+  "condicao": "oraculo",
+  "pergunta": "q044",
+  "tipo": "direta"
+ },
+ "j0028": {
+  "condicao": "sem-busca",
+  "pergunta": "q044",
+  "tipo": "direta"
+ },
+ "j0029": {
+  "condicao": "lexical",
+  "pergunta": "q071",
+  "tipo": "sem_resposta"
+ },
+ "j0030": {
+  "condicao": "oraculo",
+  "pergunta": "q114",
+  "tipo": "coloquial"
+ },
+ "j0031": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q022",
+  "tipo": "coloquial"
+ },
+ "j0032": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q118",
+  "tipo": "coloquial"
+ },
+ "j0033": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q029",
+  "tipo": "adversa"
+ },
+ "j0034": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q109",
+  "tipo": "coloquial"
+ },
+ "j0035": {
+  "condicao": "oraculo",
+  "pergunta": "q045",
+  "tipo": "coloquial"
+ },
+ "j0036": {
+  "condicao": "lexical",
+  "pergunta": "q046",
+  "tipo": "coloquial"
+ },
+ "j0037": {
+  "condicao": "oraculo",
+  "pergunta": "q011",
+  "tipo": "coloquial"
+ },
+ "j0038": {
+  "condicao": "oraculo",
+  "pergunta": "q146",
+  "tipo": "adversa"
+ },
+ "j0039": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q059",
+  "tipo": "coloquial"
+ },
+ "j0040": {
+  "condicao": "lexical",
+  "pergunta": "q139",
+  "tipo": "direta"
+ },
+ "j0041": {
+  "condicao": "lexical",
+  "pergunta": "q015",
+  "tipo": "direta"
+ },
+ "j0042": {
+  "condicao": "oraculo",
+  "pergunta": "q121",
+  "tipo": "coloquial"
+ },
+ "j0043": {
+  "condicao": "lexical",
+  "pergunta": "q135",
+  "tipo": "coloquial"
+ },
+ "j0044": {
+  "condicao": "oraculo",
+  "pergunta": "q009",
+  "tipo": "coloquial"
+ },
+ "j0045": {
+  "condicao": "sem-busca",
+  "pergunta": "q123",
+  "tipo": "coloquial"
+ },
+ "j0046": {
+  "condicao": "sem-busca",
+  "pergunta": "q029",
+  "tipo": "adversa"
+ },
+ "j0047": {
+  "condicao": "lexical",
+  "pergunta": "q146",
+  "tipo": "adversa"
+ },
+ "j0048": {
+  "condicao": "sem-busca",
+  "pergunta": "q098",
+  "tipo": "coloquial"
+ },
+ "j0049": {
+  "condicao": "oraculo",
+  "pergunta": "q063",
+  "tipo": "direta"
+ },
+ "j0050": {
+  "condicao": "sem-busca",
+  "pergunta": "q154",
+  "tipo": "adversa"
+ },
+ "j0051": {
+  "condicao": "sem-busca",
+  "pergunta": "q076",
+  "tipo": "sem_resposta"
+ },
+ "j0052": {
+  "condicao": "oraculo",
+  "pergunta": "q048",
+  "tipo": "coloquial"
+ },
+ "j0053": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q126",
+  "tipo": "direta"
+ },
+ "j0054": {
+  "condicao": "sem-busca",
+  "pergunta": "q010",
+  "tipo": "coloquial"
+ },
+ "j0055": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q121",
+  "tipo": "coloquial"
+ },
+ "j0056": {
+  "condicao": "lexical",
+  "pergunta": "q116",
+  "tipo": "coloquial"
+ },
+ "j0057": {
+  "condicao": "lexical",
+  "pergunta": "q028",
+  "tipo": "direta"
+ },
+ "j0058": {
+  "condicao": "oraculo",
+  "pergunta": "q109",
+  "tipo": "coloquial"
+ },
+ "j0059": {
+  "condicao": "oraculo",
+  "pergunta": "q040",
+  "tipo": "coloquial"
+ },
+ "j0060": {
+  "condicao": "lexical",
+  "pergunta": "q044",
+  "tipo": "direta"
+ },
+ "j0061": {
+  "condicao": "lexical",
+  "pergunta": "q055",
+  "tipo": "adversa"
+ },
+ "j0062": {
+  "condicao": "oraculo",
+  "pergunta": "q131",
+  "tipo": "direta"
+ },
+ "j0063": {
+  "condicao": "oraculo",
+  "pergunta": "q107",
+  "tipo": "coloquial"
+ },
+ "j0064": {
+  "condicao": "sem-busca",
+  "pergunta": "q013",
+  "tipo": "coloquial"
+ },
+ "j0065": {
+  "condicao": "sem-busca",
+  "pergunta": "q109",
+  "tipo": "coloquial"
+ },
+ "j0066": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q104",
+  "tipo": "adversa"
+ },
+ "j0067": {
+  "condicao": "oraculo",
+  "pergunta": "q130",
+  "tipo": "coloquial"
+ },
+ "j0068": {
+  "condicao": "lexical",
+  "pergunta": "q007",
+  "tipo": "direta"
+ },
+ "j0069": {
+  "condicao": "lexical",
+  "pergunta": "q008",
+  "tipo": "coloquial"
+ },
+ "j0070": {
+  "condicao": "sem-busca",
+  "pergunta": "q035",
+  "tipo": "coloquial"
+ },
+ "j0071": {
+  "condicao": "oraculo",
+  "pergunta": "q136",
+  "tipo": "direta"
+ },
+ "j0072": {
+  "condicao": "oraculo",
+  "pergunta": "q060",
+  "tipo": "coloquial"
+ },
+ "j0073": {
+  "condicao": "sem-busca",
+  "pergunta": "q055",
+  "tipo": "adversa"
+ },
+ "j0074": {
+  "condicao": "lexical",
+  "pergunta": "q067",
+  "tipo": "adversa"
+ },
+ "j0075": {
+  "condicao": "lexical",
+  "pergunta": "q085",
+  "tipo": "coloquial"
+ },
+ "j0076": {
+  "condicao": "oraculo",
+  "pergunta": "q098",
+  "tipo": "coloquial"
+ },
+ "j0077": {
+  "condicao": "lexical",
+  "pergunta": "q025",
+  "tipo": "coloquial"
+ },
+ "j0078": {
+  "condicao": "oraculo",
+  "pergunta": "q133",
+  "tipo": "coloquial"
+ },
+ "j0079": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q054",
+  "tipo": "coloquial"
+ },
+ "j0080": {
+  "condicao": "oraculo",
+  "pergunta": "q095",
+  "tipo": "direta"
+ },
+ "j0081": {
+  "condicao": "lexical",
+  "pergunta": "q123",
+  "tipo": "coloquial"
+ },
+ "j0082": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q122",
+  "tipo": "coloquial"
+ },
+ "j0083": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q125",
+  "tipo": "coloquial"
+ },
+ "j0084": {
+  "condicao": "lexical",
+  "pergunta": "q036",
+  "tipo": "coloquial"
+ },
+ "j0085": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q026",
+  "tipo": "coloquial"
+ },
+ "j0086": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q072",
+  "tipo": "sem_resposta"
+ },
+ "j0087": {
+  "condicao": "oraculo",
+  "pergunta": "q046",
+  "tipo": "coloquial"
+ },
+ "j0088": {
+  "condicao": "sem-busca",
+  "pergunta": "q011",
+  "tipo": "coloquial"
+ },
+ "j0089": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q086",
+  "tipo": "coloquial"
+ },
+ "j0090": {
+  "condicao": "oraculo",
+  "pergunta": "q029",
+  "tipo": "adversa"
+ },
+ "j0091": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q058",
+  "tipo": "adversa"
+ },
+ "j0092": {
+  "condicao": "lexical",
+  "pergunta": "q019",
+  "tipo": "direta"
+ },
+ "j0093": {
+  "condicao": "sem-busca",
+  "pergunta": "q124",
+  "tipo": "coloquial"
+ },
+ "j0094": {
+  "condicao": "sem-busca",
+  "pergunta": "q030",
+  "tipo": "sem_resposta"
+ },
+ "j0095": {
+  "condicao": "lexical",
+  "pergunta": "q115",
+  "tipo": "coloquial"
+ },
+ "j0096": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q148",
+  "tipo": "adversa"
+ },
+ "j0097": {
+  "condicao": "lexical",
+  "pergunta": "q020",
+  "tipo": "adversa"
+ },
+ "j0098": {
+  "condicao": "sem-busca",
+  "pergunta": "q095",
+  "tipo": "direta"
+ },
+ "j0099": {
+  "condicao": "sem-busca",
+  "pergunta": "q107",
+  "tipo": "coloquial"
+ },
+ "j0100": {
+  "condicao": "lexical",
+  "pergunta": "q048",
+  "tipo": "coloquial"
+ },
+ "j0101": {
+  "condicao": "lexical",
+  "pergunta": "q126",
+  "tipo": "direta"
+ },
+ "j0102": {
+  "condicao": "sem-busca",
+  "pergunta": "q042",
+  "tipo": "coloquial"
+ },
+ "j0103": {
+  "condicao": "oraculo",
+  "pergunta": "q086",
+  "tipo": "coloquial"
+ },
+ "j0104": {
+  "condicao": "sem-busca",
+  "pergunta": "q119",
+  "tipo": "direta"
+ },
+ "j0105": {
+  "condicao": "sem-busca",
+  "pergunta": "q051",
+  "tipo": "adversa"
+ },
+ "j0106": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q019",
+  "tipo": "direta"
+ },
+ "j0107": {
+  "condicao": "lexical",
+  "pergunta": "q112",
+  "tipo": "coloquial"
+ },
+ "j0108": {
+  "condicao": "oraculo",
+  "pergunta": "q065",
+  "tipo": "adversa"
+ },
+ "j0109": {
+  "condicao": "sem-busca",
+  "pergunta": "q148",
+  "tipo": "adversa"
+ },
+ "j0110": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q149",
+  "tipo": "adversa"
+ },
+ "j0111": {
+  "condicao": "sem-busca",
+  "pergunta": "q102",
+  "tipo": "direta"
+ },
+ "j0112": {
+  "condicao": "sem-busca",
+  "pergunta": "q012",
+  "tipo": "direta"
+ },
+ "j0113": {
+  "condicao": "lexical",
+  "pergunta": "q051",
+  "tipo": "adversa"
+ },
+ "j0114": {
+  "condicao": "oraculo",
+  "pergunta": "q018",
+  "tipo": "coloquial"
+ },
+ "j0115": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q142",
+  "tipo": "adversa"
+ },
+ "j0116": {
+  "condicao": "lexical",
+  "pergunta": "q084",
+  "tipo": "coloquial"
+ },
+ "j0117": {
+  "condicao": "oraculo",
+  "pergunta": "q092",
+  "tipo": "coloquial"
+ },
+ "j0118": {
+  "condicao": "sem-busca",
+  "pergunta": "q057",
+  "tipo": "direta"
+ },
+ "j0119": {
+  "condicao": "lexical",
+  "pergunta": "q011",
+  "tipo": "coloquial"
+ },
+ "j0120": {
+  "condicao": "sem-busca",
+  "pergunta": "q069",
+  "tipo": "coloquial"
+ },
+ "j0121": {
+  "condicao": "sem-busca",
+  "pergunta": "q114",
+  "tipo": "coloquial"
+ },
+ "j0122": {
+  "condicao": "sem-busca",
+  "pergunta": "q040",
+  "tipo": "coloquial"
+ },
+ "j0123": {
+  "condicao": "sem-busca",
+  "pergunta": "q043",
+  "tipo": "coloquial"
+ },
+ "j0124": {
+  "condicao": "sem-busca",
+  "pergunta": "q071",
+  "tipo": "sem_resposta"
+ },
+ "j0125": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q154",
+  "tipo": "adversa"
+ },
+ "j0126": {
+  "condicao": "sem-busca",
+  "pergunta": "q001",
+  "tipo": "direta"
+ },
+ "j0127": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q024",
+  "tipo": "adversa"
+ },
+ "j0128": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q098",
+  "tipo": "coloquial"
+ },
+ "j0129": {
+  "condicao": "lexical",
+  "pergunta": "q096",
+  "tipo": "direta"
+ },
+ "j0130": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q060",
+  "tipo": "coloquial"
+ },
+ "j0131": {
+  "condicao": "lexical",
+  "pergunta": "q111",
+  "tipo": "coloquial"
+ },
+ "j0132": {
+  "condicao": "sem-busca",
+  "pergunta": "q160",
+  "tipo": "adversa"
+ },
+ "j0133": {
+  "condicao": "lexical",
+  "pergunta": "q120",
+  "tipo": "coloquial"
+ },
+ "j0134": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q141",
+  "tipo": "adversa"
+ },
+ "j0135": {
+  "condicao": "lexical",
+  "pergunta": "q066",
+  "tipo": "adversa"
+ },
+ "j0136": {
+  "condicao": "lexical",
+  "pergunta": "q159",
+  "tipo": "adversa"
+ },
+ "j0137": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q139",
+  "tipo": "direta"
+ },
+ "j0138": {
+  "condicao": "oraculo",
+  "pergunta": "q127",
+  "tipo": "direta"
+ },
+ "j0139": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q110",
+  "tipo": "coloquial"
+ },
+ "j0140": {
+  "condicao": "sem-busca",
+  "pergunta": "q103",
+  "tipo": "coloquial"
+ },
+ "j0141": {
+  "condicao": "sem-busca",
+  "pergunta": "q087",
+  "tipo": "coloquial"
+ },
+ "j0142": {
+  "condicao": "sem-busca",
+  "pergunta": "q054",
+  "tipo": "coloquial"
+ },
+ "j0143": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q089",
+  "tipo": "adversa"
+ },
+ "j0144": {
+  "condicao": "oraculo",
+  "pergunta": "q085",
+  "tipo": "coloquial"
+ },
+ "j0145": {
+  "condicao": "oraculo",
+  "pergunta": "q140",
+  "tipo": "coloquial"
+ },
+ "j0146": {
+  "condicao": "sem-busca",
+  "pergunta": "q074",
+  "tipo": "sem_resposta"
+ },
+ "j0147": {
+  "condicao": "oraculo",
+  "pergunta": "q062",
+  "tipo": "direta"
+ },
+ "j0148": {
+  "condicao": "sem-busca",
+  "pergunta": "q120",
+  "tipo": "coloquial"
+ },
+ "j0149": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q068",
+  "tipo": "coloquial"
+ },
+ "j0150": {
+  "condicao": "sem-busca",
+  "pergunta": "q112",
+  "tipo": "coloquial"
+ },
+ "j0151": {
+  "condicao": "sem-busca",
+  "pergunta": "q139",
+  "tipo": "direta"
+ },
+ "j0152": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q014",
+  "tipo": "coloquial"
+ },
+ "j0153": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q107",
+  "tipo": "coloquial"
+ },
+ "j0154": {
+  "condicao": "lexical",
+  "pergunta": "q047",
+  "tipo": "coloquial"
+ },
+ "j0155": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q116",
+  "tipo": "coloquial"
+ },
+ "j0156": {
+  "condicao": "oraculo",
+  "pergunta": "q081",
+  "tipo": "coloquial"
+ },
+ "j0157": {
+  "condicao": "sem-busca",
+  "pergunta": "q097",
+  "tipo": "coloquial"
+ },
+ "j0158": {
+  "condicao": "sem-busca",
+  "pergunta": "q125",
+  "tipo": "coloquial"
+ },
+ "j0159": {
+  "condicao": "lexical",
+  "pergunta": "q079",
+  "tipo": "coloquial"
+ },
+ "j0160": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q064",
+  "tipo": "coloquial"
+ },
+ "j0161": {
+  "condicao": "oraculo",
+  "pergunta": "q079",
+  "tipo": "coloquial"
+ },
+ "j0162": {
+  "condicao": "lexical",
+  "pergunta": "q069",
+  "tipo": "coloquial"
+ },
+ "j0163": {
+  "condicao": "sem-busca",
+  "pergunta": "q147",
+  "tipo": "adversa"
+ },
+ "j0164": {
+  "condicao": "lexical",
+  "pergunta": "q140",
+  "tipo": "coloquial"
+ },
+ "j0165": {
+  "condicao": "lexical",
+  "pergunta": "q118",
+  "tipo": "coloquial"
+ },
+ "j0166": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q117",
+  "tipo": "coloquial"
+ },
+ "j0167": {
+  "condicao": "oraculo",
+  "pergunta": "q120",
+  "tipo": "coloquial"
+ },
+ "j0168": {
+  "condicao": "lexical",
+  "pergunta": "q105",
+  "tipo": "adversa"
+ },
+ "j0169": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q067",
+  "tipo": "adversa"
+ },
+ "j0170": {
+  "condicao": "oraculo",
+  "pergunta": "q038",
+  "tipo": "adversa"
+ },
+ "j0171": {
+  "condicao": "oraculo",
+  "pergunta": "q113",
+  "tipo": "coloquial"
+ },
+ "j0172": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q055",
+  "tipo": "adversa"
+ },
+ "j0173": {
+  "condicao": "oraculo",
+  "pergunta": "q150",
+  "tipo": "adversa"
+ },
+ "j0174": {
+  "condicao": "oraculo",
+  "pergunta": "q037",
+  "tipo": "coloquial"
+ },
+ "j0175": {
+  "condicao": "sem-busca",
+  "pergunta": "q060",
+  "tipo": "coloquial"
+ },
+ "j0176": {
+  "condicao": "sem-busca",
+  "pergunta": "q094",
+  "tipo": "coloquial"
+ },
+ "j0177": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q115",
+  "tipo": "coloquial"
+ },
+ "j0178": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q158",
+  "tipo": "adversa"
+ },
+ "j0179": {
+  "condicao": "sem-busca",
+  "pergunta": "q096",
+  "tipo": "direta"
+ },
+ "j0180": {
+  "condicao": "sem-busca",
+  "pergunta": "q126",
+  "tipo": "direta"
+ },
+ "j0181": {
+  "condicao": "sem-busca",
+  "pergunta": "q039",
+  "tipo": "coloquial"
+ },
+ "j0182": {
+  "condicao": "sem-busca",
+  "pergunta": "q100",
+  "tipo": "coloquial"
+ },
+ "j0183": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q053",
+  "tipo": "direta"
+ },
+ "j0184": {
+  "condicao": "sem-busca",
+  "pergunta": "q004",
+  "tipo": "coloquial"
+ },
+ "j0185": {
+  "condicao": "sem-busca",
+  "pergunta": "q138",
+  "tipo": "direta"
+ },
+ "j0186": {
+  "condicao": "sem-busca",
+  "pergunta": "q062",
+  "tipo": "direta"
+ },
+ "j0187": {
+  "condicao": "oraculo",
+  "pergunta": "q135",
+  "tipo": "coloquial"
+ },
+ "j0188": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q140",
+  "tipo": "coloquial"
+ },
+ "j0189": {
+  "condicao": "oraculo",
+  "pergunta": "q102",
+  "tipo": "direta"
+ },
+ "j0190": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q146",
+  "tipo": "adversa"
+ },
+ "j0191": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q100",
+  "tipo": "coloquial"
+ },
+ "j0192": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q145",
+  "tipo": "adversa"
+ },
+ "j0193": {
+  "condicao": "lexical",
+  "pergunta": "q014",
+  "tipo": "coloquial"
+ },
+ "j0194": {
+  "condicao": "sem-busca",
+  "pergunta": "q093",
+  "tipo": "direta"
+ },
+ "j0195": {
+  "condicao": "lexical",
+  "pergunta": "q045",
+  "tipo": "coloquial"
+ },
+ "j0196": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q002",
+  "tipo": "coloquial"
+ },
+ "j0197": {
+  "condicao": "lexical",
+  "pergunta": "q092",
+  "tipo": "coloquial"
+ },
+ "j0198": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q047",
+  "tipo": "coloquial"
+ },
+ "j0199": {
+  "condicao": "oraculo",
+  "pergunta": "q083",
+  "tipo": "coloquial"
+ },
+ "j0200": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q037",
+  "tipo": "coloquial"
+ },
+ "j0201": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q143",
+  "tipo": "adversa"
+ },
+ "j0202": {
+  "condicao": "oraculo",
+  "pergunta": "q004",
+  "tipo": "coloquial"
+ },
+ "j0203": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q035",
+  "tipo": "coloquial"
+ },
+ "j0204": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q160",
+  "tipo": "adversa"
+ },
+ "j0205": {
+  "condicao": "lexical",
+  "pergunta": "q072",
+  "tipo": "sem_resposta"
+ },
+ "j0206": {
+  "condicao": "sem-busca",
+  "pergunta": "q131",
+  "tipo": "direta"
+ },
+ "j0207": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q081",
+  "tipo": "coloquial"
+ },
+ "j0208": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q066",
+  "tipo": "adversa"
+ },
+ "j0209": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q134",
+  "tipo": "direta"
+ },
+ "j0210": {
+  "condicao": "lexical",
+  "pergunta": "q080",
+  "tipo": "adversa"
+ },
+ "j0211": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q094",
+  "tipo": "coloquial"
+ },
+ "j0212": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q156",
+  "tipo": "coloquial"
+ },
+ "j0213": {
+  "condicao": "sem-busca",
+  "pergunta": "q014",
+  "tipo": "coloquial"
+ },
+ "j0214": {
+  "condicao": "lexical",
+  "pergunta": "q121",
+  "tipo": "coloquial"
+ },
+ "j0215": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q159",
+  "tipo": "adversa"
+ },
+ "j0216": {
+  "condicao": "lexical",
+  "pergunta": "q005",
+  "tipo": "coloquial"
+ },
+ "j0217": {
+  "condicao": "lexical",
+  "pergunta": "q065",
+  "tipo": "adversa"
+ },
+ "j0218": {
+  "condicao": "lexical",
+  "pergunta": "q142",
+  "tipo": "adversa"
+ },
+ "j0219": {
+  "condicao": "oraculo",
+  "pergunta": "q084",
+  "tipo": "coloquial"
+ },
+ "j0220": {
+  "condicao": "oraculo",
+  "pergunta": "q036",
+  "tipo": "coloquial"
+ },
+ "j0221": {
+  "condicao": "oraculo",
+  "pergunta": "q142",
+  "tipo": "adversa"
+ },
+ "j0222": {
+  "condicao": "sem-busca",
+  "pergunta": "q006",
+  "tipo": "adversa"
+ },
+ "j0223": {
+  "condicao": "sem-busca",
+  "pergunta": "q144",
+  "tipo": "adversa"
+ },
+ "j0224": {
+  "condicao": "sem-busca",
+  "pergunta": "q007",
+  "tipo": "direta"
+ },
+ "j0225": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q036",
+  "tipo": "coloquial"
+ },
+ "j0226": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q038",
+  "tipo": "adversa"
+ },
+ "j0227": {
+  "condicao": "lexical",
+  "pergunta": "q013",
+  "tipo": "coloquial"
+ },
+ "j0228": {
+  "condicao": "oraculo",
+  "pergunta": "q118",
+  "tipo": "coloquial"
+ },
+ "j0229": {
+  "condicao": "oraculo",
+  "pergunta": "q119",
+  "tipo": "direta"
+ },
+ "j0230": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q003",
+  "tipo": "direta"
+ },
+ "j0231": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q144",
+  "tipo": "adversa"
+ },
+ "j0232": {
+  "condicao": "oraculo",
+  "pergunta": "q162",
+  "tipo": "adversa"
+ },
+ "j0233": {
+  "condicao": "lexical",
+  "pergunta": "q035",
+  "tipo": "coloquial"
+ },
+ "j0234": {
+  "condicao": "lexical",
+  "pergunta": "q124",
+  "tipo": "coloquial"
+ },
+ "j0235": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q063",
+  "tipo": "direta"
+ },
+ "j0236": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q046",
+  "tipo": "coloquial"
+ },
+ "j0237": {
+  "condicao": "lexical",
+  "pergunta": "q113",
+  "tipo": "coloquial"
+ },
+ "j0238": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q062",
+  "tipo": "direta"
+ },
+ "j0239": {
+  "condicao": "lexical",
+  "pergunta": "q156",
+  "tipo": "coloquial"
+ },
+ "j0240": {
+  "condicao": "sem-busca",
+  "pergunta": "q082",
+  "tipo": "coloquial"
+ },
+ "j0241": {
+  "condicao": "sem-busca",
+  "pergunta": "q036",
+  "tipo": "coloquial"
+ },
+ "j0242": {
+  "condicao": "oraculo",
+  "pergunta": "q141",
+  "tipo": "adversa"
+ },
+ "j0243": {
+  "condicao": "lexical",
+  "pergunta": "q138",
+  "tipo": "direta"
+ },
+ "j0244": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q061",
+  "tipo": "direta"
+ },
+ "j0245": {
+  "condicao": "sem-busca",
+  "pergunta": "q034",
+  "tipo": "coloquial"
+ },
+ "j0246": {
+  "condicao": "oraculo",
+  "pergunta": "q069",
+  "tipo": "coloquial"
+ },
+ "j0247": {
+  "condicao": "oraculo",
+  "pergunta": "q068",
+  "tipo": "coloquial"
+ },
+ "j0248": {
+  "condicao": "lexical",
+  "pergunta": "q061",
+  "tipo": "direta"
+ },
+ "j0249": {
+  "condicao": "sem-busca",
+  "pergunta": "q130",
+  "tipo": "coloquial"
+ },
+ "j0250": {
+  "condicao": "sem-busca",
+  "pergunta": "q009",
+  "tipo": "coloquial"
+ },
+ "j0251": {
+  "condicao": "lexical",
+  "pergunta": "q087",
+  "tipo": "coloquial"
+ },
+ "j0252": {
+  "condicao": "sem-busca",
+  "pergunta": "q157",
+  "tipo": "adversa"
+ },
+ "j0253": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q004",
+  "tipo": "coloquial"
+ },
+ "j0254": {
+  "condicao": "lexical",
+  "pergunta": "q150",
+  "tipo": "adversa"
+ },
+ "j0255": {
+  "condicao": "lexical",
+  "pergunta": "q063",
+  "tipo": "direta"
+ },
+ "j0256": {
+  "condicao": "lexical",
+  "pergunta": "q102",
+  "tipo": "direta"
+ },
+ "j0257": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q135",
+  "tipo": "coloquial"
+ },
+ "j0258": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q027",
+  "tipo": "adversa"
+ },
+ "j0259": {
+  "condicao": "lexical",
+  "pergunta": "q095",
+  "tipo": "direta"
+ },
+ "j0260": {
+  "condicao": "oraculo",
+  "pergunta": "q159",
+  "tipo": "adversa"
+ },
+ "j0261": {
+  "condicao": "oraculo",
+  "pergunta": "q012",
+  "tipo": "direta"
+ },
+ "j0262": {
+  "condicao": "oraculo",
+  "pergunta": "q042",
+  "tipo": "coloquial"
+ },
+ "j0263": {
+  "condicao": "lexical",
+  "pergunta": "q060",
+  "tipo": "coloquial"
+ },
+ "j0264": {
+  "condicao": "lexical",
+  "pergunta": "q110",
+  "tipo": "coloquial"
+ },
+ "j0265": {
+  "condicao": "oraculo",
+  "pergunta": "q053",
+  "tipo": "direta"
+ },
+ "j0266": {
+  "condicao": "lexical",
+  "pergunta": "q064",
+  "tipo": "coloquial"
+ },
+ "j0267": {
+  "condicao": "oraculo",
+  "pergunta": "q059",
+  "tipo": "coloquial"
+ },
+ "j0268": {
+  "condicao": "sem-busca",
+  "pergunta": "q134",
+  "tipo": "direta"
+ },
+ "j0269": {
+  "condicao": "oraculo",
+  "pergunta": "q024",
+  "tipo": "adversa"
+ },
+ "j0270": {
+  "condicao": "lexical",
+  "pergunta": "q016",
+  "tipo": "coloquial"
+ },
+ "j0271": {
+  "condicao": "sem-busca",
+  "pergunta": "q149",
+  "tipo": "adversa"
+ },
+ "j0272": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q124",
+  "tipo": "coloquial"
+ },
+ "j0273": {
+  "condicao": "oraculo",
+  "pergunta": "q143",
+  "tipo": "adversa"
+ },
+ "j0274": {
+  "condicao": "oraculo",
+  "pergunta": "q008",
+  "tipo": "coloquial"
+ },
+ "j0275": {
+  "condicao": "oraculo",
+  "pergunta": "q047",
+  "tipo": "coloquial"
+ },
+ "j0276": {
+  "condicao": "oraculo",
+  "pergunta": "q002",
+  "tipo": "coloquial"
+ },
+ "j0277": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q095",
+  "tipo": "direta"
+ },
+ "j0278": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q161",
+  "tipo": "adversa"
+ },
+ "j0279": {
+  "condicao": "sem-busca",
+  "pergunta": "q081",
+  "tipo": "coloquial"
+ },
+ "j0280": {
+  "condicao": "oraculo",
+  "pergunta": "q001",
+  "tipo": "direta"
+ },
+ "j0281": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q092",
+  "tipo": "coloquial"
+ },
+ "j0282": {
+  "condicao": "oraculo",
+  "pergunta": "q105",
+  "tipo": "adversa"
+ },
+ "j0283": {
+  "condicao": "oraculo",
+  "pergunta": "q015",
+  "tipo": "direta"
+ },
+ "j0284": {
+  "condicao": "oraculo",
+  "pergunta": "q117",
+  "tipo": "coloquial"
+ },
+ "j0285": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q074",
+  "tipo": "sem_resposta"
+ },
+ "j0286": {
+  "condicao": "sem-busca",
+  "pergunta": "q050",
+  "tipo": "coloquial"
+ },
+ "j0287": {
+  "condicao": "sem-busca",
+  "pergunta": "q058",
+  "tipo": "adversa"
+ },
+ "j0288": {
+  "condicao": "sem-busca",
+  "pergunta": "q021",
+  "tipo": "coloquial"
+ },
+ "j0289": {
+  "condicao": "oraculo",
+  "pergunta": "q149",
+  "tipo": "adversa"
+ },
+ "j0290": {
+  "condicao": "sem-busca",
+  "pergunta": "q086",
+  "tipo": "coloquial"
+ },
+ "j0291": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q111",
+  "tipo": "coloquial"
+ },
+ "j0292": {
+  "condicao": "oraculo",
+  "pergunta": "q050",
+  "tipo": "coloquial"
+ },
+ "j0293": {
+  "condicao": "sem-busca",
+  "pergunta": "q048",
+  "tipo": "coloquial"
+ },
+ "j0294": {
+  "condicao": "oraculo",
+  "pergunta": "q122",
+  "tipo": "coloquial"
+ },
+ "j0295": {
+  "condicao": "oraculo",
+  "pergunta": "q111",
+  "tipo": "coloquial"
+ },
+ "j0296": {
+  "condicao": "sem-busca",
+  "pergunta": "q056",
+  "tipo": "direta"
+ },
+ "j0297": {
+  "condicao": "sem-busca",
+  "pergunta": "q008",
+  "tipo": "coloquial"
+ },
+ "j0298": {
+  "condicao": "oraculo",
+  "pergunta": "q056",
+  "tipo": "direta"
+ },
+ "j0299": {
+  "condicao": "sem-busca",
+  "pergunta": "q016",
+  "tipo": "coloquial"
+ },
+ "j0300": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q021",
+  "tipo": "coloquial"
+ },
+ "j0301": {
+  "condicao": "oraculo",
+  "pergunta": "q066",
+  "tipo": "adversa"
+ },
+ "j0302": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q105",
+  "tipo": "adversa"
+ },
+ "j0303": {
+  "condicao": "oraculo",
+  "pergunta": "q108",
+  "tipo": "coloquial"
+ },
+ "j0304": {
+  "condicao": "sem-busca",
+  "pergunta": "q164",
+  "tipo": "sem_resposta"
+ },
+ "j0305": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q049",
+  "tipo": "direta"
+ },
+ "j0306": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q045",
+  "tipo": "coloquial"
+ },
+ "j0307": {
+  "condicao": "sem-busca",
+  "pergunta": "q167",
+  "tipo": "sem_resposta"
+ },
+ "j0308": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q108",
+  "tipo": "coloquial"
+ },
+ "j0309": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q018",
+  "tipo": "coloquial"
+ },
+ "j0310": {
+  "condicao": "lexical",
+  "pergunta": "q039",
+  "tipo": "coloquial"
+ },
+ "j0311": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q056",
+  "tipo": "direta"
+ },
+ "j0312": {
+  "condicao": "oraculo",
+  "pergunta": "q089",
+  "tipo": "adversa"
+ },
+ "j0313": {
+  "condicao": "sem-busca",
+  "pergunta": "q061",
+  "tipo": "direta"
+ },
+ "j0314": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q082",
+  "tipo": "coloquial"
+ },
+ "j0315": {
+  "condicao": "lexical",
+  "pergunta": "q145",
+  "tipo": "adversa"
+ },
+ "j0316": {
+  "condicao": "sem-busca",
+  "pergunta": "q028",
+  "tipo": "direta"
+ },
+ "j0317": {
+  "condicao": "lexical",
+  "pergunta": "q052",
+  "tipo": "direta"
+ },
+ "j0318": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q001",
+  "tipo": "direta"
+ },
+ "j0319": {
+  "condicao": "sem-busca",
+  "pergunta": "q106",
+  "tipo": "coloquial"
+ },
+ "j0320": {
+  "condicao": "oraculo",
+  "pergunta": "q137",
+  "tipo": "direta"
+ },
+ "j0321": {
+  "condicao": "oraculo",
+  "pergunta": "q058",
+  "tipo": "adversa"
+ },
+ "j0322": {
+  "condicao": "sem-busca",
+  "pergunta": "q129",
+  "tipo": "direta"
+ },
+ "j0323": {
+  "condicao": "oraculo",
+  "pergunta": "q051",
+  "tipo": "adversa"
+ },
+ "j0324": {
+  "condicao": "sem-busca",
+  "pergunta": "q025",
+  "tipo": "coloquial"
+ },
+ "j0325": {
+  "condicao": "sem-busca",
+  "pergunta": "q116",
+  "tipo": "coloquial"
+ },
+ "j0326": {
+  "condicao": "sem-busca",
+  "pergunta": "q143",
+  "tipo": "adversa"
+ },
+ "j0327": {
+  "condicao": "lexical",
+  "pergunta": "q023",
+  "tipo": "coloquial"
+ },
+ "j0328": {
+  "condicao": "sem-busca",
+  "pergunta": "q038",
+  "tipo": "adversa"
+ },
+ "j0329": {
+  "condicao": "oraculo",
+  "pergunta": "q160",
+  "tipo": "adversa"
+ },
+ "j0330": {
+  "condicao": "lexical",
+  "pergunta": "q108",
+  "tipo": "coloquial"
+ },
+ "j0331": {
+  "condicao": "sem-busca",
+  "pergunta": "q047",
+  "tipo": "coloquial"
+ },
+ "j0332": {
+  "condicao": "sem-busca",
+  "pergunta": "q080",
+  "tipo": "adversa"
+ },
+ "j0333": {
+  "condicao": "sem-busca",
+  "pergunta": "q135",
+  "tipo": "coloquial"
+ },
+ "j0334": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q130",
+  "tipo": "coloquial"
+ },
+ "j0335": {
+  "condicao": "oraculo",
+  "pergunta": "q099",
+  "tipo": "coloquial"
+ },
+ "j0336": {
+  "condicao": "lexical",
+  "pergunta": "q144",
+  "tipo": "adversa"
+ },
+ "j0337": {
+  "condicao": "oraculo",
+  "pergunta": "q023",
+  "tipo": "coloquial"
+ },
+ "j0338": {
+  "condicao": "lexical",
+  "pergunta": "q012",
+  "tipo": "direta"
+ },
+ "j0339": {
+  "condicao": "sem-busca",
+  "pergunta": "q026",
+  "tipo": "coloquial"
+ },
+ "j0340": {
+  "condicao": "sem-busca",
+  "pergunta": "q068",
+  "tipo": "coloquial"
+ },
+ "j0341": {
+  "condicao": "oraculo",
+  "pergunta": "q017",
+  "tipo": "coloquial"
+ },
+ "j0342": {
+  "condicao": "lexical",
+  "pergunta": "q137",
+  "tipo": "direta"
+ },
+ "j0343": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q112",
+  "tipo": "coloquial"
+ },
+ "j0344": {
+  "condicao": "sem-busca",
+  "pergunta": "q023",
+  "tipo": "coloquial"
+ },
+ "j0345": {
+  "condicao": "oraculo",
+  "pergunta": "q057",
+  "tipo": "direta"
+ },
+ "j0346": {
+  "condicao": "oraculo",
+  "pergunta": "q112",
+  "tipo": "coloquial"
+ },
+ "j0347": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q007",
+  "tipo": "direta"
+ },
+ "j0348": {
+  "condicao": "lexical",
+  "pergunta": "q082",
+  "tipo": "coloquial"
+ },
+ "j0349": {
+  "condicao": "lexical",
+  "pergunta": "q114",
+  "tipo": "coloquial"
+ },
+ "j0350": {
+  "condicao": "lexical",
+  "pergunta": "q034",
+  "tipo": "coloquial"
+ },
+ "j0351": {
+  "condicao": "sem-busca",
+  "pergunta": "q053",
+  "tipo": "direta"
+ },
+ "j0352": {
+  "condicao": "sem-busca",
+  "pergunta": "q067",
+  "tipo": "adversa"
+ },
+ "j0353": {
+  "condicao": "lexical",
+  "pergunta": "q024",
+  "tipo": "adversa"
+ },
+ "j0354": {
+  "condicao": "sem-busca",
+  "pergunta": "q018",
+  "tipo": "coloquial"
+ },
+ "j0355": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q087",
+  "tipo": "coloquial"
+ },
+ "j0356": {
+  "condicao": "lexical",
+  "pergunta": "q049",
+  "tipo": "direta"
+ },
+ "j0357": {
+  "condicao": "oraculo",
+  "pergunta": "q052",
+  "tipo": "direta"
+ },
+ "j0358": {
+  "condicao": "lexical",
+  "pergunta": "q002",
+  "tipo": "coloquial"
+ },
+ "j0359": {
+  "condicao": "lexical",
+  "pergunta": "q004",
+  "tipo": "coloquial"
+ },
+ "j0360": {
+  "condicao": "sem-busca",
+  "pergunta": "q118",
+  "tipo": "coloquial"
+ },
+ "j0361": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q131",
+  "tipo": "direta"
+ },
+ "j0362": {
+  "condicao": "lexical",
+  "pergunta": "q038",
+  "tipo": "adversa"
+ },
+ "j0363": {
+  "condicao": "oraculo",
+  "pergunta": "q123",
+  "tipo": "coloquial"
+ },
+ "j0364": {
+  "condicao": "sem-busca",
+  "pergunta": "q027",
+  "tipo": "adversa"
+ },
+ "j0365": {
+  "condicao": "oraculo",
+  "pergunta": "q100",
+  "tipo": "coloquial"
+ },
+ "j0366": {
+  "condicao": "oraculo",
+  "pergunta": "q055",
+  "tipo": "adversa"
+ },
+ "j0367": {
+  "condicao": "lexical",
+  "pergunta": "q078",
+  "tipo": "sem_resposta"
+ },
+ "j0368": {
+  "condicao": "lexical",
+  "pergunta": "q134",
+  "tipo": "direta"
+ },
+ "j0369": {
+  "condicao": "sem-busca",
+  "pergunta": "q159",
+  "tipo": "adversa"
+ },
+ "j0370": {
+  "condicao": "sem-busca",
+  "pergunta": "q033",
+  "tipo": "coloquial"
+ },
+ "j0371": {
+  "condicao": "lexical",
+  "pergunta": "q017",
+  "tipo": "coloquial"
+ },
+ "j0372": {
+  "condicao": "oraculo",
+  "pergunta": "q104",
+  "tipo": "adversa"
+ },
+ "j0373": {
+  "condicao": "lexical",
+  "pergunta": "q148",
+  "tipo": "adversa"
+ },
+ "j0374": {
+  "condicao": "lexical",
+  "pergunta": "q109",
+  "tipo": "coloquial"
+ },
+ "j0375": {
+  "condicao": "oraculo",
+  "pergunta": "q093",
+  "tipo": "direta"
+ },
+ "j0376": {
+  "condicao": "sem-busca",
+  "pergunta": "q104",
+  "tipo": "adversa"
+ },
+ "j0377": {
+  "condicao": "lexical",
+  "pergunta": "q003",
+  "tipo": "direta"
+ },
+ "j0378": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q048",
+  "tipo": "coloquial"
+ },
+ "j0379": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q150",
+  "tipo": "adversa"
+ },
+ "j0380": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q015",
+  "tipo": "direta"
+ },
+ "j0381": {
+  "condicao": "sem-busca",
+  "pergunta": "q024",
+  "tipo": "adversa"
+ },
+ "j0382": {
+  "condicao": "oraculo",
+  "pergunta": "q022",
+  "tipo": "coloquial"
+ },
+ "j0383": {
+  "condicao": "oraculo",
+  "pergunta": "q094",
+  "tipo": "coloquial"
+ },
+ "j0384": {
+  "condicao": "lexical",
+  "pergunta": "q093",
+  "tipo": "direta"
+ },
+ "j0385": {
+  "condicao": "lexical",
+  "pergunta": "q054",
+  "tipo": "coloquial"
+ },
+ "j0386": {
+  "condicao": "lexical",
+  "pergunta": "q009",
+  "tipo": "coloquial"
+ },
+ "j0387": {
+  "condicao": "oraculo",
+  "pergunta": "q014",
+  "tipo": "coloquial"
+ },
+ "j0388": {
+  "condicao": "oraculo",
+  "pergunta": "q097",
+  "tipo": "coloquial"
+ },
+ "j0389": {
+  "condicao": "oraculo",
+  "pergunta": "q064",
+  "tipo": "coloquial"
+ },
+ "j0390": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q042",
+  "tipo": "coloquial"
+ },
+ "j0391": {
+  "condicao": "sem-busca",
+  "pergunta": "q111",
+  "tipo": "coloquial"
+ },
+ "j0392": {
+  "condicao": "oraculo",
+  "pergunta": "q021",
+  "tipo": "coloquial"
+ },
+ "j0393": {
+  "condicao": "sem-busca",
+  "pergunta": "q158",
+  "tipo": "adversa"
+ },
+ "j0394": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q011",
+  "tipo": "coloquial"
+ },
+ "j0395": {
+  "condicao": "sem-busca",
+  "pergunta": "q133",
+  "tipo": "coloquial"
+ },
+ "j0396": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q119",
+  "tipo": "direta"
+ },
+ "j0397": {
+  "condicao": "lexical",
+  "pergunta": "q029",
+  "tipo": "adversa"
+ },
+ "j0398": {
+  "condicao": "oraculo",
+  "pergunta": "q126",
+  "tipo": "direta"
+ },
+ "j0399": {
+  "condicao": "oraculo",
+  "pergunta": "q147",
+  "tipo": "adversa"
+ },
+ "j0400": {
+  "condicao": "oraculo",
+  "pergunta": "q028",
+  "tipo": "direta"
+ },
+ "j0401": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q128",
+  "tipo": "direta"
+ },
+ "j0402": {
+  "condicao": "sem-busca",
+  "pergunta": "q117",
+  "tipo": "coloquial"
+ },
+ "j0403": {
+  "condicao": "oraculo",
+  "pergunta": "q054",
+  "tipo": "coloquial"
+ },
+ "j0404": {
+  "condicao": "lexical",
+  "pergunta": "q068",
+  "tipo": "coloquial"
+ },
+ "j0405": {
+  "condicao": "sem-busca",
+  "pergunta": "q140",
+  "tipo": "coloquial"
+ },
+ "j0406": {
+  "condicao": "sem-busca",
+  "pergunta": "q078",
+  "tipo": "sem_resposta"
+ },
+ "j0407": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q099",
+  "tipo": "coloquial"
+ },
+ "j0408": {
+  "condicao": "sem-busca",
+  "pergunta": "q084",
+  "tipo": "coloquial"
+ },
+ "j0409": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q084",
+  "tipo": "coloquial"
+ },
+ "j0410": {
+  "condicao": "lexical",
+  "pergunta": "q119",
+  "tipo": "direta"
+ },
+ "j0411": {
+  "condicao": "lexical",
+  "pergunta": "q043",
+  "tipo": "coloquial"
+ },
+ "j0412": {
+  "condicao": "sem-busca",
+  "pergunta": "q017",
+  "tipo": "coloquial"
+ },
+ "j0413": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q133",
+  "tipo": "coloquial"
+ },
+ "j0414": {
+  "condicao": "oraculo",
+  "pergunta": "q034",
+  "tipo": "coloquial"
+ },
+ "j0415": {
+  "condicao": "sem-busca",
+  "pergunta": "q113",
+  "tipo": "coloquial"
+ },
+ "j0416": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q057",
+  "tipo": "direta"
+ },
+ "j0417": {
+  "condicao": "sem-busca",
+  "pergunta": "q121",
+  "tipo": "coloquial"
+ },
+ "j0418": {
+  "condicao": "lexical",
+  "pergunta": "q100",
+  "tipo": "coloquial"
+ },
+ "j0419": {
+  "condicao": "lexical",
+  "pergunta": "q127",
+  "tipo": "direta"
+ },
+ "j0420": {
+  "condicao": "lexical",
+  "pergunta": "q136",
+  "tipo": "direta"
+ },
+ "j0421": {
+  "condicao": "oraculo",
+  "pergunta": "q110",
+  "tipo": "coloquial"
+ },
+ "j0422": {
+  "condicao": "oraculo",
+  "pergunta": "q049",
+  "tipo": "direta"
+ },
+ "j0423": {
+  "condicao": "sem-busca",
+  "pergunta": "q083",
+  "tipo": "coloquial"
+ },
+ "j0424": {
+  "condicao": "lexical",
+  "pergunta": "q018",
+  "tipo": "coloquial"
+ },
+ "j0425": {
+  "condicao": "lexical",
+  "pergunta": "q010",
+  "tipo": "coloquial"
+ },
+ "j0426": {
+  "condicao": "oraculo",
+  "pergunta": "q096",
+  "tipo": "direta"
+ },
+ "j0427": {
+  "condicao": "sem-busca",
+  "pergunta": "q019",
+  "tipo": "direta"
+ },
+ "j0428": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q155",
+  "tipo": "sem_resposta"
+ },
+ "j0429": {
+  "condicao": "lexical",
+  "pergunta": "q037",
+  "tipo": "coloquial"
+ },
+ "j0430": {
+  "condicao": "lexical",
+  "pergunta": "q130",
+  "tipo": "coloquial"
+ },
+ "j0431": {
+  "condicao": "lexical",
+  "pergunta": "q098",
+  "tipo": "coloquial"
+ },
+ "j0432": {
+  "condicao": "sem-busca",
+  "pergunta": "q041",
+  "tipo": "coloquial"
+ },
+ "j0433": {
+  "condicao": "oraculo",
+  "pergunta": "q091",
+  "tipo": "coloquial"
+ },
+ "j0434": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q013",
+  "tipo": "coloquial"
+ },
+ "j0435": {
+  "condicao": "lexical",
+  "pergunta": "q158",
+  "tipo": "adversa"
+ },
+ "j0436": {
+  "condicao": "sem-busca",
+  "pergunta": "q145",
+  "tipo": "adversa"
+ },
+ "j0437": {
+  "condicao": "lexical",
+  "pergunta": "q001",
+  "tipo": "direta"
+ },
+ "j0438": {
+  "condicao": "lexical",
+  "pergunta": "q059",
+  "tipo": "coloquial"
+ },
+ "j0439": {
+  "condicao": "sem-busca",
+  "pergunta": "q064",
+  "tipo": "coloquial"
+ },
+ "j0440": {
+  "condicao": "lexical",
+  "pergunta": "q006",
+  "tipo": "adversa"
+ },
+ "j0441": {
+  "condicao": "sem-busca",
+  "pergunta": "q066",
+  "tipo": "adversa"
+ },
+ "j0442": {
+  "condicao": "sem-busca",
+  "pergunta": "q002",
+  "tipo": "coloquial"
+ },
+ "j0443": {
+  "condicao": "oraculo",
+  "pergunta": "q124",
+  "tipo": "coloquial"
+ },
+ "j0444": {
+  "condicao": "sem-busca",
+  "pergunta": "q049",
+  "tipo": "direta"
+ },
+ "j0445": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q044",
+  "tipo": "direta"
+ },
+ "j0446": {
+  "condicao": "lexical",
+  "pergunta": "q022",
+  "tipo": "coloquial"
+ },
+ "j0447": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q147",
+  "tipo": "adversa"
+ },
+ "j0448": {
+  "condicao": "lexical",
+  "pergunta": "q081",
+  "tipo": "coloquial"
+ },
+ "j0449": {
+  "condicao": "oraculo",
+  "pergunta": "q041",
+  "tipo": "coloquial"
+ },
+ "j0450": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q071",
+  "tipo": "sem_resposta"
+ },
+ "j0451": {
+  "condicao": "lexical",
+  "pergunta": "q143",
+  "tipo": "adversa"
+ },
+ "j0452": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q138",
+  "tipo": "direta"
+ },
+ "j0453": {
+  "condicao": "oraculo",
+  "pergunta": "q026",
+  "tipo": "coloquial"
+ },
+ "j0454": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q012",
+  "tipo": "direta"
+ },
+ "j0455": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q043",
+  "tipo": "coloquial"
+ },
+ "j0456": {
+  "condicao": "oraculo",
+  "pergunta": "q148",
+  "tipo": "adversa"
+ },
+ "j0457": {
+  "condicao": "sem-busca",
+  "pergunta": "q037",
+  "tipo": "coloquial"
+ },
+ "j0458": {
+  "condicao": "sem-busca",
+  "pergunta": "q091",
+  "tipo": "coloquial"
+ },
+ "j0459": {
+  "condicao": "sem-busca",
+  "pergunta": "q122",
+  "tipo": "coloquial"
+ },
+ "j0460": {
+  "condicao": "sem-busca",
+  "pergunta": "q059",
+  "tipo": "coloquial"
+ },
+ "j0461": {
+  "condicao": "lexical",
+  "pergunta": "q149",
+  "tipo": "adversa"
+ },
+ "j0462": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q065",
+  "tipo": "adversa"
+ },
+ "j0463": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q127",
+  "tipo": "direta"
+ },
+ "j0464": {
+  "condicao": "sem-busca",
+  "pergunta": "q089",
+  "tipo": "adversa"
+ },
+ "j0465": {
+  "condicao": "sem-busca",
+  "pergunta": "q105",
+  "tipo": "adversa"
+ },
+ "j0466": {
+  "condicao": "sem-busca",
+  "pergunta": "q162",
+  "tipo": "adversa"
+ },
+ "j0467": {
+  "condicao": "sem-busca",
+  "pergunta": "q099",
+  "tipo": "coloquial"
+ },
+ "j0468": {
+  "condicao": "lexical",
+  "pergunta": "q021",
+  "tipo": "coloquial"
+ },
+ "j0469": {
+  "condicao": "lexical",
+  "pergunta": "q160",
+  "tipo": "adversa"
+ },
+ "j0470": {
+  "condicao": "oraculo",
+  "pergunta": "q129",
+  "tipo": "direta"
+ },
+ "j0471": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q006",
+  "tipo": "adversa"
+ },
+ "j0472": {
+  "condicao": "oraculo",
+  "pergunta": "q116",
+  "tipo": "coloquial"
+ },
+ "j0473": {
+  "condicao": "sem-busca",
+  "pergunta": "q020",
+  "tipo": "adversa"
+ },
+ "j0474": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q010",
+  "tipo": "coloquial"
+ },
+ "j0475": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q078",
+  "tipo": "sem_resposta"
+ },
+ "j0476": {
+  "condicao": "oraculo",
+  "pergunta": "q161",
+  "tipo": "adversa"
+ },
+ "j0477": {
+  "condicao": "sem-busca",
+  "pergunta": "q022",
+  "tipo": "coloquial"
+ },
+ "j0478": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q025",
+  "tipo": "coloquial"
+ },
+ "j0479": {
+  "condicao": "oraculo",
+  "pergunta": "q145",
+  "tipo": "adversa"
+ },
+ "j0480": {
+  "condicao": "sem-busca",
+  "pergunta": "q115",
+  "tipo": "coloquial"
+ },
+ "j0481": {
+  "condicao": "lexical",
+  "pergunta": "q117",
+  "tipo": "coloquial"
+ },
+ "j0482": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q091",
+  "tipo": "coloquial"
+ },
+ "j0483": {
+  "condicao": "sem-busca",
+  "pergunta": "q128",
+  "tipo": "direta"
+ },
+ "j0484": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q016",
+  "tipo": "coloquial"
+ },
+ "j0485": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q079",
+  "tipo": "coloquial"
+ },
+ "j0486": {
+  "condicao": "oraculo",
+  "pergunta": "q138",
+  "tipo": "direta"
+ },
+ "j0487": {
+  "condicao": "sem-busca",
+  "pergunta": "q073",
+  "tipo": "sem_resposta"
+ },
+ "j0488": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q051",
+  "tipo": "adversa"
+ },
+ "j0489": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q085",
+  "tipo": "coloquial"
+ },
+ "j0490": {
+  "condicao": "lexical",
+  "pergunta": "q129",
+  "tipo": "direta"
+ },
+ "j0491": {
+  "condicao": "oraculo",
+  "pergunta": "q156",
+  "tipo": "coloquial"
+ },
+ "j0492": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q034",
+  "tipo": "coloquial"
+ },
+ "j0493": {
+  "condicao": "oraculo",
+  "pergunta": "q003",
+  "tipo": "direta"
+ },
+ "j0494": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q080",
+  "tipo": "adversa"
+ },
+ "j0495": {
+  "condicao": "sem-busca",
+  "pergunta": "q110",
+  "tipo": "coloquial"
+ },
+ "j0496": {
+  "condicao": "lexical",
+  "pergunta": "q026",
+  "tipo": "coloquial"
+ },
+ "j0497": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q136",
+  "tipo": "direta"
+ },
+ "j0498": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q113",
+  "tipo": "coloquial"
+ },
+ "j0499": {
+  "condicao": "oraculo",
+  "pergunta": "q019",
+  "tipo": "direta"
+ },
+ "j0500": {
+  "condicao": "sem-busca",
+  "pergunta": "q136",
+  "tipo": "direta"
+ },
+ "j0501": {
+  "condicao": "oraculo",
+  "pergunta": "q010",
+  "tipo": "coloquial"
+ },
+ "j0502": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q097",
+  "tipo": "coloquial"
+ },
+ "j0503": {
+  "condicao": "lexical",
+  "pergunta": "q062",
+  "tipo": "direta"
+ },
+ "j0504": {
+  "condicao": "oraculo",
+  "pergunta": "q103",
+  "tipo": "coloquial"
+ },
+ "j0505": {
+  "condicao": "sem-busca",
+  "pergunta": "q085",
+  "tipo": "coloquial"
+ },
+ "j0506": {
+  "condicao": "oraculo",
+  "pergunta": "q144",
+  "tipo": "adversa"
+ },
+ "j0507": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q041",
+  "tipo": "coloquial"
+ },
+ "j0508": {
+  "condicao": "lexical",
+  "pergunta": "q083",
+  "tipo": "coloquial"
+ },
+ "j0509": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q157",
+  "tipo": "adversa"
+ },
+ "j0510": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q073",
+  "tipo": "sem_resposta"
+ },
+ "j0511": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q137",
+  "tipo": "direta"
+ },
+ "j0512": {
+  "condicao": "oraculo",
+  "pergunta": "q087",
+  "tipo": "coloquial"
+ },
+ "j0513": {
+  "condicao": "sem-busca",
+  "pergunta": "q156",
+  "tipo": "coloquial"
+ },
+ "j0514": {
+  "condicao": "oraculo",
+  "pergunta": "q157",
+  "tipo": "adversa"
+ },
+ "j0515": {
+  "condicao": "sem-busca",
+  "pergunta": "q046",
+  "tipo": "coloquial"
+ },
+ "j0516": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q162",
+  "tipo": "adversa"
+ },
+ "j0517": {
+  "condicao": "sem-busca",
+  "pergunta": "q003",
+  "tipo": "direta"
+ },
+ "j0518": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q123",
+  "tipo": "coloquial"
+ },
+ "j0519": {
+  "condicao": "oraculo",
+  "pergunta": "q043",
+  "tipo": "coloquial"
+ },
+ "j0520": {
+  "condicao": "oraculo",
+  "pergunta": "q128",
+  "tipo": "direta"
+ },
+ "j0521": {
+  "condicao": "sem-busca",
+  "pergunta": "q079",
+  "tipo": "coloquial"
+ },
+ "j0522": {
+  "condicao": "sem-busca",
+  "pergunta": "q142",
+  "tipo": "adversa"
+ },
+ "j0523": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q096",
+  "tipo": "direta"
+ },
+ "j0524": {
+  "condicao": "lexical",
+  "pergunta": "q050",
+  "tipo": "coloquial"
+ },
+ "j0525": {
+  "condicao": "oraculo",
+  "pergunta": "q106",
+  "tipo": "coloquial"
+ },
+ "j0526": {
+  "condicao": "lexical",
+  "pergunta": "q099",
+  "tipo": "coloquial"
+ },
+ "j0527": {
+  "condicao": "oraculo",
+  "pergunta": "q080",
+  "tipo": "adversa"
+ },
+ "j0528": {
+  "condicao": "oraculo",
+  "pergunta": "q154",
+  "tipo": "adversa"
+ },
+ "j0529": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q129",
+  "tipo": "direta"
+ },
+ "j0530": {
+  "condicao": "lexical",
+  "pergunta": "q154",
+  "tipo": "adversa"
+ },
+ "j0531": {
+  "condicao": "oraculo",
+  "pergunta": "q139",
+  "tipo": "direta"
+ },
+ "j0532": {
+  "condicao": "oraculo",
+  "pergunta": "q039",
+  "tipo": "coloquial"
+ },
+ "j0533": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q102",
+  "tipo": "direta"
+ },
+ "j0534": {
+  "condicao": "lexical",
+  "pergunta": "q122",
+  "tipo": "coloquial"
+ },
+ "j0535": {
+  "condicao": "oraculo",
+  "pergunta": "q134",
+  "tipo": "direta"
+ },
+ "j0536": {
+  "condicao": "lexical",
+  "pergunta": "q033",
+  "tipo": "coloquial"
+ },
+ "j0537": {
+  "condicao": "lexical",
+  "pergunta": "q058",
+  "tipo": "adversa"
+ },
+ "j0538": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q008",
+  "tipo": "coloquial"
+ },
+ "j0539": {
+  "condicao": "lexical",
+  "pergunta": "q027",
+  "tipo": "adversa"
+ },
+ "j0540": {
+  "condicao": "oraculo",
+  "pergunta": "q020",
+  "tipo": "adversa"
+ },
+ "j0541": {
+  "condicao": "oraculo",
+  "pergunta": "q016",
+  "tipo": "coloquial"
+ },
+ "j0542": {
+  "condicao": "sem-busca",
+  "pergunta": "q146",
+  "tipo": "adversa"
+ },
+ "j0543": {
+  "condicao": "oraculo",
+  "pergunta": "q025",
+  "tipo": "coloquial"
+ },
+ "j0544": {
+  "condicao": "lexical",
+  "pergunta": "q133",
+  "tipo": "coloquial"
+ },
+ "j0545": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q069",
+  "tipo": "coloquial"
+ },
+ "j0546": {
+  "condicao": "sem-busca",
+  "pergunta": "q127",
+  "tipo": "direta"
+ },
+ "j0547": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q033",
+  "tipo": "coloquial"
+ },
+ "j0548": {
+  "condicao": "oraculo",
+  "pergunta": "q006",
+  "tipo": "adversa"
+ },
+ "j0549": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q093",
+  "tipo": "direta"
+ },
+ "j0550": {
+  "condicao": "oraculo",
+  "pergunta": "q005",
+  "tipo": "coloquial"
+ },
+ "j0551": {
+  "condicao": "oraculo",
+  "pergunta": "q067",
+  "tipo": "adversa"
+ },
+ "j0552": {
+  "condicao": "lexical",
+  "pergunta": "q097",
+  "tipo": "coloquial"
+ },
+ "j0553": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q083",
+  "tipo": "coloquial"
+ },
+ "j0554": {
+  "condicao": "lexical",
+  "pergunta": "q125",
+  "tipo": "coloquial"
+ },
+ "j0555": {
+  "condicao": "sem-busca",
+  "pergunta": "q150",
+  "tipo": "adversa"
+ },
+ "j0556": {
+  "condicao": "oraculo",
+  "pergunta": "q013",
+  "tipo": "coloquial"
+ },
+ "j0557": {
+  "condicao": "oraculo",
+  "pergunta": "q027",
+  "tipo": "adversa"
+ },
+ "j0558": {
+  "condicao": "lexical",
+  "pergunta": "q131",
+  "tipo": "direta"
+ },
+ "j0559": {
+  "condicao": "sem-busca",
+  "pergunta": "q092",
+  "tipo": "coloquial"
+ },
+ "j0560": {
+  "condicao": "oraculo",
+  "pergunta": "q158",
+  "tipo": "adversa"
+ },
+ "j0561": {
+  "condicao": "lexical",
+  "pergunta": "q147",
+  "tipo": "adversa"
+ },
+ "j0562": {
+  "condicao": "sem-busca",
+  "pergunta": "q015",
+  "tipo": "direta"
+ },
+ "j0563": {
+  "condicao": "sem-busca",
+  "pergunta": "q137",
+  "tipo": "direta"
+ },
+ "j0564": {
+  "condicao": "oraculo",
+  "pergunta": "q007",
+  "tipo": "direta"
+ },
+ "j0565": {
+  "condicao": "sem-busca",
+  "pergunta": "q032",
+  "tipo": "sem_resposta"
+ },
+ "j0566": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q009",
+  "tipo": "coloquial"
+ },
+ "j0567": {
+  "condicao": "lexical",
+  "pergunta": "q070",
+  "tipo": "sem_resposta"
+ },
+ "j0568": {
+  "condicao": "oraculo",
+  "pergunta": "q125",
+  "tipo": "coloquial"
+ },
+ "j0569": {
+  "condicao": "sem-busca",
+  "pergunta": "q075",
+  "tipo": "sem_resposta"
+ },
+ "j0570": {
+  "condicao": "sem-busca",
+  "pergunta": "q141",
+  "tipo": "adversa"
+ },
+ "j0571": {
+  "condicao": "lexical",
+  "pergunta": "q042",
+  "tipo": "coloquial"
+ },
+ "j0572": {
+  "condicao": "lexical",
+  "pergunta": "q086",
+  "tipo": "coloquial"
+ },
+ "j0573": {
+  "condicao": "sem-busca",
+  "pergunta": "q161",
+  "tipo": "adversa"
+ },
+ "j0574": {
+  "condicao": "lexical",
+  "pergunta": "q094",
+  "tipo": "coloquial"
+ },
+ "j0575": {
+  "condicao": "lexical",
+  "pergunta": "q040",
+  "tipo": "coloquial"
+ },
+ "j0576": {
+  "condicao": "hibrida-bge-m3",
+  "pergunta": "q005",
+  "tipo": "coloquial"
+ },
+ "j0577": {
+  "condicao": "lexical",
+  "pergunta": "q128",
+  "tipo": "direta"
+ }
+}

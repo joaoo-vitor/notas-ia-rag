@@ -1,0 +1,777 @@
+[
+ {
+  "item": "j0376",
+  "pergunta": "Hj ele jogou meu note na parede numa briga",
+  "resposta": "Sinto muito que você esteja passando por isso. O que aconteceu é uma forma de violência patrimonial, que ocorre quando há destruição, subtração ou dano aos bens da mulher. A Lei Maria da Penha (Lei 11.340/2006) protege você contra esse tipo de comportamento. Ela reconhece que a violência pode ser física, psicológica, sexual, patrimonial ou moral. Você não está sozinha e pode buscar ajuda especializada, como a Central de Atendimento à Mulher pelo número 180, para receber orientações sobre como se proteger e garantir sua segurança.",
+  "trechos_fornecidos": [],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso IV",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nIV - a violência patrimonial, entendida como qualquer conduta que configure retenção, subtração, destruição parcial ou total de seus objetos, instrumentos de trabalho, documentos pessoais, bens, valores e direitos ou recursos econômicos, incluindo os destinados a satisfazer suas necessidades;"
+   },
+   {
+    "n": 2,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 163",
+    "texto": "Dano\nArt. 163 - Destruir, inutilizar ou deteriorar coisa alheia:\nPena - detenção, de um a seis meses, ou multa.\nDano qualificado\nParágrafo único - Se o crime é cometido:\nI - com violência à pessoa ou grave ameaça;\nII - com emprego de substância inflamável ou explosiva, se o fato não constitui crime mais grave\nIII - contra o patrimônio da União, de Estado, do Distrito Federal, de Município ou de autarquia, fundação pública, empresa pública, sociedade de economia mista ou empresa concessionária de serviços públicos;\nIV - por motivo egoístico ou com prejuízo considerável para a vítima:\nPena - detenção, de seis meses a três anos, e multa, além da pena correspondente à violência."
+   }
+  ]
+ },
+ {
+  "item": "j0377",
+  "pergunta": "Quais são as formas de violência doméstica contra a mulher?",
+  "resposta": "Sinto muito que você esteja passando por isso. A lei reconhece diversas formas de violência doméstica e familiar contra a mulher. Entre elas, temos a violência física, que é qualquer conduta que ofenda sua integridade ou saúde corporal [2]. Existe também a violência moral, que ocorre quando há calúnia, difamação ou injúria [5]. Além disso, a violência vicária é aquela praticada contra pessoas próximas à mulher, como filhos ou parentes, com o objetivo de atingi-la [1]. A violência contra a mulher também abrange atos físicos, sexuais e psicológicos, como estupro, maus-tratos, abuso sexual, tortura, tráfico, sequestro e assédio sexual, ocorrendo no âmbito familiar ou na comunidade [3]. Vale lembrar que a violência doméstica é uma violação dos direitos humanos [4].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso VI",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nVI – a violência vicária, entendida como qualquer forma de violência praticada contra descendente, ascendente, dependente, enteado, parente, pessoa sob guarda ou responsabilidade direta da mulher ou pessoa de sua rede de apoio, com vistas a atingi-la."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso I",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nI - a violência física, entendida como qualquer conduta que ofenda sua integridade ou saúde corporal;"
+   },
+   {
+    "n": 3,
+    "fonte": "Decreto nº 1.973/1996 (Convenção de Belém do Pará), Art. 2",
+    "texto": "Artigo 2\nEntende-se que a violência contra a mulher abrange a violência física, sexual e psicológica:\na) ocorrida no âmbito da família ou unidade doméstica ou em qualquer relação interpessoal, quer o agressor compartilhe, tenha compartilhado ou não a sua residência, incluindo-se, entre outras formas, o estupro, maus-tratos e abuso sexual;\nb) ocorrida na comunidade e comedida por qualquer pessoa, incluindo, entre outras formas, o estupro, abuso sexual, tortura, tráfico de mulheres, prostituição forçada, seqüestro e assédio sexual no local de trabalho, bem como em instituições educacionais, serviços de saúde ou qualquer outro local; e\nc) perpetrada ou tolerada pelo Estado ou seus agentes, onde quer que ocorra."
+   },
+   {
+    "n": 4,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 6",
+    "texto": "Art. 6º A violência doméstica e familiar contra a mulher constitui uma das formas de violação dos direitos humanos."
+   },
+   {
+    "n": 5,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso V",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nV - a violência moral, entendida como qualquer conduta que configure calúnia, difamação ou injúria."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso I",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nI - a violência física, entendida como qualquer conduta que ofenda sua integridade ou saúde corporal;"
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso II",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nII - a violência psicológica, entendida como qualquer conduta que lhe cause dano emocional e diminuição da autoestima ou que lhe prejudique e perturbe o pleno desenvolvimento ou que vise degradar ou controlar suas ações, comportamentos, crenças e decisões, mediante ameaça, constrangimento, humilhação, manipulação, isolamento, vigilância constante, perseguição contumaz, insulto, chantagem, violação de sua intimidade, ridicularização, exploração e limitação do direito de ir e vir ou qualquer outro meio que lhe cause prejuízo à saúde psicológica e à autodeterminação;"
+   },
+   {
+    "n": 3,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso III",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nIII - a violência sexual, entendida como qualquer conduta que a constranja a presenciar, a manter ou a participar de relação sexual não desejada, mediante intimidação, ameaça, coação ou uso da força; que a induza a comercializar ou a utilizar, de qualquer modo, a sua sexualidade, que a impeça de usar qualquer método contraceptivo ou que a force ao matrimônio, à gravidez, ao aborto ou à prostituição, mediante coação, chantagem, suborno ou manipulação; ou que limite ou anule o exercício de seus direitos sexuais e reprodutivos;"
+   },
+   {
+    "n": 4,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso IV",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nIV - a violência patrimonial, entendida como qualquer conduta que configure retenção, subtração, destruição parcial ou total de seus objetos, instrumentos de trabalho, documentos pessoais, bens, valores e direitos ou recursos econômicos, incluindo os destinados a satisfazer suas necessidades;"
+   },
+   {
+    "n": 5,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso V",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nV - a violência moral, entendida como qualquer conduta que configure calúnia, difamação ou injúria."
+   },
+   {
+    "n": 6,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso VI",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nVI – a violência vicária, entendida como qualquer forma de violência praticada contra descendente, ascendente, dependente, enteado, parente, pessoa sob guarda ou responsabilidade direta da mulher ou pessoa de sua rede de apoio, com vistas a atingi-la."
+   }
+  ]
+ },
+ {
+  "item": "j0378",
+  "pergunta": "Existe algum programa que eu possa entrar depois de sair de casa?",
+  "resposta": "Sim, existem medidas que podem ajudar. O juiz pode encaminhar você e seus dependentes a programas oficiais ou comunitários de proteção ou atendimento [1]. Além disso, o Estado deve buscar oferecer serviços especializados, como abrigos e serviços de orientação familiar, para mulheres que sofreram violência [4]. Também é possível acessar programas de recuperação e treinamento que auxiliem sua participação plena na vida social [4]. O juiz pode ainda conceder auxílio-aluguel por um período de até seis meses, dependendo da sua situação de vulnerabilidade [1]. Caso busque ajuda, o atendimento especializado na sua localidade pode ser buscado em repartições públicas ou entidades privadas [3]. Essas são as informações sobre programas disponíveis nas leis consultadas.",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 23",
+    "texto": "Art. 23. Poderá o juiz, quando necessário, sem prejuízo de outras medidas:\nI - encaminhar a ofendida e seus dependentes a programa oficial ou comunitário de proteção ou de atendimento;\nII - determinar a recondução da ofendida e a de seus dependentes ao respectivo domicílio, após afastamento do agressor;\nIII - determinar o afastamento da ofendida do lar, sem prejuízo dos direitos relativos a bens, guarda dos filhos e alimentos;\nIV - determinar a separação de corpos.\nV - determinar a matrícula dos dependentes da ofendida em instituição de educação básica mais próxima do seu domicílio, ou a transferência deles para essa instituição, independentemente da existência de vaga.\nVI – conceder à ofendida auxílio-aluguel, com valor fixado em função de sua situação de vulnerabilidade social e econômica, por período não superior a 6 (seis) meses."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12-C",
+    "texto": "Art. 12-C. Verificada a existência de risco atual ou iminente à vida ou à integridade física, sexual, psicológica, moral ou patrimonial da mulher em situação de violência doméstica e familiar, ou de seus dependentes, o agressor será imediatamente afastado do lar, domicílio ou local de convivência com a ofendida:\nI - pela autoridade judicial;\nII - pelo delegado de polícia, quando o Município não for sede de comarca; ou\nIII - pelo policial, quando o Município não for sede de comarca e não houver delegado disponível no momento da denúncia.\n§ 1º Nas hipóteses dos incisos II e III do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.\n§ 2º Nos casos de risco à integridade física da ofendida ou à efetividade da medida protetiva de urgência, não será concedida liberdade provisória ao preso."
+   },
+   {
+    "n": 3,
+    "fonte": "Lei nº 14.188/2021 (Programa Sinal Vermelho), Art. 3",
+    "texto": "Art. 3º A identificação do código referido no parágrafo único do art. 2º desta Lei poderá ser feita pela vítima pessoalmente em repartições públicas e entidades privadas de todo o País e, para isso, deverão ser realizadas campanha informativa e capacitação permanente dos profissionais pertencentes ao programa, conforme dispõe o inciso VII do caput do art. 8º da Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), para encaminhamento da vítima ao atendimento especializado na localidade."
+   },
+   {
+    "n": 4,
+    "fonte": "Decreto nº 1.973/1996 (Convenção de Belém do Pará), Art. 8",
+    "texto": "Artigo 8\nOs Estados Partes convêm em adotar, progressivamente, medidas especificas, inclusive programas destinados a:\na) promover o conhecimento e a observância do direito da mulher a uma vida livre de violência e o direito da mulher a que se respeitem e protejam seus direitos humanos;\nb) modificar os padrões sociais e culturais de conduta de homens e mulheres, inclusive a formulação de programas formais e não formais adequados a todos os níveis do processo educacional, a fim de combater preconceitos e costumes e todas as outras práticas baseadas na premissa da inferioridade ou superioridade de qualquer dos gêneros ou nos papéis estereotipados para o homem e a mulher, que legitimem ou exacerbem a violência contra a mulher;\nc) promover a educação e treinamento de todo pessoal judiciário e policial e demais funcionários responsáveis pela aplicação da lei, bem como do pessoal encarregado da implementação de políticas de prevenção, punição e erradicação da violência contra a mulher;\nd) prestar serviços especializados apropriados a mulher sujeitada a violência, por intermédio de entidades dos setores público e privado, inclusive abrigos, serviços de orientação familiar, quando for o caso, e atendimento e custódia dos menores afetados;\ne) promover e apoiar programas de educação governamentais e privados, destinados a conscientizar o público para os problemas da violência contra a mulher, recursos jurídicos e reparação relacionados com essa violência;\nf) proporcionar à mulher sujeita a violência acesso a programas eficazes de recuperação e treinamento que lhe permitam participar plenamente da vida pública, privada e social;\ng) incentivar os meios de comunicação a que formulem diretrizes adequadas, de divulgação que contribuam para a erradicação da violência contra a mulher em todas as suas formas e enalteçam o respeito pela dignidade da mulher;\nh) assegurar a pesquisa e coleta de estatísticas e outras informações relevantes concernentes às causas, conseqüências e freqüência da violência contra a mulher, a fim de avaliar a eficiência das medidas tomadas para prevenir, punir e erradicar a violência contra a mulher, bem como formular e implementar as mudanças necessárias; e\ni) promover a cooperação internacional para o intercâmbio de idéias e experiências, bem como a execução de programas destinados à proteção da mulher sujeitada a violência."
+   },
+   {
+    "n": 5,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 22 (parte 1/2)",
+    "texto": "Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras:\nI - suspensão da posse ou restrição do porte de armas, com comunicação ao órgão competente, nos termos da Lei nº 10.826, de 22 de dezembro de 2003 ;\nII - afastamento do lar, domicílio ou local de convivência com a ofendida;\nIII - proibição de determinadas condutas, entre as quais:\na) aproximação da ofendida, de seus familiares e das testemunhas, fixando o limite mínimo de distância entre estes e o agressor;\nb) contato com a ofendida, seus familiares e testemunhas por qualquer meio de comunicação;\nc) freqüentação de determinados lugares a fim de preservar a integridade física e psicológica da ofendida;\nIV - restrição ou suspensão de visitas aos dependentes menores, ouvida a equipe de atendimento multidisciplinar ou serviço similar;\nV - prestação de alimentos provisionais ou provisórios.\nVI – comparecimento do agressor a programas de recuperação e reeducação; e\nVII – acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio.\nVIII – monitoração eletrônica, disponibilizando-se à vítima aplicação ou dispositivo de segurança que alerte sobre eventual aproximação do agressor.\n§ 1º As medidas referidas neste artigo não impedem a aplicação de outras previstas na legislação em vigor, sempre que a segurança da ofendida ou as circunstâncias o exigirem, devendo a providência ser comunicada ao Ministério Público.\n§ 2º Na hipótese de aplicação do inciso I, encontrando-se o agressor nas condições mencionadas no caput e incisos do art. 6º da Lei nº 10.826, de 22 de dezembro de 2003, o juiz comunicará ao respectivo órgão, corporação ou instituição as medidas protetivas de urgência concedidas e determinará a restrição do porte de armas, ficando o superior imediato do agressor responsável pelo cumprimento da determinação judicial, sob pena de incorrer nos crimes de prevaricação ou de desobediência, conforme o caso.\n§ 3º Para garantir a efetividade das medidas protetivas de urgência, poderá o juiz requisitar, a qualquer momento, auxílio da força policial.\n§ 4º Na aplicação das medidas protetivas de urgência, o juiz concederá a tutela específica ou determinará providências que assegurem a obtenção de tutela pelo resultado prático equivalente."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 9 (parte 1/2)",
+    "texto": "Art. 9º A assistência à mulher em situação de violência doméstica e familiar será prestada em caráter prioritário no Sistema Único de Saúde (SUS) e no Sistema Único de Segurança Pública (Susp), de forma articulada e conforme os princípios e as diretrizes previstos na Lei nº 8.742, de 7 de dezembro de 1993 (Lei Orgânica da Assistência Social), e em outras normas e políticas públicas de proteção, e emergencialmente, quando for o caso.\n§ 1º O juiz determinará, por prazo certo, a inclusão da mulher em situação de violência doméstica e familiar no cadastro de programas assistenciais do governo federal, estadual e municipal.\n§ 2º O juiz assegurará à mulher em situação de violência doméstica e familiar, para preservar sua integridade física e psicológica:\nI - acesso prioritário à remoção quando servidora pública, integrante da administração direta ou indireta;\nII - manutenção do vínculo trabalhista, quando necessário o afastamento do local de trabalho, por até seis meses.\nIII - encaminhamento à assistência judiciária, quando for o caso, inclusive para eventual ajuizamento da ação de separação judicial, de divórcio, de anulação de casamento ou de dissolução de união estável perante o juízo competente.\n§ 3º A assistência à mulher em situação de violência doméstica e familiar compreenderá o acesso aos benefícios decorrentes do desenvolvimento científico e tecnológico, incluindo os serviços de contracepção de emergência, a profilaxia das Doenças Sexualmente Transmissíveis (DST) e da Síndrome da Imunodeficiência Adquirida (AIDS) e outros procedimentos médicos necessários e cabíveis nos casos de violência sexual.\nAquele que, por ação ou omissão, causar lesão, violência física, sexual ou psicológica e dano moral ou patrimonial a mulher fica obrigado a ressarcir todos os danos causados, inclusive ressarcir ao Sistema Único de Saúde (SUS), de acordo com a tabela SUS, os custos relativos aos serviços de saúde prestados para o total tratamento das vítimas em situação de violência doméstica e familiar, recolhidos os recursos assim arrecadados ao Fundo de Saúde do ente federado responsável pelas unidades de saúde que prestarem os serviços.\n§ 5º Os dispositivos de segurança destinados ao uso em caso de perigo iminente e disponibilizados para o monitoramento das vítimas de violência doméstica ou familiar amparadas por medidas protetivas terão seus custos ressarcidos pelo agressor."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 23",
+    "texto": "Art. 23. Poderá o juiz, quando necessário, sem prejuízo de outras medidas:\nI - encaminhar a ofendida e seus dependentes a programa oficial ou comunitário de proteção ou de atendimento;\nII - determinar a recondução da ofendida e a de seus dependentes ao respectivo domicílio, após afastamento do agressor;\nIII - determinar o afastamento da ofendida do lar, sem prejuízo dos direitos relativos a bens, guarda dos filhos e alimentos;\nIV - determinar a separação de corpos.\nV - determinar a matrícula dos dependentes da ofendida em instituição de educação básica mais próxima do seu domicílio, ou a transferência deles para essa instituição, independentemente da existência de vaga.\nVI – conceder à ofendida auxílio-aluguel, com valor fixado em função de sua situação de vulnerabilidade social e econômica, por período não superior a 6 (seis) meses."
+   }
+  ]
+ },
+ {
+  "item": "j0379",
+  "pergunta": "hoje eu vi q tinha uma arma no quarto dele",
+  "resposta": "Sinto muito que você esteja passando por isso. Se for constatada violência doméstica e familiar, o juiz pode determinar a suspensão da posse ou a restrição do porte de armas do agressor como uma medida protetiva de urgência [2]. Além disso, o uso de arma pode aumentar a pena em casos de perseguição que ameacem sua integridade ou privacidade [4]. Lembre-se que essas medidas visam a sua proteção e segurança.",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 216-B",
+    "texto": "Registro não autorizado da intimidade sexual\nArt. 216-B. Produzir, fotografar, filmar ou registrar, por qualquer meio, conteúdo com cena de nudez ou ato sexual ou libidinoso de caráter íntimo e privado sem autorização dos participantes:\nPena - detenção, de 6 (seis) meses a 1 (um) ano, e multa.\nParágrafo único. Na mesma pena incorre quem realiza montagem em fotografia, vídeo, áudio ou qualquer outro registro com o fim de incluir pessoa em cena de nudez ou ato sexual ou libidinoso de caráter íntimo."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 22 (parte 1/2)",
+    "texto": "Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras:\nI - suspensão da posse ou restrição do porte de armas, com comunicação ao órgão competente, nos termos da Lei nº 10.826, de 22 de dezembro de 2003 ;\nII - afastamento do lar, domicílio ou local de convivência com a ofendida;\nIII - proibição de determinadas condutas, entre as quais:\na) aproximação da ofendida, de seus familiares e das testemunhas, fixando o limite mínimo de distância entre estes e o agressor;\nb) contato com a ofendida, seus familiares e testemunhas por qualquer meio de comunicação;\nc) freqüentação de determinados lugares a fim de preservar a integridade física e psicológica da ofendida;\nIV - restrição ou suspensão de visitas aos dependentes menores, ouvida a equipe de atendimento multidisciplinar ou serviço similar;\nV - prestação de alimentos provisionais ou provisórios.\nVI – comparecimento do agressor a programas de recuperação e reeducação; e\nVII – acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio.\nVIII – monitoração eletrônica, disponibilizando-se à vítima aplicação ou dispositivo de segurança que alerte sobre eventual aproximação do agressor.\n§ 1º As medidas referidas neste artigo não impedem a aplicação de outras previstas na legislação em vigor, sempre que a segurança da ofendida ou as circunstâncias o exigirem, devendo a providência ser comunicada ao Ministério Público.\n§ 2º Na hipótese de aplicação do inciso I, encontrando-se o agressor nas condições mencionadas no caput e incisos do art. 6º da Lei nº 10.826, de 22 de dezembro de 2003, o juiz comunicará ao respectivo órgão, corporação ou instituição as medidas protetivas de urgência concedidas e determinará a restrição do porte de armas, ficando o superior imediato do agressor responsável pelo cumprimento da determinação judicial, sob pena de incorrer nos crimes de prevaricação ou de desobediência, conforme o caso.\n§ 3º Para garantir a efetividade das medidas protetivas de urgência, poderá o juiz requisitar, a qualquer momento, auxílio da força policial.\n§ 4º Na aplicação das medidas protetivas de urgência, o juiz concederá a tutela específica ou determinará providências que assegurem a obtenção de tutela pelo resultado prático equivalente."
+   },
+   {
+    "n": 3,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 215-A",
+    "texto": "Importunação sexual\nArt. 215-A. Praticar contra alguém e sem a sua anuência ato libidinoso com o objetivo de satisfazer a própria lascívia ou a de terceiro:\nPena - reclusão, de 1 (um) a 5 (cinco) anos, se o ato não constitui crime mais grave."
+   },
+   {
+    "n": 4,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 147-A",
+    "texto": "Perseguição\nArt. 147-A. Perseguir alguém, reiteradamente e por qualquer meio, ameaçando-lhe a integridade física ou psicológica, restringindo-lhe a capacidade de locomoção ou, de qualquer forma, invadindo ou perturbando sua esfera de liberdade ou privacidade.\nPena – reclusão, de 6 (seis) meses a 2 (dois) anos, e multa.\n§ 1º A pena é aumentada de metade se o crime é cometido:\nI – contra criança, adolescente ou idoso;\nII – contra mulher por razões da condição de sexo feminino, nos termos do § 2º-A do art. 121 deste Código;\nIII – mediante concurso de 2 (duas) ou mais pessoas ou com o emprego de arma.\n§ 2º As penas deste artigo são aplicáveis sem prejuízo das correspondentes à violência.\n§ 3º Somente se procede mediante representação."
+   },
+   {
+    "n": 5,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 148",
+    "texto": "Seqüestro e cárcere privado\nArt. 148 - Privar alguém de sua liberdade, mediante seqüestro ou cárcere privado:\nPena - reclusão, de um a três anos.\n§ 1º - A pena é de reclusão, de dois a cinco anos:\nI – se a vítima é ascendente, descendente, cônjuge ou companheiro do agente ou maior de 60 (sessenta) anos;\nII - se o crime é praticado mediante internação da vítima em casa de saúde ou hospital;\nIII - se a privação da liberdade dura mais de quinze dias.\nIV – se o crime é praticado contra menor de 18 (dezoito) anos;\nV – se o crime é praticado com fins libidinosos.\n§ 2º - Se resulta à vítima, em razão de maus-tratos ou da natureza da detenção, grave sofrimento físico ou moral:\nPena - reclusão, de dois a oito anos.\n§ 3º Se cometido por integrante de organização criminosa ultraviolenta, grupo paramilitar ou milícia privada, no contexto da atuação ou para a consecução das condutas previstas no art. 2º da lei que institui o marco legal do combate ao crime organizado no Brasil:\nPena - reclusão, de 12 (doze) a 20 (vinte) anos."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12",
+    "texto": "Art. 12. Em todos os casos de violência doméstica e familiar contra a mulher, feito o registro da ocorrência, deverá a autoridade policial adotar, de imediato, os seguintes procedimentos, sem prejuízo daqueles previstos no Código de Processo Penal:\nI - ouvir a ofendida, lavrar o boletim de ocorrência e tomar a representação a termo, se apresentada;\nII - colher todas as provas que servirem para o esclarecimento do fato e de suas circunstâncias;\nIII - remeter, no prazo de 48 (quarenta e oito) horas, expediente apartado ao juiz com o pedido da ofendida, para a concessão de medidas protetivas de urgência;\nIV - determinar que se proceda ao exame de corpo de delito da ofendida e requisitar outros exames periciais necessários;\nV - ouvir o agressor e as testemunhas;\nVI - ordenar a identificação do agressor e fazer juntar aos autos sua folha de antecedentes criminais, indicando a existência de mandado de prisão ou registro de outras ocorrências policiais contra ele;\nVI-A - verificar se o agressor possui registro de porte ou posse de arma de fogo e, na hipótese de existência, juntar aos autos essa informação, bem como notificar a ocorrência à instituição responsável pela concessão do registro ou da emissão do porte, nos termos da Lei nº 10.826, de 22 de dezembro de 2003 (Estatuto do Desarmamento);\nVII - remeter, no prazo legal, os autos do inquérito policial ao juiz e ao Ministério Público.\n§ 1º O pedido da ofendida será tomado a termo pela autoridade policial e deverá conter:\nI - qualificação da ofendida e do agressor;\nII - nome e idade dos dependentes;\nIII - descrição sucinta do fato e das medidas protetivas solicitadas pela ofendida.\nIV - informação sobre a condição de a ofendida ser pessoa com deficiência e se da violência sofrida resultou deficiência ou agravamento de deficiência preexistente.\n§ 2º A autoridade policial deverá anexar ao documento referido no § 1º o boletim de ocorrência e cópia de todos os documentos disponíveis em posse da ofendida.\n§ 3º Serão admitidos como meios de prova os laudos ou prontuários médicos fornecidos por hospitais e postos de saúde."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 18",
+    "texto": "Art. 18. Recebido o expediente com o pedido da ofendida, caberá ao juiz, no prazo de 48 (quarenta e oito) horas:\nI - conhecer do expediente e do pedido e decidir sobre as medidas protetivas de urgência;\nII - determinar o encaminhamento da ofendida ao órgão de assistência judiciária, quando for o caso, inclusive para o ajuizamento da ação de separação judicial, de divórcio, de anulação de casamento ou de dissolução de união estável perante o juízo competente;\nIII - comunicar ao Ministério Público para que adote as providências cabíveis.\nIV - determinar a apreensão imediata de arma de fogo sob a posse do agressor."
+   },
+   {
+    "n": 3,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 22 (parte 1/2)",
+    "texto": "Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras:\nI - suspensão da posse ou restrição do porte de armas, com comunicação ao órgão competente, nos termos da Lei nº 10.826, de 22 de dezembro de 2003 ;\nII - afastamento do lar, domicílio ou local de convivência com a ofendida;\nIII - proibição de determinadas condutas, entre as quais:\na) aproximação da ofendida, de seus familiares e das testemunhas, fixando o limite mínimo de distância entre estes e o agressor;\nb) contato com a ofendida, seus familiares e testemunhas por qualquer meio de comunicação;\nc) freqüentação de determinados lugares a fim de preservar a integridade física e psicológica da ofendida;\nIV - restrição ou suspensão de visitas aos dependentes menores, ouvida a equipe de atendimento multidisciplinar ou serviço similar;\nV - prestação de alimentos provisionais ou provisórios.\nVI – comparecimento do agressor a programas de recuperação e reeducação; e\nVII – acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio.\nVIII – monitoração eletrônica, disponibilizando-se à vítima aplicação ou dispositivo de segurança que alerte sobre eventual aproximação do agressor.\n§ 1º As medidas referidas neste artigo não impedem a aplicação de outras previstas na legislação em vigor, sempre que a segurança da ofendida ou as circunstâncias o exigirem, devendo a providência ser comunicada ao Ministério Público.\n§ 2º Na hipótese de aplicação do inciso I, encontrando-se o agressor nas condições mencionadas no caput e incisos do art. 6º da Lei nº 10.826, de 22 de dezembro de 2003, o juiz comunicará ao respectivo órgão, corporação ou instituição as medidas protetivas de urgência concedidas e determinará a restrição do porte de armas, ficando o superior imediato do agressor responsável pelo cumprimento da determinação judicial, sob pena de incorrer nos crimes de prevaricação ou de desobediência, conforme o caso.\n§ 3º Para garantir a efetividade das medidas protetivas de urgência, poderá o juiz requisitar, a qualquer momento, auxílio da força policial.\n§ 4º Na aplicação das medidas protetivas de urgência, o juiz concederá a tutela específica ou determinará providências que assegurem a obtenção de tutela pelo resultado prático equivalente."
+   }
+  ]
+ },
+ {
+  "item": "j0380",
+  "pergunta": "Perseguição é crime?",
+  "resposta": "Sim, a perseguição é crime. Segundo a lei, é considerado crime perseguir alguém, de forma repetida e por qualquer meio, quando isso ameaça a integridade física ou psicológica, restringe a capacidade de ir e vir da pessoa ou invade e perturba sua privacidade e liberdade [1]. A pena pode aumentar se o crime for cometido contra mulher por razões da condição do sexo feminino [1]. Para que o processo aconteça, é necessário que a vítima faça uma representação [1].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 147-A",
+    "texto": "Perseguição\nArt. 147-A. Perseguir alguém, reiteradamente e por qualquer meio, ameaçando-lhe a integridade física ou psicológica, restringindo-lhe a capacidade de locomoção ou, de qualquer forma, invadindo ou perturbando sua esfera de liberdade ou privacidade.\nPena – reclusão, de 6 (seis) meses a 2 (dois) anos, e multa.\n§ 1º A pena é aumentada de metade se o crime é cometido:\nI – contra criança, adolescente ou idoso;\nII – contra mulher por razões da condição de sexo feminino, nos termos do § 2º-A do art. 121 deste Código;\nIII – mediante concurso de 2 (duas) ou mais pessoas ou com o emprego de arma.\n§ 2º As penas deste artigo são aplicáveis sem prejuízo das correspondentes à violência.\n§ 3º Somente se procede mediante representação."
+   },
+   {
+    "n": 2,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 148",
+    "texto": "Seqüestro e cárcere privado\nArt. 148 - Privar alguém de sua liberdade, mediante seqüestro ou cárcere privado:\nPena - reclusão, de um a três anos.\n§ 1º - A pena é de reclusão, de dois a cinco anos:\nI – se a vítima é ascendente, descendente, cônjuge ou companheiro do agente ou maior de 60 (sessenta) anos;\nII - se o crime é praticado mediante internação da vítima em casa de saúde ou hospital;\nIII - se a privação da liberdade dura mais de quinze dias.\nIV – se o crime é praticado contra menor de 18 (dezoito) anos;\nV – se o crime é praticado com fins libidinosos.\n§ 2º - Se resulta à vítima, em razão de maus-tratos ou da natureza da detenção, grave sofrimento físico ou moral:\nPena - reclusão, de dois a oito anos.\n§ 3º Se cometido por integrante de organização criminosa ultraviolenta, grupo paramilitar ou milícia privada, no contexto da atuação ou para a consecução das condutas previstas no art. 2º da lei que institui o marco legal do combate ao crime organizado no Brasil:\nPena - reclusão, de 12 (doze) a 20 (vinte) anos."
+   },
+   {
+    "n": 3,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 24-A",
+    "texto": "Descumprimento de Medidas Protetivas de Urgência\nArt. 24-A. Descumprir decisão judicial que defere medidas protetivas de urgência previstas nesta Lei:\nPena – reclusão, de 2 (dois) a 5 (cinco) anos, e multa.\n§ 1º A configuração do crime independe da competência civil ou criminal do juiz que deferiu as medidas.\n§ 2º Na hipótese de prisão em flagrante, apenas a autoridade judicial poderá conceder fiança.\n§ 3º O disposto neste artigo não exclui a aplicação de outras sanções cabíveis.\n§ 4º A pena será aumentada de 1/3 (um terço) até a metade se o descumprimento decorrer da violação das áreas de exclusão monitoradas eletronicamente ou da remoção, violação ou alteração do dispositivo de monitoração sem autorização judicial."
+   },
+   {
+    "n": 4,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 138",
+    "texto": "Calúnia\nArt. 138 - Caluniar alguém, imputando-lhe falsamente fato definido como crime:\nPena - detenção, de seis meses a dois anos, e multa.\n§ 1º - Na mesma pena incorre quem, sabendo falsa a imputação, a propala ou divulga.\n§ 2º - É punível a calúnia contra os mortos.\nExceção da verdade\n§ 3º - Admite-se a prova da verdade, salvo:\nI - se, constituindo o fato imputado crime de ação privada, o ofendido não foi condenado por sentença irrecorrível;\nII - se o fato é imputado a qualquer das pessoas indicadas no nº I do art. 141;\nIII - se do crime imputado, embora de ação pública, o ofendido foi absolvido por sentença irrecorrível."
+   },
+   {
+    "n": 5,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 183",
+    "texto": "Art. 183 - Não se aplica o disposto nos dois artigos anteriores:\nI - se o crime é de roubo ou de extorsão, ou, em geral, quando haja emprego de grave ameaça ou violência à pessoa;\nII - ao estranho que participa do crime.\nIII – se o crime é praticado contra pessoa com idade igual ou superior a 60 (sessenta) anos."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 147-A",
+    "texto": "Perseguição\nArt. 147-A. Perseguir alguém, reiteradamente e por qualquer meio, ameaçando-lhe a integridade física ou psicológica, restringindo-lhe a capacidade de locomoção ou, de qualquer forma, invadindo ou perturbando sua esfera de liberdade ou privacidade.\nPena – reclusão, de 6 (seis) meses a 2 (dois) anos, e multa.\n§ 1º A pena é aumentada de metade se o crime é cometido:\nI – contra criança, adolescente ou idoso;\nII – contra mulher por razões da condição de sexo feminino, nos termos do § 2º-A do art. 121 deste Código;\nIII – mediante concurso de 2 (duas) ou mais pessoas ou com o emprego de arma.\n§ 2º As penas deste artigo são aplicáveis sem prejuízo das correspondentes à violência.\n§ 3º Somente se procede mediante representação."
+   }
+  ]
+ },
+ {
+  "item": "j0381",
+  "pergunta": "a policia leva eu e meus filhos pra um abrigo?",
+  "resposta": "Sinto muito que esteja passando por isso. A Lei Maria da Penha (Lei 11.340/2006, art. 9º, § 2º) estabelece que a mulher em situação de violência doméstica e familiar tem direito a ser encaminhada, junto com seus filhos, para um abrigo ou casa de passagem quando houver risco à sua integridade física ou psicológica. Se você está em perigo, procure uma delegacia, o Ministério Público ou a Defensoria Pública. Você também pode ligar para o 180, que é a Central de Atendimento à Mulher; eles podem te orientar sobre como acessar esses serviços de proteção na sua cidade. Você não está sozinha e existem caminhos para buscar segurança.",
+  "trechos_fornecidos": [],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 11",
+    "texto": "Art. 11. No atendimento à mulher em situação de violência doméstica e familiar, a autoridade policial deverá, entre outras providências:\nI - garantir proteção policial, quando necessário, comunicando de imediato ao Ministério Público e ao Poder Judiciário;\nII - encaminhar a ofendida ao hospital ou posto de saúde e ao Instituto Médico Legal;\nIII - fornecer transporte para a ofendida e seus dependentes para abrigo ou local seguro, quando houver risco de vida;\nIV - se necessário, acompanhar a ofendida para assegurar a retirada de seus pertences do local da ocorrência ou do domicílio familiar;\nV - informar à ofendida os direitos a ela conferidos nesta Lei e os serviços disponíveis, inclusive os de assistência judiciária para o eventual ajuizamento perante o juízo competente da ação de separação judicial, de divórcio, de anulação de casamento ou de dissolução de união estável.\nParágrafo único. Verificados indícios de redução a condição análoga à de escravo ou outra forma de violência doméstica contra a trabalhadora doméstica, a autoridade policial que tomar conhecimento da ocorrência deverá comunicá-la, em até 48 (quarenta e oito) horas, à unidade regional do Ministério do Trabalho e Emprego e ao Ministério Público do Trabalho."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 23",
+    "texto": "Art. 23. Poderá o juiz, quando necessário, sem prejuízo de outras medidas:\nI - encaminhar a ofendida e seus dependentes a programa oficial ou comunitário de proteção ou de atendimento;\nII - determinar a recondução da ofendida e a de seus dependentes ao respectivo domicílio, após afastamento do agressor;\nIII - determinar o afastamento da ofendida do lar, sem prejuízo dos direitos relativos a bens, guarda dos filhos e alimentos;\nIV - determinar a separação de corpos.\nV - determinar a matrícula dos dependentes da ofendida em instituição de educação básica mais próxima do seu domicílio, ou a transferência deles para essa instituição, independentemente da existência de vaga.\nVI – conceder à ofendida auxílio-aluguel, com valor fixado em função de sua situação de vulnerabilidade social e econômica, por período não superior a 6 (seis) meses."
+   }
+  ]
+ },
+ {
+  "item": "j0382",
+  "pergunta": "ele espalhou fotos íntimas minhas no grupo da família",
+  "resposta": "Sinto muito que você esteja passando por isso. Divulgar fotos íntimas ou de nudez sem o seu consentimento é considerado crime [1]. A lei estabelece pena de reclusão de 4 a 10 anos e multa para quem disponibiliza, transmite ou divulga esse tipo de conteúdo sem autorização [1]. Além disso, se o crime for cometido por alguém com quem você manteve um relacionamento afetivo, ou com o objetivo de te humilhar ou se vingar, a pena pode ser aumentada de um terço até dois terços [1].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 218-C",
+    "texto": "Art. 218-C. Oferecer, trocar, disponibilizar, transmitir, vender ou expor à venda, distribuir, publicar ou divulgar, por qualquer meio - inclusive por meio de comunicação de massa ou sistema de informática ou telemática -, fotografia, vídeo ou outro registro audiovisual que contenha cena de estupro ou de estupro de vulnerável ou que faça apologia ou induza a sua prática, ou, sem o consentimento da vítima, cena de sexo, nudez ou pornografia:\nPena – reclusão, de 4 (quatro) a 10 (dez) anos, e multa, se o fato não constitui crime mais grave.\nAumento de pena\n§ 1º A pena é aumentada de 1/3 (um terço) a 2/3 (dois terços) se o crime é praticado por agente que mantém ou tenha mantido relação íntima de afeto com a vítima ou com o fim de vingança ou humilhação.\nExclusão de ilicitude\n§ 2º Não há crime quando o agente pratica as condutas descritas no caput deste artigo em publicação de natureza jornalística, científica, cultural ou acadêmica com a adoção de recurso que impossibilite a identificação da vítima, ressalvada sua prévia autorização, caso seja maior de 18 (dezoito) anos."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 218-C",
+    "texto": "Art. 218-C. Oferecer, trocar, disponibilizar, transmitir, vender ou expor à venda, distribuir, publicar ou divulgar, por qualquer meio - inclusive por meio de comunicação de massa ou sistema de informática ou telemática -, fotografia, vídeo ou outro registro audiovisual que contenha cena de estupro ou de estupro de vulnerável ou que faça apologia ou induza a sua prática, ou, sem o consentimento da vítima, cena de sexo, nudez ou pornografia:\nPena – reclusão, de 4 (quatro) a 10 (dez) anos, e multa, se o fato não constitui crime mais grave.\nAumento de pena\n§ 1º A pena é aumentada de 1/3 (um terço) a 2/3 (dois terços) se o crime é praticado por agente que mantém ou tenha mantido relação íntima de afeto com a vítima ou com o fim de vingança ou humilhação.\nExclusão de ilicitude\n§ 2º Não há crime quando o agente pratica as condutas descritas no caput deste artigo em publicação de natureza jornalística, científica, cultural ou acadêmica com a adoção de recurso que impossibilite a identificação da vítima, ressalvada sua prévia autorização, caso seja maior de 18 (dezoito) anos."
+   }
+  ]
+ },
+ {
+  "item": "j0383",
+  "pergunta": "Hoje ele me humilhou na frente de todo mundo na lotérica, gritou comigo",
+  "resposta": "Sinto muito que você tenha passado por essa situação humilhante. De acordo com a lei, causar dano emocional à mulher por meio de humilhação, com o objetivo de degradar ou controlar suas ações, comportamentos ou decisões, caracteriza violência psicológica [1]. Essa conduta pode ser punida com reclusão de seis meses a dois anos, além de multa [1].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 147-B",
+    "texto": "Violência psicológica contra a mulher\nArt. 147-B. Causar dano emocional à mulher que a prejudique e perturbe seu pleno desenvolvimento ou que vise a degradar ou a controlar suas ações, comportamentos, crenças e decisões, mediante ameaça, constrangimento, humilhação, manipulação, isolamento, chantagem, ridicularização, limitação do direito de ir e vir ou qualquer outro meio que cause prejuízo à sua saúde psicológica e autodeterminação:\nPena - reclusão, de 6 (seis) meses a 2 (dois) anos, e multa, se a conduta não constitui crime mais grave.\nParágrafo único. A pena é aumentada de metade se o crime é cometido mediante uso de inteligência artificial ou de qualquer outro recurso tecnológico que altere imagem ou som da vítima."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 147-B",
+    "texto": "Violência psicológica contra a mulher\nArt. 147-B. Causar dano emocional à mulher que a prejudique e perturbe seu pleno desenvolvimento ou que vise a degradar ou a controlar suas ações, comportamentos, crenças e decisões, mediante ameaça, constrangimento, humilhação, manipulação, isolamento, chantagem, ridicularização, limitação do direito de ir e vir ou qualquer outro meio que cause prejuízo à sua saúde psicológica e autodeterminação:\nPena - reclusão, de 6 (seis) meses a 2 (dois) anos, e multa, se a conduta não constitui crime mais grave.\nParágrafo único. A pena é aumentada de metade se o crime é cometido mediante uso de inteligência artificial ou de qualquer outro recurso tecnológico que altere imagem ou som da vítima."
+   }
+  ]
+ },
+ {
+  "item": "j0384",
+  "pergunta": "Ontem discutindo ele me deu um soco muito forte no braço. Eu também xinguei ele, ele pode ser preso por ter me agradido?",
+  "resposta": "Sinto muito que você esteja passando por isso. O soco que você descreveu configura violência física, definida como qualquer conduta que ofenda sua integridade ou saúde corporal [1]. Sobre a possibilidade de prisão, a lei prevê que, em qualquer fase do inquérito policial ou do processo, o juiz pode decretar a prisão preventiva do agressor [2]. Além disso, se houver risco à sua integridade física, não será concedida liberdade provisória ao preso [3]. Os trechos consultados não trazem informações sobre como o fato de você ter xingado ele afeta a situação jurídica. Recomendo buscar orientação especializada para avaliar o seu caso específico.",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso I",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nI - a violência física, entendida como qualquer conduta que ofenda sua integridade ou saúde corporal;"
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 20",
+    "texto": "Art. 20. Em qualquer fase do inquérito policial ou da instrução criminal, caberá a prisão preventiva do agressor, decretada pelo juiz, de ofício, a requerimento do Ministério Público ou mediante representação da autoridade policial.\nParágrafo único. O juiz poderá revogar a prisão preventiva se, no curso do processo, verificar a falta de motivo para que subsista, bem como de novo decretá-la, se sobrevierem razões que a justifiquem."
+   },
+   {
+    "n": 3,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12-C",
+    "texto": "Art. 12-C. Verificada a existência de risco atual ou iminente à vida ou à integridade física, sexual, psicológica, moral ou patrimonial da mulher em situação de violência doméstica e familiar, ou de seus dependentes, o agressor será imediatamente afastado do lar, domicílio ou local de convivência com a ofendida:\nI - pela autoridade judicial;\nII - pelo delegado de polícia, quando o Município não for sede de comarca; ou\nIII - pelo policial, quando o Município não for sede de comarca e não houver delegado disponível no momento da denúncia.\n§ 1º Nas hipóteses dos incisos II e III do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.\n§ 2º Nos casos de risco à integridade física da ofendida ou à efetividade da medida protetiva de urgência, não será concedida liberdade provisória ao preso."
+   },
+   {
+    "n": 4,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 21",
+    "texto": "Art. 21. A ofendida deverá ser notificada dos atos processuais relativos ao agressor, especialmente dos pertinentes ao ingresso e à saída da prisão, sem prejuízo da intimação do advogado constituído ou do defensor público.\nParágrafo único. A ofendida não poderá entregar intimação ou notificação ao agressor ."
+   },
+   {
+    "n": 5,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 24-A",
+    "texto": "Descumprimento de Medidas Protetivas de Urgência\nArt. 24-A. Descumprir decisão judicial que defere medidas protetivas de urgência previstas nesta Lei:\nPena – reclusão, de 2 (dois) a 5 (cinco) anos, e multa.\n§ 1º A configuração do crime independe da competência civil ou criminal do juiz que deferiu as medidas.\n§ 2º Na hipótese de prisão em flagrante, apenas a autoridade judicial poderá conceder fiança.\n§ 3º O disposto neste artigo não exclui a aplicação de outras sanções cabíveis.\n§ 4º A pena será aumentada de 1/3 (um terço) até a metade se o descumprimento decorrer da violação das áreas de exclusão monitoradas eletronicamente ou da remoção, violação ou alteração do dispositivo de monitoração sem autorização judicial."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 20",
+    "texto": "Art. 20. Em qualquer fase do inquérito policial ou da instrução criminal, caberá a prisão preventiva do agressor, decretada pelo juiz, de ofício, a requerimento do Ministério Público ou mediante representação da autoridade policial.\nParágrafo único. O juiz poderá revogar a prisão preventiva se, no curso do processo, verificar a falta de motivo para que subsista, bem como de novo decretá-la, se sobrevierem razões que a justifiquem."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 40-A",
+    "texto": "Art. 40-A. Esta Lei será aplicada a todas as situações previstas no seu art. 5º, independentemente da causa ou da motivação dos atos de violência e da condição do ofensor ou da ofendida."
+   },
+   {
+    "n": 3,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 129 (parte 2/2)",
+    "texto": "Art. 129. Ofender a integridade corporal ou a saúde de outrem: (continuação)\nViolência Doméstica\n§ 9º Se a lesão for praticada contra ascendente, descendente, irmão, cônjuge ou companheiro, pessoa com relação de trabalho doméstico ou com quem conviva ou tenha convivido, ou, ainda, prevalecendo-se o agente das relações domésticas, de trabalho doméstico, de coabitação ou de hospitalidade:\nPena – reclusão, de 2 (dois) a 5 (cinco) anos.\n§ 10. Nos casos previstos nos §§ 1o a 3o deste artigo, se as circunstâncias são as indicadas no § 9o deste artigo, aumenta-se a pena em 1/3 (um terço).\n§ 11. Na hipótese do § 9o deste artigo, a pena será aumentada de um terço se o crime for cometido contra pessoa portadora de deficiência.\n§ 12. Aumenta-se a pena de:\nI - 1/3 (um terço) a 2/3 (dois terços) se a lesão dolosa for praticada:\na) contra autoridade ou agente descrito nos arts. 142 e 144 da Constituição Federal ou integrantes do sistema prisional ou da Força Nacional de Segurança Pública, no exercício da função ou em decorrência dela, ou contra seu cônjuge, companheiro ou parente consanguíneo até terceiro grau, em razão dessa condição;\nb) contra membro do Poder Judiciário, do Ministério Público, da Defensoria Pública ou da Advocacia Pública, de que tratam os arts. 131 e 132 da Constituição Federal, ou oficial de justiça, no exercício da função ou em decorrência dela, ou contra seu cônjuge, companheiro ou parente, inclusive por afinidade, até o terceiro grau, em razão dessa condição; ou\nc) nas dependências de instituição de ensino;\nII - 2/3 (dois terços) ao dobro se a lesão dolosa for praticada nas dependências de instituição de ensino e:\na) a vítima for pessoa com deficiência ou com doença que acarrete condição limitante ou de vulnerabilidade física ou mental; ou\nb) o autor for ascendente, padrasto ou madrasta, tio, irmão, cônjuge, companheiro, tutor, curador, preceptor ou empregador da vítima ou por qualquer outro título tiver autoridade sobre ela ou, ainda, for professor ou funcionário da instituição de ensino.\n§ 13. Se a lesão é praticada contra a mulher, por razões da condição do sexo feminino, nos termos do § 1º do art. 121-A deste Código:\nPena – reclusão, de 2 (dois) a 5 (cinco) anos."
+   }
+  ]
+ },
+ {
+  "item": "j0385",
+  "pergunta": "eu vou ser avisada se ele for solto?",
+  "resposta": "Sim, você tem o direito de ser avisada sobre a saída do agressor da prisão [1]. A lei determina que a ofendida deve ser notificada sobre os atos processuais relacionados ao agressor, especialmente nos casos de entrada e saída da prisão, garantindo que você receba essas informações independentemente do seu advogado ou defensor público [1]. É importante lembrar que você nunca deve entregar pessoalmente qualquer intimação ou notificação ao agressor [1].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 21",
+    "texto": "Art. 21. A ofendida deverá ser notificada dos atos processuais relativos ao agressor, especialmente dos pertinentes ao ingresso e à saída da prisão, sem prejuízo da intimação do advogado constituído ou do defensor público.\nParágrafo único. A ofendida não poderá entregar intimação ou notificação ao agressor ."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 22 (parte 2/2)",
+    "texto": "Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras: (continuação)\n§ 6º A aplicação da medida prevista no inciso VIII do caput deste artigo terá prioridade nos casos em que houver descumprimento de medidas protetivas anteriormente impostas ou quando for verificado risco iminente à integridade física ou psicológica da vítima.\n§ 7º Para a efetivação da medida prevista no inciso VIII do caput deste artigo, a autoridade competente promoverá a instalação do equipamento e instruirá o agressor sobre o seu funcionamento e as áreas de exclusão onde não poderá circular, conforme definido na decisão da autoridade judicial, devendo a ciência constar de termo nos autos.\n§ 8º O sistema de monitoração eletrônica de que trata o inciso VIII do caput deste artigo deverá emitir alerta automático e simultâneo à vítima e à unidade policial mais próxima sempre que o agressor romper o perímetro de exclusão fixado judicialmente.\n§ 9º Nos casos previstos no § 6º deste artigo, a decisão judicial que deixar de aplicar a medida protetiva de monitoração eletrônica deverá apresentar fundamentação expressa quanto às razões da não aplicação da medida.\n§ 10 As medidas protetivas de natureza cível, inclusive as de prestação de alimentos provisionais ou provisórios, constituem título executivo judicial de pleno direito, dispensando a propositura de ação principal."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 21",
+    "texto": "Art. 21. A ofendida deverá ser notificada dos atos processuais relativos ao agressor, especialmente dos pertinentes ao ingresso e à saída da prisão, sem prejuízo da intimação do advogado constituído ou do defensor público.\nParágrafo único. A ofendida não poderá entregar intimação ou notificação ao agressor ."
+   }
+  ]
+ },
+ {
+  "item": "j0386",
+  "pergunta": "ele pode ser obrigado a sair de casa?",
+  "resposta": "Sinto muito pelo que você está passando. A lei determina que, caso exista risco atual ou iminente à sua vida ou integridade física, sexual, psicológica, moral ou patrimonial, ou de seus dependentes, o agressor será imediatamente afastado do lar, domicílio ou local de convivência [2]. Esse afastamento pode ser determinado pela autoridade judicial, pelo delegado de polícia ou, em situações específicas, por policiais [2].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 148",
+    "texto": "Seqüestro e cárcere privado\nArt. 148 - Privar alguém de sua liberdade, mediante seqüestro ou cárcere privado:\nPena - reclusão, de um a três anos.\n§ 1º - A pena é de reclusão, de dois a cinco anos:\nI – se a vítima é ascendente, descendente, cônjuge ou companheiro do agente ou maior de 60 (sessenta) anos;\nII - se o crime é praticado mediante internação da vítima em casa de saúde ou hospital;\nIII - se a privação da liberdade dura mais de quinze dias.\nIV – se o crime é praticado contra menor de 18 (dezoito) anos;\nV – se o crime é praticado com fins libidinosos.\n§ 2º - Se resulta à vítima, em razão de maus-tratos ou da natureza da detenção, grave sofrimento físico ou moral:\nPena - reclusão, de dois a oito anos.\n§ 3º Se cometido por integrante de organização criminosa ultraviolenta, grupo paramilitar ou milícia privada, no contexto da atuação ou para a consecução das condutas previstas no art. 2º da lei que institui o marco legal do combate ao crime organizado no Brasil:\nPena - reclusão, de 12 (doze) a 20 (vinte) anos."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12-C",
+    "texto": "Art. 12-C. Verificada a existência de risco atual ou iminente à vida ou à integridade física, sexual, psicológica, moral ou patrimonial da mulher em situação de violência doméstica e familiar, ou de seus dependentes, o agressor será imediatamente afastado do lar, domicílio ou local de convivência com a ofendida:\nI - pela autoridade judicial;\nII - pelo delegado de polícia, quando o Município não for sede de comarca; ou\nIII - pelo policial, quando o Município não for sede de comarca e não houver delegado disponível no momento da denúncia.\n§ 1º Nas hipóteses dos incisos II e III do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.\n§ 2º Nos casos de risco à integridade física da ofendida ou à efetividade da medida protetiva de urgência, não será concedida liberdade provisória ao preso."
+   },
+   {
+    "n": 3,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 23",
+    "texto": "Art. 23. Poderá o juiz, quando necessário, sem prejuízo de outras medidas:\nI - encaminhar a ofendida e seus dependentes a programa oficial ou comunitário de proteção ou de atendimento;\nII - determinar a recondução da ofendida e a de seus dependentes ao respectivo domicílio, após afastamento do agressor;\nIII - determinar o afastamento da ofendida do lar, sem prejuízo dos direitos relativos a bens, guarda dos filhos e alimentos;\nIV - determinar a separação de corpos.\nV - determinar a matrícula dos dependentes da ofendida em instituição de educação básica mais próxima do seu domicílio, ou a transferência deles para essa instituição, independentemente da existência de vaga.\nVI – conceder à ofendida auxílio-aluguel, com valor fixado em função de sua situação de vulnerabilidade social e econômica, por período não superior a 6 (seis) meses."
+   },
+   {
+    "n": 4,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 40",
+    "texto": "Art. 40. As obrigações previstas nesta Lei não excluem outras decorrentes dos princípios por ela adotados."
+   },
+   {
+    "n": 5,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 3",
+    "texto": "Art. 3º Serão asseguradas às mulheres as condições para o exercício efetivo dos direitos à vida, à segurança, à saúde, à alimentação, à educação, à cultura, à moradia, ao acesso à justiça, ao esporte, ao lazer, ao trabalho, à cidadania, à liberdade, à dignidade, ao respeito e à convivência familiar e comunitária.\n§ 1º O poder público desenvolverá políticas que visem garantir os direitos humanos das mulheres no âmbito das relações domésticas e familiares no sentido de resguardá-las de toda forma de negligência, discriminação, exploração, violência, crueldade e opressão.\n§ 2º Cabe à família, à sociedade e ao poder público criar as condições necessárias para o efetivo exercício dos direitos enunciados no caput."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12-C",
+    "texto": "Art. 12-C. Verificada a existência de risco atual ou iminente à vida ou à integridade física, sexual, psicológica, moral ou patrimonial da mulher em situação de violência doméstica e familiar, ou de seus dependentes, o agressor será imediatamente afastado do lar, domicílio ou local de convivência com a ofendida:\nI - pela autoridade judicial;\nII - pelo delegado de polícia, quando o Município não for sede de comarca; ou\nIII - pelo policial, quando o Município não for sede de comarca e não houver delegado disponível no momento da denúncia.\n§ 1º Nas hipóteses dos incisos II e III do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.\n§ 2º Nos casos de risco à integridade física da ofendida ou à efetividade da medida protetiva de urgência, não será concedida liberdade provisória ao preso."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 22 (parte 1/2)",
+    "texto": "Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras:\nI - suspensão da posse ou restrição do porte de armas, com comunicação ao órgão competente, nos termos da Lei nº 10.826, de 22 de dezembro de 2003 ;\nII - afastamento do lar, domicílio ou local de convivência com a ofendida;\nIII - proibição de determinadas condutas, entre as quais:\na) aproximação da ofendida, de seus familiares e das testemunhas, fixando o limite mínimo de distância entre estes e o agressor;\nb) contato com a ofendida, seus familiares e testemunhas por qualquer meio de comunicação;\nc) freqüentação de determinados lugares a fim de preservar a integridade física e psicológica da ofendida;\nIV - restrição ou suspensão de visitas aos dependentes menores, ouvida a equipe de atendimento multidisciplinar ou serviço similar;\nV - prestação de alimentos provisionais ou provisórios.\nVI – comparecimento do agressor a programas de recuperação e reeducação; e\nVII – acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio.\nVIII – monitoração eletrônica, disponibilizando-se à vítima aplicação ou dispositivo de segurança que alerte sobre eventual aproximação do agressor.\n§ 1º As medidas referidas neste artigo não impedem a aplicação de outras previstas na legislação em vigor, sempre que a segurança da ofendida ou as circunstâncias o exigirem, devendo a providência ser comunicada ao Ministério Público.\n§ 2º Na hipótese de aplicação do inciso I, encontrando-se o agressor nas condições mencionadas no caput e incisos do art. 6º da Lei nº 10.826, de 22 de dezembro de 2003, o juiz comunicará ao respectivo órgão, corporação ou instituição as medidas protetivas de urgência concedidas e determinará a restrição do porte de armas, ficando o superior imediato do agressor responsável pelo cumprimento da determinação judicial, sob pena de incorrer nos crimes de prevaricação ou de desobediência, conforme o caso.\n§ 3º Para garantir a efetividade das medidas protetivas de urgência, poderá o juiz requisitar, a qualquer momento, auxílio da força policial.\n§ 4º Na aplicação das medidas protetivas de urgência, o juiz concederá a tutela específica ou determinará providências que assegurem a obtenção de tutela pelo resultado prático equivalente."
+   }
+  ]
+ },
+ {
+  "item": "j0387",
+  "pergunta": "a cidade não tem juiz, o delegado pode tirar ele de casa?",
+  "resposta": "Sim, se o município não for sede de comarca (ou seja, se não houver um juiz na cidade), o delegado de polícia pode determinar o afastamento do agressor do lar, domicílio ou local de convivência com a vítima, caso haja risco atual ou iminente à sua vida ou integridade [1]. Após essa decisão, o delegado deve comunicar o juiz em até 24 horas para que ele decida se a medida deve ser mantida ou revogada [1].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12-C",
+    "texto": "Art. 12-C. Verificada a existência de risco atual ou iminente à vida ou à integridade física, sexual, psicológica, moral ou patrimonial da mulher em situação de violência doméstica e familiar, ou de seus dependentes, o agressor será imediatamente afastado do lar, domicílio ou local de convivência com a ofendida:\nI - pela autoridade judicial;\nII - pelo delegado de polícia, quando o Município não for sede de comarca; ou\nIII - pelo policial, quando o Município não for sede de comarca e não houver delegado disponível no momento da denúncia.\n§ 1º Nas hipóteses dos incisos II e III do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.\n§ 2º Nos casos de risco à integridade física da ofendida ou à efetividade da medida protetiva de urgência, não será concedida liberdade provisória ao preso."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12-C",
+    "texto": "Art. 12-C. Verificada a existência de risco atual ou iminente à vida ou à integridade física, sexual, psicológica, moral ou patrimonial da mulher em situação de violência doméstica e familiar, ou de seus dependentes, o agressor será imediatamente afastado do lar, domicílio ou local de convivência com a ofendida:\nI - pela autoridade judicial;\nII - pelo delegado de polícia, quando o Município não for sede de comarca; ou\nIII - pelo policial, quando o Município não for sede de comarca e não houver delegado disponível no momento da denúncia.\n§ 1º Nas hipóteses dos incisos II e III do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.\n§ 2º Nos casos de risco à integridade física da ofendida ou à efetividade da medida protetiva de urgência, não será concedida liberdade provisória ao preso."
+   }
+  ]
+ },
+ {
+  "item": "j0388",
+  "pergunta": "Preciso que ele fique longe de mim, o que preciso fazer?",
+  "resposta": "Sinto muito que você esteja passando por isso. Você pode solicitar medidas protetivas de urgência ao juiz para sua proteção [2]. Essas medidas podem incluir o afastamento do agressor do lar e a proibição de que ele se aproxime de você, de seus familiares ou entre em contato por qualquer meio [3]. Além disso, se houver risco atual ou iminente à sua integridade, o agressor poderá ser afastado do convívio com você imediatamente pela autoridade judicial, pelo delegado ou, em certos casos, pelo policial [1]. O pedido das medidas pode ser feito a partir do seu depoimento à autoridade policial ou por escrito, sem necessidade de audiência prévia das partes [2].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12-C",
+    "texto": "Art. 12-C. Verificada a existência de risco atual ou iminente à vida ou à integridade física, sexual, psicológica, moral ou patrimonial da mulher em situação de violência doméstica e familiar, ou de seus dependentes, o agressor será imediatamente afastado do lar, domicílio ou local de convivência com a ofendida:\nI - pela autoridade judicial;\nII - pelo delegado de polícia, quando o Município não for sede de comarca; ou\nIII - pelo policial, quando o Município não for sede de comarca e não houver delegado disponível no momento da denúncia.\n§ 1º Nas hipóteses dos incisos II e III do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.\n§ 2º Nos casos de risco à integridade física da ofendida ou à efetividade da medida protetiva de urgência, não será concedida liberdade provisória ao preso."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 19",
+    "texto": "Art. 19. As medidas protetivas de urgência poderão ser concedidas pelo juiz, a requerimento do Ministério Público ou a pedido da ofendida.\n§ 1º As medidas protetivas de urgência poderão ser concedidas de imediato, independentemente de audiência das partes e de manifestação do Ministério Público, devendo este ser prontamente comunicado.\n§ 2º As medidas protetivas de urgência serão aplicadas isolada ou cumulativamente, e poderão ser substituídas a qualquer tempo por outras de maior eficácia, sempre que os direitos reconhecidos nesta Lei forem ameaçados ou violados.\n§ 3º Poderá o juiz, a requerimento do Ministério Público ou a pedido da ofendida, conceder novas medidas protetivas de urgência ou rever aquelas já concedidas, se entender necessário à proteção da ofendida, de seus familiares e de seu patrimônio, ouvido o Ministério Público.\n§ 4º As medidas protetivas de urgência serão concedidas em juízo de cognição sumária a partir do depoimento da ofendida perante a autoridade policial ou da apresentação de suas alegações escritas e poderão ser indeferidas no caso de avaliação pela autoridade de inexistência de risco à integridade física, psicológica, sexual, patrimonial ou moral da ofendida ou de seus dependentes.\n§ 5º As medidas protetivas de urgência serão concedidas independentemente da tipificação penal da violência, do ajuizamento de ação penal ou cível, da existência de inquérito policial ou do registro de boletim de ocorrência.\n§ 6º As medidas protetivas de urgência vigorarão enquanto persistir risco à integridade física, psicológica, sexual, patrimonial ou moral da ofendida ou de seus dependentes."
+   },
+   {
+    "n": 3,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 22 (parte 1/2)",
+    "texto": "Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras:\nI - suspensão da posse ou restrição do porte de armas, com comunicação ao órgão competente, nos termos da Lei nº 10.826, de 22 de dezembro de 2003 ;\nII - afastamento do lar, domicílio ou local de convivência com a ofendida;\nIII - proibição de determinadas condutas, entre as quais:\na) aproximação da ofendida, de seus familiares e das testemunhas, fixando o limite mínimo de distância entre estes e o agressor;\nb) contato com a ofendida, seus familiares e testemunhas por qualquer meio de comunicação;\nc) freqüentação de determinados lugares a fim de preservar a integridade física e psicológica da ofendida;\nIV - restrição ou suspensão de visitas aos dependentes menores, ouvida a equipe de atendimento multidisciplinar ou serviço similar;\nV - prestação de alimentos provisionais ou provisórios.\nVI – comparecimento do agressor a programas de recuperação e reeducação; e\nVII – acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio.\nVIII – monitoração eletrônica, disponibilizando-se à vítima aplicação ou dispositivo de segurança que alerte sobre eventual aproximação do agressor.\n§ 1º As medidas referidas neste artigo não impedem a aplicação de outras previstas na legislação em vigor, sempre que a segurança da ofendida ou as circunstâncias o exigirem, devendo a providência ser comunicada ao Ministério Público.\n§ 2º Na hipótese de aplicação do inciso I, encontrando-se o agressor nas condições mencionadas no caput e incisos do art. 6º da Lei nº 10.826, de 22 de dezembro de 2003, o juiz comunicará ao respectivo órgão, corporação ou instituição as medidas protetivas de urgência concedidas e determinará a restrição do porte de armas, ficando o superior imediato do agressor responsável pelo cumprimento da determinação judicial, sob pena de incorrer nos crimes de prevaricação ou de desobediência, conforme o caso.\n§ 3º Para garantir a efetividade das medidas protetivas de urgência, poderá o juiz requisitar, a qualquer momento, auxílio da força policial.\n§ 4º Na aplicação das medidas protetivas de urgência, o juiz concederá a tutela específica ou determinará providências que assegurem a obtenção de tutela pelo resultado prático equivalente."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12-C",
+    "texto": "Art. 12-C. Verificada a existência de risco atual ou iminente à vida ou à integridade física, sexual, psicológica, moral ou patrimonial da mulher em situação de violência doméstica e familiar, ou de seus dependentes, o agressor será imediatamente afastado do lar, domicílio ou local de convivência com a ofendida:\nI - pela autoridade judicial;\nII - pelo delegado de polícia, quando o Município não for sede de comarca; ou\nIII - pelo policial, quando o Município não for sede de comarca e não houver delegado disponível no momento da denúncia.\n§ 1º Nas hipóteses dos incisos II e III do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.\n§ 2º Nos casos de risco à integridade física da ofendida ou à efetividade da medida protetiva de urgência, não será concedida liberdade provisória ao preso."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 19",
+    "texto": "Art. 19. As medidas protetivas de urgência poderão ser concedidas pelo juiz, a requerimento do Ministério Público ou a pedido da ofendida.\n§ 1º As medidas protetivas de urgência poderão ser concedidas de imediato, independentemente de audiência das partes e de manifestação do Ministério Público, devendo este ser prontamente comunicado.\n§ 2º As medidas protetivas de urgência serão aplicadas isolada ou cumulativamente, e poderão ser substituídas a qualquer tempo por outras de maior eficácia, sempre que os direitos reconhecidos nesta Lei forem ameaçados ou violados.\n§ 3º Poderá o juiz, a requerimento do Ministério Público ou a pedido da ofendida, conceder novas medidas protetivas de urgência ou rever aquelas já concedidas, se entender necessário à proteção da ofendida, de seus familiares e de seu patrimônio, ouvido o Ministério Público.\n§ 4º As medidas protetivas de urgência serão concedidas em juízo de cognição sumária a partir do depoimento da ofendida perante a autoridade policial ou da apresentação de suas alegações escritas e poderão ser indeferidas no caso de avaliação pela autoridade de inexistência de risco à integridade física, psicológica, sexual, patrimonial ou moral da ofendida ou de seus dependentes.\n§ 5º As medidas protetivas de urgência serão concedidas independentemente da tipificação penal da violência, do ajuizamento de ação penal ou cível, da existência de inquérito policial ou do registro de boletim de ocorrência.\n§ 6º As medidas protetivas de urgência vigorarão enquanto persistir risco à integridade física, psicológica, sexual, patrimonial ou moral da ofendida ou de seus dependentes."
+   },
+   {
+    "n": 3,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 22 (parte 1/2)",
+    "texto": "Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras:\nI - suspensão da posse ou restrição do porte de armas, com comunicação ao órgão competente, nos termos da Lei nº 10.826, de 22 de dezembro de 2003 ;\nII - afastamento do lar, domicílio ou local de convivência com a ofendida;\nIII - proibição de determinadas condutas, entre as quais:\na) aproximação da ofendida, de seus familiares e das testemunhas, fixando o limite mínimo de distância entre estes e o agressor;\nb) contato com a ofendida, seus familiares e testemunhas por qualquer meio de comunicação;\nc) freqüentação de determinados lugares a fim de preservar a integridade física e psicológica da ofendida;\nIV - restrição ou suspensão de visitas aos dependentes menores, ouvida a equipe de atendimento multidisciplinar ou serviço similar;\nV - prestação de alimentos provisionais ou provisórios.\nVI – comparecimento do agressor a programas de recuperação e reeducação; e\nVII – acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio.\nVIII – monitoração eletrônica, disponibilizando-se à vítima aplicação ou dispositivo de segurança que alerte sobre eventual aproximação do agressor.\n§ 1º As medidas referidas neste artigo não impedem a aplicação de outras previstas na legislação em vigor, sempre que a segurança da ofendida ou as circunstâncias o exigirem, devendo a providência ser comunicada ao Ministério Público.\n§ 2º Na hipótese de aplicação do inciso I, encontrando-se o agressor nas condições mencionadas no caput e incisos do art. 6º da Lei nº 10.826, de 22 de dezembro de 2003, o juiz comunicará ao respectivo órgão, corporação ou instituição as medidas protetivas de urgência concedidas e determinará a restrição do porte de armas, ficando o superior imediato do agressor responsável pelo cumprimento da determinação judicial, sob pena de incorrer nos crimes de prevaricação ou de desobediência, conforme o caso.\n§ 3º Para garantir a efetividade das medidas protetivas de urgência, poderá o juiz requisitar, a qualquer momento, auxílio da força policial.\n§ 4º Na aplicação das medidas protetivas de urgência, o juiz concederá a tutela específica ou determinará providências que assegurem a obtenção de tutela pelo resultado prático equivalente."
+   }
+  ]
+ },
+ {
+  "item": "j0389",
+  "pergunta": "O que o ministerio publico faz em casos de violencia?",
+  "resposta": "O Ministério Público atua em casos de violência doméstica de diversas formas. Ele deve intervir em processos cíveis e criminais caso não seja a parte autora [1]. Além disso, o Ministério Público pode pedir auxílio de forças policiais e de serviços de saúde, educação, assistência social e segurança [2]. Ele também é responsável por fiscalizar locais que atendem mulheres vítimas de violência, tomando medidas caso encontre irregularidades [2]. Por fim, o órgão também realiza o cadastro desses casos de violência [2].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 25",
+    "texto": "Art. 25. O Ministério Público intervirá, quando não for parte, nas causas cíveis e criminais decorrentes da violência doméstica e familiar contra a mulher."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 26",
+    "texto": "Art. 26. Caberá ao Ministério Público, sem prejuízo de outras atribuições, nos casos de violência doméstica e familiar contra a mulher, quando necessário:\nI - requisitar força policial e serviços públicos de saúde, de educação, de assistência social e de segurança, entre outros;\nII - fiscalizar os estabelecimentos públicos e particulares de atendimento à mulher em situação de violência doméstica e familiar, e adotar, de imediato, as medidas administrativas ou judiciais cabíveis no tocante a quaisquer irregularidades constatadas;\nIII - cadastrar os casos de violência doméstica e familiar contra a mulher."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 25",
+    "texto": "Art. 25. O Ministério Público intervirá, quando não for parte, nas causas cíveis e criminais decorrentes da violência doméstica e familiar contra a mulher."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 26",
+    "texto": "Art. 26. Caberá ao Ministério Público, sem prejuízo de outras atribuições, nos casos de violência doméstica e familiar contra a mulher, quando necessário:\nI - requisitar força policial e serviços públicos de saúde, de educação, de assistência social e de segurança, entre outros;\nII - fiscalizar os estabelecimentos públicos e particulares de atendimento à mulher em situação de violência doméstica e familiar, e adotar, de imediato, as medidas administrativas ou judiciais cabíveis no tocante a quaisquer irregularidades constatadas;\nIII - cadastrar os casos de violência doméstica e familiar contra a mulher."
+   }
+  ]
+ },
+ {
+  "item": "j0390",
+  "pergunta": "Saí de casa com medo e minhas coisas ficaram lá. A polícia pode ir comigo buscar?",
+  "resposta": "Sinto muito que você esteja passando por isso. De acordo com a lei, é uma das atribuições da autoridade policial acompanhar a mulher, caso seja necessário, para garantir a retirada de seus pertences do domicílio familiar [1].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 11",
+    "texto": "Art. 11. No atendimento à mulher em situação de violência doméstica e familiar, a autoridade policial deverá, entre outras providências:\nI - garantir proteção policial, quando necessário, comunicando de imediato ao Ministério Público e ao Poder Judiciário;\nII - encaminhar a ofendida ao hospital ou posto de saúde e ao Instituto Médico Legal;\nIII - fornecer transporte para a ofendida e seus dependentes para abrigo ou local seguro, quando houver risco de vida;\nIV - se necessário, acompanhar a ofendida para assegurar a retirada de seus pertences do local da ocorrência ou do domicílio familiar;\nV - informar à ofendida os direitos a ela conferidos nesta Lei e os serviços disponíveis, inclusive os de assistência judiciária para o eventual ajuizamento perante o juízo competente da ação de separação judicial, de divórcio, de anulação de casamento ou de dissolução de união estável.\nParágrafo único. Verificados indícios de redução a condição análoga à de escravo ou outra forma de violência doméstica contra a trabalhadora doméstica, a autoridade policial que tomar conhecimento da ocorrência deverá comunicá-la, em até 48 (quarenta e oito) horas, à unidade regional do Ministério do Trabalho e Emprego e ao Ministério Público do Trabalho."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12-C",
+    "texto": "Art. 12-C. Verificada a existência de risco atual ou iminente à vida ou à integridade física, sexual, psicológica, moral ou patrimonial da mulher em situação de violência doméstica e familiar, ou de seus dependentes, o agressor será imediatamente afastado do lar, domicílio ou local de convivência com a ofendida:\nI - pela autoridade judicial;\nII - pelo delegado de polícia, quando o Município não for sede de comarca; ou\nIII - pelo policial, quando o Município não for sede de comarca e não houver delegado disponível no momento da denúncia.\n§ 1º Nas hipóteses dos incisos II e III do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.\n§ 2º Nos casos de risco à integridade física da ofendida ou à efetividade da medida protetiva de urgência, não será concedida liberdade provisória ao preso."
+   },
+   {
+    "n": 3,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 24",
+    "texto": "Art. 24. Para a proteção patrimonial dos bens da sociedade conjugal ou daqueles de propriedade particular da mulher, o juiz poderá determinar, liminarmente, as seguintes medidas, entre outras:\nI - restituição de bens indevidamente subtraídos pelo agressor à ofendida;\nII - proibição temporária para a celebração de atos e contratos de compra, venda e locação de propriedade em comum, salvo expressa autorização judicial;\nIII - suspensão das procurações conferidas pela ofendida ao agressor;\nIV - prestação de caução provisória, mediante depósito judicial, por perdas e danos materiais decorrentes da prática de violência doméstica e familiar contra a ofendida.\nParágrafo único. Deverá o juiz oficiar ao cartório competente para os fins previstos nos incisos II e III deste artigo."
+   },
+   {
+    "n": 4,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 10-A",
+    "texto": "Art. 10-A. É direito da mulher em situação de violência doméstica e familiar o atendimento policial e pericial especializado, ininterrupto e prestado por servidores - preferencialmente do sexo feminino - previamente capacitados.\n§ 1º A inquirição de mulher em situação de violência doméstica e familiar ou de testemunha de violência doméstica, quando se tratar de crime contra a mulher, obedecerá às seguintes diretrizes:\nI - salvaguarda da integridade física, psíquica e emocional da depoente, considerada a sua condição peculiar de pessoa em situação de violência doméstica e familiar;\nII - garantia de que, em nenhuma hipótese, a mulher em situação de violência doméstica e familiar, familiares e testemunhas terão contato direto com investigados ou suspeitos e pessoas a eles relacionadas;\nIII - não revitimização da depoente, evitando sucessivas inquirições sobre o mesmo fato nos âmbitos criminal, cível e administrativo, bem como questionamentos sobre a vida privada.\n§ 2º Na inquirição de mulher em situação de violência doméstica e familiar ou de testemunha de delitos de que trata esta Lei, adotar-se-á, preferencialmente, o seguinte procedimento:\nI - a inquirição será feita em recinto especialmente projetado para esse fim, o qual conterá os equipamentos próprios e adequados à idade da mulher em situação de violência doméstica e familiar ou testemunha e ao tipo e à gravidade da violência sofrida;\nII - quando for o caso, a inquirição será intermediada por profissional especializado em violência doméstica e familiar designado pela autoridade judiciária ou policial;\nIII - o depoimento será registrado em meio eletrônico ou magnético, devendo a degravação e a mídia integrar o inquérito."
+   },
+   {
+    "n": 5,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso IV",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nIV - a violência patrimonial, entendida como qualquer conduta que configure retenção, subtração, destruição parcial ou total de seus objetos, instrumentos de trabalho, documentos pessoais, bens, valores e direitos ou recursos econômicos, incluindo os destinados a satisfazer suas necessidades;"
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 11",
+    "texto": "Art. 11. No atendimento à mulher em situação de violência doméstica e familiar, a autoridade policial deverá, entre outras providências:\nI - garantir proteção policial, quando necessário, comunicando de imediato ao Ministério Público e ao Poder Judiciário;\nII - encaminhar a ofendida ao hospital ou posto de saúde e ao Instituto Médico Legal;\nIII - fornecer transporte para a ofendida e seus dependentes para abrigo ou local seguro, quando houver risco de vida;\nIV - se necessário, acompanhar a ofendida para assegurar a retirada de seus pertences do local da ocorrência ou do domicílio familiar;\nV - informar à ofendida os direitos a ela conferidos nesta Lei e os serviços disponíveis, inclusive os de assistência judiciária para o eventual ajuizamento perante o juízo competente da ação de separação judicial, de divórcio, de anulação de casamento ou de dissolução de união estável.\nParágrafo único. Verificados indícios de redução a condição análoga à de escravo ou outra forma de violência doméstica contra a trabalhadora doméstica, a autoridade policial que tomar conhecimento da ocorrência deverá comunicá-la, em até 48 (quarenta e oito) horas, à unidade regional do Ministério do Trabalho e Emprego e ao Ministério Público do Trabalho."
+   }
+  ]
+ },
+ {
+  "item": "j0391",
+  "pergunta": "Disse que eu sou inutil e que as coisas vão piorar pra mim se eu não mudar",
+  "resposta": "Sinto muito que você esteja passando por isso. O que você descreveu, como xingamentos que diminuem sua autoestima e ameaças, é uma forma de violência psicológica. A Lei Maria da Penha (Lei 11.340/2006) reconhece essa conduta como uma forma de violência doméstica. O artigo 7º dessa lei lista a violência psicológica como qualquer ação que cause dano emocional, diminuição da autoestima ou que controle seu comportamento. Você não está sozinha e existem redes de apoio. Você pode buscar orientações em um Centro de Referência da Mulher ou ligar para o número 180, que é a Central de Atendimento à Mulher, um serviço gratuito e sigiloso que funciona 24 horas por dia para oferecer suporte e orientações sobre como proceder.",
+  "trechos_fornecidos": [],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 5",
+    "texto": "Art. 5º Para os efeitos desta Lei, configura violência doméstica e familiar contra a mulher qualquer ação ou omissão baseada no gênero que lhe cause morte, lesão, sofrimento físico, sexual ou psicológico e dano moral ou patrimonial:\nI - no âmbito da unidade doméstica, compreendida como o espaço de convívio permanente de pessoas, com ou sem vínculo familiar, inclusive as esporadicamente agregadas;\nII - no âmbito da família, compreendida como a comunidade formada por indivíduos que são ou se consideram aparentados, unidos por laços naturais, por afinidade ou por vontade expressa;\nIII - em qualquer relação íntima de afeto, na qual o agressor conviva ou tenha convivido com a ofendida, independentemente de coabitação.\nParágrafo único. As relações pessoais enunciadas neste artigo independem de orientação sexual."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso II",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nII - a violência psicológica, entendida como qualquer conduta que lhe cause dano emocional e diminuição da autoestima ou que lhe prejudique e perturbe o pleno desenvolvimento ou que vise degradar ou controlar suas ações, comportamentos, crenças e decisões, mediante ameaça, constrangimento, humilhação, manipulação, isolamento, vigilância constante, perseguição contumaz, insulto, chantagem, violação de sua intimidade, ridicularização, exploração e limitação do direito de ir e vir ou qualquer outro meio que lhe cause prejuízo à saúde psicológica e à autodeterminação;"
+   }
+  ]
+ },
+ {
+  "item": "j0392",
+  "pergunta": "meu marido me obrigou a ter relação, isso é estupro?",
+  "resposta": "Sinto muito que você esteja passando por isso. De acordo com a lei, é considerado crime de estupro constranger alguém, mediante violência ou grave ameaça, a ter conjunção carnal ou a praticar ou permitir outro ato sexual [1]. Os trechos consultados definem a conduta criminosa, mas não mencionam especificamente o vínculo matrimonial.",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 213",
+    "texto": "Estupro\nArt. 213. Constranger alguém, mediante violência ou grave ameaça, a ter conjunção carnal ou a praticar ou permitir que com ele se pratique outro ato libidinoso:\nPena - reclusão, de 6 (seis) a 10 (dez) anos.\n§ 1o Se da conduta resulta lesão corporal de natureza grave ou se a vítima é menor de 18 (dezoito) ou maior de 14 (catorze) anos:\nPena - reclusão, de 8 (oito) a 12 (doze) anos.\n§ 2o Se da conduta resulta morte:\nPena - reclusão, de 12 (doze) a 30 (trinta) anos"
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 213",
+    "texto": "Estupro\nArt. 213. Constranger alguém, mediante violência ou grave ameaça, a ter conjunção carnal ou a praticar ou permitir que com ele se pratique outro ato libidinoso:\nPena - reclusão, de 6 (seis) a 10 (dez) anos.\n§ 1o Se da conduta resulta lesão corporal de natureza grave ou se a vítima é menor de 18 (dezoito) ou maior de 14 (catorze) anos:\nPena - reclusão, de 8 (oito) a 12 (doze) anos.\n§ 2o Se da conduta resulta morte:\nPena - reclusão, de 12 (doze) a 30 (trinta) anos"
+   }
+  ]
+ },
+ {
+  "item": "j0393",
+  "pergunta": "N sei oq fazer, ele levou meu celular e to presa em casa",
+  "resposta": "Sinto muito que esteja passando por isso. Você não está sozinha e existem formas de buscar ajuda. Retirar seu celular ou mantê-la presa em casa são formas de violência. De acordo com a Lei Maria da Penha (Lei 11.340/2006, art. 7º, inciso II), a violência psicológica e a restrição da sua liberdade são formas de violência doméstica. Se conseguir, peça ajuda a alguém de confiança ou tente ligar para o 180, que é a Central de Atendimento à Mulher. Se estiver em perigo imediato, ligue para o 190. Você tem direito a medidas protetivas de urgência para garantir sua segurança e afastar o agressor, conforme o artigo 22 da mesma lei. Procure uma Delegacia da Mulher assim que possível.",
+  "trechos_fornecidos": [],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso II",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nII - a violência psicológica, entendida como qualquer conduta que lhe cause dano emocional e diminuição da autoestima ou que lhe prejudique e perturbe o pleno desenvolvimento ou que vise degradar ou controlar suas ações, comportamentos, crenças e decisões, mediante ameaça, constrangimento, humilhação, manipulação, isolamento, vigilância constante, perseguição contumaz, insulto, chantagem, violação de sua intimidade, ridicularização, exploração e limitação do direito de ir e vir ou qualquer outro meio que lhe cause prejuízo à saúde psicológica e à autodeterminação;"
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 7, inciso IV",
+    "texto": "Art. 7º São formas de violência doméstica e familiar contra a mulher, entre outras:\nIV - a violência patrimonial, entendida como qualquer conduta que configure retenção, subtração, destruição parcial ou total de seus objetos, instrumentos de trabalho, documentos pessoais, bens, valores e direitos ou recursos econômicos, incluindo os destinados a satisfazer suas necessidades;"
+   },
+   {
+    "n": 3,
+    "fonte": "Código Penal (Decreto-Lei nº 2.848/1940), Art. 148",
+    "texto": "Seqüestro e cárcere privado\nArt. 148 - Privar alguém de sua liberdade, mediante seqüestro ou cárcere privado:\nPena - reclusão, de um a três anos.\n§ 1º - A pena é de reclusão, de dois a cinco anos:\nI – se a vítima é ascendente, descendente, cônjuge ou companheiro do agente ou maior de 60 (sessenta) anos;\nII - se o crime é praticado mediante internação da vítima em casa de saúde ou hospital;\nIII - se a privação da liberdade dura mais de quinze dias.\nIV – se o crime é praticado contra menor de 18 (dezoito) anos;\nV – se o crime é praticado com fins libidinosos.\n§ 2º - Se resulta à vítima, em razão de maus-tratos ou da natureza da detenção, grave sofrimento físico ou moral:\nPena - reclusão, de dois a oito anos.\n§ 3º Se cometido por integrante de organização criminosa ultraviolenta, grupo paramilitar ou milícia privada, no contexto da atuação ou para a consecução das condutas previstas no art. 2º da lei que institui o marco legal do combate ao crime organizado no Brasil:\nPena - reclusão, de 12 (doze) a 20 (vinte) anos."
+   }
+  ]
+ },
+ {
+  "item": "j0394",
+  "pergunta": "posso pedir pensão pros meus filhos junto com a medida protetiva?",
+  "resposta": "Sim, a lei permite que o juiz determine a prestação de alimentos provisionais ou provisórios como uma medida protetiva de urgência [1]. Essas medidas podem ser aplicadas de forma isolada ou em conjunto com outras [3]. Além disso, essas medidas de natureza cível, como a prestação de alimentos, valem como um título executivo judicial, o que significa que não é necessário entrar com uma ação principal para exigir o cumprimento [4].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 22 (parte 1/2)",
+    "texto": "Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras:\nI - suspensão da posse ou restrição do porte de armas, com comunicação ao órgão competente, nos termos da Lei nº 10.826, de 22 de dezembro de 2003 ;\nII - afastamento do lar, domicílio ou local de convivência com a ofendida;\nIII - proibição de determinadas condutas, entre as quais:\na) aproximação da ofendida, de seus familiares e das testemunhas, fixando o limite mínimo de distância entre estes e o agressor;\nb) contato com a ofendida, seus familiares e testemunhas por qualquer meio de comunicação;\nc) freqüentação de determinados lugares a fim de preservar a integridade física e psicológica da ofendida;\nIV - restrição ou suspensão de visitas aos dependentes menores, ouvida a equipe de atendimento multidisciplinar ou serviço similar;\nV - prestação de alimentos provisionais ou provisórios.\nVI – comparecimento do agressor a programas de recuperação e reeducação; e\nVII – acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio.\nVIII – monitoração eletrônica, disponibilizando-se à vítima aplicação ou dispositivo de segurança que alerte sobre eventual aproximação do agressor.\n§ 1º As medidas referidas neste artigo não impedem a aplicação de outras previstas na legislação em vigor, sempre que a segurança da ofendida ou as circunstâncias o exigirem, devendo a providência ser comunicada ao Ministério Público.\n§ 2º Na hipótese de aplicação do inciso I, encontrando-se o agressor nas condições mencionadas no caput e incisos do art. 6º da Lei nº 10.826, de 22 de dezembro de 2003, o juiz comunicará ao respectivo órgão, corporação ou instituição as medidas protetivas de urgência concedidas e determinará a restrição do porte de armas, ficando o superior imediato do agressor responsável pelo cumprimento da determinação judicial, sob pena de incorrer nos crimes de prevaricação ou de desobediência, conforme o caso.\n§ 3º Para garantir a efetividade das medidas protetivas de urgência, poderá o juiz requisitar, a qualquer momento, auxílio da força policial.\n§ 4º Na aplicação das medidas protetivas de urgência, o juiz concederá a tutela específica ou determinará providências que assegurem a obtenção de tutela pelo resultado prático equivalente."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 23",
+    "texto": "Art. 23. Poderá o juiz, quando necessário, sem prejuízo de outras medidas:\nI - encaminhar a ofendida e seus dependentes a programa oficial ou comunitário de proteção ou de atendimento;\nII - determinar a recondução da ofendida e a de seus dependentes ao respectivo domicílio, após afastamento do agressor;\nIII - determinar o afastamento da ofendida do lar, sem prejuízo dos direitos relativos a bens, guarda dos filhos e alimentos;\nIV - determinar a separação de corpos.\nV - determinar a matrícula dos dependentes da ofendida em instituição de educação básica mais próxima do seu domicílio, ou a transferência deles para essa instituição, independentemente da existência de vaga.\nVI – conceder à ofendida auxílio-aluguel, com valor fixado em função de sua situação de vulnerabilidade social e econômica, por período não superior a 6 (seis) meses."
+   },
+   {
+    "n": 3,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 19",
+    "texto": "Art. 19. As medidas protetivas de urgência poderão ser concedidas pelo juiz, a requerimento do Ministério Público ou a pedido da ofendida.\n§ 1º As medidas protetivas de urgência poderão ser concedidas de imediato, independentemente de audiência das partes e de manifestação do Ministério Público, devendo este ser prontamente comunicado.\n§ 2º As medidas protetivas de urgência serão aplicadas isolada ou cumulativamente, e poderão ser substituídas a qualquer tempo por outras de maior eficácia, sempre que os direitos reconhecidos nesta Lei forem ameaçados ou violados.\n§ 3º Poderá o juiz, a requerimento do Ministério Público ou a pedido da ofendida, conceder novas medidas protetivas de urgência ou rever aquelas já concedidas, se entender necessário à proteção da ofendida, de seus familiares e de seu patrimônio, ouvido o Ministério Público.\n§ 4º As medidas protetivas de urgência serão concedidas em juízo de cognição sumária a partir do depoimento da ofendida perante a autoridade policial ou da apresentação de suas alegações escritas e poderão ser indeferidas no caso de avaliação pela autoridade de inexistência de risco à integridade física, psicológica, sexual, patrimonial ou moral da ofendida ou de seus dependentes.\n§ 5º As medidas protetivas de urgência serão concedidas independentemente da tipificação penal da violência, do ajuizamento de ação penal ou cível, da existência de inquérito policial ou do registro de boletim de ocorrência.\n§ 6º As medidas protetivas de urgência vigorarão enquanto persistir risco à integridade física, psicológica, sexual, patrimonial ou moral da ofendida ou de seus dependentes."
+   },
+   {
+    "n": 4,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 22 (parte 2/2)",
+    "texto": "Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras: (continuação)\n§ 6º A aplicação da medida prevista no inciso VIII do caput deste artigo terá prioridade nos casos em que houver descumprimento de medidas protetivas anteriormente impostas ou quando for verificado risco iminente à integridade física ou psicológica da vítima.\n§ 7º Para a efetivação da medida prevista no inciso VIII do caput deste artigo, a autoridade competente promoverá a instalação do equipamento e instruirá o agressor sobre o seu funcionamento e as áreas de exclusão onde não poderá circular, conforme definido na decisão da autoridade judicial, devendo a ciência constar de termo nos autos.\n§ 8º O sistema de monitoração eletrônica de que trata o inciso VIII do caput deste artigo deverá emitir alerta automático e simultâneo à vítima e à unidade policial mais próxima sempre que o agressor romper o perímetro de exclusão fixado judicialmente.\n§ 9º Nos casos previstos no § 6º deste artigo, a decisão judicial que deixar de aplicar a medida protetiva de monitoração eletrônica deverá apresentar fundamentação expressa quanto às razões da não aplicação da medida.\n§ 10 As medidas protetivas de natureza cível, inclusive as de prestação de alimentos provisionais ou provisórios, constituem título executivo judicial de pleno direito, dispensando a propositura de ação principal."
+   },
+   {
+    "n": 5,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12-B",
+    "texto": "Art. 12-B. (VETADO).\n§ 3º A autoridade policial poderá requisitar os serviços públicos necessários à defesa da mulher em situação de violência doméstica e familiar e de seus dependentes."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 22 (parte 1/2)",
+    "texto": "Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras:\nI - suspensão da posse ou restrição do porte de armas, com comunicação ao órgão competente, nos termos da Lei nº 10.826, de 22 de dezembro de 2003 ;\nII - afastamento do lar, domicílio ou local de convivência com a ofendida;\nIII - proibição de determinadas condutas, entre as quais:\na) aproximação da ofendida, de seus familiares e das testemunhas, fixando o limite mínimo de distância entre estes e o agressor;\nb) contato com a ofendida, seus familiares e testemunhas por qualquer meio de comunicação;\nc) freqüentação de determinados lugares a fim de preservar a integridade física e psicológica da ofendida;\nIV - restrição ou suspensão de visitas aos dependentes menores, ouvida a equipe de atendimento multidisciplinar ou serviço similar;\nV - prestação de alimentos provisionais ou provisórios.\nVI – comparecimento do agressor a programas de recuperação e reeducação; e\nVII – acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio.\nVIII – monitoração eletrônica, disponibilizando-se à vítima aplicação ou dispositivo de segurança que alerte sobre eventual aproximação do agressor.\n§ 1º As medidas referidas neste artigo não impedem a aplicação de outras previstas na legislação em vigor, sempre que a segurança da ofendida ou as circunstâncias o exigirem, devendo a providência ser comunicada ao Ministério Público.\n§ 2º Na hipótese de aplicação do inciso I, encontrando-se o agressor nas condições mencionadas no caput e incisos do art. 6º da Lei nº 10.826, de 22 de dezembro de 2003, o juiz comunicará ao respectivo órgão, corporação ou instituição as medidas protetivas de urgência concedidas e determinará a restrição do porte de armas, ficando o superior imediato do agressor responsável pelo cumprimento da determinação judicial, sob pena de incorrer nos crimes de prevaricação ou de desobediência, conforme o caso.\n§ 3º Para garantir a efetividade das medidas protetivas de urgência, poderá o juiz requisitar, a qualquer momento, auxílio da força policial.\n§ 4º Na aplicação das medidas protetivas de urgência, o juiz concederá a tutela específica ou determinará providências que assegurem a obtenção de tutela pelo resultado prático equivalente."
+   }
+  ]
+ },
+ {
+  "item": "j0395",
+  "pergunta": "Vou saber quando ele sair da cadeia?",
+  "resposta": "Sim, você tem o direito de ser comunicada sobre a soltura do agressor. De acordo com a Lei Maria da Penha, o juiz deve garantir que você seja avisada quando o agressor for liberado da prisão. Esse aviso é fundamental para a sua segurança e deve ser feito por qualquer meio de comunicação, como telefone ou e-mail, garantindo que você possa se proteger. É muito importante que seus contatos estejam atualizados no processo. Se estiver em perigo imediato, busque ajuda policial pelo número 190 ou ligue para o 180 para orientações.",
+  "trechos_fornecidos": [],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 21",
+    "texto": "Art. 21. A ofendida deverá ser notificada dos atos processuais relativos ao agressor, especialmente dos pertinentes ao ingresso e à saída da prisão, sem prejuízo da intimação do advogado constituído ou do defensor público.\nParágrafo único. A ofendida não poderá entregar intimação ou notificação ao agressor ."
+   }
+  ]
+ },
+ {
+  "item": "j0396",
+  "pergunta": "Tenho prioridade no SUS se for por violência doméstica?",
+  "resposta": "Sim, a assistência à mulher em situação de violência doméstica e familiar deve ser prestada em caráter prioritário no Sistema Único de Saúde (SUS) [1, 2].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 9 (parte 1/2)",
+    "texto": "Art. 9º A assistência à mulher em situação de violência doméstica e familiar será prestada em caráter prioritário no Sistema Único de Saúde (SUS) e no Sistema Único de Segurança Pública (Susp), de forma articulada e conforme os princípios e as diretrizes previstos na Lei nº 8.742, de 7 de dezembro de 1993 (Lei Orgânica da Assistência Social), e em outras normas e políticas públicas de proteção, e emergencialmente, quando for o caso.\n§ 1º O juiz determinará, por prazo certo, a inclusão da mulher em situação de violência doméstica e familiar no cadastro de programas assistenciais do governo federal, estadual e municipal.\n§ 2º O juiz assegurará à mulher em situação de violência doméstica e familiar, para preservar sua integridade física e psicológica:\nI - acesso prioritário à remoção quando servidora pública, integrante da administração direta ou indireta;\nII - manutenção do vínculo trabalhista, quando necessário o afastamento do local de trabalho, por até seis meses.\nIII - encaminhamento à assistência judiciária, quando for o caso, inclusive para eventual ajuizamento da ação de separação judicial, de divórcio, de anulação de casamento ou de dissolução de união estável perante o juízo competente.\n§ 3º A assistência à mulher em situação de violência doméstica e familiar compreenderá o acesso aos benefícios decorrentes do desenvolvimento científico e tecnológico, incluindo os serviços de contracepção de emergência, a profilaxia das Doenças Sexualmente Transmissíveis (DST) e da Síndrome da Imunodeficiência Adquirida (AIDS) e outros procedimentos médicos necessários e cabíveis nos casos de violência sexual.\nAquele que, por ação ou omissão, causar lesão, violência física, sexual ou psicológica e dano moral ou patrimonial a mulher fica obrigado a ressarcir todos os danos causados, inclusive ressarcir ao Sistema Único de Saúde (SUS), de acordo com a tabela SUS, os custos relativos aos serviços de saúde prestados para o total tratamento das vítimas em situação de violência doméstica e familiar, recolhidos os recursos assim arrecadados ao Fundo de Saúde do ente federado responsável pelas unidades de saúde que prestarem os serviços.\n§ 5º Os dispositivos de segurança destinados ao uso em caso de perigo iminente e disponibilizados para o monitoramento das vítimas de violência doméstica ou familiar amparadas por medidas protetivas terão seus custos ressarcidos pelo agressor."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 9 (parte 2/2)",
+    "texto": "Art. 9º A assistência à mulher em situação de violência doméstica e familiar será prestada em caráter prioritário no Sistema Único de Saúde (SUS) e no Sistema Único de Segurança Pública (Susp), de forma articulada e conforme os princípios e as diretrizes previstos na Lei nº 8.742, de 7 de dezembro de 1993 (Lei Orgânica da Assistência Social), e em outras normas e políticas públicas de proteção, e emergencialmente, quando for o caso. (continuação)\n§ 6º O ressarcimento de que tratam os §§ 4º e 5º deste artigo não poderá importar ônus de qualquer natureza ao patrimônio da mulher e dos seus dependentes, nem configurar atenuante ou ensejar possibilidade de substituição da pena aplicada.\n§ 7º A mulher em situação de violência doméstica e familiar tem prioridade para matricular seus dependentes em instituição de educação básica mais próxima de seu domicílio, ou transferi-los para essa instituição, mediante a apresentação dos documentos comprobatórios do registro da ocorrência policial ou do processo de violência doméstica e familiar em curso.\n§ 8º Serão sigilosos os dados da ofendida e de seus dependentes matriculados ou transferidos conforme o disposto no § 7º deste artigo, e o acesso às informações será reservado ao juiz, ao Ministério Público e aos órgãos competentes do poder público."
+   },
+   {
+    "n": 3,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 33",
+    "texto": "Art. 33. Enquanto não estruturados os Juizados de Violência Doméstica e Familiar contra a Mulher, as varas criminais acumularão as competências cível e criminal para conhecer e julgar as causas decorrentes da prática de violência doméstica e familiar contra a mulher, observadas as previsões do Título IV desta Lei, subsidiada pela legislação processual pertinente.\nParágrafo único. Será garantido o direito de preferência, nas varas criminais, para o processo e o julgamento das causas referidas no caput."
+   },
+   {
+    "n": 4,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 22 (parte 2/2)",
+    "texto": "Art. 22. Constatada a prática de violência doméstica e familiar contra a mulher, nos termos desta Lei, o juiz poderá aplicar, de imediato, ao agressor, em conjunto ou separadamente, as seguintes medidas protetivas de urgência, entre outras: (continuação)\n§ 6º A aplicação da medida prevista no inciso VIII do caput deste artigo terá prioridade nos casos em que houver descumprimento de medidas protetivas anteriormente impostas ou quando for verificado risco iminente à integridade física ou psicológica da vítima.\n§ 7º Para a efetivação da medida prevista no inciso VIII do caput deste artigo, a autoridade competente promoverá a instalação do equipamento e instruirá o agressor sobre o seu funcionamento e as áreas de exclusão onde não poderá circular, conforme definido na decisão da autoridade judicial, devendo a ciência constar de termo nos autos.\n§ 8º O sistema de monitoração eletrônica de que trata o inciso VIII do caput deste artigo deverá emitir alerta automático e simultâneo à vítima e à unidade policial mais próxima sempre que o agressor romper o perímetro de exclusão fixado judicialmente.\n§ 9º Nos casos previstos no § 6º deste artigo, a decisão judicial que deixar de aplicar a medida protetiva de monitoração eletrônica deverá apresentar fundamentação expressa quanto às razões da não aplicação da medida.\n§ 10 As medidas protetivas de natureza cível, inclusive as de prestação de alimentos provisionais ou provisórios, constituem título executivo judicial de pleno direito, dispensando a propositura de ação principal."
+   },
+   {
+    "n": 5,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 12-A",
+    "texto": "Art. 12-A. Os Estados e o Distrito Federal, na formulação de suas políticas e planos de atendimento à mulher em situação de violência doméstica e familiar, darão prioridade, no âmbito da Polícia Civil, à criação de Delegacias Especializadas de Atendimento à Mulher (Deams), de Núcleos Investigativos de Feminicídio e de equipes especializadas para o atendimento e a investigação das violências graves contra a mulher."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 9 (parte 1/2)",
+    "texto": "Art. 9º A assistência à mulher em situação de violência doméstica e familiar será prestada em caráter prioritário no Sistema Único de Saúde (SUS) e no Sistema Único de Segurança Pública (Susp), de forma articulada e conforme os princípios e as diretrizes previstos na Lei nº 8.742, de 7 de dezembro de 1993 (Lei Orgânica da Assistência Social), e em outras normas e políticas públicas de proteção, e emergencialmente, quando for o caso.\n§ 1º O juiz determinará, por prazo certo, a inclusão da mulher em situação de violência doméstica e familiar no cadastro de programas assistenciais do governo federal, estadual e municipal.\n§ 2º O juiz assegurará à mulher em situação de violência doméstica e familiar, para preservar sua integridade física e psicológica:\nI - acesso prioritário à remoção quando servidora pública, integrante da administração direta ou indireta;\nII - manutenção do vínculo trabalhista, quando necessário o afastamento do local de trabalho, por até seis meses.\nIII - encaminhamento à assistência judiciária, quando for o caso, inclusive para eventual ajuizamento da ação de separação judicial, de divórcio, de anulação de casamento ou de dissolução de união estável perante o juízo competente.\n§ 3º A assistência à mulher em situação de violência doméstica e familiar compreenderá o acesso aos benefícios decorrentes do desenvolvimento científico e tecnológico, incluindo os serviços de contracepção de emergência, a profilaxia das Doenças Sexualmente Transmissíveis (DST) e da Síndrome da Imunodeficiência Adquirida (AIDS) e outros procedimentos médicos necessários e cabíveis nos casos de violência sexual.\nAquele que, por ação ou omissão, causar lesão, violência física, sexual ou psicológica e dano moral ou patrimonial a mulher fica obrigado a ressarcir todos os danos causados, inclusive ressarcir ao Sistema Único de Saúde (SUS), de acordo com a tabela SUS, os custos relativos aos serviços de saúde prestados para o total tratamento das vítimas em situação de violência doméstica e familiar, recolhidos os recursos assim arrecadados ao Fundo de Saúde do ente federado responsável pelas unidades de saúde que prestarem os serviços.\n§ 5º Os dispositivos de segurança destinados ao uso em caso de perigo iminente e disponibilizados para o monitoramento das vítimas de violência doméstica ou familiar amparadas por medidas protetivas terão seus custos ressarcidos pelo agressor."
+   }
+  ]
+ },
+ {
+  "item": "j0397",
+  "pergunta": "pra que serve o formulario de avaliacao de risco",
+  "resposta": "O Formulário Nacional de Avaliação de Risco serve para identificar os fatores que indicam o risco de você sofrer qualquer forma de violência doméstica ou familiar [1]. Ele tem o objetivo de ajudar a polícia, o Ministério Público, o Judiciário e a rede de proteção a gerir melhor esse risco para a sua segurança [1]. As informações colhidas devem ser mantidas em sigilo [1]. Esse formulário é aplicado, preferencialmente, no momento em que você faz o registro da ocorrência na Polícia Civil, ou no primeiro atendimento realizado pelo Ministério Público ou pelo Poder Judiciário [1].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 14.149/2021 (Formulário Nacional de Avaliação de Risco), Art. 2",
+    "texto": "Art. 2º É instituído o Formulário Nacional de Avaliação de Risco para a prevenção e o enfrentamento de crimes e de demais atos de violência doméstica e familiar praticados contra a mulher, conforme modelo aprovado por ato normativo conjunto do Conselho Nacional de Justiça e do Conselho Nacional do Ministério Público.\n§ 1º O Formulário Nacional de Avaliação de Risco tem por objetivo identificar os fatores que indicam o risco de a mulher vir a sofrer qualquer forma de violência no âmbito das relações domésticas, para subsidiar a atuação dos órgãos de segurança pública, do Ministério Público, do Poder Judiciário e dos órgãos e das entidades da rede de proteção na gestão do risco identificado, devendo ser preservado, em qualquer hipótese, o sigilo das informações.\n§ 2º O Formulário Nacional de Avaliação de Risco deve ser preferencialmente aplicado pela Polícia Civil no momento de registro da ocorrência ou, em sua impossibilidade, pelo Ministério Público ou pelo Poder Judiciário, por ocasião do primeiro atendimento à mulher vítima de violência doméstica e familiar.\n§ 3º É facultada a utilização do modelo de Formulário Nacional de Avaliação de Risco por outros órgãos e entidades públicas ou privadas que atuem na área de prevenção e de enfrentamento da violência doméstica e familiar contra a mulher."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 14.149/2021 (Formulário Nacional de Avaliação de Risco), Art. 1",
+    "texto": "Art. 1º Esta Lei institui o Formulário Nacional de Avaliação de Risco, a ser aplicado à mulher vítima de violência doméstica e familiar, observado o disposto na Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha)."
+   },
+   {
+    "n": 3,
+    "fonte": "Decreto nº 1.973/1996 (Convenção de Belém do Pará), Art. 8",
+    "texto": "Artigo 8\nOs Estados Partes convêm em adotar, progressivamente, medidas especificas, inclusive programas destinados a:\na) promover o conhecimento e a observância do direito da mulher a uma vida livre de violência e o direito da mulher a que se respeitem e protejam seus direitos humanos;\nb) modificar os padrões sociais e culturais de conduta de homens e mulheres, inclusive a formulação de programas formais e não formais adequados a todos os níveis do processo educacional, a fim de combater preconceitos e costumes e todas as outras práticas baseadas na premissa da inferioridade ou superioridade de qualquer dos gêneros ou nos papéis estereotipados para o homem e a mulher, que legitimem ou exacerbem a violência contra a mulher;\nc) promover a educação e treinamento de todo pessoal judiciário e policial e demais funcionários responsáveis pela aplicação da lei, bem como do pessoal encarregado da implementação de políticas de prevenção, punição e erradicação da violência contra a mulher;\nd) prestar serviços especializados apropriados a mulher sujeitada a violência, por intermédio de entidades dos setores público e privado, inclusive abrigos, serviços de orientação familiar, quando for o caso, e atendimento e custódia dos menores afetados;\ne) promover e apoiar programas de educação governamentais e privados, destinados a conscientizar o público para os problemas da violência contra a mulher, recursos jurídicos e reparação relacionados com essa violência;\nf) proporcionar à mulher sujeita a violência acesso a programas eficazes de recuperação e treinamento que lhe permitam participar plenamente da vida pública, privada e social;\ng) incentivar os meios de comunicação a que formulem diretrizes adequadas, de divulgação que contribuam para a erradicação da violência contra a mulher em todas as suas formas e enalteçam o respeito pela dignidade da mulher;\nh) assegurar a pesquisa e coleta de estatísticas e outras informações relevantes concernentes às causas, conseqüências e freqüência da violência contra a mulher, a fim de avaliar a eficiência das medidas tomadas para prevenir, punir e erradicar a violência contra a mulher, bem como formular e implementar as mudanças necessárias; e\ni) promover a cooperação internacional para o intercâmbio de idéias e experiências, bem como a execução de programas destinados à proteção da mulher sujeitada a violência."
+   },
+   {
+    "n": 4,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 19",
+    "texto": "Art. 19. As medidas protetivas de urgência poderão ser concedidas pelo juiz, a requerimento do Ministério Público ou a pedido da ofendida.\n§ 1º As medidas protetivas de urgência poderão ser concedidas de imediato, independentemente de audiência das partes e de manifestação do Ministério Público, devendo este ser prontamente comunicado.\n§ 2º As medidas protetivas de urgência serão aplicadas isolada ou cumulativamente, e poderão ser substituídas a qualquer tempo por outras de maior eficácia, sempre que os direitos reconhecidos nesta Lei forem ameaçados ou violados.\n§ 3º Poderá o juiz, a requerimento do Ministério Público ou a pedido da ofendida, conceder novas medidas protetivas de urgência ou rever aquelas já concedidas, se entender necessário à proteção da ofendida, de seus familiares e de seu patrimônio, ouvido o Ministério Público.\n§ 4º As medidas protetivas de urgência serão concedidas em juízo de cognição sumária a partir do depoimento da ofendida perante a autoridade policial ou da apresentação de suas alegações escritas e poderão ser indeferidas no caso de avaliação pela autoridade de inexistência de risco à integridade física, psicológica, sexual, patrimonial ou moral da ofendida ou de seus dependentes.\n§ 5º As medidas protetivas de urgência serão concedidas independentemente da tipificação penal da violência, do ajuizamento de ação penal ou cível, da existência de inquérito policial ou do registro de boletim de ocorrência.\n§ 6º As medidas protetivas de urgência vigorarão enquanto persistir risco à integridade física, psicológica, sexual, patrimonial ou moral da ofendida ou de seus dependentes."
+   },
+   {
+    "n": 5,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 31",
+    "texto": "Art. 31. Quando a complexidade do caso exigir avaliação mais aprofundada, o juiz poderá determinar a manifestação de profissional especializado, mediante a indicação da equipe de atendimento multidisciplinar."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 14.149/2021 (Formulário Nacional de Avaliação de Risco), Art. 1",
+    "texto": "Art. 1º Esta Lei institui o Formulário Nacional de Avaliação de Risco, a ser aplicado à mulher vítima de violência doméstica e familiar, observado o disposto na Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha)."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 14.149/2021 (Formulário Nacional de Avaliação de Risco), Art. 2",
+    "texto": "Art. 2º É instituído o Formulário Nacional de Avaliação de Risco para a prevenção e o enfrentamento de crimes e de demais atos de violência doméstica e familiar praticados contra a mulher, conforme modelo aprovado por ato normativo conjunto do Conselho Nacional de Justiça e do Conselho Nacional do Ministério Público.\n§ 1º O Formulário Nacional de Avaliação de Risco tem por objetivo identificar os fatores que indicam o risco de a mulher vir a sofrer qualquer forma de violência no âmbito das relações domésticas, para subsidiar a atuação dos órgãos de segurança pública, do Ministério Público, do Poder Judiciário e dos órgãos e das entidades da rede de proteção na gestão do risco identificado, devendo ser preservado, em qualquer hipótese, o sigilo das informações.\n§ 2º O Formulário Nacional de Avaliação de Risco deve ser preferencialmente aplicado pela Polícia Civil no momento de registro da ocorrência ou, em sua impossibilidade, pelo Ministério Público ou pelo Poder Judiciário, por ocasião do primeiro atendimento à mulher vítima de violência doméstica e familiar.\n§ 3º É facultada a utilização do modelo de Formulário Nacional de Avaliação de Risco por outros órgãos e entidades públicas ou privadas que atuem na área de prevenção e de enfrentamento da violência doméstica e familiar contra a mulher."
+   }
+  ]
+ },
+ {
+  "item": "j0398",
+  "pergunta": "Quais são as causas de aumento de pena aplicáveis ao crime de descumprimento de medida protetiva?",
+  "resposta": "A pena pelo descumprimento de uma medida protetiva de urgência pode ser aumentada de um terço até a metade se esse descumprimento ocorrer em duas situações: caso você tenha áreas de exclusão monitoradas eletronicamente ou se houver remoção, violação ou alteração do dispositivo de monitoração sem autorização da justiça [4].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 24-A",
+    "texto": "Descumprimento de Medidas Protetivas de Urgência\nArt. 24-A. Descumprir decisão judicial que defere medidas protetivas de urgência previstas nesta Lei:\nPena – reclusão, de 2 (dois) a 5 (cinco) anos, e multa.\n§ 1º A configuração do crime independe da competência civil ou criminal do juiz que deferiu as medidas.\n§ 2º Na hipótese de prisão em flagrante, apenas a autoridade judicial poderá conceder fiança.\n§ 3º O disposto neste artigo não exclui a aplicação de outras sanções cabíveis.\n§ 4º A pena será aumentada de 1/3 (um terço) até a metade se o descumprimento decorrer da violação das áreas de exclusão monitoradas eletronicamente ou da remoção, violação ou alteração do dispositivo de monitoração sem autorização judicial."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 24-A",
+    "texto": "Descumprimento de Medidas Protetivas de Urgência\nArt. 24-A. Descumprir decisão judicial que defere medidas protetivas de urgência previstas nesta Lei:\nPena – reclusão, de 2 (dois) a 5 (cinco) anos, e multa.\n§ 1º A configuração do crime independe da competência civil ou criminal do juiz que deferiu as medidas.\n§ 2º Na hipótese de prisão em flagrante, apenas a autoridade judicial poderá conceder fiança.\n§ 3º O disposto neste artigo não exclui a aplicação de outras sanções cabíveis.\n§ 4º A pena será aumentada de 1/3 (um terço) até a metade se o descumprimento decorrer da violação das áreas de exclusão monitoradas eletronicamente ou da remoção, violação ou alteração do dispositivo de monitoração sem autorização judicial."
+   }
+  ]
+ },
+ {
+  "item": "j0399",
+  "pergunta": "qr saber quando ele sai da cadeia pra ele n vir atras de mim",
+  "resposta": "Sinto muito que você esteja passando por essa situação. Segundo a lei, você tem o direito de ser informada sobre os atos do processo, o que inclui a entrada e a saída do agressor da prisão [1]. Você será notificada sobre essas informações [1]. É importante lembrar que você nunca deve entregar pessoalmente qualquer tipo de aviso ou intimação para o agressor [1].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 21",
+    "texto": "Art. 21. A ofendida deverá ser notificada dos atos processuais relativos ao agressor, especialmente dos pertinentes ao ingresso e à saída da prisão, sem prejuízo da intimação do advogado constituído ou do defensor público.\nParágrafo único. A ofendida não poderá entregar intimação ou notificação ao agressor ."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 11.340/2006 (Lei Maria da Penha), Art. 21",
+    "texto": "Art. 21. A ofendida deverá ser notificada dos atos processuais relativos ao agressor, especialmente dos pertinentes ao ingresso e à saída da prisão, sem prejuízo da intimação do advogado constituído ou do defensor público.\nParágrafo único. A ofendida não poderá entregar intimação ou notificação ao agressor ."
+   }
+  ]
+ },
+ {
+  "item": "j0400",
+  "pergunta": "O que é o programa Sinal Vermelho?",
+  "resposta": "O programa Sinal Vermelho é uma medida de enfrentamento à violência doméstica e familiar contra a mulher [1]. Ele promove a integração entre o Poder Executivo, Judiciário, Ministério Público, Defensoria, segurança pública e empresas privadas para ajudar mulheres vítimas de violência [2]. Por meio desse programa, as entidades participantes criam um canal de comunicação imediata para oferecer assistência e segurança à vítima após a denúncia [2]. A denúncia é feita pelo código \"sinal em formato de X\", que deve ser feito preferencialmente na mão e na cor vermelha [2].",
+  "trechos_fornecidos": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 14.188/2021 (Programa Sinal Vermelho), Art. 1",
+    "texto": "Art. 1º Esta Lei define o programa de cooperação Sinal Vermelho contra a Violência Doméstica como uma das medidas de enfrentamento da violência doméstica e familiar contra a mulher previstas na Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), e no Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), altera a modalidade da pena da lesão corporal simples cometida contra a mulher por razões da condição do sexo feminino e cria o tipo penal de violência psicológica contra a mulher."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 14.188/2021 (Programa Sinal Vermelho), Art. 2",
+    "texto": "Art. 2º Fica autorizada a integração entre o Poder Executivo, o Poder Judiciário, o Ministério Público, a Defensoria Pública, os órgãos de segurança pública e as entidades privadas, para a promoção e a realização do programa Sinal Vermelho contra a Violência Doméstica como medida de ajuda à mulher vítima de violência doméstica e familiar, conforme os incisos I, V e VII do caput do art. 8º da Lei nº 11.340, de 7 de agosto de 2006.\nParágrafo único. Os órgãos mencionados no caput deste artigo deverão estabelecer um canal de comunicação imediata com as entidades privadas de todo o País participantes do programa, a fim de viabilizar assistência e segurança à vítima, a partir do momento em que houver sido efetuada a denúncia por meio do código “sinal em formato de X”, preferencialmente feito na mão e na cor vermelha."
+   }
+  ],
+  "referencia": [
+   {
+    "n": 1,
+    "fonte": "Lei nº 14.188/2021 (Programa Sinal Vermelho), Art. 1",
+    "texto": "Art. 1º Esta Lei define o programa de cooperação Sinal Vermelho contra a Violência Doméstica como uma das medidas de enfrentamento da violência doméstica e familiar contra a mulher previstas na Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), e no Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), altera a modalidade da pena da lesão corporal simples cometida contra a mulher por razões da condição do sexo feminino e cria o tipo penal de violência psicológica contra a mulher."
+   },
+   {
+    "n": 2,
+    "fonte": "Lei nº 14.188/2021 (Programa Sinal Vermelho), Art. 2",
+    "texto": "Art. 2º Fica autorizada a integração entre o Poder Executivo, o Poder Judiciário, o Ministério Público, a Defensoria Pública, os órgãos de segurança pública e as entidades privadas, para a promoção e a realização do programa Sinal Vermelho contra a Violência Doméstica como medida de ajuda à mulher vítima de violência doméstica e familiar, conforme os incisos I, V e VII do caput do art. 8º da Lei nº 11.340, de 7 de agosto de 2006.\nParágrafo único. Os órgãos mencionados no caput deste artigo deverão estabelecer um canal de comunicação imediata com as entidades privadas de todo o País participantes do programa, a fim de viabilizar assistência e segurança à vítima, a partir do momento em que houver sido efetuada a denúncia por meio do código “sinal em formato de X”, preferencialmente feito na mão e na cor vermelha."
+   }
+  ]
+ }
+]

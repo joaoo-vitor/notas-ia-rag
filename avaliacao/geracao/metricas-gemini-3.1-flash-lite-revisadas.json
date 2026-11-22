@@ -1,0 +1,507 @@
+{
+ "modelo": "gemini-3.1-flash-lite",
+ "gabarito": "0cc27a5e4188",
+ "perguntas": 31,
+ "so_revisadas": true,
+ "condicoes": {
+  "sem-busca": {
+   "metricas": {
+    "recusa_correta": {
+     "media": 0.0,
+     "ic95": [
+      0.0,
+      0.0
+     ],
+     "n": 2
+    },
+    "recusa_indevida": {
+     "media": 0.0,
+     "ic95": [
+      0.0,
+      0.0
+     ],
+     "n": 29
+    },
+    "citou_relevante": {
+     "media": 0.7241379310344828,
+     "ic95": [
+      0.5517241379310345,
+      0.8846153846153846
+     ],
+     "n": 29
+    },
+    "precisao_citacao": {
+     "media": 0.6724137931034483,
+     "ic95": [
+      0.5157258064516129,
+      0.8226892059553345
+     ],
+     "n": 29
+    },
+    "precisao_estrita": {
+     "media": 0.6379310344827587,
+     "ic95": [
+      0.46774193548387094,
+      0.7931034482758621
+     ],
+     "n": 29
+    },
+    "cobertura_citacao": {
+     "media": 0.603448275862069,
+     "ic95": [
+      0.4482758620689655,
+      0.7586366538952745
+     ],
+     "n": 29
+    },
+    "citacao_invalida": null,
+    "contexto_relevante": null
+   },
+   "recusa": {
+    "precisao": 0.0,
+    "cobertura": 0.0,
+    "f1": 0.0,
+    "f1_ic95": [
+     0.0,
+     0.0
+    ]
+   },
+   "desfechos": {
+    "ok": 21,
+    "sem_citacao_relevante": 8
+   },
+   "por_tipo": {
+    "direta": {
+     "metrica": "citou_relevante",
+     "media": 0.7142857142857143,
+     "n": 7
+    },
+    "coloquial": {
+     "metrica": "citou_relevante",
+     "media": 0.8235294117647058,
+     "n": 17
+    },
+    "adversa": {
+     "metrica": "citou_relevante",
+     "media": 0.4,
+     "n": 5
+    },
+    "sem_resposta": {
+     "metrica": "recusa_correta",
+     "media": 0.0,
+     "n": 2
+    }
+   },
+   "diferenca": {
+    "citou_relevante": {
+     "media": -0.2857142857142857,
+     "ic95": [
+      -0.4482758620689655,
+      -0.119884615384616
+     ],
+     "n": 28
+    },
+    "precisao_citacao": {
+     "media": -0.07142857142857142,
+     "ic95": [
+      -0.22701149425287356,
+      0.07184865900383137
+     ],
+     "n": 28
+    },
+    "recusa_correta": {
+     "media": -1.0,
+     "ic95": [
+      -1.0,
+      -1.0
+     ],
+     "n": 2
+    },
+    "recusa_indevida": {
+     "media": -0.034482758620689655,
+     "ic95": [
+      -0.1111111111111111,
+      0.0
+     ],
+     "n": 29
+    }
+   }
+  },
+  "lexical": {
+   "metricas": {
+    "recusa_correta": {
+     "media": 1.0,
+     "ic95": [
+      1.0,
+      1.0
+     ],
+     "n": 2
+    },
+    "recusa_indevida": {
+     "media": 0.0,
+     "ic95": [
+      0.0,
+      0.0
+     ],
+     "n": 29
+    },
+    "citou_relevante": {
+     "media": 0.9655172413793104,
+     "ic95": [
+      0.8928571428571429,
+      1.0
+     ],
+     "n": 29
+    },
+    "precisao_citacao": {
+     "media": 0.7557471264367815,
+     "ic95": [
+      0.6494252873563218,
+      0.8602150537634408
+     ],
+     "n": 29
+    },
+    "precisao_estrita": {
+     "media": 0.675287356321839,
+     "ic95": [
+      0.5645161290322581,
+      0.7873896756978651
+     ],
+     "n": 29
+    },
+    "cobertura_citacao": {
+     "media": 0.8793103448275862,
+     "ic95": [
+      0.7777777777777778,
+      0.9655172413793104
+     ],
+     "n": 29
+    },
+    "citacao_invalida": {
+     "media": 0.0,
+     "ic95": [
+      0.0,
+      0.0
+     ],
+     "n": 31
+    },
+    "contexto_relevante": {
+     "media": 0.9655172413793104,
+     "ic95": [
+      0.8928571428571429,
+      1.0
+     ],
+     "n": 29
+    }
+   },
+   "recusa": {
+    "precisao": 1.0,
+    "cobertura": 1.0,
+    "f1": 1.0,
+    "f1_ic95": [
+     0.0,
+     1.0
+    ]
+   },
+   "desfechos": {
+    "ok": 28,
+    "erro_busca": 1
+   },
+   "por_tipo": {
+    "direta": {
+     "metrica": "citou_relevante",
+     "media": 1.0,
+     "n": 7
+    },
+    "coloquial": {
+     "metrica": "citou_relevante",
+     "media": 1.0,
+     "n": 17
+    },
+    "adversa": {
+     "metrica": "citou_relevante",
+     "media": 0.8,
+     "n": 5
+    },
+    "sem_resposta": {
+     "metrica": "recusa_correta",
+     "media": 1.0,
+     "n": 2
+    }
+   },
+   "diferenca": {
+    "citou_relevante": {
+     "media": -0.03571428571428571,
+     "ic95": [
+      -0.1111111111111111,
+      0.0
+     ],
+     "n": 28
+    },
+    "precisao_citacao": {
+     "media": 0.01488095238095238,
+     "ic95": [
+      -0.09483784893267651,
+      0.11828732423490487
+     ],
+     "n": 28
+    },
+    "recusa_correta": {
+     "media": 0.0,
+     "ic95": [
+      0.0,
+      0.0
+     ],
+     "n": 2
+    },
+    "recusa_indevida": {
+     "media": -0.034482758620689655,
+     "ic95": [
+      -0.1111111111111111,
+      0.0
+     ],
+     "n": 29
+    }
+   }
+  },
+  "hibrida-bge-m3": {
+   "metricas": {
+    "recusa_correta": {
+     "media": 1.0,
+     "ic95": [
+      1.0,
+      1.0
+     ],
+     "n": 2
+    },
+    "recusa_indevida": {
+     "media": 0.034482758620689655,
+     "ic95": [
+      0.0,
+      0.1111111111111111
+     ],
+     "n": 29
+    },
+    "citou_relevante": {
+     "media": 1.0,
+     "ic95": [
+      1.0,
+      1.0
+     ],
+     "n": 28
+    },
+    "precisao_citacao": {
+     "media": 0.7321428571428571,
+     "ic95": [
+      0.6357838441890167,
+      0.8333333333333334
+     ],
+     "n": 28
+    },
+    "precisao_estrita": {
+     "media": 0.6904761904761905,
+     "ic95": [
+      0.5833333333333333,
+      0.8027976190476188
+     ],
+     "n": 28
+    },
+    "cobertura_citacao": {
+     "media": 0.9642857142857143,
+     "ic95": [
+      0.9107142857142857,
+      1.0
+     ],
+     "n": 28
+    },
+    "citacao_invalida": {
+     "media": 0.0,
+     "ic95": [
+      0.0,
+      0.0
+     ],
+     "n": 31
+    },
+    "contexto_relevante": {
+     "media": 0.9655172413793104,
+     "ic95": [
+      0.8888888888888888,
+      1.0
+     ],
+     "n": 29
+    }
+   },
+   "recusa": {
+    "precisao": 0.6666666666666666,
+    "cobertura": 1.0,
+    "f1": 0.8,
+    "f1_ic95": [
+     0.0,
+     1.0
+    ]
+   },
+   "desfechos": {
+    "ok": 28,
+    "recusa_indevida": 1
+   },
+   "por_tipo": {
+    "direta": {
+     "metrica": "citou_relevante",
+     "media": 1.0,
+     "n": 7
+    },
+    "coloquial": {
+     "metrica": "citou_relevante",
+     "media": 1.0,
+     "n": 16
+    },
+    "adversa": {
+     "metrica": "citou_relevante",
+     "media": 1.0,
+     "n": 5
+    },
+    "sem_resposta": {
+     "metrica": "recusa_correta",
+     "media": 1.0,
+     "n": 2
+    }
+   }
+  },
+  "oraculo": {
+   "metricas": {
+    "recusa_correta": {
+     "media": 1.0,
+     "ic95": [
+      1.0,
+      1.0
+     ],
+     "n": 2
+    },
+    "recusa_indevida": {
+     "media": 0.0,
+     "ic95": [
+      0.0,
+      0.0
+     ],
+     "n": 29
+    },
+    "citou_relevante": {
+     "media": 1.0,
+     "ic95": [
+      1.0,
+      1.0
+     ],
+     "n": 29
+    },
+    "precisao_citacao": {
+     "media": 1.0,
+     "ic95": [
+      1.0,
+      1.0
+     ],
+     "n": 29
+    },
+    "precisao_estrita": {
+     "media": 1.0,
+     "ic95": [
+      1.0,
+      1.0
+     ],
+     "n": 29
+    },
+    "cobertura_citacao": {
+     "media": 1.0,
+     "ic95": [
+      1.0,
+      1.0
+     ],
+     "n": 29
+    },
+    "citacao_invalida": {
+     "media": 0.0,
+     "ic95": [
+      0.0,
+      0.0
+     ],
+     "n": 31
+    },
+    "contexto_relevante": {
+     "media": 1.0,
+     "ic95": [
+      1.0,
+      1.0
+     ],
+     "n": 29
+    }
+   },
+   "recusa": {
+    "precisao": 1.0,
+    "cobertura": 1.0,
+    "f1": 1.0,
+    "f1_ic95": [
+     0.0,
+     1.0
+    ]
+   },
+   "desfechos": {
+    "ok": 29
+   },
+   "por_tipo": {
+    "direta": {
+     "metrica": "citou_relevante",
+     "media": 1.0,
+     "n": 7
+    },
+    "coloquial": {
+     "metrica": "citou_relevante",
+     "media": 1.0,
+     "n": 17
+    },
+    "adversa": {
+     "metrica": "citou_relevante",
+     "media": 1.0,
+     "n": 5
+    },
+    "sem_resposta": {
+     "metrica": "recusa_correta",
+     "media": 1.0,
+     "n": 2
+    }
+   },
+   "diferenca": {
+    "citou_relevante": {
+     "media": 0.0,
+     "ic95": [
+      0.0,
+      0.0
+     ],
+     "n": 28
+    },
+    "precisao_citacao": {
+     "media": 0.26785714285714285,
+     "ic95": [
+      0.16666666666666666,
+      0.3642161558109834
+     ],
+     "n": 28
+    },
+    "recusa_correta": {
+     "media": 0.0,
+     "ic95": [
+      0.0,
+      0.0
+     ],
+     "n": 2
+    },
+    "recusa_indevida": {
+     "media": -0.034482758620689655,
+     "ic95": [
+      -0.1111111111111111,
+      0.0
+     ],
+     "n": 29
+    }
+   }
+  }
+ }
+}
