@@ -1,0 +1,10 @@
+.git
+.venv
+venv
+**/__pycache__
+indice
+dados
+avaliacao
+editor
+docs
+*.md
